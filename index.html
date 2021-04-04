@@ -24,33 +24,67 @@
         <main>
             <section class="box about" id="about">
                 <h2>About</h2>
+                <p> 
+                    I am an independent researcher on intelligence. My long-term research goal is to 
+                    create an artificial researcher. I am currently intereseted in meta-learning, 
+                    grounding, and memory.
+                </p>
                 <p>
-                    I am a Ph.D. student in the
-                    <a href="http://www.k.u-tokyo.ac.jp/complex/index_e.html" target="_blank"> Department of Complexity Science and Engineering</a>
-                    in the <a href="https://www.u-tokyo.ac.jp/en/#" target="_blank">University of Tokyo</a> advised by <a href="http://mns.k.u-tokyo.ac.jp/~okada/" target="_blank">Masato Okada</a> in the 
-                    <a href="http://mns.k.u-tokyo.ac.jp/index.html" target="_blank">Okada Lab</a>.
-                    I received my B.A. in Economics at <a href="https://www.keio.ac.jp/en/" target="_blank">Keio University</a>, where I studied international relations surpervised by 
-                    <a href="https://k-ris.keio.ac.jp/html/100000856_en.html" target="_blank">Kanji Akagi</a> and 
-                    neuroaesthetics in the <a href="https://kawabatalab.com/" target="_blank">Aesthetic Science Laboratory</a> advised by <a href="https://k-ris.keio.ac.jp/html/100000266_en.html" target="_blank">Hideaki Kawabata</a>.
+                    I completed my master of research at
+                    <a href="http://www.k.u-tokyo.ac.jp/complex/index_e.html" target="_blank"> the Department of Complexity Science and Engineering</a>
+                    at <a href="https://www.u-tokyo.ac.jp/en/#" target="_blank">the University of Tokyo</a>.
+                    Prior to that, I received my B.A. in Economics at <a href="https://www.keio.ac.jp/en/" target="_blank">Keio University</a>, where I studied economics, international relations, 
+                    and neuroaesthetics.
                 </p>
             </section>
             <section class="box research" id="research">
                 <h2>Research</h2>
-                <p>
-                    I'm interested in theory of neural networks, influence of task and data structure on learning, and research automation.
-                </p>
-                <h3>Statistical Mechanical Analysis of Online Learning</h3>
-                <div class="stat-mech">
-                    <p>We use statistical mechanics to analyze the learning dynamics of neural networks. My research depends on previous
-                        works by statistical
-                        physicians in 1990s, in particular <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.74.4337" target="_blank">[Saad
-                            & Solla 1995]</a>. Assuming that input data are i.i.d. sample and that same data will not be used twice, this framework allows us to derive the exact learning 
-                            dynamics of two-layered neural network in the wide limit of input width. We used this method to examin the impact of normalization method, i.e. batch normalization, on the 
-                            learning dynamics of shallow networks. 
+                <article class="stat-mech">
+                    <h3>Statistical Mechanical Analysis of Online Learning</h3>
+                    <p>
+                        I used a statistical mechanical method to analyze the learning 
+                        dynamics of shallow neural networks. My research employed the 
+                        techniques of previous works by statistical physicians in the 1990s, 
+                        in particular 
+                        <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.74.4337" 
+                           target="_blank">[Saad & Solla 1995]
+                        </a>. With some assumptions, this framework allows us to derive the exact 
+                        learning dynamics of two-layered neural networks. This technique is recently revived 
+                         by a series of researches 
+                        <a href="https://papers.nips.cc/paper/2019/hash/cab070d53bd0d200746fb852a922064a-Abstract.html" 
+                         target="_blank">
+                         [Goldt et al. NeurIPS 2019]
+                        </a> 
+                        <a href="https://proceedings.neurips.cc/paper/2019/hash/287e03db1d99e0ec2edb90d079e142f3-Abstract.html" 
+                        target="_blank">
+                        [Yoshida & Okada NeurIPS 2019]
+                        </a>
+                        <a href="https://arxiv.org/abs/1909.11500" 
+                        target="_blank">
+                        [Goldt et al. 2019]
+                        </a>. 
+                        I used this method to examine the impact of the normalization method on the learning dynamics. 
                     </p>
                     <!-- <canvas id="canvas" width="300" height="300">Canvas not supported!</canvas> -->
                     <!-- <p><img src="images/weight-vactor.png" alt="weight vector of teacher and student" width="200px"></p> -->
-                </div>
+                </article>
+                <article class="meta-learning">
+                    <h3>Meta-learning</h3>
+                    <p>
+                        I studied the trainability of Model-agnostic Meta-learning (MAML), 
+                        a popular meta-learning algorithm. With some simplifications, 
+                        I regarded MAML as optimization with a negative gradient penalty. 
+                        This simplification enables to capture of the empirical relationship 
+                        between critical meta-learning rate and inner-learning rate.  
+                        A takeaway from this study is the usefulness to regard 
+                        gradient-based bi-level optimization algorithms as a single-level regularized optimization problem. 
+                        This view could work to study other gradient-based bi-level optimization algorithms as well. 
+                        I believe bi-level optimization matters because the problems we are interested in are usually hierarchical 
+                        and bi-level optimization is a natural fit for the problems. 
+                    </p>
+                    <!-- <canvas id="canvas" width="300" height="300">Canvas not supported!</canvas> -->
+                    <!-- <p><img src="images/weight-vactor.png" alt="weight vector of teacher and student" width="200px"></p> -->
+                </article>
             </section>
             <section class="box publications" id='publications'>  <!--IDに統一する-->
                 <h2>Publications</h2>

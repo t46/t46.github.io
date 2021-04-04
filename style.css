@@ -5,8 +5,8 @@
 }
 
 body {
-    font-family: 'Avenir';
-    color: rgb(200, 200, 200);
+    font-family: 'Open Sans';
+    color: rgb(180, 180, 180);
     margin: 0;
     background-color:rgb(40, 40, 40);
 }
@@ -17,7 +17,7 @@ header {
 
 h1 {
     font-family: 'accent';
-    color: rgb(200, 200, 200);
+    color: rgb(180, 180, 180);
     background-color:rgb(40, 40, 40, 0.2);
     margin-left: 40px;
     margin-top: 25px;
@@ -25,7 +25,7 @@ h1 {
 }
 
 h1 a {
-    color: rgb(200, 200, 200);
+    color: rgb(180, 180, 180);
     text-decoration: none;
 }
 
@@ -63,7 +63,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: rgb(200, 200, 200);
+    color: rgb(180, 180, 180);
     text-decoration: none;
 }
 
@@ -76,17 +76,18 @@ main {
     margin-left: 20%; 
     margin-right: 20%;
     margin-top: 20%;
-    /* 40px, 40px, 80px --> 150, 150, 200*/
+    /* 40px, 40px, 80px 画面横幅いっぱいになる*/
 }
 
 main section {
       overflow: scroll;
-      height: 100vh;
+      margin-bottom: 10%;
+      /* height: 100vh; ページごとの表示になる*/ 
     }
 
 
 .about p a {
-    color: rgb(200, 200, 200);
+    color: rgb(180, 180, 180);
     text-decoration: none;
 }
 
@@ -95,16 +96,12 @@ main section {
     text-decoration: underline;
 }
 
-.stat-mech {
-    display: flex;
-}
-
-.stat-mech p{
+/* .stat-mech p{
     padding-right: 40px;
-}
+} */
 
 .stat-mech p a{
-    color: rgb(200, 200, 200);
+    color: rgb(180, 180, 180);
     text-decoration: none;
 }
 
@@ -153,7 +150,7 @@ main section {
 }
 
 .contact ul li {
-    color: rgb(200, 200, 200);
+    color: rgb(180, 180, 180);
     text-decoration: none;
 }
 
@@ -163,7 +160,7 @@ main section {
 }
 
 .contact ul li a {
-    color: rgb(200, 200, 200);
+    color: rgb(180, 180, 180);
     text-decoration: none;
 }
 
@@ -173,10 +170,10 @@ main section {
 }
 
 footer {
-    color: rgb(200, 200, 200);
+    color: rgb(180, 180, 180);
     margin-right: 40px;
 }
 
 footer p {
-    color: rgb(200, 200, 200);
+    color: rgb(180, 180, 180);
 }
