@@ -11,11 +11,6 @@ $(function() {
 
 $('#top-image').css('display', 'none').fadeIn(4000)
 
-$.scrollify({ 
-    section: ".box",
-    offset: -60, 
-});
-
 var ctx;
 ctx = document.getElementById("canvas").getContext("2d");
 ctx.scale(1, 1);
