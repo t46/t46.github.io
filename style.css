@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Avenir';
-    color: rgb(225, 225, 225);
+    color: rgb(200, 200, 200);
     margin: 0;
     background-color:rgb(40, 40, 40);
 }
@@ -17,7 +17,7 @@ header {
 
 h1 {
     font-family: 'accent';
-    color: rgb(225, 225, 225);
+    color: rgb(200, 200, 200);
     background-color:rgb(40, 40, 40, 0.2);
     margin-left: 40px;
     margin-top: 25px;
@@ -25,7 +25,7 @@ h1 {
 }
 
 h1 a {
-    color: rgb(225, 225, 225);
+    color: rgb(200, 200, 200);
     text-decoration: none;
 }
 
@@ -63,7 +63,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: rgb(225, 225, 225);
+    color: rgb(200, 200, 200);
     text-decoration: none;
 }
 
@@ -73,9 +73,10 @@ nav ul li a:hover {
 }
 
 main {
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 80px;
+    margin-left: 20%; 
+    margin-right: 20%;
+    margin-top: 20%;
+    /* 40px, 40px, 80px --> 150, 150, 200*/
 }
 
 main section {
@@ -85,7 +86,7 @@ main section {
 
 
 .about p a {
-    color: rgb(225, 225, 225);
+    color: rgb(200, 200, 200);
     text-decoration: none;
 }
 
@@ -103,7 +104,7 @@ main section {
 }
 
 .stat-mech p a{
-    color: rgb(225, 225, 225);
+    color: rgb(200, 200, 200);
     text-decoration: none;
 }
 
@@ -142,19 +143,17 @@ main section {
 }
 
 .pub_authors p {
-    font-weight: bold;
     font-size: 80%;
     margin: 0;
 }
 
 .pub_publisher p {
-    font-weight: bold;
     font-size: 80%;
     margin: 0;
 }
 
 .contact ul li {
-    color: rgb(225, 225, 225);
+    color: rgb(200, 200, 200);
     text-decoration: none;
 }
 
@@ -164,7 +163,7 @@ main section {
 }
 
 .contact ul li a {
-    color: rgb(225, 225, 225);
+    color: rgb(200, 200, 200);
     text-decoration: none;
 }
 
@@ -174,10 +173,10 @@ main section {
 }
 
 footer {
-    color: rgb(225, 225, 225);
+    color: rgb(200, 200, 200);
     margin-right: 40px;
 }
 
 footer p {
-    color: rgb(225, 225, 225);
+    color: rgb(200, 200, 200);
 }
