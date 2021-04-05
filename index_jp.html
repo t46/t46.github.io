@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>高木 志郎</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style_jp.css">
+        <link rel="icon" href="images/rose_dark.ico">
+    </head>
+    <body>
+        <header> <!-- navをheaderに含めるか検討 -->
+            <h1><a href="index_jp.html">高木 志郎</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#job">Job</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="box top-image" id="top-image">
+        </section>
+        <main>
+            <section class="box about" id="about">
+                <h2>About</h2>
+                <p> 
+                    フリーランスで研究者をしています．どのようにして人間は思考しているのか，知能の限界はどこで
+                    可能性は何かということに興味があります．長期的には研究者を人工的に作ることを目標に研究をしています．
+                    また，研究という営みそれ自体にも関心があり，広い意味での研究の自動化・民主化にも興味を持っています．
+                </p>
+                <p> 
+                    <ul>
+                        <li>
+                            2014 - 2018:　慶應義塾大学　経済学部
+                            <ul>
+                                <li>
+                                    2014-2015: 佐藤一光プレゼミ
+                                </li>
+                                <li>
+                                    2015-2016: University of Wisconsin
+                                </li>
+                                <li>
+                                    2016-2018: 赤木完爾ゼミ（国際政治学・安全保障）
+                                </li>
+                                <li>
+                                    2017-2018: 川畑秀明研究室（感性心理学）
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            2018 - 2020:　東京大学　新領域創成科学研究科　複雑理工学専攻　修士課程
+                            <ul>
+                                <li>
+                                    岡田真人研究室（ニューラルネットワーク，データ駆動科学，統計力学）
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    研究業績の詳細については<a href="index.html">英語のページ</a>をご覧ください．
+                </p>
+            </section>
+            <section class="box research" id="research">
+                <h2>Research</h2>
+                <section class="box master" id="master">
+                    <p>
+                        修士課程では，機械学習において「学習はいつうまくいくのか？」という問題について研究しました．
+                    </p>
+                    <article class="stat-mech">
+                        <h3>正則化手法を用いた浅いニューラルネットワークのオンライン学習の統計力学的解析</h3>
+                        <p>
+                            ニューラルネットワーク自体は古くから存在していましたが，学習が難しいことで知られていました．
+                            近年のニューラルネットワークの実応用への躍進には，この困難な学習を容易にする手法の発展が欠かせませんでした．
+                            そのような手法の一つに「正規化手法」と呼ばれる手法があります．
+                            私はこの正規化手法が学習にどのような影響を与えるのかについて研究しました．
+    
+                            学習ダイナミクスを解析するにあたり，私は1990年代に物理学者によって提案された，
+                            統計力学的解析手法を用いました
+                            <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.74.4337" 
+                            target="_blank">[Saad & Solla 1995]</a>．
+                            これは，パラメータ数の大自由度極限をとるなどの諸々の仮定のもとで，
+                            浅いニューラルネットワークの学習ダイナミクスを厳密に導出できるという手法です．近年，統計力学のメッカともよべるフランスの研究者たちが
+                            この手法を用いた一連の研究を発表したことで，この手法は再び注目を集めています
+                            <a href="https://papers.nips.cc/paper/2019/hash/cab070d53bd0d200746fb852a922064a-Abstract.html" 
+                             target="_blank">
+                             [Goldt et al. NeurIPS 2019]
+                            </a> 
+                            <a href="https://arxiv.org/abs/1909.11500" 
+                            target="_blank">
+                            [Goldt et al. 2019]
+                            </a>．
+                        </p>
+                        <!-- <canvas id="canvas" width="300" height="300">Canvas not supported!</canvas> -->
+                        <!-- <p><img src="images/weight-vactor.png" alt="weight vector of teacher and student" width="200px"></p> -->
+                    </article>
+                    <article class="meta-learning">
+                        <h3>メタ学習</h3>
+                        <p>
+                            私たち人間は，「学習方法自体を学習する」といったような，ある種の階層的な学習を行います．
+                            このような学習のことを「メタ学習」といいます．
+                            このメタ学習を用いて，タスクをうまく解くための事前知識を学習する手法に，
+                            Model-agnostic Meta-learning (MAML)と呼ばれる手法があります．
+                            私はこの手法がうまくいくのはどのような場合かを調べました．
+                            MAMLでは，個別のタスクについてどれだけ一度に学習を進めるかという量（タスクごとの学習率）と，
+                            タスク全体についてどれだけ学習を進めるかという量（メタ学習率）があります．
+                            極めて大雑把な計算の結果，学習がうまくいくために取りうるメタ学習率と，
+                            タスクごとの学習率の間の，ある種の関係性を予測することができました．
+                            この関係性は，数値実験によって，実験的にも確認することができました．
+                        </p>
+                        <!-- <canvas id="canvas" width="300" height="300">Canvas not supported!</canvas> -->
+                        <!-- <p><img src="images/weight-vactor.png" alt="weight vector of teacher and student" width="200px"></p> -->
+                    </article>
+                </section>
+                <section id="bachelor">
+                    <p>
+                        学部時代は，国際政治学と感性心理学についての研究を行いました．
+                    </p>
+                    <article class="us-japan">
+                        <h3>日米安保公共財論再考</h3>
+                        <p>
+                            「日米安全保障体制はアジア太平洋の公共財である」という文言・認識が政府内外において定着しています．
+                            しかし，経済学において一般に用いられる「公共財」という概念を念頭に置いた時に，
+                            二国間の軍事的な関係である日米安保体制にこのような文言を用いることには違和感を覚えます．
+                            そこで私は，日米安保体制はいつどのようにして「公共財」と呼ばれるようになったのか，
+                            それはどのような文脈を反映していて，その政策的含意は何か，ということについて調べました．                 
+                        </p>
+                    </article>
+                    <article class="aesthetics">
+                        <h3>人間の顔に対する印象について</h3>
+                        <p>
+                            私たちは人間の顔を見る時に，「魅力的である」「怖い」などのなんらかの印象を受けます．
+                            しかしこのような印象はなぜどのようにして生じるのでしょうか？
+                            私はこのような顔認識における印象の発生において，
+                            複数の神経細胞の同期的な発火による巨視的なパターンが重要であると考えました．
+                            そこで，経頭蓋交流電気刺激（tACS）を用いて大域的な活動に介入を行うことで，
+                            人間の顔に対する印象に変化が現れるかを調べました．
+                        </p>
+                    </article>
+                </section>
+            </section>
+            <section class="box job" id="job">
+                <h2>Job</h2>
+                受託させていただけるお仕事を随時募集しております．これまで携わらせていただいたお仕事には以下のようなものがあります．
+                <h3>論文サーベイ資料作成及び発表</h3>
+                <p>
+                    ご要望に基づいて，機械学習関連の論文をサーベイし，スライドにまとめてご説明いたします．
+                    例えば，これまで以下の様なケースについて扱ってきました．
+                    <ul>
+                        <li>
+                            特にやることは決まっていないが，機械学習のある分野の最先端の研究の状況が知りたい
+                        </li>
+                        <li>
+                            社内の機械学習を用いたプロジェクトで生じた課題を，解決しうる文献がないか知りたい
+                        </li>
+                        <li>
+                            新たに機械学習が関わるプロジェクトを始めるため，どの様な手法が用いられているか網羅的に知りたい
+                        </li>
+                    </ul>
+                    その他，法人向け講義資料の作成及び講義も担当させていただいたことがあります．
+                    機械学習は全くわからないけれど色々知りたい，といった場合も喜んでご説明いたします．
+                    いずれの場合においても，できるだけご要望に添える情報を提供できる様にお話を伺いますので，
+                    少しでもご興味を持たれましたら，是非ご連絡ください．
+                </p>
+                <h3>機械学習モデルの改良</h3>
+                <p>
+                    新しく使えるデータが増えた，対応しなければならないケースが増えたなどの場合に，
+                    機械学習モデルの改良に携わらせていただいた経験があります．
+                    ニューラルネットワークのモデルの実装においては，pytorchを用いた実装を行うことができます．
+                </p>
+
+                <p>
+                    その他簡単なデータ解析や数値実験くらいであればお手伝いできますので，是非ご連絡ください．
+                </p>
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <ul>
+                    <li>e-mail : takagi4646 [at] gmail.com</li>
+                    <li><a href="https://twitter.com/46takagi" target="_blank" rel="noopener noreferrer">twitter : @46takagi</a></li>
+                    <li><a href="https://github.com/t46" target="_blank" rel="noopener noreferrer">GitHub : t46</a></li>
+                </ul>
+                <footer>
+                    <p>© Shiro Takagi</p>
+                </footer>
+            </section>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">EN</a>
+                        <a>/</a>
+                        <a href="index_jp.html">JP</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-scrollify@1/jquery.scrollify.min.js"></script>
+        <script src="effects.js" charset="utf-8"></script>
+    </body>
+</html>

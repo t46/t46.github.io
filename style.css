@@ -40,12 +40,21 @@ h1 a {
     height: 100vh;
 }
 
-nav {
+header nav {
     background-color:rgb(40, 40, 40, 0.2);
     margin-top: 35px;
     text-align: center; 
     position: fixed;
     right: 40px;
+}
+
+footer nav {
+    background-color:rgb(40, 40, 40, 0.2);
+    margin-top: 35px;
+    text-align: center; 
+    position: fixed;
+    right: 40px;
+    bottom: 35px;
 }
 
 nav ul {
@@ -110,9 +119,9 @@ main section {
     text-decoration: underline;
 }
 
-#weight-vector {
+/* #weight-vector {
     background-color: antiquewhite;
-}
+} */
 
 .publications p a {
     color: rgb(255, 210, 220);
