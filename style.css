@@ -1,6 +1,6 @@
 /* フォント */
 @font-face {
-	font-family: 'accent';
+	font-family: 'accent', 'Didot';
 	src: local(accent);
 }
 
@@ -116,7 +116,7 @@ main section {
 }
 
 .publications p a {
-    color: rgb(255, 210, 220);
+    color: rgb(180, 180, 180);
     text-decoration: none;
 }
 
@@ -126,7 +126,7 @@ main section {
 }
 
 .presentations p a {
-    color: rgb(255, 210, 220);
+    color: rgb(180, 180, 180);
     text-decoration: none;
 }
 
