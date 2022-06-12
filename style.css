@@ -230,5 +230,6 @@ div.gallery img {
 }
 
 div.desc {
+    margin: 5 px;
     text-align: center;
 }
