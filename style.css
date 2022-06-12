@@ -165,22 +165,22 @@ main section {
     margin: 0;
 }
 
-.others ul li {
+.misc ul li {
     color: rgb(180, 180, 180);
     text-decoration: underline;
 }
 
-.others ul li :hover {
+.misc ul li :hover {
     color: rgb(162, 93, 123);
     text-decoration: underline;
 }
 
-.others ul li a {
+.misc ul li a {
     color: rgb(180, 180, 180);
     text-decoration: underline;
 }
 
-.others ul li a:hover {
+.misc ul li a:hover {
     color: rgb(162, 93, 123);
     text-decoration: underline;
 }
@@ -213,3 +213,34 @@ footer {
 footer p {
     color: rgb(180, 180, 180);
 }
+
+/* Garelly */
+
+div.gallery {
+    margin: 20px;
+    /* border: 1px solid #ccc; */
+    float: left;
+    height: 180px;
+    width: auto;
+    /* width: 50%; */
+    /* height: auto; */
+    position:relative;
+  }
+  
+  /* div.gallery:hover {
+    border: 1px solid #777;
+  } */
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+    position:relative;
+  }
+
+  div.desc {
+    text-align: center;
+    position: absolute;
+    bottom: -25px;
+    left: 0px;
+    right: 0px;
+  }
