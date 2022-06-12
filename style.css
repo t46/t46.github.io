@@ -97,7 +97,7 @@ main section {
 
 .about p a {
     color: rgb(180, 180, 180);
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .about p a:hover {
@@ -117,7 +117,7 @@ main section {
 
 .publications p a {
     color: rgb(180, 180, 180);
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .publications p a:hover {
@@ -127,7 +127,7 @@ main section {
 
 .presentations p a {
     color: rgb(180, 180, 180);
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .presentations p a:hover {
@@ -152,7 +152,7 @@ main section {
 
 .others ul li {
     color: rgb(180, 180, 180);
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .others ul li :hover {
@@ -162,7 +162,7 @@ main section {
 
 .others ul li a {
     color: rgb(180, 180, 180);
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .others ul li a:hover {
@@ -172,7 +172,7 @@ main section {
 
 .contact ul li {
     color: rgb(180, 180, 180);
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .contact ul li :hover {
@@ -182,7 +182,7 @@ main section {
 
 .contact ul li a {
     color: rgb(180, 180, 180);
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .contact ul li a:hover {
