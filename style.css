@@ -165,7 +165,7 @@ main section {
 
 .misc ul li {
     color: rgb(180, 180, 180);
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .misc ul li :hover {
