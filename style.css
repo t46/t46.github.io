@@ -150,6 +150,26 @@ main section {
     margin: 0;
 }
 
+.others ul li {
+    color: rgb(180, 180, 180);
+    text-decoration: none;
+}
+
+.others ul li :hover {
+    color: rgb(100, 100, 100);
+    text-decoration: underline;
+}
+
+.others ul li a {
+    color: rgb(180, 180, 180);
+    text-decoration: none;
+}
+
+.others ul li a:hover {
+    color: rgb(100, 100, 100);
+    text-decoration: underline;
+}
+
 .contact ul li {
     color: rgb(180, 180, 180);
     text-decoration: none;
