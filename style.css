@@ -220,10 +220,12 @@ div.gallery {
     margin: 20px;
     /* border: 1px solid #ccc; */
     float: left;
-    width: 180px;
+    /* width: 180px; */
+    height: 180px;
+    aspect-ratio: auto;
     /* width: auto; */
     /* width: 50%; */
-    height: auto;
+    /* height: auto; */
     position:relative;
   }
   
