@@ -183,6 +183,26 @@ main section {
     text-decoration: underline;
 }
 
+.blogs ul li {
+    color: rgb(180, 180, 180);
+    text-decoration: none;
+}
+
+.blogs ul li :hover {
+    color: rgb(162, 93, 123);
+    text-decoration: underline;
+}
+
+.blogs ul li a {
+    color: rgb(180, 180, 180);
+    text-decoration: underline;
+}
+
+.blogs ul li a:hover {
+    color: rgb(162, 93, 123);
+    text-decoration: underline;
+}
+
 .contact ul li {
     color: rgb(180, 180, 180);
     text-decoration: none;
