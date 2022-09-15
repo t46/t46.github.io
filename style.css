@@ -5,10 +5,11 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif; /**/
     color: rgb(180, 180, 180);
     margin: 0;
     background-color:rgb(40, 40, 40);
+    font-size: 15px;
 }
 
 header {
@@ -97,8 +98,8 @@ nav ul li a:hover {
 }
 
 main {
-    margin-left: 20%; 
-    margin-right: 20%;
+    margin-left: 10%; 
+    margin-right: 10%;
     margin-top: 20%;
 }
 
