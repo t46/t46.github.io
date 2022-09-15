@@ -10,6 +10,7 @@ body {
     margin: 0;
     background-color:rgb(40, 40, 40);
     font-size: 15px;
+    line-height: 1.2em;
 }
 
 header {
