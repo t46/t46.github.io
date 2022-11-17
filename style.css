@@ -32,12 +32,12 @@ h1 a {
 }
 
 h1 a:hover {
-    color: rgb(162, 93, 123);
+    color: rgb(144, 101, 121);
     text-decoration: underline;
 }
 
 h2 {
-    color: rgb(82, 139, 139);
+    color: rgb(107, 131, 132);
 }
 
 .top-image {
