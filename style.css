@@ -40,6 +40,11 @@ h2 {
     color: rgb(107, 131, 132);
 }
 
+h2 a:hover {
+    color: rgb(144, 101, 121);
+    text-decoration: underline;
+}
+
 .top-image {
     margin-top: 63px;
     background-color:rgb(40, 40, 40);
