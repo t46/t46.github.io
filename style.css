@@ -145,12 +145,22 @@ main section {
     text-decoration: underline;
 }
 
-.presentations p a {
+.workshops p a {
     color: rgb(180, 180, 180);
     text-decoration: underline;
 }
 
-.presentations p a:hover {
+.workshops p a:hover {
+    color: rgb(162, 93, 123);
+    text-decoration: underline;
+}
+
+.talks p a {
+    color: rgb(180, 180, 180);
+    text-decoration: underline;
+}
+
+.talks p a:hover {
     color: rgb(162, 93, 123);
     text-decoration: underline;
 }
