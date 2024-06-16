@@ -125,12 +125,12 @@ main section {
     text-decoration: underline;
 }
 
-.stat-mech p a{
+.about ul li a {
     color: rgb(180, 180, 180);
-    text-decoration: none;
+    text-decoration: underline;
 }
 
-.stat-mech p a:hover{
+.about ul li a:hover {
     color: rgb(162, 93, 123);
     text-decoration: underline;
 }
