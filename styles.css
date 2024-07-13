@@ -247,3 +247,14 @@ p {
     color: #333;
     text-decoration: underline;
 }
+
+/* Logo Link Styles */
+.logo a {
+    color: rgb(180, 180, 180);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.logo a:hover {
+    color: #ff69b4;
+}
