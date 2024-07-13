@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const hamburger = document.getElementById('hamburger-menu');
-    const menu = document.getElementById('menu');
+    const hamburger = document.querySelector('.hamburger');
+    const menu = document.querySelector('.menu');
 
     function toggleMenu() {
         hamburger.classList.toggle('active');
