@@ -59,13 +59,21 @@ header {
 .menu {
     position: absolute;
     top: 100%;
-    right: 0;
+    /* right: 0; */
     background-color: rgba(0, 0, 0, 0.9);
     min-width: 200px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
     border-radius: 0 0 0 5px;
+}
+
+.menu.left {
+    left: 0;
+}
+
+.menu.right {
+    right: 0;
 }
 
 .menu.active {
