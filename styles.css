@@ -1,9 +1,20 @@
 /* Global Styles */
+@font-face {
+    font-family: 'Accent';
+    src: url('fonts/accent.woff2') format('woff2'),
+         url('fonts/accent.woff') format('woff'),
+         url('fonts/accent.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Benne&display=swap');
+
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Benne', serif;
     background-color: #000000;
     color: rgb(180, 180, 180);
 }
@@ -29,9 +40,11 @@ header {
     height: 60px;
 }
 
+/* Apply Accent font to logo */
 .logo {
+    font-family: 'Accent', sans-serif;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 30px;
 }
 
 /* Menu Styles */
@@ -59,7 +72,6 @@ header {
 .menu {
     position: absolute;
     top: 100%;
-    /* right: 0; */
     background-color: rgba(0, 0, 0, 0.9);
     min-width: 200px;
     max-height: 0;
@@ -159,7 +171,6 @@ header {
     padding-left: 0em;
     margin-bottom: 0.5em;
 }
-
 
 /* 出版物リストのスタイリング */
 .pub_title {
