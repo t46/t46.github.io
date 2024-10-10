@@ -300,3 +300,13 @@ p {
     max-height: 80vh;
     opacity: 0.8;
 }
+
+.talk-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(180, 180, 180);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
