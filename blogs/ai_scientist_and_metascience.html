@@ -41,6 +41,35 @@
         font-weight: bold;
     }
 
+    p, ul, li {
+        margin-top: 0;
+        margin-bottom: 0.8em;
+        line-height: 1.5;
+    }
+
+    ul {
+        padding-left: 20px;  /* リストのインデントを調整 */
+    }
+
+    li {
+        margin-bottom: 0.4em;  /* リストアイテム間のスペースを調整 */
+    }
+
+    /* ネストされたリストのスタイル調整 */
+    li ul {
+        margin-top: 0.4em;
+        margin-bottom: 0;
+        
+    }
+
+    li li {
+        margin-bottom: 0.2em;
+    }
+
+    ul li {
+        font-size: 0.9em;
+    }
+
     /* .autonomy-levels tr:nth-child(even) {
         background-color: #f9f9f9;
     }
@@ -243,15 +272,16 @@
                         <p>These discussions are just beginning. In 2021, an OECD working group held a <a href="https://www.oecd.org/en/publications/artificial-intelligence-in-science_a8d820bd-en.html">workshop on "AI and Scientific Productivity"</a>. In Japan, researchers like Makoto Kureha and Minao Kukita <a href="https://www.philosophyoflife.org/jpl202303.pdf">have long examined</a> AI's potential long-term impacts on scientific creativity and understanding.</p>
                 
                         <p>Below are some of the metascientific questions on AI in science that are beginning to be discussed:</p>
-                
+                        
+                        <p>
                         <ul>
-                            <li><strong>Questions from a researcher's perspective</strong>
+                            <li>Questions from a researcher's perspective
                                 <ul>
                                     <li>What parts of research can AI assist with?</li>
                                 </ul>
                             </li>
                         
-                            <li><strong>Questions from the philosophy of science</strong>
+                            <li>Questions from the philosophy of science
                                 <ul>
                                     <li>How will the "justification" of scientific knowledge change in the age of AI?
                                         <ul>
@@ -276,7 +306,7 @@
                                 </ul>
                             </li>
                         
-                            <li><strong>Questions about the social process of science</strong>
+                            <li>Questions about the social process of science
                                 <ul>
                                     <li>How can AI streamline scientific discovery?</li>
                                     <li>Can AI conduct peer review?</li>
@@ -287,7 +317,7 @@
                                 </ul>
                             </li>
                         
-                            <li><strong>Questions about the risks of AI</strong>
+                            <li>Questions about the risks of AI
                                 <ul>
                                     <li>How can AI be used for research misconduct?</li>
                                     <li>To what extent can scientific AI be used for dual use and crime? (e.g., discovery of dangerous drugs by AI)</li>
