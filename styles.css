@@ -483,6 +483,36 @@ p {
 }
 
 /* =============================================================
+   Click Bloom — Petal Effect
+   ============================================================= */
+.click-petal {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9997;
+    border-radius: 50% 0 50% 0;
+    opacity: 0.8;
+    transform: translate(-50%, -50%);
+    animation: petalBurst ease-out forwards;
+}
+
+@keyframes petalBurst {
+    0% {
+        opacity: 0.8;
+        transform: translate(-50%, -50%) scale(0.3) rotate(0deg);
+    }
+    50% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(
+            calc(-50% + var(--tx)),
+            calc(-50% + var(--ty))
+        ) scale(1) rotate(var(--rot));
+    }
+}
+
+/* =============================================================
    Scroll Reveal (used by GSAP ScrollTrigger)
    ============================================================= */
 .scroll-reveal {

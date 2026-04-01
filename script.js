@@ -157,4 +157,56 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
     }
+
+    // =================================================================
+    // Click Bloom — Flower petals scatter on click
+    // =================================================================
+    if (!reducedMotion) {
+        var petalColors = [
+            'var(--color-accent)',      // dusty rose
+            'var(--color-accent-alt)',   // muted sage
+            'var(--color-accent-soft)',  // soft lavender
+            'var(--color-accent-warm)',  // warm gold
+            '#d4a0aa',                   // lighter rose
+            '#a3bab3',                   // lighter sage
+        ];
+
+        function createPetal(x, y) {
+            var petal = document.createElement('div');
+            petal.classList.add('click-petal');
+
+            var color = petalColors[Math.floor(Math.random() * petalColors.length)];
+            var size = 6 + Math.random() * 10;
+            var angle = Math.random() * Math.PI * 2;
+            var distance = 30 + Math.random() * 80;
+            var tx = Math.cos(angle) * distance;
+            var ty = Math.sin(angle) * distance;
+            var rotation = Math.random() * 360;
+            var duration = 0.6 + Math.random() * 0.5;
+
+            petal.style.cssText =
+                'left:' + x + 'px;' +
+                'top:' + y + 'px;' +
+                'width:' + size + 'px;' +
+                'height:' + (size * 0.6) + 'px;' +
+                'background:' + color + ';' +
+                '--tx:' + tx + 'px;' +
+                '--ty:' + ty + 'px;' +
+                '--rot:' + rotation + 'deg;' +
+                'animation-duration:' + duration + 's;';
+
+            document.body.appendChild(petal);
+
+            setTimeout(function () {
+                petal.remove();
+            }, duration * 1000 + 50);
+        }
+
+        document.addEventListener('click', function (e) {
+            var count = 6 + Math.floor(Math.random() * 5);
+            for (var i = 0; i < count; i++) {
+                createPetal(e.clientX, e.clientY);
+            }
+        });
+    }
 });
