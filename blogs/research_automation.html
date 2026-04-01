@@ -18,18 +18,23 @@
     </script>
 </head>
 <body>
+    <canvas id="particles-canvas"></canvas>
+    <div class="menu-overlay" id="menuOverlay">
+        <nav class="menu-overlay__nav">
+            <a href="../about.html" class="menu-overlay__item">A B O U T</a>
+            <a href="../research.html" class="menu-overlay__item">R E S E A R C H</a>
+            <a href="../gallery.html" class="menu-overlay__item">G A L L E R Y</a>
+            <a href="../misc.html" class="menu-overlay__item">M I S C</a>
+        </nav>
+    </div>
     <div class="container">
         <header>
             <div class="logo"><a href="../index.html">SHIRO TAKAGI</a></div>
             <div class="menu-container">
-                <div class="hamburger" onclick="toggleMenu()">
+                <div class="hamburger">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
-                <div class="menu">
-                    <a href="../about.html">ABOUT</a>
-                    <a href="../research.html">RESEARCH</a>
                 </div>
             </div>
         </header>
@@ -470,6 +475,10 @@
 <a href="https://www.linkedin.com/in/shiro-takagi-a58774176/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
 <a href="https://github.com/t46" title="GitHub"><i class="fab fa-github"></i></a>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="../particles.js"></script>
+<script src="../cursor.js"></script>
 <script src="../script.js"></script>
 </body>
 </html>

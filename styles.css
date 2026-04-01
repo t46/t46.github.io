@@ -1,4 +1,8 @@
-/* Global Styles */
+/* =============================================================
+   Meditative Living Site — Global Styles
+   ============================================================= */
+
+/* Custom Fonts */
 @font-face {
     font-family: 'Accent';
     src: url('fonts/accent.woff2') format('woff2'),
@@ -10,22 +14,72 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Benne&display=swap');
 
+/* =============================================================
+   CSS Custom Properties
+   ============================================================= */
+:root {
+    --color-bg:         #0a0a0f;
+    --color-bg-alt:     #12121a;
+    --color-text:       #b8b5b0;
+    --color-text-dim:   #7a7672;
+    --color-accent:     #c48b9a;
+    --color-accent-alt: #8fa7a0;
+    --color-accent-soft:#a89bb5;
+    --color-accent-warm:#c4a882;
+    --color-glow:       rgba(196, 139, 154, 0.3);
+    --color-glow-strong:rgba(196, 139, 154, 0.5);
+    --color-overlay:    rgba(10, 10, 15, 0.85);
+}
+
+/* =============================================================
+   Base / Reset
+   ============================================================= */
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
     font-family: 'Benne', serif;
-    background-color: #000000;
-    color: rgb(180, 180, 180);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    animation: breathe 20s ease-in-out infinite;
+    overflow-x: hidden;
 }
 
+/* Breathing Background */
+@keyframes breathe {
+    0%, 100% { background-color: #0a0a0f; }
+    25%      { background-color: #111828; }
+    50%      { background-color: #1a150f; }
+    75%      { background-color: #16101a; }
+}
+
+/* =============================================================
+   Particles Canvas
+   ============================================================= */
+#particles-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* =============================================================
+   Layout
+   ============================================================= */
 .container {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    position: relative;
+    z-index: 1;
 }
 
-/* Header Styles */
+/* =============================================================
+   Header
+   ============================================================= */
 header {
     display: flex;
     justify-content: space-between;
@@ -40,14 +94,51 @@ header {
     height: 60px;
 }
 
-/* Apply Accent font to logo */
+/* Logo */
 .logo {
     font-family: 'Accent', sans-serif;
     font-weight: 700;
     font-size: 30px;
 }
 
-/* Menu Styles */
+.logo a {
+    color: var(--color-text);
+    text-decoration: none;
+    text-shadow: 0 0 20px var(--color-glow);
+    letter-spacing: 0;
+    transition: letter-spacing 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                text-shadow 0.4s ease,
+                color 0.4s ease;
+    display: inline-block;
+}
+
+.logo a:hover {
+    color: var(--color-accent);
+    letter-spacing: 0.15em;
+    text-shadow: 0 0 30px var(--color-glow-strong);
+}
+
+/* Logo character animation */
+.logo-char {
+    display: inline-block;
+    opacity: 0;
+    animation: charReveal 0.4s ease forwards;
+}
+
+@keyframes charReveal {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =============================================================
+   Hamburger Menu
+   ============================================================= */
 .menu-container {
     position: relative;
 }
@@ -59,53 +150,18 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    z-index: 1001;
+    position: relative;
 }
 
 .hamburger span {
     display: block;
     height: 2px;
     width: 100%;
-    background-color: rgb(180, 180, 180);
-    transition: all 0.3s ease;
+    background-color: var(--color-text);
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.menu {
-    position: absolute;
-    top: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    min-width: 200px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-    border-radius: 0 0 0 5px;
-}
-
-.menu.left {
-    left: 0;
-}
-
-.menu.right {
-    right: 0;
-}
-
-.menu.active {
-    max-height: 300px;
-}
-
-.menu a {
-    display: block;
-    color: rgb(180, 180, 180);
-    text-decoration: none;
-    padding: 15px 20px;
-    font-size: 15px;
-    transition: background-color 0.3s ease;
-}
-
-.menu a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-/* Hamburger Animation */
 .hamburger.active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
 }
@@ -118,7 +174,69 @@ header {
     transform: rotate(-45deg) translate(7px, -6px);
 }
 
-/* Main Content Styles */
+/* =============================================================
+   Fullscreen Overlay Menu
+   ============================================================= */
+.menu-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    background: var(--color-overlay);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+}
+
+@supports not (backdrop-filter: blur(12px)) {
+    .menu-overlay {
+        background: rgba(10, 10, 15, 0.95);
+    }
+}
+
+.menu-overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.menu-overlay__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.menu-overlay__item {
+    font-family: 'Accent', sans-serif;
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    letter-spacing: 0.3em;
+    color: var(--color-text);
+    text-decoration: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: color 0.4s ease,
+                letter-spacing 0.4s ease,
+                text-shadow 0.4s ease;
+}
+
+.menu-overlay__item:hover {
+    color: var(--color-accent);
+    letter-spacing: 0.5em;
+    text-shadow: 0 0 20px var(--color-glow);
+}
+
+/* Keep old .menu hidden — replaced by overlay */
+.menu {
+    display: none;
+}
+
+/* =============================================================
+   Main Content
+   ============================================================= */
 .main-content {
     flex: 1;
     display: flex;
@@ -141,7 +259,7 @@ header {
 
 .main-content h2 {
     margin-bottom: 15px;
-    color: rgb(180, 180, 180);
+    color: var(--color-text);
     text-align: center;
     width: 100%;
 }
@@ -154,34 +272,226 @@ header {
     box-sizing: border-box;
 }
 
-/* リンクのスタイル */
+/* Links */
 .main-content a {
-    color: rgb(180, 180, 180);
+    color: var(--color-text);
     text-decoration: underline;
-    transition: color 0.3s ease;
+    text-decoration-color: var(--color-text-dim);
+    text-underline-offset: 3px;
+    transition: color 0.4s ease, text-decoration-color 0.4s ease;
 }
 
 .main-content a:hover {
-    color: #ff69b4;
+    color: var(--color-accent);
+    text-decoration-color: var(--color-accent);
 }
 
-/* <li>のスタイリング */
+/* Lists */
 .main-content li {
     margin-left: 0em;
     padding-left: 0em;
     margin-bottom: 0.5em;
 }
 
-/* 出版物リストのスタイリング */
+/* Publication Styling */
 .pub_title {
     font-size: 1em;
-    font-weight: bold; /* pub_titleを太字に */
+    font-weight: bold;
 }
 
 .pub_authors, .pub_publisher, .pub_material {
     font-size: 0.9em;
 }
 
+/* =============================================================
+   Hero Image (Landing Page)
+   ============================================================= */
+.hero-parallax {
+    position: fixed;
+    top: -20px;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+    z-index: 0;
+    will-change: transform;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    mix-blend-mode: screen;
+}
+
+.central-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+    opacity: 0;
+}
+
+.central-image.revealed {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-12px); }
+}
+
+/* =============================================================
+   Other Page Styles
+   ============================================================= */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* =============================================================
+   Contact Info
+   ============================================================= */
+.contact-info {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 14px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.contact-info a {
+    color: var(--color-text-dim);
+    text-decoration: none;
+    margin: 0 6px;
+    display: inline-block;
+    transition: color 0.4s ease,
+                transform 0.3s ease,
+                filter 0.4s ease;
+}
+
+.contact-info a:hover {
+    color: var(--color-accent);
+    transform: scale(1.25);
+    filter: drop-shadow(0 0 6px var(--color-glow));
+}
+
+/* =============================================================
+   Logo Link Styles (kept for specificity)
+   ============================================================= */
+
+/* =============================================================
+   Fade-in Animation
+   ============================================================= */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+/* =============================================================
+   Scroll Reveal (used by GSAP ScrollTrigger)
+   ============================================================= */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* =============================================================
+   Cursor Glow
+   ============================================================= */
+.cursor-glow {
+    position: fixed;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(196, 139, 154, 0.06) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 9998;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease;
+    will-change: left, top;
+}
+
+/* =============================================================
+   Gallery (migrated from old style.css)
+   ============================================================= */
+.gallery_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.gallery {
+    border: 1px solid var(--color-text-dim);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gallery:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px var(--color-glow);
+}
+
+.gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.4s ease;
+}
+
+.gallery img:hover {
+    opacity: 0.85;
+}
+
+.gallery .desc {
+    padding: 8px;
+    text-align: center;
+    font-size: 0.85em;
+    color: var(--color-text-dim);
+}
+
+.gallery-section h2 {
+    text-align: center;
+    margin: 2rem 0 1rem;
+    color: var(--color-text);
+}
+
+/* =============================================================
+   Talk Link
+   ============================================================= */
+.talk-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: var(--color-text);
+    text-decoration: none;
+    transition: color 0.4s ease;
+}
+
+.talk-link:hover {
+    color: var(--color-accent);
+}
+
+/* =============================================================
+   Responsive Design
+   ============================================================= */
 @media (max-width: 768px) {
     .main-content {
         padding: 10px;
@@ -197,43 +507,7 @@ header {
         padding: 0 10px;
         line-height: 1.4;
     }
-}
 
-/* Home Page Specific Styles */
-.central-image {
-    max-width: 80%;
-    max-height: 80vh;
-    opacity: 0.8;
-}
-
-.overlay-text {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-size: 24px;
-    font-weight: 700;
-    background-color: transparent;
-    padding: 20px;
-    max-width: 80%;
-}
-
-/* Other Page Styles */
-h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-p {
-    font-size: 1em;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
     .menu-container {
         order: -1;
     }
@@ -242,70 +516,53 @@ p {
         max-width: 100%;
     }
 
-    .overlay-text {
-        font-size: 20px;
+    .central-image.revealed {
+        animation: floatMobile 6s ease-in-out infinite;
+    }
+
+    @keyframes floatMobile {
+        0%, 100% { transform: translateY(0); }
+        50%      { transform: translateY(-6px); }
+    }
+
+    .contact-info {
+        bottom: 10px;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .contact-info a {
+        margin: 0 6px;
+        font-size: 16px;
+        padding: 4px;
+    }
+
+    .gallery img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .cursor-glow {
+        display: none !important;
     }
 }
 
-.contact-info {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    font-size: 12px;
-    opacity: 0.5;
-    z-index: 1000;
-}
-
-.contact-info a {
-    color: #666;
-    text-decoration: none;
-    margin: 0 5px;
-}
-
-.contact-info a:hover {
-    color: #333;
-    text-decoration: underline;
-}
-
-/* Logo Link Styles */
-.logo a {
-    color: rgb(180, 180, 180);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.logo a:hover {
-    color: #ff69b4;
-}
-
-/* Fade-in Animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
+/* =============================================================
+   Reduced Motion
+   ============================================================= */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
     }
-    to {
-        opacity: 1;
+
+    body, html {
+        animation: none;
     }
-}
 
-.fade-in {
-    animation: fadeIn 1s ease-in-out;
-    opacity: 0;
-    animation-fill-mode: forwards;
-}
-
-/* Central Image Styles */
-.central-image {
-    max-width: 80%;
-    max-height: 80vh;
-    opacity: 0.8;
-}
-
-.talk-link {
-    display: block;
-    text-align: center;
-    margin-top: 20px;
-    color: rgb(180, 180, 180);
-    text-decoration: none;
-    transition: color 0.3s ease;
+    .cursor-glow {
+        display: none !important;
+    }
 }
