@@ -165,10 +165,6 @@ document.addEventListener('DOMContentLoaded', function () {
         var petalColors = [
             'var(--color-accent)',      // dusty rose
             'var(--color-accent-alt)',   // muted sage
-            'var(--color-accent-soft)',  // soft lavender
-            'var(--color-accent-warm)',  // warm gold
-            '#d4a0aa',                   // lighter rose
-            '#a3bab3',                   // lighter sage
         ];
 
         function createPetal(x, y) {
@@ -180,9 +176,9 @@ document.addEventListener('DOMContentLoaded', function () {
             var angle = Math.random() * Math.PI * 2;
             var distance = 30 + Math.random() * 80;
             var tx = Math.cos(angle) * distance;
-            var ty = Math.sin(angle) * distance;
+            var ty = Math.sin(angle) * distance + 20;
             var rotation = Math.random() * 360;
-            var duration = 0.6 + Math.random() * 0.5;
+            var duration = 0.8 + Math.random() * 0.6;
 
             petal.style.cssText =
                 'left:' + x + 'px;' +
