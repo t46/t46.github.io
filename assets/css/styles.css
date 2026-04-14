@@ -244,6 +244,7 @@ header {
 
 .menu-overlay__item {
     font-family: 'Accent', sans-serif;
+    font-weight: 700;
     font-size: clamp(1.5rem, 4vw, 3rem);
     letter-spacing: 0.3em;
     color: var(--color-text);
