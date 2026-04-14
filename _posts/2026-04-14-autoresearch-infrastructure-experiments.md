@@ -69,13 +69,18 @@ tags:
     <p><strong>Approach:</strong> Treat each experiment result as an <em>individual</em> in an evolutionary population. Define a fitness function over result quality, reproducibility, novelty, and efficiency. Apply tournament selection, crossover, and mutation to propagate good configurations and explore their neighborhood.</p>
 
     <figure>
-        <img src="/assets/images/blog/autoresearch-infra/eed-fitness.png" alt="EED dashboard showing fitness progression and population overview from autoresearch-lite data">
-        <figcaption style="text-align: center;">EED running on autoresearch-lite data: population overview and fitness progression over 15 generations</figcaption>
+        <img src="/assets/images/blog/autoresearch-infra/eed-fitness.png" alt="Fitness progression over 15 evolutionary generations from autoresearch-lite data">
+        <figcaption style="text-align: center;">Fitness progression over 15 generations: best, mean, and min fitness from real autoresearch-lite experiments</figcaption>
     </figure>
 
     <figure>
-        <img src="/assets/images/blog/autoresearch-infra/eed-genealogy-ui.png" alt="Genealogy tree and fitness component breakdown from autoresearch-lite experiments">
-        <figcaption style="text-align: center;">Fitness component breakdown and genealogy tree: nodes colored by fitness (red=low, green=high), edges by operation type</figcaption>
+        <img src="/assets/images/blog/autoresearch-infra/eed-genealogy.png" alt="Genealogy tree showing evolutionary relationships between experiments">
+        <figcaption style="text-align: center;">Genealogy tree: nodes colored by fitness (red=low, green=high), edges by operation type (blue=crossover, green=mutation, gray=elite)</figcaption>
+    </figure>
+
+    <figure>
+        <img src="/assets/images/blog/autoresearch-infra/eed-fitness-components.png" alt="Fitness component breakdown showing quality, reproducibility, novelty, and efficiency scores">
+        <figcaption style="text-align: center;">Fitness component breakdown across the population: quality dominates, but reproducibility and novelty contribute meaningful separation</figcaption>
     </figure>
 
     <p><strong>Validation result:</strong> When fed the 21 autoresearch experiments, the fitness function correctly separated outcomes: keep experiments scored 0.62, discards 0.57, and crashes 0.10. Over 10 generations of evolution, fitness improved by 9.4%. Critically, crossover operated on actual hyperparameters &mdash; combining the learning rate from one experiment with the weight decay from another &mdash; which is a standard and meaningful hyperparameter search strategy. The system even "rediscovered" <code>weight_decay=5e-5</code>, the value that produced the best real result.</p>
@@ -100,8 +105,13 @@ tags:
     </figure>
 
     <figure>
+        <img src="/assets/images/blog/autoresearch-infra/ecv-cascade.png" alt="Cascade chain graph showing experiment dependencies and confidence scores">
+        <figcaption style="text-align: center;">Cascade chain: all 21 experiments with dependency edges, colored by confidence. Red borders indicate gated (blocked) experiments</figcaption>
+    </figure>
+
+    <figure>
         <img src="/assets/images/blog/autoresearch-infra/ecv-gating.png" alt="Confidence decay along keep chain and gating effectiveness metrics">
-        <figcaption style="text-align: center;">Confidence decays along the keep chain (0.61 &rarr; 0.27), crossing below the 0.40 threshold. Gating effectiveness: Recall=1.0 (all crashes caught)</figcaption>
+        <figcaption style="text-align: center;">Confidence decays along the keep chain (0.61 &rarr; 0.27), crossing below the 0.40 threshold</figcaption>
     </figure>
 
     <p><strong>Validation result:</strong> Against the 21 autoresearch experiments, the system correctly ordered confidence scores: keep (0.66) &gt; discard (0.56) &gt; crash (0.22). Both crashes were correctly gated (100% crash detection). In the cascade analysis, the 3-node keep chain (baseline &rarr; epochs increase &rarr; weight decay reduction) showed confidence compounding from 0.61 down to 0.27 &mdash; correctly flagging that accumulated uncertainty makes downstream results less trustworthy.</p>
