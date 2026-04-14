@@ -6,6 +6,23 @@
     <link href="{{ '/assets/css/styles.css' | relative_url }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="icon" href="{{ '/assets/images/rose_dark.ico' | relative_url }}">
+
+    <!-- Open Graph / SNS preview -->
+    {% assign og_title = page.title | default: site.title %}
+    {% assign og_description = page.description | default: "Shiro Takagi — independent AI researcher. Metascience, autonomous research, AI infrastructure." %}
+    {% assign og_image = page.og_image | default: "/assets/images/rose_dark.jpg" %}
+    <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+    <meta property="og:title" content="{{ og_title }}">
+    <meta property="og:description" content="{{ og_description }}">
+    <meta property="og:image" content="{{ og_image | absolute_url }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@{{ site.author.twitter }}">
+    <meta name="twitter:title" content="{{ og_title }}">
+    <meta name="twitter:description" content="{{ og_description }}">
+    <meta name="twitter:image" content="{{ og_image | absolute_url }}">
+
     {% if page.extra_css %}
     <style>
     {{ page.extra_css }}
