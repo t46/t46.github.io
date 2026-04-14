@@ -4,6 +4,7 @@ title: "Building Infrastructure for Autonomous Research: Three Experiments"
 date: 2026-04-14
 permalink: /blogs/autoresearch_infrastructure_experiments.html
 description: "When AI runs 100 experiments a night, what breaks? Three open-source prototypes for autoresearch infrastructure: evolutionary curation, cascade contamination prevention, and machine-native knowledge formats."
+og_image: /assets/images/blog/autoresearch-infra/eed-fitness.png
 tags:
   - metascience-experiment
 ---
