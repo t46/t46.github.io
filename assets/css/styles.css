@@ -857,6 +857,25 @@ p {
     font-weight: bold;
 }
 
+article.page.sans img,
+.content-wrapper img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+article.page.sans figure,
+.content-wrapper figure {
+    margin: 1.5em 0;
+}
+
+article.page.sans figcaption,
+.content-wrapper figcaption {
+    font-size: 0.85em;
+    color: var(--color-text-muted, #888);
+    margin-top: 0.5em;
+}
+
 article.page.sans p,
 article.page.sans ul,
 article.page.sans li {
