@@ -1,413 +1,361 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHIRO TAKAGI - Gallery</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="icon" href="images/rose_dark.ico">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QXPCMJ2F1L"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-QXPCMJ2F1L');
-    </script>
-</head>
-<body>
-    <canvas id="particles-canvas"></canvas>
-    <div class="menu-overlay" id="menuOverlay">
-        <nav class="menu-overlay__nav">
-            <a href="about.html" class="menu-overlay__item">A B O U T</a>
-            <a href="research.html" class="menu-overlay__item">R E S E A R C H</a>
-            <a href="gallery.html" class="menu-overlay__item">G A L L E R Y</a>
-            <a href="misc.html" class="menu-overlay__item">M I S C</a>
-        </nav>
-    </div>
-    <div class="container">
-        <header>
-            <div class="logo"><a href="index.html">SHIRO TAKAGI</a></div>
-            <div class="menu-container">
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </header>
-        <div class="main-content fade-in">
-            <div class="content-wrapper" style="max-width: 900px;">
-                <section class="gallery-section">
-                    <h2>Flowering Men</h2>
-                    <div class="gallery_container">
-                        <div class="gallery">
-                            <a target="_blank" href="images/flower/rose_red.jpg">
-                                <img src="images/flower/rose_red.jpg" alt="rose_red" loading="lazy">
-                            </a>
-                            <div class="desc">Rose</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/flower/dandelion.jpg">
-                                <img src="images/flower/dandelion.jpg" alt="dandelion" loading="lazy">
-                            </a>
-                            <div class="desc">Dandelion</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/flower/spider_lily.jpg">
-                                <img src="images/flower/spider_lily.jpg" alt="spider_lily" loading="lazy">
-                            </a>
-                            <div class="desc">Spider Lily</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/flower/tiger_lily.jpg">
-                                <img src="images/flower/tiger_lily.jpg" alt="tiger_lily" loading="lazy">
-                            </a>
-                            <div class="desc">Tiger Lily</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/flower/iris.jpg">
-                                <img src="images/flower/iris.jpg" alt="iris" loading="lazy">
-                            </a>
-                            <div class="desc">Iris</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/flower/nemofila.jpg">
-                                <img src="images/flower/nemofila.jpg" alt="nemofila" loading="lazy">
-                            </a>
-                            <div class="desc">Nemofila</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/flower/orchid.jpg">
-                                <img src="images/flower/orchid.jpg" alt="orchid" loading="lazy">
-                            </a>
-                            <div class="desc">Orchid</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/flower/hydrangea.jpg">
-                                <img src="images/flower/hydrangea.jpg" alt="hydrangea" loading="lazy">
-                            </a>
-                            <div class="desc">Hydrangea</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/flower/pansy.jpg">
-                                <img src="images/flower/pansy.jpg" alt="pansy" loading="lazy">
-                            </a>
-                            <div class="desc">Pansy</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/flower/purple_ball.jpg">
-                                <img src="images/flower/purple_ball.jpg" alt="purple_ball" loading="lazy">
-                            </a>
-                            <div class="desc">Purple Ball</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/flower/narcissus.jpg">
-                                <img src="images/flower/narcissus.jpg" alt="narcissus" loading="lazy">
-                            </a>
-                            <div class="desc">Narcissus</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/flower/rose_black.jpg">
-                                <img src="images/flower/rose_black.jpg" alt="rose_dark" loading="lazy">
-                            </a>
-                            <div class="desc">Rose (Dark)</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/flower/poppy.jpg">
-                                <img src="images/flower/poppy.jpg" alt="poppy" loading="lazy">
-                            </a>
-                            <div class="desc">Poppy</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/flower/two_lily.jpg">
-                                <img src="images/flower/two_lily.jpg" alt="two_lily" loading="lazy">
-                            </a>
-                            <div class="desc">Two Lilies</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/flower/big_head.jpg">
-                                <img src="images/flower/big_head.jpg" alt="big_head" loading="lazy">
-                            </a>
-                            <div class="desc">Big Head</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/flower/white_flower.jpg">
-                                <img src="images/flower/white_flower.jpg" alt="nihilist" loading="lazy">
-                            </a>
-                            <div class="desc">Nihilist</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/flower/danselion_small.jpg">
-                                <img src="images/flower/danselion_small.jpg" alt="dandelion_small" loading="lazy">
-                            </a>
-                            <div class="desc">Small Lion</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/flower/puffball.jpg">
-                                <img src="images/flower/puffball.jpg" alt="puffball" loading="lazy">
-                            </a>
-                            <div class="desc">Puffball</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/flower/anemone_many.jpg">
-                                <img src="images/flower/anemone_many.jpg" alt="anemone" loading="lazy">
-                            </a>
-                            <div class="desc">Anemones</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/flower/coffee.jpg">
-                                <img src="images/flower/coffee.jpg" alt="caffe" loading="lazy">
-                            </a>
-                            <div class="desc">At a Caffe</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/flower/rose_night.jpg">
-                                <img src="images/flower/rose_night.jpg" alt="rose_night" loading="lazy">
-                            </a>
-                            <div class="desc">At Night</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/flower/flower_man_logo_pink.jpg">
-                                <img src="images/flower/flower_man_logo_pink.jpg" alt="kimono_rose" loading="lazy">
-                            </a>
-                            <div class="desc">Kimono Rose</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/flower/DALL·E_1.png">
-                                <img src="images/flower/DALL·E_1.png" alt="DALL·E_1" loading="lazy">
-                            </a>
-                            <div class="desc">DALL·E (1)</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/flower/DALL·E_2.png">
-                                <img src="images/flower/DALL·E_2.png" alt="DALL·E_2" loading="lazy">
-                            </a>
-                            <div class="desc">DALL·E (2)</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/flower/DALL·E_3.png">
-                                <img src="images/flower/DALL·E_3.png" alt="DALL·E_3" loading="lazy">
-                            </a>
-                            <div class="desc">DALL·E (3)</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/flower/DALL·E_4.png">
-                                <img src="images/flower/DALL·E_4.png" alt="DALL·E_4" loading="lazy">
-                            </a>
-                            <div class="desc">DALL·E (4)</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/flower/DALL·E_5.png">
-                                <img src="images/flower/DALL·E_5.png" alt="DALL·E_5" loading="lazy">
-                            </a>
-                            <div class="desc">DALL·E (5)</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/flower/DALL·E_6.png">
-                                <img src="images/flower/DALL·E_6.png" alt="DALL·E_6" loading="lazy">
-                            </a>
-                            <div class="desc">DALL·E (6)</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/flower/DALL·E_7.png">
-                                <img src="images/flower/DALL·E_7.png" alt="DALL·E_7" loading="lazy">
-                            </a>
-                            <div class="desc">DALL·E (7)</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/flower/DALL·E_8.png">
-                                <img src="images/flower/DALL·E_8.png" alt="DALL·E_8" loading="lazy">
-                            </a>
-                            <div class="desc">DALL·E (8)</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/flower/midjourney_1.png">
-                                <img src="images/flower/midjourney_1.png" alt="midjourney_1" loading="lazy">
-                            </a>
-                            <div class="desc">Midjourney (1)</div>
-                        </div>
-                    </div>
-                </section>
-                <section class="gallery-section">
-                    <h2>Flowering Things</h2>
-                    <div class="gallery_container">
-                        <div class="gallery">
-                            <a target="_blank" href="images/flower/flower_vessel.jpg">
-                                <img src="images/flower/flower_vessel.jpg" alt="flower_vessel" loading="lazy">
-                            </a>
-                            <div class="desc">Flower Vessel</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/flower/sakura_stream.jpg">
-                                <img src="images/flower/sakura_stream.jpg" alt="sakura_stream" loading="lazy">
-                            </a>
-                            <div class="desc">Sakura Stream</div>
-                        </div>
-                    </div>
-                </section>
-                <section class="gallery-section">
-                    <h2>Drawings</h2>
-                    <div class="gallery_container">
-                        <div class="gallery">
-                            <a target="_blank" href="images/illustrations/rolypoly.jpg">
-                                <img src="images/illustrations/rolypoly.jpg" alt="rolypoly" loading="lazy">
-                            </a>
-                            <div class="desc">Roly-Poly</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/illustrations/cabbage.jpg">
-                                <img src="images/illustrations/cabbage.jpg" alt="cabbage" loading="lazy">
-                            </a>
-                            <div class="desc">Ccaabbaaggee</div>
-                        </div>
-                    </div>
-                </section>
-                <section class="gallery-section">
-                    <h2>Stories on the Street</h2>
-                    <div class="gallery_container">
-                        <div class="gallery">
-                            <a target="_blank" href="images/photos/rusted_panda.jpg">
-                                <img src="images/photos/rusted_panda.jpg" alt="rusted_panda" loading="lazy">
-                            </a>
-                            <div class="desc">Left Panda</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/photos/pink.jpg">
-                                <img src="images/photos/pink.jpg" alt="pink" loading="lazy">
-                            </a>
-                            <div class="desc">Left Boot</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/photos/squirrel.jpg">
-                                <img src="images/photos/squirrel.jpg" alt="squirrel" loading="lazy">
-                            </a>
-                            <div class="desc">Left Squirrel</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/photos/mikan.jpg">
-                                <img src="images/photos/mikan.jpg" alt="mikan" loading="lazy">
-                            </a>
-                            <div class="desc">Left Mikan</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/photos/encounter.jpg">
-                                <img src="images/photos/encounter.jpg" alt="encounter" loading="lazy">
-                            </a>
-                            <div class="desc">Encounter</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/photos/teatime.jpg">
-                                <img src="images/photos/teatime.jpg" alt="teatime" loading="lazy">
-                            </a>
-                            <div class="desc">Teatime</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/photos/thirsty_frog.jpg">
-                                <img src="images/photos/thirsty_frog.jpg" alt="frog" loading="lazy">
-                            </a>
-                            <div class="desc">Thirsty Frog</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/photos/yourside.jpg">
-                                <img src="images/photos/yourside.jpg" alt="yourside" loading="lazy">
-                            </a>
-                            <div class="desc">Side-by-Side</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/photos/captain.jpg">
-                                <img src="images/photos/captain.jpg" alt="captain" loading="lazy">
-                            </a>
-                            <div class="desc">Captain</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/photos/morning_craw.jpg">
-                                <img src="images/photos/morning_craw.jpg" alt="morning_craw" loading="lazy">
-                            </a>
-                            <div class="desc">Early Bird</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/photos/stretched_cat.jpg">
-                                <img src="images/photos/stretched_cat.jpg" alt="stretched_cat" loading="lazy">
-                            </a>
-                            <div class="desc">Stretched Cat</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/photos/ukiyoe_cat.jpg">
-                                <img src="images/photos/ukiyoe_cat.jpg" alt="ukiyoe_cat" loading="lazy">
-                            </a>
-                            <div class="desc">Ukiyo-E Cat</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/photos/way_home.jpg">
-                                <img src="images/photos/way_home.jpg" alt="way_home" loading="lazy">
-                            </a>
-                            <div class="desc">On the Way Home</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/photos/rainy_day.jpg">
-                                <img src="images/photos/rainy_day.jpg" alt="rainy_day" loading="lazy">
-                            </a>
-                            <div class="desc">Rainy Day</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/photos/beauty.jpg">
-                                <img src="images/photos/beauty.jpg" alt="beauty" loading="lazy">
-                            </a>
-                            <div class="desc">Burning Gradation</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/photos/gradation.jpg">
-                                <img src="images/photos/gradation.jpg" alt="gradation" loading="lazy">
-                            </a>
-                            <div class="desc">Freezing Gradation</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/photos/rose_night_light_up.jpg">
-                                <img src="images/photos/rose_night_light_up.jpg" alt="rose_night_light" loading="lazy">
-                            </a>
-                            <div class="desc">Greeting</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/photos/sakura.jpg">
-                                <img src="images/photos/sakura.jpg" alt="sakura" loading="lazy">
-                            </a>
-                            <div class="desc">Sakura</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/photos/reversed_bridge.jpg">
-                                <img src="images/photos/reversed_bridge.jpg" alt="reversed_bridge" loading="lazy">
-                            </a>
-                            <div class="desc">Upside-Down</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/photos/sunset.jpg">
-                                <img src="images/photos/sunset.jpg" alt="sunset" loading="lazy">
-                            </a>
-                            <div class="desc">Sunset</div>
-                        </div>
-                        <div class="gallery">
-                            <a target="_blank" href="images/photos/attention.jpg">
-                                <img src="images/photos/attention.jpg" alt="attention" loading="lazy">
-                            </a>
-                            <div class="desc">All You Need</div>
-                        </div>
-                    </div>
-                </section>
-            </div>
+---
+layout: page
+title: SHIRO TAKAGI - Gallery
+wrapper_style: "max-width: 900px;"
+---
+<section class="gallery-section">
+    <h2>Flowering Men</h2>
+    <div class="gallery_container">
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/flower/rose_red.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/flower/rose_red.jpg' | relative_url }}" alt="rose_red" loading="lazy">
+            </a>
+            <div class="desc">Rose</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/flower/dandelion.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/flower/dandelion.jpg' | relative_url }}" alt="dandelion" loading="lazy">
+            </a>
+            <div class="desc">Dandelion</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/flower/spider_lily.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/flower/spider_lily.jpg' | relative_url }}" alt="spider_lily" loading="lazy">
+            </a>
+            <div class="desc">Spider Lily</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/flower/tiger_lily.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/flower/tiger_lily.jpg' | relative_url }}" alt="tiger_lily" loading="lazy">
+            </a>
+            <div class="desc">Tiger Lily</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/flower/iris.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/flower/iris.jpg' | relative_url }}" alt="iris" loading="lazy">
+            </a>
+            <div class="desc">Iris</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/flower/nemofila.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/flower/nemofila.jpg' | relative_url }}" alt="nemofila" loading="lazy">
+            </a>
+            <div class="desc">Nemofila</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/flower/orchid.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/flower/orchid.jpg' | relative_url }}" alt="orchid" loading="lazy">
+            </a>
+            <div class="desc">Orchid</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/flower/hydrangea.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/flower/hydrangea.jpg' | relative_url }}" alt="hydrangea" loading="lazy">
+            </a>
+            <div class="desc">Hydrangea</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/flower/pansy.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/flower/pansy.jpg' | relative_url }}" alt="pansy" loading="lazy">
+            </a>
+            <div class="desc">Pansy</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/flower/purple_ball.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/flower/purple_ball.jpg' | relative_url }}" alt="purple_ball" loading="lazy">
+            </a>
+            <div class="desc">Purple Ball</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/flower/narcissus.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/flower/narcissus.jpg' | relative_url }}" alt="narcissus" loading="lazy">
+            </a>
+            <div class="desc">Narcissus</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/flower/rose_black.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/flower/rose_black.jpg' | relative_url }}" alt="rose_dark" loading="lazy">
+            </a>
+            <div class="desc">Rose (Dark)</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/flower/poppy.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/flower/poppy.jpg' | relative_url }}" alt="poppy" loading="lazy">
+            </a>
+            <div class="desc">Poppy</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/flower/two_lily.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/flower/two_lily.jpg' | relative_url }}" alt="two_lily" loading="lazy">
+            </a>
+            <div class="desc">Two Lilies</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/flower/big_head.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/flower/big_head.jpg' | relative_url }}" alt="big_head" loading="lazy">
+            </a>
+            <div class="desc">Big Head</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/flower/white_flower.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/flower/white_flower.jpg' | relative_url }}" alt="nihilist" loading="lazy">
+            </a>
+            <div class="desc">Nihilist</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/flower/danselion_small.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/flower/danselion_small.jpg' | relative_url }}" alt="dandelion_small" loading="lazy">
+            </a>
+            <div class="desc">Small Lion</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/flower/puffball.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/flower/puffball.jpg' | relative_url }}" alt="puffball" loading="lazy">
+            </a>
+            <div class="desc">Puffball</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/flower/anemone_many.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/flower/anemone_many.jpg' | relative_url }}" alt="anemone" loading="lazy">
+            </a>
+            <div class="desc">Anemones</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/flower/coffee.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/flower/coffee.jpg' | relative_url }}" alt="caffe" loading="lazy">
+            </a>
+            <div class="desc">At a Caffe</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/flower/rose_night.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/flower/rose_night.jpg' | relative_url }}" alt="rose_night" loading="lazy">
+            </a>
+            <div class="desc">At Night</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/flower/flower_man_logo_pink.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/flower/flower_man_logo_pink.jpg' | relative_url }}" alt="kimono_rose" loading="lazy">
+            </a>
+            <div class="desc">Kimono Rose</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/flower/DALL·E_1.png' | relative_url }}">
+                <img src="{{ '/assets/images/flower/DALL·E_1.png' | relative_url }}" alt="DALL·E_1" loading="lazy">
+            </a>
+            <div class="desc">DALL·E (1)</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/flower/DALL·E_2.png' | relative_url }}">
+                <img src="{{ '/assets/images/flower/DALL·E_2.png' | relative_url }}" alt="DALL·E_2" loading="lazy">
+            </a>
+            <div class="desc">DALL·E (2)</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/flower/DALL·E_3.png' | relative_url }}">
+                <img src="{{ '/assets/images/flower/DALL·E_3.png' | relative_url }}" alt="DALL·E_3" loading="lazy">
+            </a>
+            <div class="desc">DALL·E (3)</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/flower/DALL·E_4.png' | relative_url }}">
+                <img src="{{ '/assets/images/flower/DALL·E_4.png' | relative_url }}" alt="DALL·E_4" loading="lazy">
+            </a>
+            <div class="desc">DALL·E (4)</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/flower/DALL·E_5.png' | relative_url }}">
+                <img src="{{ '/assets/images/flower/DALL·E_5.png' | relative_url }}" alt="DALL·E_5" loading="lazy">
+            </a>
+            <div class="desc">DALL·E (5)</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/flower/DALL·E_6.png' | relative_url }}">
+                <img src="{{ '/assets/images/flower/DALL·E_6.png' | relative_url }}" alt="DALL·E_6" loading="lazy">
+            </a>
+            <div class="desc">DALL·E (6)</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/flower/DALL·E_7.png' | relative_url }}">
+                <img src="{{ '/assets/images/flower/DALL·E_7.png' | relative_url }}" alt="DALL·E_7" loading="lazy">
+            </a>
+            <div class="desc">DALL·E (7)</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/flower/DALL·E_8.png' | relative_url }}">
+                <img src="{{ '/assets/images/flower/DALL·E_8.png' | relative_url }}" alt="DALL·E_8" loading="lazy">
+            </a>
+            <div class="desc">DALL·E (8)</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/flower/midjourney_1.png' | relative_url }}">
+                <img src="{{ '/assets/images/flower/midjourney_1.png' | relative_url }}" alt="midjourney_1" loading="lazy">
+            </a>
+            <div class="desc">Midjourney (1)</div>
         </div>
     </div>
-    <div class="contact-info">
-        <a href="mailto:takagi4646@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-        <a href="https://x.com/takagi_shiro" title="Twitter"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.linkedin.com/in/shiro-takagi-a58774176/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/t46" title="GitHub"><i class="fab fa-github"></i></a>
+</section>
+<section class="gallery-section">
+    <h2>Flowering Things</h2>
+    <div class="gallery_container">
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/flower/flower_vessel.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/flower/flower_vessel.jpg' | relative_url }}" alt="flower_vessel" loading="lazy">
+            </a>
+            <div class="desc">Flower Vessel</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/flower/sakura_stream.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/flower/sakura_stream.jpg' | relative_url }}" alt="sakura_stream" loading="lazy">
+            </a>
+            <div class="desc">Sakura Stream</div>
+        </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    <script src="particles.js"></script>
-    <script src="cursor.js"></script>
-    <script src="script.js"></script>
-</body>
-</html>
+</section>
+<section class="gallery-section">
+    <h2>Drawings</h2>
+    <div class="gallery_container">
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/illustrations/rolypoly.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/illustrations/rolypoly.jpg' | relative_url }}" alt="rolypoly" loading="lazy">
+            </a>
+            <div class="desc">Roly-Poly</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/illustrations/cabbage.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/illustrations/cabbage.jpg' | relative_url }}" alt="cabbage" loading="lazy">
+            </a>
+            <div class="desc">Ccaabbaaggee</div>
+        </div>
+    </div>
+</section>
+<section class="gallery-section">
+    <h2>Stories on the Street</h2>
+    <div class="gallery_container">
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/photos/rusted_panda.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/photos/rusted_panda.jpg' | relative_url }}" alt="rusted_panda" loading="lazy">
+            </a>
+            <div class="desc">Left Panda</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/photos/pink.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/photos/pink.jpg' | relative_url }}" alt="pink" loading="lazy">
+            </a>
+            <div class="desc">Left Boot</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/photos/squirrel.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/photos/squirrel.jpg' | relative_url }}" alt="squirrel" loading="lazy">
+            </a>
+            <div class="desc">Left Squirrel</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/photos/mikan.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/photos/mikan.jpg' | relative_url }}" alt="mikan" loading="lazy">
+            </a>
+            <div class="desc">Left Mikan</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/photos/encounter.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/photos/encounter.jpg' | relative_url }}" alt="encounter" loading="lazy">
+            </a>
+            <div class="desc">Encounter</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/photos/teatime.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/photos/teatime.jpg' | relative_url }}" alt="teatime" loading="lazy">
+            </a>
+            <div class="desc">Teatime</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/photos/thirsty_frog.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/photos/thirsty_frog.jpg' | relative_url }}" alt="frog" loading="lazy">
+            </a>
+            <div class="desc">Thirsty Frog</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/photos/yourside.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/photos/yourside.jpg' | relative_url }}" alt="yourside" loading="lazy">
+            </a>
+            <div class="desc">Side-by-Side</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/photos/captain.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/photos/captain.jpg' | relative_url }}" alt="captain" loading="lazy">
+            </a>
+            <div class="desc">Captain</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/photos/morning_craw.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/photos/morning_craw.jpg' | relative_url }}" alt="morning_craw" loading="lazy">
+            </a>
+            <div class="desc">Early Bird</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/photos/stretched_cat.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/photos/stretched_cat.jpg' | relative_url }}" alt="stretched_cat" loading="lazy">
+            </a>
+            <div class="desc">Stretched Cat</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/photos/ukiyoe_cat.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/photos/ukiyoe_cat.jpg' | relative_url }}" alt="ukiyoe_cat" loading="lazy">
+            </a>
+            <div class="desc">Ukiyo-E Cat</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/photos/way_home.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/photos/way_home.jpg' | relative_url }}" alt="way_home" loading="lazy">
+            </a>
+            <div class="desc">On the Way Home</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/photos/rainy_day.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/photos/rainy_day.jpg' | relative_url }}" alt="rainy_day" loading="lazy">
+            </a>
+            <div class="desc">Rainy Day</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/photos/beauty.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/photos/beauty.jpg' | relative_url }}" alt="beauty" loading="lazy">
+            </a>
+            <div class="desc">Burning Gradation</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/photos/gradation.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/photos/gradation.jpg' | relative_url }}" alt="gradation" loading="lazy">
+            </a>
+            <div class="desc">Freezing Gradation</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/photos/rose_night_light_up.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/photos/rose_night_light_up.jpg' | relative_url }}" alt="rose_night_light" loading="lazy">
+            </a>
+            <div class="desc">Greeting</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/photos/sakura.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/photos/sakura.jpg' | relative_url }}" alt="sakura" loading="lazy">
+            </a>
+            <div class="desc">Sakura</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/photos/reversed_bridge.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/photos/reversed_bridge.jpg' | relative_url }}" alt="reversed_bridge" loading="lazy">
+            </a>
+            <div class="desc">Upside-Down</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/photos/sunset.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/photos/sunset.jpg' | relative_url }}" alt="sunset" loading="lazy">
+            </a>
+            <div class="desc">Sunset</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="{{ '/assets/images/photos/attention.jpg' | relative_url }}">
+                <img src="{{ '/assets/images/photos/attention.jpg' | relative_url }}" alt="attention" loading="lazy">
+            </a>
+            <div class="desc">All You Need</div>
+        </div>
+    </div>
+</section>

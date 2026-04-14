@@ -1,0 +1,93 @@
+- title: "Controlled Experiments as a Comparison Between Base and Derived Classes"
+  url: "/assets/papers/Controlled_Experiments_as_a_Comparison_Between_Base_and_Derived_Classes.pdf"
+  authors: "<b>Shiro Takagi</b>"
+  venue: "2024"
+
+- title: "A Dataset for Evaluating LLM-based Evaluation Functions for Research Question Extraction Task"
+  url: "https://arxiv.org/abs/2409.06883"
+  authors: "Yuya Fujisaki, <b>Shiro Takagi</b>, Hideki Asoh, Wataru Kumagai"
+  venue: "arXiv:2409.06883"
+
+- title: "Collective Predictive Coding as Model of Science: Formalizing Scientific Activities Towards Generative Science"
+  url: "https://arxiv.org/abs/2409.00102"
+  authors: "Tadahiro Taniguchi, <b>Shiro Takagi</b>, Jun Otsuka, Yusuke Hayashi, Hiro Taiyo Hamada"
+  venue: "arXiv:2409.00102"
+
+- title: "Speculative Exploration on the Concept of Artificial Agents Conducting Autonomous Research"
+  url: "https://arxiv.org/abs/2312.03497"
+  authors: "<b>Shiro Takagi</b>"
+  venue: "arXiv:2312.03497"
+  materials:
+    - label: "LaTeX"
+      url: "https://github.com/t46/research-automation-perspective-paper"
+
+- title: "Towards Autonomous Hypothesis Verification via Language Models with Minimal Guidance"
+  url: "https://arxiv.org/abs/2311.09706"
+  authors: "<b>Shiro Takagi</b>, Ryutaro Yamaguchi, Wataru Kumagai"
+  venue: "arXiv:2311.09706"
+  materials:
+    - label: "Code"
+      url: "https://github.com/t46/mock-pipeline"
+
+- title: "Empirical Study on Optimizer Selection for Out-of-Distribution Generalization"
+  url: "https://openreview.net/forum?id=ipe0IMglFF"
+  authors: "Hiroki Naganuma, Kartik Ahuja, <b>Shiro Takagi</b>, Tetsuya Motokawa, Rio Yokota, Kohta Ishikawa, Ikuro Sato, Ioannis Mitliagkas"
+  venue: "Transactions on Machine Learning Research, June, 2023"
+
+- title: "On the Effect of Pre-training for Transformer in Different Modality on Offline Reinforcement Learning"
+  url: "https://openreview.net/forum?id=9GXoMs__ckJ"
+  authors: "<b>Shiro Takagi</b>"
+  venue: "Advances in Neural Information Processing Systems 35 (2022)"
+  materials:
+    - label: "Code"
+      url: "https://github.com/t46/pre-training-different-modality-offline-rl"
+    - label: "LaTeX"
+      url: "https://github.com/t46/paper-pre-training-different-modality-offline-rl"
+    - label: "Poster"
+      url: "/assets/posters/poster_neurips_2022.pdf"
+
+- title: "Convergence of Neural Networks to Gaussian Mixture Distribution"
+  url: "https://arxiv.org/abs/2204.12100"
+  authors: "Yasuhiko Asao, Ryotaro Sakamoto, <b>Shiro Takagi</b>"
+  venue: "arXiv:2204.12100"
+  materials:
+    - label: "Code"
+      url: "https://github.com/t46/nn-gaussian-mixture"
+
+- title: "Image Recognition via Vietoris-Rips Complex"
+  url: "https://arxiv.org/abs/2109.02231"
+  authors: "Yasuhiko Asao, Jumpei Nagase, Ryotaro Sakamoto, <b>Shiro Takagi</b>"
+  venue: "arXiv:2109.02231"
+  materials:
+    - label: "Code"
+      url: "https://github.com/t46/image-recognition-via-vietoris-rips-complex"
+
+- title: "Statistical Mechanical Analysis of Catastrophic Forgetting in Continual Learning with Teacher and Student Networks"
+  url: "https://arxiv.org/abs/2105.07385"
+  authors: "Haruka Asanuma, <b>Shiro Takagi</b>, Yoshihiro Nagano, Yuki Yoshida, Yasuhiko Igarashi, Masato Okada"
+  venue: "arXiv:2105.07385"
+
+- title: "Analysis of Trainability of Gradient-based Multi-environment Learning from Gradient Norm Regularization Perspective"
+  url: "/assets/papers/analysis_of_trainability_of_gradient_based_multi_environment_learning_from_gradient_norm_regularization_perspective.pdf"
+  authors: "<b>Shiro Takagi</b>, Yoshihiro Nagano, Yuki Yoshida and Masato Okada"
+  venue: "The International Joint Conference on Neural Networks 2021, Shenzhen, China, July 18-22, 2021"
+
+- title: "The Effect of Batch Normalization in the Symmetric Phase"
+  url: "/assets/papers/the_effect_of_batch_normalization_in_the_symmetric_phase.pdf"
+  authors: "<b>Shiro Takagi</b>, Yuki Yoshida and Masato Okada"
+  venue: "29th International Conference on Artificial Neural Networks, Bratislava, Slovakia, September 15-18, 2020"
+
+- title: "Impact of Layer Normalization on Single-Layer Perceptron ― Statistical Mechanical Analysis"
+  url: "https://journals.jps.jp/doi/abs/10.7566/JPSJ.88.074003?journalCode=jpsj"
+  authors: "<b>Shiro Takagi</b>, Yuki Yoshida and Masato Okada"
+  venue: "Journal of the Physical Society of Japan, 88(7), 2019"
+
+- title: "What Makes Action and Outcome Temporally Close to Each Other: A Systematic Review and Meta-Analysis of Temporal Binding"
+  url: "https://www.researchgate.net/publication/334943813_What_Makes_Action_and_Outcome_Temporally_Close_to_Each_Other_A_Systematic_Review_and_Meta-Analysis_of_Temporal_Binding"
+  authors: "Takumi Tanaka, Takuya Matsumoto, Shintaro Hayashi, <b>Shiro Takagi</b> and Hideaki Kawabata"
+  venue: "Timing & Time Perception, 8(3), 2019"
+
+- title: "Re-Examination International Public Goods Theory of U.S. Japan Alliance (in Japanese)"
+  url: "/assets/papers/us_japan_alliance_public_good.pdf"
+  authors: "<b>Shiro Takagi</b>"
+  venue: "Seijigaku Kenkyu - Studies in Politics, 59, 2017 (Non-refereed)"

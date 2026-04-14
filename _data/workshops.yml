@@ -1,0 +1,67 @@
+- title: "Speculative Exploration on the Concept of Artificial Agents Conducting Autonomous Research (in Japanese)"
+  venue: "1st Science of Science Research Seminar, March, 2024"
+
+- title: "Managing the Whole Research Process on GitHub"
+  url: "https://openreview.net/forum?id=J0BgSIxpsSD"
+  authors: "<b>Shiro Takagi</b>"
+  venue: "NeurIPS Workshop on Broadening Research Collaborations in ML, 2022"
+  materials:
+    - label: "LaTeX"
+      url: "https://github.com/t46/github-research-management"
+    - label: "Poster"
+      url: "/assets/posters/poster_neurip_ws_2022_github.pdf"
+
+- title: "Separation of Research Data from Its Presentation"
+  url: "https://openreview.net/forum?id=-RKZoHd2-Ca"
+  authors: "<b>Shiro Takagi</b>"
+  venue: "NeurIPS Workshop on Broadening Research Collaborations in ML, 2022"
+  materials:
+    - label: "LaTeX"
+      url: "https://github.com/t46/separation-data-presentation"
+    - label: "Poster"
+      url: "/assets/posters/poster_neurip_ws_2022_view.pdf"
+
+- title: "Thoughts on the Applicability of Machine Learning to Scientific Discovery and Possible Future Research Directions (Perspective)"
+  url: "https://openreview.net/forum?id=shg-h1o9-a"
+  authors: "<b>Shiro Takagi</b>"
+  venue: "3rd AI4Science Workshop @ NeurIPS, 2022"
+  materials:
+    - label: "LaTeX"
+      url: "https://github.com/t46/perspective-ai-for-science"
+    - label: "Poster"
+      url: "/assets/posters/poster_neurip_ws_2022_ai4sci.pdf"
+
+- title: "Empirical Study on Optimizer Selection for Out-of-Distribution Generalization"
+  url: "https://openreview.net/forum?id=i1s663Cqt9"
+  authors: "Hiroki Naganuma, Kartik Ahuja, Ioannis Mitliagkas, <b>Shiro Takagi</b>, Tetsuya Motokawa, Rio Yokota, Kohta Ishikawa, Ikuro Sato"
+  venue: "NeurIPS 2022 Workshop on Distribution Shifts, 2022"
+
+- title: "On The Conditions of MAML Convergence"
+  url: "http://metalearning.ml/2019/papers/metalearn2019-takagi.pdf"
+  authors: "<b>Shiro Takagi</b>, Yoshihiro Nagano, Yuki Yoshida, Masato Okada"
+  venue: "NeurIPS Workshop on Meta-Learning, 2019"
+
+- title: "Localized Generations with Self-Supervised Meta-Learning"
+  url: "https://drive.google.com/file/d/1mTLNBujoec3azgZAnK-pliUr1Yhg-w-l/view"
+  authors: "Yoshihiro Nagano, <b>Shiro Takagi</b>, Yuki Yoshida, Masato Okada"
+  venue: "NeurIPS Workshop on Learning with Rich Experience: Integration of Learning Paradigms, 2019"
+
+- title: "The Effect of Learning Rates on Model-agnostic Meta-learning"
+  authors: "<b>Shiro Takagi</b>, Yoshihiro Nagano, Yuki Yoshida, Masato Okada"
+  venue: "ACML Workshop on Statistics & Machine Learning Researchers in Japan, 2019"
+
+- title: "Learning Locally Structured Dataset with Gradient-Based Meta-Learning"
+  authors: "Yoshihiro Nagano, <b>Shiro Takagi</b>, Yuki Yoshida, Masato Okada"
+  venue: "ACML Workshop on Statistics & Machine Learning Researchers in Japan, 2019"
+
+- title: "Statistical Mechanical Formulation of Learning Dynamics of Two-Layered Neural Networks with Batch Normalization"
+  authors: "<b>Shiro Takagi</b>, Yuki Yoshida and Masato Okada"
+  venue: "The 33rd Annual Conference of the Japanese Society for Artificial Intelligence, 2019"
+
+- title: "The Impact of Layer Normalization on Single-Layer Perceptron — Statistical Mechanical Analysis"
+  authors: "<b>Shiro Takagi</b>, Yuki Yoshida and Masato Okada"
+  venue: "The Physical Society of Japan Annual Meeting, 2019"
+
+- title: "Statistical Mechanical Analysis of Single-layer Perceptron with Layer Normalization"
+  authors: "<b>Shiro Takagi</b>, Yuki Yoshida and Masato Okada"
+  venue: "The 21st Information-Based Induction Sciences Workshop, 2018"

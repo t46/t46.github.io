@@ -1,0 +1,24 @@
+title: SHIRO TAKAGI
+url: "https://t46.github.io"
+baseurl: ""
+
+author:
+  name: Shiro Takagi
+  email: takagi4646@gmail.com
+  twitter: takagi_shiro
+  linkedin: shiro-takagi-a58774176
+  github: t46
+
+google_analytics: G-QXPCMJ2F1L
+
+permalink: /blogs/:title.html
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
