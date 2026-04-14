@@ -27,9 +27,9 @@
 /* Custom Fonts */
 @font-face {
     font-family: 'Accent';
-    src: url('fonts/accent.woff2') format('woff2'),
-         url('fonts/accent.woff') format('woff'),
-         url('fonts/accent.ttf') format('truetype');
+    src: url('../fonts/accent.woff2') format('woff2'),
+         url('../fonts/accent.woff') format('woff'),
+         url('../fonts/accent.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -830,4 +830,57 @@ p {
     .cursor-glow {
         display: none !important;
     }
+}
+
+/* Blog post styles */
+.autonomy-levels {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.autonomy-levels caption {
+    padding: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.autonomy-levels th,
+.autonomy-levels td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.autonomy-levels th {
+    font-weight: bold;
+}
+
+article.page.sans p,
+article.page.sans ul,
+article.page.sans li {
+    margin-top: 0;
+    margin-bottom: 0.8em;
+    line-height: 1.5;
+}
+
+article.page.sans ul {
+    padding-left: 20px;
+}
+
+article.page.sans li {
+    margin-bottom: 0.4em;
+}
+
+article.page.sans li ul {
+    margin-top: 0.4em;
+    margin-bottom: 0;
+}
+
+article.page.sans li li {
+    margin-bottom: 0.2em;
+}
+
+article.page.sans ul li {
+    font-size: 1em;
 }
