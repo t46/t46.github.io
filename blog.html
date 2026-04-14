@@ -1,0 +1,22 @@
+---
+layout: page
+title: SHIRO TAKAGI - Blog
+---
+<section>
+<h2>BLOG</h2>
+<p>
+    Essays and technical posts on autonomous research, metascience, and AI infrastructure.
+</p>
+<ul>
+    {% for post in site.posts %}
+    <li>
+        <span style="color: #888; font-size: 0.9em;">{{ post.date | date: "%Y-%m-%d" }}</span>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+    <li>
+        <span style="color: #888; font-size: 0.9em;">2024-08-01</span>
+        <a href="https://ethereal-albatross-bac.notion.site/Playing-with-the-AI-Scientist-by-sakana-ai-part-1-3d1724824ab24cbe9412166219fe9733" target="_blank" rel="noopener noreferrer">Playing with the AI Scientist by sakana ai: part-1</a>
+    </li>
+</ul>
+</section>
