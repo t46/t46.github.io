@@ -68,6 +68,11 @@ tags:
 
     <p><strong>Approach:</strong> Treat each experiment result as an <em>individual</em> in an evolutionary population. Define a fitness function over result quality, reproducibility, novelty, and efficiency. Apply tournament selection, crossover, and mutation to propagate good configurations and explore their neighborhood.</p>
 
+    <figure>
+        <img src="/assets/images/blog/autoresearch-infra/eed-demo.png" alt="EED interactive demo showing fitness progression and population overview">
+        <figcaption style="text-align: center;">EED interactive demo: autoresearch experiments evolving over generations</figcaption>
+    </figure>
+
     <p><strong>Validation result:</strong> When fed the 21 autoresearch experiments, the fitness function correctly separated outcomes: keep experiments scored 0.62, discards 0.57, and crashes 0.10. Over 10 generations of evolution, fitness improved by 9.4%. Critically, crossover operated on actual hyperparameters &mdash; combining the learning rate from one experiment with the weight decay from another &mdash; which is a standard and meaningful hyperparameter search strategy. The system even "rediscovered" <code>weight_decay=5e-5</code>, the value that produced the best real result.</p>
 
     <p><strong>Limitation:</strong> Evolution operated on numeric hyperparameters but could not mutate categorical choices (optimizer type, activation function). Population diversity collapsed by generation 7 due to small population size (21 individuals). Most importantly, the system generates new hyperparameter configurations but has no pipeline to actually run them &mdash; it can propose but not verify.</p>
@@ -84,6 +89,11 @@ tags:
 
     <p><strong>Approach:</strong> Assign each experiment result a Bayesian confidence score computed from reproduction rate (40%), statistical evidence (25%), effect size (20%), and code quality (15%). A decision engine gates results below a confidence threshold, preventing low-confidence outputs from becoming downstream premises.</p>
 
+    <figure>
+        <img src="/assets/images/blog/autoresearch-infra/ecv-demo.png" alt="ECV interactive demo showing confidence scores and gating decisions for autoresearch experiments">
+        <figcaption style="text-align: center;">ECV interactive demo: each experiment scored and color-coded, crashes blocked</figcaption>
+    </figure>
+
     <p><strong>Validation result:</strong> Against the 21 autoresearch experiments, the system correctly ordered confidence scores: keep (0.66) &gt; discard (0.56) &gt; crash (0.22). Both crashes were correctly gated (100% crash detection). In the cascade analysis, the 3-node keep chain (baseline &rarr; epochs increase &rarr; weight decay reduction) showed confidence compounding from 0.61 down to 0.27 &mdash; correctly flagging that accumulated uncertainty makes downstream results less trustworthy.</p>
 
     <p><strong>Limitation:</strong> The separation between keep and discard was not statistically significant (p=0.42, only 3 keeps). The effect size mapping is direction-agnostic: a large accuracy <em>drop</em> gets a high effect size score, inflating discard confidence. With N=21, the validation shows the system runs on real data and produces reasonable orderings, but cannot establish statistical calibration.</p>
@@ -99,6 +109,11 @@ tags:
     <p><strong>Problem:</strong> Scientific knowledge is packaged for human consumption: natural language papers, visual figures, implicit assumptions. When AI agents are the primary readers, this format is a bottleneck. Research by <a href="https://arxiv.org/abs/2504.02601" target="_blank" rel="noopener noreferrer">AgentRxiv</a> showed that machine-optimized formats improve AI performance by 13.7% on reasoning benchmarks.</p>
 
     <p><strong>Approach:</strong> Define structured artifact schemas (Pydantic v2 models) where uncertainty, conditions, causation, and provenance are first-class citizens &mdash; not sentences buried in section 4.3 of a PDF. Build an agent interface with three operations: <code>query()</code> for structured Q&A, <code>compose()</code> for cross-artifact synthesis, and <code>diff()</code> for contradiction detection.</p>
+
+    <figure>
+        <img src="/assets/images/blog/autoresearch-infra/lnra-demo.png" alt="LNRA interactive demo showing structured artifact explorer">
+        <figcaption style="text-align: center;">LNRA interactive demo: browsing a structured research artifact with claims, results, and provenance</figcaption>
+    </figure>
 
     <p><strong>Validation result:</strong> The entire autoresearch session (results.tsv + train.py + git log) was converted into a structured artifact. All 5 research queries returned correct answers: the system identified that increasing epochs was the most impactful change (+2.69%), correctly diagnosed both crash causes, and detected the diminishing-returns pattern in late experiments. <code>compose()</code> with an existing Attention Is All You Need artifact surfaced novel insights about how iterative optimization and architectural innovation are complementary strategies. <code>diff()</code> correctly found zero method overlap and identified methodology differences.</p>
 
