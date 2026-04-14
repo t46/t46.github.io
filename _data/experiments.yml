@@ -1,0 +1,29 @@
+- title: "Epistemic Cascade Validator"
+  description: "Confidence scoring system that detects and prevents epistemic cascade contamination in autonomous research pipelines."
+  date: 2026-04-14
+  status: "prototype"
+  github: "https://github.com/t46/epistemic-cascade-validator"
+  tags:
+    - autoresearch
+    - reproducibility
+    - bayesian
+
+- title: "LLM-Native Research Artifacts"
+  description: "Machine-readable formats for scientific knowledge that AI agents can directly operate on, manipulate, and reason with."
+  date: 2026-04-14
+  status: "prototype"
+  github: "https://github.com/t46/llm-native-research-artifacts"
+  tags:
+    - knowledge-representation
+    - ai-to-ai
+    - research-artifacts
+
+- title: "Evolutionary Experiment Database"
+  description: "Manages autonomous research experiment results as evolutionary populations with fitness selection and genealogy tracking."
+  date: 2026-04-14
+  status: "prototype"
+  github: "https://github.com/t46/evolutionary-experiment-database"
+  tags:
+    - autoresearch
+    - evolutionary-computation
+    - knowledge-management

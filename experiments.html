@@ -1,0 +1,54 @@
+---
+layout: page
+title: SHIRO TAKAGI - Experiments
+wide: true
+---
+<h2>METASCIENCE EXPERIMENTS</h2>
+<p>
+    I build and release open-source prototypes that explore the infrastructure layer of autonomous research.
+    As AI systems begin to run hundreds of experiments per night, new problems emerge that traditional scientific workflows were never designed to handle:
+    How do we curate results at machine speed? How do we prevent false positives from cascading through experiment chains? How should knowledge be represented when the primary consumers are AI agents, not humans?
+</p>
+<p>
+    Each experiment below is a working prototype published as an open-source repository. They are not papers — they are tools and simulations that test a specific hypothesis about how science should work in the age of autoresearch.
+</p>
+<br>
+
+<ul class="experiment-list">
+    {% for exp in site.data.experiments %}
+    <li>
+        <div class="pub_title">
+            <p>
+                <a href="{{ exp.github }}" target="_blank" rel="noopener noreferrer">{{ exp.title }}</a>
+            </p>
+        </div>
+        <div class="pub_authors">
+            <p>{{ exp.description }}</p>
+        </div>
+        <div class="pub_publisher">
+            <p>{{ exp.date }} &middot; {{ exp.status }}</p>
+        </div>
+        <div class="pub_material">
+            <p>
+                <a href="{{ exp.github }}" target="_blank" rel="noopener noreferrer">GitHub</a>
+                {% for tag in exp.tags %}
+                <span class="experiment-tag">{{ tag }}</span>
+                {% endfor %}
+            </p>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+
+<br>
+<h2>BLOG POSTS</h2>
+<p>Longer write-ups on the motivation and design behind these experiments.</p>
+<ul>
+    {% for post in site.posts %}
+    {% if post.tags contains "metascience-experiment" %}
+    <li>
+        <a href="{{ post.url | relative_url }}" target="_blank" rel="noopener noreferrer">{{ post.title }}</a>
+    </li>
+    {% endif %}
+    {% endfor %}
+</ul>
