@@ -69,8 +69,13 @@ tags:
     <p><strong>Approach:</strong> Treat each experiment result as an <em>individual</em> in an evolutionary population. Define a fitness function over result quality, reproducibility, novelty, and efficiency. Apply tournament selection, crossover, and mutation to propagate good configurations and explore their neighborhood.</p>
 
     <figure>
-        <img src="/assets/images/blog/autoresearch-infra/eed-genealogy.png" alt="Experiment genealogy tree showing evolutionary selection over 10 generations">
-        <figcaption style="text-align: center;">Genealogy tree of autoresearch experiments: nodes colored by fitness (red=low, green=high), edges by operation type (blue=crossover, orange=clone, green=elite)</figcaption>
+        <img src="/assets/images/blog/autoresearch-infra/eed-fitness.png" alt="EED dashboard showing fitness progression and population overview from autoresearch-lite data">
+        <figcaption style="text-align: center;">EED running on autoresearch-lite data: population overview and fitness progression over 15 generations</figcaption>
+    </figure>
+
+    <figure>
+        <img src="/assets/images/blog/autoresearch-infra/eed-genealogy-ui.png" alt="Genealogy tree and fitness component breakdown from autoresearch-lite experiments">
+        <figcaption style="text-align: center;">Fitness component breakdown and genealogy tree: nodes colored by fitness (red=low, green=high), edges by operation type</figcaption>
     </figure>
 
     <p><strong>Validation result:</strong> When fed the 21 autoresearch experiments, the fitness function correctly separated outcomes: keep experiments scored 0.62, discards 0.57, and crashes 0.10. Over 10 generations of evolution, fitness improved by 9.4%. Critically, crossover operated on actual hyperparameters &mdash; combining the learning rate from one experiment with the weight decay from another &mdash; which is a standard and meaningful hyperparameter search strategy. The system even "rediscovered" <code>weight_decay=5e-5</code>, the value that produced the best real result.</p>
@@ -90,8 +95,13 @@ tags:
     <p><strong>Approach:</strong> Assign each experiment result a Bayesian confidence score computed from reproduction rate (40%), statistical evidence (25%), effect size (20%), and code quality (15%). A decision engine gates results below a confidence threshold, preventing low-confidence outputs from becoming downstream premises.</p>
 
     <figure>
-        <img src="/assets/images/blog/autoresearch-infra/ecv-comparison.png" alt="Contamination rate and false discovery rate comparison with and without confidence scoring">
-        <figcaption style="text-align: center;">Confidence scoring eliminates cascade contamination: contamination rate drops from 0.10 to 0.00, FDR from 0.19 to 0.00 (p=0.015)</figcaption>
+        <img src="/assets/images/blog/autoresearch-infra/ecv-table.png" alt="ECV scoring each autoresearch experiment with confidence scores, color-coded by status">
+        <figcaption style="text-align: center;">Each autoresearch experiment scored: confidence color-coded (green=high, red=low), crashes correctly BLOCKED</figcaption>
+    </figure>
+
+    <figure>
+        <img src="/assets/images/blog/autoresearch-infra/ecv-gating.png" alt="Confidence decay along keep chain and gating effectiveness metrics">
+        <figcaption style="text-align: center;">Confidence decays along the keep chain (0.61 &rarr; 0.27), crossing below the 0.40 threshold. Gating effectiveness: Recall=1.0 (all crashes caught)</figcaption>
     </figure>
 
     <p><strong>Validation result:</strong> Against the 21 autoresearch experiments, the system correctly ordered confidence scores: keep (0.66) &gt; discard (0.56) &gt; crash (0.22). Both crashes were correctly gated (100% crash detection). In the cascade analysis, the 3-node keep chain (baseline &rarr; epochs increase &rarr; weight decay reduction) showed confidence compounding from 0.61 down to 0.27 &mdash; correctly flagging that accumulated uncertainty makes downstream results less trustworthy.</p>
