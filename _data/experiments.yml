@@ -1,3 +1,13 @@
+- title: "Autoresearch-Lite"
+  description: "Lightweight Karpathy-compatible autoresearch loop for Apple Silicon. LLM proposes hyperparameter changes, trains CNNs on CIFAR-10, logs results as keep/discard/crash."
+  date: 2026-04-14
+  status: "prototype"
+  github: "https://github.com/t46/autoresearch-lite"
+  tags:
+    - autoresearch
+    - validation
+    - apple-silicon
+
 - title: "Epistemic Cascade Validator"
   description: "Confidence scoring system that detects and prevents epistemic cascade contamination in autonomous research pipelines."
   date: 2026-04-14
