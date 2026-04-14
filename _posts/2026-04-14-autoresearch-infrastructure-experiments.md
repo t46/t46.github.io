@@ -59,6 +59,8 @@ tags:
     </ul>
 
     <p>Validation accuracy improved from 0.709 (baseline) to 0.740 (best). This is a real autoresearch session &mdash; real gradients, real loss curves, real GPU memory &mdash; and the output is what all three prototypes were validated against.</p>
+
+    <p><a href="https://github.com/t46/autoresearch-lite" target="_blank" rel="noopener noreferrer">GitHub: t46/autoresearch-lite</a></p>
 </section>
 
 <section>
@@ -187,5 +189,12 @@ tags:
 
     <p>Next steps include scaling to hundreds of experiments, integrating the tools with live autoresearch pipelines, and developing LLM-based genetic operators for semantic-level evolution. I plan to continue releasing experiments like these &mdash; open-source prototypes that explore what research infrastructure should look like when AI does the research.</p>
 
-    <p>If you're working on similar problems, I'd love to <a href="https://x.com/takagi_shiro" target="_blank" rel="noopener noreferrer">hear from you</a>. All code is available on <a href="https://github.com/t46" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+    <p>If you're working on similar problems, I'd love to <a href="https://x.com/takagi_shiro" target="_blank" rel="noopener noreferrer">hear from you</a>. All code is open source:</p>
+
+    <ul>
+        <li><a href="https://github.com/t46/autoresearch-lite" target="_blank" rel="noopener noreferrer">autoresearch-lite</a> &mdash; lightweight Karpathy-compatible autoresearch loop for Apple Silicon</li>
+        <li><a href="https://github.com/t46/evolutionary-experiment-database" target="_blank" rel="noopener noreferrer">evolutionary-experiment-database</a> &mdash; evolutionary selection and genealogy tracking for experiment results</li>
+        <li><a href="https://github.com/t46/epistemic-cascade-validator" target="_blank" rel="noopener noreferrer">epistemic-cascade-validator</a> &mdash; Bayesian confidence scoring and cascade contamination prevention</li>
+        <li><a href="https://github.com/t46/llm-native-research-artifacts" target="_blank" rel="noopener noreferrer">llm-native-research-artifacts</a> &mdash; structured knowledge representations for AI-to-AI research communication</li>
+    </ul>
 </section>
