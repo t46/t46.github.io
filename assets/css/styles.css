@@ -904,3 +904,32 @@ article.page.sans li li {
 article.page.sans ul li {
     font-size: 1em;
 }
+
+/* =============================================================
+   Link Icons (auto-applied via Font Awesome 5)
+   ============================================================= */
+
+/* GitHub links: Octocat icon */
+a[href*="github.com"]::before {
+    font-family: "Font Awesome 5 Brands";
+    content: "\f09b"; /* fa-github */
+    margin-right: 0.3em;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* External links: subtle arrow icon (except GitHub, which already has an icon) */
+a[target="_blank"]:not([href*="github.com"])::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f35d"; /* fa-external-link-alt */
+    margin-right: 0.25em;
+    font-size: 0.75em;
+    font-weight: 900;
+    font-style: normal;
+    opacity: 0.6;
+}
+
+/* Don't add icons inside icon-only links (e.g. contact bar) */
+.contact-info a::before {
+    content: none !important;
+}
