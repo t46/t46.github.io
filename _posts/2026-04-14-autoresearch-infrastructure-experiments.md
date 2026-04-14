@@ -13,8 +13,7 @@ tags:
 <h3 style="text-align: center;">When AI runs 100 experiments a night, what breaks?</h3>
 
 <p class="authors" style="text-align: center;">
-    Shiro Takagi<br>
-    <small><a href="https://t46.github.io/">independent AI researcher</a></small>
+    <a href="https://t46.github.io/">Shiro Takagi</a>
 </p>
 
 <br>
