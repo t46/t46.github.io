@@ -1,3 +1,23 @@
+- title: "RA Policy Collector"
+  description: "Automated science policy monitoring for Japanese funding agencies (MEXT, JST, JSPS). Scrapes, normalizes, and diff-detects 143+ policy items daily via GitHub Actions."
+  date: 2026-04-16
+  status: "prototype"
+  github: "https://github.com/t46/ra-policy-collector"
+  tags:
+    - research-administration
+    - metascience
+    - automation
+
+- title: "RA Skills Hub"
+  description: "Community-driven research administration expertise as reusable AI skills. 8 skills covering policy monitoring, grant review, budget planning, and a meta-skill for RA knowledge capture."
+  date: 2026-04-16
+  status: "prototype"
+  github: "https://github.com/t46/ra-skills"
+  tags:
+    - research-administration
+    - metascience
+    - knowledge-management
+
 - title: "Autoresearch-Lite"
   description: "Lightweight Karpathy-compatible autoresearch loop for Apple Silicon. LLM proposes hyperparameter changes, trains CNNs on CIFAR-10, logs results as keep/discard/crash."
   date: 2026-04-14
