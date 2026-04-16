@@ -46,17 +46,16 @@ tags:
 
     <h4>Prototype 1: Automated Policy Collection</h4>
 
-    <p><a href="https://github.com/t46/ra-policy-collector" target="_blank" rel="noopener noreferrer">ra-policy-collector</a> automatically scrapes policy announcements from three major Japanese science funding agencies:</p>
+    <p><a href="https://github.com/t46/ra-policy-collector" target="_blank" rel="noopener noreferrer">ra-policy-collector</a> automatically collects policy announcements from major Japanese science funding agencies. Currently two sources are active:</p>
 
     <ul>
-        <li><strong>MEXT</strong> (Ministry of Education): HTML scraping of the public call page &rarr; 63 items collected</li>
-        <li><strong>JST</strong> (Japan Science and Technology Agency): RSS feed parsing &rarr; 25 items collected</li>
-        <li><strong>JSPS</strong> (Japan Society for the Promotion of Science): HTML scraping of KAKENHI pages &rarr; 55 items collected</li>
+        <li><strong>MEXT</strong> (Ministry of Education): HTML scraping of the public call page, used under the <a href="https://www.mext.go.jp/b_menu/1351168.htm" target="_blank" rel="noopener noreferrer">Government Standard Terms of Use 2.0</a> &rarr; 63 items collected</li>
+        <li><strong>JST</strong> (Japan Science and Technology Agency): official RSS feed parsing &rarr; 25 items collected</li>
     </ul>
 
     <p>Each item is normalized into a structured format (title, URL, source, date, category) and stored as JSON. The system detects new items by comparing against the previous collection, and generates a daily Markdown report. A GitHub Actions workflow runs the collector every morning at 9:00 JST.</p>
 
-    <p>143 items from a single run. That is 143 pages a research administrator no longer needs to visit manually. The system is extensible &mdash; adding NEDO, AMED, Cabinet Office CSTI, or e-Rad is a matter of writing a new collector function and registering it.</p>
+    <p>88 items from a single run across two agencies. That is dozens of pages a research administrator no longer needs to visit manually. The system is extensible &mdash; adding JSPS, NEDO, AMED, Cabinet Office CSTI, or e-Rad is a matter of writing a new collector function and registering it, provided the target site's terms of use permit automated access.</p>
 
     <p>This is not sophisticated AI. It is basic scraping and structuring. But that is precisely the point: <strong>the bar for meaningful automation in research administration is low</strong>, because the current baseline is "a person visiting government websites every morning."</p>
 
