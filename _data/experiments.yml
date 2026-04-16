@@ -1,3 +1,13 @@
+- title: "Negative Result Repository"
+  description: "Structure, search, and learn from failed autoresearch experiments. Converts discarded/crashed experiments into searchable knowledge with similarity search, pattern aggregation, and autoresearch loop integration."
+  date: 2026-04-16
+  status: "prototype"
+  github: "https://github.com/t46/negative-result-repository"
+  tags:
+    - autoresearch
+    - negative-results
+    - metascience
+
 - title: "RA Policy Collector"
   description: "Automated science policy monitoring for Japanese funding agencies (MEXT, JST, JSPS). Scrapes, normalizes, and diff-detects 143+ policy items daily via GitHub Actions."
   date: 2026-04-16
