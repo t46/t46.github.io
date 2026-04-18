@@ -1,3 +1,13 @@
+- title: "Research PageRank"
+  description: "Trust propagation in bipolar argumentation graphs. Signed PageRank variant on supports/contradicts claim networks, tested with 12 AI research claims. 4/5 intuition checks passed."
+  date: 2026-04-18
+  status: "prototype"
+  github: "https://github.com/t46/research-pagerank"
+  tags:
+    - trust-propagation
+    - argumentation
+    - metascience
+
 - title: "Negative Result Repository"
   description: "Structure, search, and learn from failed autoresearch experiments. Converts discarded/crashed experiments into searchable knowledge with similarity search, pattern aggregation, and autoresearch loop integration."
   date: 2026-04-16
