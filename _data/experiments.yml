@@ -1,3 +1,33 @@
+- title: "Claim Prediction Market"
+  description: "Can prediction markets identify novel research claims? 5 LLM predictors evaluate 35 ARA-generated claims. Market ensemble achieves Brier score 0.177, identifying 1 genuinely surprising verified claim the market predicted would fail."
+  date: 2026-04-23
+  status: "prototype"
+  github: "https://github.com/t46/claim-prediction-market"
+  tags:
+    - prediction-markets
+    - metascience
+    - research-evaluation
+
+- title: "Research Anomaly Detector"
+  description: "Structural pathology detection for AI-generated research. 7 detectors find 47 anomalies in ARA output including confidence inflation (0.98 confidence on 1 evidence item) and 82% precision oscillation rate."
+  date: 2026-04-23
+  status: "prototype"
+  github: "https://github.com/t46/research-anomaly-detector"
+  tags:
+    - anomaly-detection
+    - metascience
+    - quality-assurance
+
+- title: "Belief Market"
+  description: "Can economic staking mechanisms rank research claims better than confidence scores? Negative result: 2-agent LMSR market (tau=0.242) loses to raw confidence (tau=0.435), revealing a minimum diversity threshold for prediction markets."
+  date: 2026-04-23
+  status: "prototype"
+  github: "https://github.com/t46/belief-market"
+  tags:
+    - prediction-markets
+    - metascience
+    - negative-result
+
 - title: "Research PageRank"
   description: "Trust propagation in bipolar argumentation graphs. Signed PageRank variant on supports/contradicts claim networks, tested with 12 AI research claims. 4/5 intuition checks passed."
   date: 2026-04-18
