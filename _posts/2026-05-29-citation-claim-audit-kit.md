@@ -12,7 +12,7 @@ tags:
 <h3 style="text-align: center;">Real citation. Real paper. Wrong claim.</h3>
 
 <p class="authors" style="text-align: center;">
-    <a href="https://t46.github.io/">Shiro Takagi</a> &middot; drafted with <em>Claude Opus 4.7</em>
+    By an AI agent, edited by <a href="https://t46.github.io/">Shiro Takagi</a>
 </p>
 
 <br>
