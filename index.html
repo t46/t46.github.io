@@ -2,3 +2,118 @@
 layout: home
 title: SHIRO TAKAGI
 ---
+<section class="hero-atelier">
+    <div class="hero-inner">
+        <p class="hero-label">Independent researcher</p>
+        <h1 class="hero-title">Shiro<br>Takagi</h1>
+        <p class="hero-desc">
+            Building AI that conducts research — and rethinking how science
+            itself should work.
+        </p>
+    </div>
+</section>
+
+<div class="atelier-content">
+    <section class="atelier-section">
+        <div class="about-band">
+            <div class="section-head">
+                <span class="section-no">01</span>
+                <div>
+                    <span class="section-label">The question</span>
+                    <h2 class="section-title">Can a machine <em>do science</em>?</h2>
+                </div>
+            </div>
+            <p class="band-quote">
+                &ldquo;I build AI that conducts academic research. And because peer review,
+                papers, and universities are historical accidents rather than optimal designs,
+                I am equally drawn to the other question: <em>what new forms should science
+                take when AI becomes a researcher?</em> The design space of science has barely
+                been explored — I want to create the new games of knowledge-making, not just
+                play the old one.&rdquo;
+            </p>
+            <a href="{{ '/about.html' | relative_url }}" class="section-more">About me &rarr;</a>
+        </div>
+    </section>
+
+    <section class="atelier-section">
+        <div class="section-head">
+            <span class="section-no">02</span>
+            <div>
+                <span class="section-label">Selected work</span>
+                <h2 class="section-title">Research</h2>
+            </div>
+        </div>
+        <p class="section-lede">
+            Publications and workshop papers on autonomous research agents,
+            learning dynamics, and collective models of science.
+        </p>
+        <ul class="index-list">
+            {% for pub in site.data.publications limit: 4 %}
+            <li>
+                <span class="index-no">{{ forloop.index | prepend: '00' | slice: -2, 2 }}</span>
+                <div class="index-body">
+                    {% if pub.url %}
+                    <a href="{{ pub.url }}" target="_blank" rel="noopener noreferrer" class="index-title">{{ pub.title }}</a>
+                    {% else %}
+                    <span class="index-title">{{ pub.title }}</span>
+                    {% endif %}
+                    <p class="index-meta">{{ pub.venue }}</p>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+        <a href="{{ '/research.html' | relative_url }}" class="section-more">All publications, talks &amp; projects &rarr;</a>
+    </section>
+
+    <section class="atelier-section">
+        <div class="section-head">
+            <span class="section-no">03</span>
+            <div>
+                <span class="section-label">Working prototypes</span>
+                <h2 class="section-title">Experiments</h2>
+            </div>
+        </div>
+        <p class="section-lede">
+            Open-source prototypes probing the infrastructure of autonomous science:
+            what happens when AI runs hundreds of experiments per night?
+        </p>
+        <ul class="index-list">
+            {% for exp in site.data.experiments limit: 3 %}
+            <li>
+                <span class="index-no">{{ forloop.index | prepend: '00' | slice: -2, 2 }}</span>
+                <div class="index-body">
+                    <a href="{{ exp.github }}" target="_blank" rel="noopener noreferrer" class="index-title">{{ exp.title }}</a>
+                    <p class="index-desc">{{ exp.description | truncate: 140 }}</p>
+                </div>
+                <span class="index-date">{{ exp.date | date: "%Y.%m" }}</span>
+            </li>
+            {% endfor %}
+        </ul>
+        <a href="{{ '/experiments.html' | relative_url }}" class="section-more">All experiments &rarr;</a>
+    </section>
+
+    <section class="atelier-section">
+        <div class="section-head">
+            <span class="section-no">04</span>
+            <div>
+                <span class="section-label">Writing</span>
+                <h2 class="section-title">Blog</h2>
+            </div>
+        </div>
+        <p class="section-lede">
+            Essays on autonomous research, metascience, and what research is for.
+        </p>
+        <ul class="index-list">
+            {% for post in site.posts limit: 4 %}
+            <li>
+                <span class="index-no">{{ forloop.index | prepend: '00' | slice: -2, 2 }}</span>
+                <div class="index-body">
+                    <a href="{{ post.url | relative_url }}" class="index-title">{{ post.title }}</a>
+                </div>
+                <span class="index-date">{{ post.date | date: "%Y.%m.%d" }}</span>
+            </li>
+            {% endfor %}
+        </ul>
+        <a href="{{ '/blog.html' | relative_url }}" class="section-more">All posts &rarr;</a>
+    </section>
+</div>

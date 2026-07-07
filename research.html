@@ -24,7 +24,7 @@ wide: true
         <div class="pub_material">
             <p>
                 {% for mat in pub.materials %}
-                <a href="{{ mat.url }}" target="_blank" rel="noopener noreferrer">{{ mat.label }}</a>{% unless forloop.last %} / {% endunless %}
+                <a href="{{ mat.url }}" target="_blank" rel="noopener noreferrer">{{ mat.label }}</a>
                 {% endfor %}
             </p>
         </div>
@@ -53,7 +53,7 @@ wide: true
         <div class="pub_material">
             <p>
                 {% for mat in ws.materials %}
-                <a href="{{ mat.url }}" target="_blank" rel="noopener noreferrer">{{ mat.label }}</a>{% unless forloop.last %} / {% endunless %}
+                <a href="{{ mat.url }}" target="_blank" rel="noopener noreferrer">{{ mat.label }}</a>
                 {% endfor %}
             </p>
         </div>

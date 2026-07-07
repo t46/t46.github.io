@@ -2,9 +2,12 @@
 <html lang="en">
 {% include head.html %}
 <body>
-    <canvas id="particles-canvas"></canvas>
+    <canvas id="atelier-canvas"></canvas>
+    <div class="paper-grain" aria-hidden="true"></div>
     {% include nav.html %}
+    <main class="site-main">
     {{ content }}
+    </main>
     {% include contact.html %}
     {% include scripts.html %}
 </body>
