@@ -14,6 +14,13 @@ title: SHIRO TAKAGI - Blog
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
     </li>
     {% endfor %}
+    {% for note in site.data.unktok_lab_notes %}
+    <li>
+        <span style="color: #888; font-size: 0.9em;">{{ note.date }}</span>
+        <a href="{{ note.url | escape }}" target="_blank" rel="noopener noreferrer">{{ note.title | escape }}</a>
+        <span style="color: #888; font-size: 0.85em;">&middot; Unktok Lab Notes</span>
+    </li>
+    {% endfor %}
     <li>
         <span style="color: #888; font-size: 0.9em;">2024-08-01</span>
         <a href="https://ethereal-albatross-bac.notion.site/Playing-with-the-AI-Scientist-by-sakana-ai-part-1-3d1724824ab24cbe9412166219fe9733" target="_blank" rel="noopener noreferrer">Playing with the AI Scientist by sakana ai: part-1</a>

@@ -1,3 +1,14 @@
+- title: "Atlas of Judgment"
+  description: "What is actually inside a peer review? Every public ICLR review from 2018 to 2026 — about 200,000 reviews — read by an LLM pipeline into 1,009,592 units of evaluative reasoning, each labelled for what it inspects, the standard it argues from, and the verdict it reaches. 30 interactive plates, a machine-reader API over the same 50 data files, and a null cabinet for the analyses that did not survive their own tests."
+  date: 2026-09-02
+  status: "live"
+  url: "https://atlas-of-judgment.pages.dev"
+  github: "https://github.com/t46/atlas-of-judgment"
+  tags:
+    - peer-review
+    - metascience
+    - machine-readable-research
+
 - title: "Claim Prediction Market"
   description: "Can prediction markets identify novel research claims? 5 LLM predictors evaluate 35 ARA-generated claims. Market ensemble achieves Brier score 0.177, identifying 1 genuinely surprising verified claim the market predicted would fail."
   date: 2026-04-23

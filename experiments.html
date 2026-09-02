@@ -19,7 +19,7 @@ wide: true
     <li>
         <div class="pub_title">
             <p>
-                <a href="{{ exp.github }}" target="_blank" rel="noopener noreferrer">{{ exp.title }}</a>
+                <a href="{{ exp.url | default: exp.github }}" target="_blank" rel="noopener noreferrer">{{ exp.title }}</a>
             </p>
         </div>
         <div class="pub_authors">
@@ -30,6 +30,7 @@ wide: true
         </div>
         <div class="pub_material">
             <p>
+                {% if exp.url %}<a href="{{ exp.url }}" target="_blank" rel="noopener noreferrer">Site</a>{% endif %}
                 <a href="{{ exp.github }}" target="_blank" rel="noopener noreferrer">GitHub</a>
                 {% for tag in exp.tags %}
                 <span class="experiment-tag">{{ tag }}</span>
@@ -42,7 +43,7 @@ wide: true
 
 <br>
 <h2>BLOG POSTS</h2>
-<p>Longer write-ups on the motivation and design behind these experiments.</p>
+<p>Longer write-ups on the motivation and design behind these experiments, including public Lab Notes from work at Unktok.</p>
 <ul>
     {% for post in site.posts %}
     {% if post.tags contains "metascience-experiment" %}
@@ -50,5 +51,12 @@ wide: true
         <a href="{{ post.url | relative_url }}" target="_blank" rel="noopener noreferrer">{{ post.title }}</a>
     </li>
     {% endif %}
+    {% endfor %}
+    {% for note in site.data.unktok_lab_notes %}
+    <li>
+        <span style="color: #888; font-size: 0.9em;">{{ note.date }}</span>
+        <a href="{{ note.url | escape }}" target="_blank" rel="noopener noreferrer">{{ note.title | escape }}</a>
+        <span style="color: #888; font-size: 0.85em;">&middot; Unktok Lab Notes</span>
+    </li>
     {% endfor %}
 </ul>

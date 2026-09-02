@@ -101,9 +101,19 @@ title: SHIRO TAKAGI
             </div>
         </div>
         <p class="section-lede">
-            Essays on autonomous research, metascience, and what research is for.
+            Essays on autonomous research, metascience, and what research is for — plus public Lab Notes from work at Unktok.
         </p>
         <ul class="index-list">
+            {% for note in site.data.unktok_lab_notes limit: 2 %}
+            <li>
+                <span class="index-no">UN</span>
+                <div class="index-body">
+                    <a href="{{ note.url | escape }}" target="_blank" rel="noopener noreferrer" class="index-title">{{ note.title | escape }}</a>
+                    <p class="index-desc">{{ note.description | truncate: 140 | escape }}</p>
+                </div>
+                <span class="index-date">{{ note.date | replace: '-', '.' }}</span>
+            </li>
+            {% endfor %}
             {% for post in site.posts limit: 4 %}
             <li>
                 <span class="index-no">{{ forloop.index | prepend: '00' | slice: -2, 2 }}</span>

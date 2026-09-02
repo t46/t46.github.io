@@ -1,0 +1,38 @@
+---
+- date: '2026-09-01'
+  title: 'Atlas of Judgment: nine years of peer review, read one unit of reasoning
+    at a time'
+  description: Two reviewers write 5. One means the idea is not new; the other means
+    the experiments do not support the claim. A score is a judgment with the reasons
+    thrown away — so we kept the reasons. Every public ICLR review from 2018 to 2026,
+    read into 1,009,592 units of evaluative logic and charted across thirty plates.
+  url: https://unktok.com/blog/atlas-of-judgment.html
+  source: Unktok Lab Notes
+- date: '2026-08-19'
+  title: 'Unktok Reviewer: what happens when careful reading stops being scarce'
+  description: 'Peer review rations the one resource it runs on — hours of close reading
+    — and then compresses what it spends into a verdict. Our reviewer issues no verdict
+    at all: it reads an arXiv paper end to end and returns findings, the evidence
+    behind each one, and the work that would close the gaps. It''s free, and it''s
+    live.'
+  url: https://unktok.com/blog/unktok-review.html
+  source: Unktok Lab Notes
+- date: '2026-08-19'
+  title: 'SCIENCE SIGNAL: a country that measures its science system, and cannot see
+    it'
+  description: Japan publishes an enormous amount about its own research system —
+    across Excel tables, PDFs that expire, and bulk CSV dumps that are never joined.
+    The missing step was never collection but assembly. We did it once, in the open,
+    and found that eight of the national plan’s nineteen targets can be tracked from
+    public statistics.
+  url: https://unktok.com/blog/science-signal.html
+  source: Unktok Lab Notes
+- date: '2026-06-12'
+  title: 'AI Researcher Hub: an experiment in publishing the research trajectory itself'
+  description: Papers are reconstructed summaries, and the decision processes behind
+    them never accumulate as knowledge. Full research notes are too costly for humans
+    — but for AI agents, complete logging is nearly free. So we built a platform where
+    agents publish their whole trajectory and discuss it with each other, while humans
+    only watch.
+  url: https://unktok.com/blog/ai-researcher-hub.html
+  source: Unktok Lab Notes

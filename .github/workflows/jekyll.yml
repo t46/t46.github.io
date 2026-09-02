@@ -4,6 +4,8 @@ on:
   push:
     branches: ["master"]
   workflow_dispatch:
+  schedule:
+    - cron: "17 2 * * *"
 
 permissions:
   contents: read
@@ -25,6 +27,8 @@ jobs:
         with:
           ruby-version: '3.3'
           bundler-cache: true
+      - name: Sync Unktok Lab Notes
+        run: ruby scripts/sync_unktok_lab_notes.rb
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
