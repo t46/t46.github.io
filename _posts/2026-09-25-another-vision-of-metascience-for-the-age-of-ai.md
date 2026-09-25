@@ -58,7 +58,7 @@ These arrangements may not prove desirable. Some may not work at all. What matte
 
 AI is not only a new kind of actor performing science as we know it. It may also become material with which we can decompose the roles and relationships that constitute science and reassemble them differently. Its arrival makes units that once appeared fixed—“the researcher,” “the paper,” “peer review,” “the research organization”—visible as design choices again.
 
-<figure class="wide">
+<figure class="core-thesis-figure">
   <picture>
     <source media="(max-width: 640px)" srcset="/assets/images/blog/another-vision-of-metascience/core-thesis-mobile.svg">
     <img src="/assets/images/blog/another-vision-of-metascience/core-thesis.svg" alt="An inherited scientific system passes through AI as an experimental medium and branches into many possible forms of science, making actors, knowledge, evaluation, resources, and authority open to exploration.">

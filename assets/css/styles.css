@@ -838,6 +838,25 @@ article.page.sans figcaption,
     font-style: italic;
 }
 
+@media (max-width: 640px) {
+    article.page.sans figure.core-thesis-figure,
+    .content-wrapper figure.core-thesis-figure {
+        width: calc(100% + 40px);
+        max-width: none;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    article.page.sans figure.core-thesis-figure picture,
+    .content-wrapper figure.core-thesis-figure picture,
+    article.page.sans figure.core-thesis-figure img,
+    .content-wrapper figure.core-thesis-figure img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
 /* Tables */
 .autonomy-levels,
 article.page.sans table {
