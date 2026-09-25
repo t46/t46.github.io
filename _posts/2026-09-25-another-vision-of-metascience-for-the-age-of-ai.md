@@ -61,8 +61,9 @@ AI is not only a new kind of actor performing science as we know it. It may also
 <figure class="core-thesis-figure">
   <picture>
     <source media="(max-width: 640px)" srcset="/assets/images/blog/another-vision-of-metascience/core-thesis-mobile.svg">
-    <img src="/assets/images/blog/another-vision-of-metascience/core-thesis.svg" alt="An inherited scientific system passes through AI as an experimental medium and branches into many possible forms of science, making actors, knowledge, evaluation, resources, and authority open to exploration.">
+    <img src="/assets/images/blog/another-vision-of-metascience/core-thesis.svg" alt="The science we inherited occupies a small region within a much larger design space of possible sciences; AI may make a larger region possible to build and test.">
   </picture>
+  <figcaption>Visual structure adapted from Michael Nielsen and Kanjun Qiu’s depiction of the design space for science’s social processes in <a href="https://scienceplusplus.org/metascience/">“A Vision of Metascience.”</a> The middle region—what AI may make possible to build and test—is our addition.</figcaption>
 </figure>
 
 <h3 style="text-align: center;">§3 Artificial scientific systems as laboratories for metascience</h3>

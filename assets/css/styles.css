@@ -855,6 +855,13 @@ article.page.sans figcaption,
         width: 100%;
         max-width: 100%;
     }
+
+    article.page.sans figure.core-thesis-figure figcaption,
+    .content-wrapper figure.core-thesis-figure figcaption {
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
 }
 
 /* Tables */
