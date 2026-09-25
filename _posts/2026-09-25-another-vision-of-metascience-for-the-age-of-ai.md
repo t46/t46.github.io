@@ -4,7 +4,10 @@ title: "Another Vision of Metascience for the Age of AI"
 date: 2026-09-25
 permalink: /blogs/another_vision_of_metascience_for_the_age_of_ai.html
 description: "AI scientists may do more than automate research: they may let us build, test, and learn across alternative forms of science."
-og_image: /assets/images/blog/another-vision-of-metascience/hero.png
+og_image: /assets/images/blog/another-vision-of-metascience/social-card.png
+og_image_width: 1280
+og_image_height: 670
+og_image_alt: "The science we inherited sits within a larger design space of possible sciences that AI may make possible to build and test."
 tags:
   - metascience
   - ai-scientist

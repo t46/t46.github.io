@@ -36,6 +36,8 @@ jobs:
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
+      - name: Validate social previews
+        run: node scripts/validate-social-cards.mjs _site/blogs _site https://t46.github.io
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
