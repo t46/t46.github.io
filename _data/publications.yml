@@ -7,6 +7,8 @@
       url: "/assets/papers/what-would-it-mean-for-machines-to-do-research.pdf"
     - label: "PDF (日本語版)"
       url: "/assets/papers/what-would-it-mean-for-machines-to-do-research-ja.pdf"
+    - label: "Zenodo (DOI)"
+      url: "https://doi.org/10.5281/zenodo.23851153"
 
 - title: "Controlled Experiments as a Comparison Between Base and Derived Classes"
   url: "/assets/papers/Controlled_Experiments_as_a_Comparison_Between_Base_and_Derived_Classes.pdf"
