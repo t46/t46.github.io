@@ -1,3 +1,13 @@
+- title: "What Would It Mean for Machines to Do Research? A Conceptual Exploration Drawing on Accounts of Human Inquiry"
+  url: "/assets/papers/what-would-it-mean-for-machines-to-do-research.pdf"
+  authors: "<b>Shiro Takagi</b>"
+  venue: "2026 (book-length essay)"
+  materials:
+    - label: "PDF (English)"
+      url: "/assets/papers/what-would-it-mean-for-machines-to-do-research.pdf"
+    - label: "PDF (日本語版)"
+      url: "/assets/papers/what-would-it-mean-for-machines-to-do-research-ja.pdf"
+
 - title: "Controlled Experiments as a Comparison Between Base and Derived Classes"
   url: "/assets/papers/Controlled_Experiments_as_a_Comparison_Between_Base_and_Derived_Classes.pdf"
   authors: "<b>Shiro Takagi</b>"
