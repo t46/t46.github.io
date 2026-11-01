@@ -1,0 +1,1735 @@
+---
+layout: "post"
+title: "Chapter 5 — How Possibilities Become Available | What Would It Mean for Machines to Do Research?"
+permalink: "/blogs/what-would-it-mean-for-machines-to-do-research/chapter-5.html"
+description: "A book-length conceptual exploration of what it would mean for machines to do research, drawing on accounts of knowledge, understanding, inquiry, and the social organization of research developed with human researchers in mind."
+og_image: "/assets/images/blog/what-would-it-mean-for-machines-to-do-research/social-card.png"
+og_image_width: 1280
+og_image_height: 670
+og_image_alt: "What Would It Mean for Machines to Do Research? A Conceptual Exploration Drawing on Accounts of Human Inquiry"
+---
+{% raw %}
+<p class="book-running-title"><a href="/blogs/what_would_it_mean_for_machines_to_do_research.html">What Would It Mean for Machines to Do Research?</a></p>
+<nav class="book-nav"><a href="/blogs/what-would-it-mean-for-machines-to-do-research/chapter-4.html">&larr; Chapter 4</a><a href="/blogs/what_would_it_mean_for_machines_to_do_research.html">Contents</a><a href="/blogs/what-would-it-mean-for-machines-to-do-research/chapter-6.html">Chapter 6 &rarr;</a></nav>
+<div class="book">
+<h2 id="chapter-5-how-possibilities-become-available">Chapter 5 — How Possibilities Become Available</h2>
+<p>In the health department's note seen in the introduction to Part III, broad candidate answers about the cause, a standard of comparison in the median of the
+preceding decade, a case definition by head circumference, and the range of
+cases to be tested bore on one another within one document. The candidate of
+infection fixed how the means were chosen, that is, which cases were to be
+examined for what. The case definition was a representation that fixed what was
+to be counted as a case in subsequent notifications, and the note stated that
+the protocol containing it would be updated as clinical and epidemiological
+evidence developed. What this chapter asks about is such relations among
+candidate answers, representations, and means: how candidates, and the
+representations and means through which candidates are represented, compared,
+and checked, become available. Even for a question whose answer conditions are
+fixed, candidates that could meet those conditions need not be at hand. On the
+lack of candidates, Chapter 4, Section 3 looked at Bromberger's p-predicament,
+in which one holds that a question has a right answer yet can think of no answer
+free of decisive objections. Conversely, when the way candidates are represented
+changes, the candidates obtainable change, and sometimes so do the questions
+that can be raised (Section 3).</p>
+<h3 id="1-descriptions-of-procedure-and-the-work-they-do-not-show">1. Descriptions of procedure and the work they do not show</h3>
+<p>In research whose answer is not yet known in <i>S</i>, questions, representations, methods, evidence, standards, and the like can change within inquiry (the introduction to Part III). Novelty does not always bring such changes, however, and Part III does not
+claim that every research project changes its question, method, evidence, or
+standards. Even where the answer is new, the procedure for reaching it may be
+substantially settled in advance. In one publicly logged language-model project, for example, the loss expected from a large training run was registered before the run, and, according to the project's record, the prediction, extrapolated 333-fold in compute beyond the largest run used to fit a scaling law, came within about one percent of the value later measured. Even a procedure settled in advance includes the investigators' choices, however: the fit's asymptote had been fixed by them, and a fit that left it free came closer (<a href="https://github.com/marin-community/marin/issues/4447">Marin Community 2026a</a>; <a href="https://github.com/marin-community/marin/issues/4697">Marin Community 2026b</a>). Some studies, like the registered-report replication discussed in Section 2, register part of their procedure in advance.</p>
+<p>Part III describes how inquiry proceeds when one or more of the question,
+method, evidence, or standards remain unsettled or become revisable. Such cases
+do not cover all research, but because attempts at something new can involve
+them, they bring into view work that a description of research as a fixed procedure does not set out to show. They are especially important when evaluating
+claims to open-ended or increasingly autonomous research capacity, but they do
+not set a new necessary condition for all research.</p>
+<p>Stage labels such as <code>question generation</code>, <code>hypothesis generation</code>, and <code>verification</code> name important possibilities. What they leave to be explained is how a question becomes available (Chapter 4), how a candidate is made thinkable, how an informative test is designed, and how a mismatch is diagnosed. An instruction to “generate a hypothesis” leaves as much to be explained as an appeal to creativity does. Behind an instruction to “verify it” lie decisions about apparatus, measurement, controls, background assumptions, inferential rules, and the locus of possible error, among others. For assessing claims about research capacity, these are parts that stage labels alone leave unexplained. Which of them must be realized within an artificial actor, and
+which may remain distributed across other actors and arrangements, is taken up
+in Chapter 7, Section 2.</p>
+<p>Even where a procedure is standardized, a written description of it can conceal
+work. In Edwin Hutchins's study of a ship's navigation team, whose tasks and
+means were standardized throughout the fleet, the written watch procedures
+neither structured the work as it was performed nor described the tasks actually
+carried out, and Hutchins argues that a system built to perform exactly as they
+specify would not work and that such documents are to be treated as data
+about the practice rather than as its analysis (<a href="https://doi.org/10.7551/mitpress/1881.001.0001">Hutchins 1995, 26, 28,
+178</a>).</p>
+<h4 id="1-1-the-picture-part-iii-works-with">1.1 The picture Part III works with</h4>
+<p>Part III attempts a middle-level account of research process. It is thicker than
+the book's working characterization but thinner than a complete psychology,
+social ontology, or philosophy of inquiry. It is also more abstract than any
+actual research process: it is not a description of particular processes but a
+vocabulary for comparing them (Section 1.2). The three chapters of Part III each look at the same inquiry from the side of one of what the introduction to Part III called the three relations of inquiry: Chapter 4 takes up the relation between an inquiry and the unsettled points that organize it, this chapter the relations among candidate answers, representations, and means, and Chapter 6 the relation between a result and what it bears on. The picture the three chapters work with is:</p>
+<blockquote>
+<p>Research can proceed by recursively reconfiguring an inquiry configuration.
+Among the dimensions that may change are what is asked and what remains unresolved, candidate
+contents and attitudes, representations, evidence, methods and instruments,
+standards, practical capacities, actors, records, and social arrangements.
+Their reconfiguration is shaped by heterogeneous constraints and responses—
+formal, empirical, interpretive, practical, and critical—whose epistemic force
+differs from case to case and is not given in advance by the picture. They need not change in one universal
+order, and the dimensions that may change are not limited to those named here.</p>
+</blockquote>
+<p>Two expressions in the picture need explanation. By an <em>inquiry configuration</em>, the term already used in the introduction to Part III,
+Part III means an inquiry at a given point, described along such dimensions
+together with the relations among them; to reconfigure it is to change one or
+more of those elements or relations. The reconfiguring is recursive in that a change in one dimension can alter which further changes are possible, and the configuration so changed can be changed again. An inquiry configuration is distinct from what the book elsewhere calls an artificial configuration, a unit to which research is attributed and which includes something artificial, such as a single model, an agent, a collection of agents, or an organization of humans and AI (Introduction, Section 6). Some of the dimensions
+can be spelled out more finely. Candidate contents and attitudes include
+contents that are merely entertained as well as credences, beliefs,
+acceptances, and suspensions; representations include concepts; evidence
+includes defeaters; methods and
+instruments include materials, among them the samples and preparations that an
+inquiry studies, whose state can change in the course of it; standards include
+values; and practical capacities include skills. Relations among the dimensions
+can matter as much as the inventory. A trace, for example, becomes evidence for
+a claim only through
+relations among apparatus, calibration, background assumptions, interpretation,
+and use; Chapter 6, Section 2.1 takes up such dependencies.</p>
+<p>The term is introduced for this limited analytic purpose. It neither follows deductively
+from the working characterization of research nor names a ready-made theory borrowed
+from one of the sources discussed in Part III. It is a provisional schema for
+keeping different changes visible when comparing, explaining, designing, or evaluating
+research processes, and it spells out what Chapter 1, Section 1 called the process
+level, at which inquiry can change many things before its target is attained. It is
+neither a stage model nor a claim about the fundamental constituents of mind or
+research. A belief-centered theory, one that describes inquiry as changes in belief and credence toward propositions, may, if sufficiently broad, ultimately represent these changes, a possibility to which Section 3 of this chapter returns, and other cases may require different
+dimensions or different ways of dividing them.</p>
+<p>So understood, the picture is Part III's way of approaching the task stated
+in the introduction to Part III, that of explaining how the differently typed changes
+that Chapter 2 called epistemic transformations can be related within an
+inquiry: it treats them as changes along different dimensions of one
+configuration. It draws attention to three points, observed in the cases
+examined in Part III and stated as possibilities rather than as general
+claims. First, more than one kind of thing can change during inquiry. Second, a
+change in one dimension can alter which changes are possible or appropriate in
+another. Third, those relations can recur rather than forming a one-way
+sequence. The three points are distinct; the second and third spell out what the picture means by reconfiguring recursively.</p>
+<p>None of the three points says that every change is rational, progressive, or
+knowledge-producing. Calling a transition a change in inquiry configuration does
+not settle its epistemic status. A newly formulated question can be confused or
+illuminating; a representation can conceal a dependency or disclose one; an
+instrument can increase sensitivity while introducing a new artifact; a social
+arrangement can widen criticism or suppress it. The picture is a means of describing
+what changed and how the changes were related. Knowledge, understanding, progress, rationality, and value
+remain further judgments governed by the distinctions established in Chapters
+1–3.</p>
+<p>Section 2 sets out the stance from which these dimensions are examined and asks how far published records show the process of research. Sections 3 to 6 take up in turn, without treating them as stages, those dimensions of the picture that concern candidate answers and the representations and means through which they are represented, compared, and checked: candidate contents and the concepts and representations through which they become expressible (Section 3); attitudes toward candidates as they are formed, pursued, and appraised (Section 4); the operations through which candidates and representations are brought under constraint (Section 5); and the instruments, materials, skills, actors, records, and social arrangements through which inquiry is carried out (Section 6). What is asked and what remains unresolved is treated mainly in Chapter 4, and evidence and standards return mainly in Chapter 6, which asks how results bear on an inquiry and how standards can be revised within it. Section 7 draws out, from this chapter's cases, consequences for how the possibilities of inquiry change.</p>
+<h4 id="1-2-what-the-picture-rests-on">1.2 What the picture rests on</h4>
+<p>The picture is analytic and provisional. It is not an empirical claim that a
+representative sample of all research has been shown to share one process. Because
+it is an account of research process, building it involved looking not only at
+published results but also at research as it actually proceeded. Papers reporting
+results are arranged for justification and communication and need not be traces
+of the process that made their contributions possible (Section 2). The evidence
+considered in developing the picture therefore includes, besides bounded cases
+from a range of fields, public records of the process of research that can convey
+what papers need not show, such as laboratory notebooks, training logs, repository
+histories, theses, and oral histories. The training logs and repository histories
+come mostly from recent machine-learning research. Many of the cases come, besides
+such records, from papers and reports, historical studies, laboratory
+ethnographies, and retrospective interviews; papers too can give clues to the
+process when read against recollections or records of the same work (Section 2).
+How far this aim is met is limited in the ways described below.</p>
+<p>For any evidence, the selection made by its sources bears on how it can be read;
+the selection in retrospective accounts and in observation is discussed where
+they are used (Sections 2 and 6.4). For laboratory notebooks, notebooks made
+public were kept by people who chose to publish them and, where they were
+published during the work, were written in the knowledge that they would be read,
+so they may be more explicit than private notebooks. Historical notebooks that
+archives have digitized are limited to what archives have kept and made available,
+a selection that can favor well-known figures. The notebook pages used in this
+book were chosen as examples, not sampled.</p>
+<p>The evidence as a whole remains purposive and uneven, weighted toward highly visible successes,
+controversies, crises, and failures. Ordinary and genuinely abandoned or
+unpublished work outside the machine-learning records, of which the notebook
+pages add only a few instances, less visible research carried on outside the settings in
+which the cases and debates examined here have mostly been developed,
+participant-owned records, real-time observation outside selected laboratories,
+engineering research beyond a small number of cases, and independent
+re-execution are thin. Which work is counted as research can
+also affect which records are made, kept, and used, a bias distinct from the
+unevenness just described. <em>Laboratory Life</em>, for example, analyzes scientists' work as a cycle in which credibility, starting from credentials such as a doctorate, is invested and converted among money, data, papers, and credentials, and describes the laboratory's technicians, whose salaries repaid their labor but could not be reinvested, as closer to workers than to investors in that cycle; a note reports that seven technicians were interviewed, three on tape, just before they left the laboratory, that their importance in the production of facts "is usually underestimated," and that the interviews are left unused because the authors' main concern is the credibility cycle (<a href="https://doi.org/10.1515/9781400820412">Latour and Woolgar 1986, 200–201, 218, 232 n. 16</a>). Here, an analytic focus that treats the technicians' work as labor outside the credibility cycle leaves their interviews unused, although the authors themselves grant the technicians' importance in producing facts.</p>
+<p>Because the evidence is selective in these ways, what can be asked of the picture is whether it makes
+important differences visible, survives counterexamples, and supports
+investigation that discriminates more finely; the cases are not offered as a frequency estimate
+or a proof of universal stages. Further study of practice may do more than add
+examples to the picture: it may change the picture itself, such as which
+dimensions it distinguishes and how it relates them.</p>
+<h3 id="2-no-single-method-no-return-to-mystery">2. No single method, no return to mystery</h3>
+<p>This section has two tasks. It first sets out the chapter's stance. About the
+process of research, two extremes are possible: that there is a single method
+that all research follows, and that discovery is a leap beyond analysis. The
+chapter takes neither. It then asks how far published
+records show the process behind them, which leads to the distinction drawn in
+Section 2.1 between output evidence and process evidence.</p>
+<p>When research is described briefly, either extreme comes easily. A list of stage labels such as <code>question generation</code>, <code>hypothesis generation</code>, and <code>verification</code> reads naturally as one fixed procedure, and an apparent leap reads naturally as the point where explanation ends. This chapter therefore does not assume that one method
+or sequence adequately describes every research process, but neither does it
+treat research as unanalyzable. Recurrent functions, dependencies,
+transformations, and failure modes can be investigated without claiming a
+universal method or an algorithm that guarantees discovery.</p>
+<p>Arguments close to the view that discovery is a leap beyond analysis were once made in the philosophy-of-science debate about discovery. On Schickore's survey, within the distinction between the context of discovery, how an idea comes to be thought of, and the context of justification, how it is supported, the generation of new knowledge could be characterized as an irrational act, a mysterious creative intuition, a “eureka moment”; from this, philosophers argued that one can neither prescribe a logical method that produces new ideas nor logically reconstruct the process of discovery, and that only the process of testing is amenable to logical investigation. The argument is usually associated with Popper's <em>Logic of Scientific Discovery</em> (<a href="https://plato.stanford.edu/archives/sum2026/entries/scientific-discovery/">Schickore 2022, §5</a>; compare Section 4.1).</p>
+<p>Rejecting both extremes, on the other hand, also has precedents. The same survey of the discovery debate describes
+programs that rejected both a discovery machine and an unanalyzable creative
+act: Hanson reconstructed the suggestion of hypotheses as abductive reasoning from surprising phenomena, that is, as inference back to a hypothesis that would explain them, and Simon and collaborators treated discovery as
+heuristic problem solving and simulated parts of it in programs such as BACON
+(<a href="https://plato.stanford.edu/archives/sum2026/entries/scientific-discovery/">Schickore 2022, §6</a>).
+The same survey reports Nickles's argument that a claim's reconstructed discoverability, a demonstration in hindsight that the claim could have been derived from results already established, however it was first thought of, can itself justify it (<a href="https://plato.stanford.edu/archives/sum2026/entries/scientific-discovery/">Schickore 2022, §8</a>). On this argument, the reasoning of discovery is not only analyzable but can bear on justification.
+This chapter does not adopt any one of these programs, but it shares their
+refusal of both extremes. For programs such as BACON, the distinction Section 3 draws between searching a set of candidates already characterized and making candidates available bears on which parts of discovery they carried out.</p>
+<p>The concept of <code>creativity</code> shows how the extreme of an unanalyzable leap can be avoided without denying what the word picks out. Calling a conceptual reorganization
+creative may be apt. A scientist may experience an idea as sudden; an analogy
+may connect previously separate domains; an unexpected result may expose a
+possibility no one had represented. But the label does not yet tell us what made
+the possibility available. At another scale, an apparent leap may involve
+remembering a fact, noticing a mismatch, drawing a diagram, changing a contrast,
+deriving a consequence, borrowing a technique, attempting a cheap check,
+abandoning a subproblem, or returning to an old question with a new vocabulary.
+Poincaré, for example, recalled that the idea that the transformations
+used to define a new class of functions were those of non-Euclidean geometry
+came to Poincaré at the moment of stepping into a carriage, although nothing in the preceding
+thoughts seemed to have prepared the way for it. It came after days of deliberate
+work, some of it fruitless and some guided consciously by analogy; Poincaré verified
+it only after returning home, and warned that the sense of certainty
+accompanying such ideas can deceive and may be exposed only when a proof is
+attempted
+(<a href="https://henripoincarepapers.univ-nantes.fr/chp/hp-pdf/hp1914sm.pdf">Poincaré [1908] 1914, 52–56,
+60</a>).
+Neither such steps nor the suddenness with which an idea arrives makes the
+outcome uncreative. They make creativity a phenomenon to
+investigate rather than a place where explanation stops.</p>
+<p>What <code>creative</code> is attributed to also varies. Paul and Stokes note that the
+adjective can be applied to a product, a process, or a person, and that most
+definitions focus on the product: on one common approach, persons or processes
+are creative to the extent that they produce creative products, and a product is
+creative if it is new and valuable. They also report
+wide agreement among philosophers that creativity requires some special kind of
+process and not just a special product, but no consensus on what is
+required of the process (<a href="https://plato.stanford.edu/archives/sum2026/entries/creativity/">Paul and Stokes 2023,
+§§2, 2.2</a>). On the distinctions just reported, the question raised in the Introduction (Section 1), whether creativity
+is a capacity to be reproduced, a name for an output judged after the event, or
+a family of processes, therefore has no single answer: creativity can be
+attributed to an output, to the process through which it became available, or
+to an actor's capacity, and how far an attribution of one settles the others
+depends on which of the approaches just reported is adopted.
+This chapter asks what made a possibility available. Where <code>creative</code>, like
+<code>discovery</code>, is used as a term of praise for an actor, the question becomes one
+of credit, which Chapter 7, Section 3.3 takes up.</p>
+<p>Refusing to let a label such as <code>creativity</code> end the explanation does not imply that every relevant
+mechanism is consciously accessible, retrospectively recoverable, or reducible
+to a finite list of operations. Some processes may remain opaque to the actor or
+observer, and a reconstruction may remain partial. The weaker commitment is to
+identify and investigate opacity rather than to transform it, by the choice of
+label, into evidence that no further analysis is possible.</p>
+<p>The section now turns to its second task, how far published records show the process behind them. Just as the label <code>creativity</code> can hide what made a possibility available, a polished output can hide the process that produced it. A paper, proof, artifact,
+dataset, or interpretation can present selected claims and reasons in an
+order that readers can assess. That order need not reproduce the temporal order
+of the work. Earlier formulations, failed controls, improvised repairs,
+discarded candidates, changes of representation, conversations, and reasons for
+stopping may be absent without the public account being dishonest. A document
+arranged for justification and communication is not automatically a trace of
+the process by which its contribution became possible.</p>
+<p>Where the same work has left another record besides the paper, setting the two
+side by side can make the difference between the order of presentation and the
+order of work visible. Tanenbaum and Thomas's 1956 paper on diffused silicon
+transistors, for example, states the diffusion conditions and "a much simpler
+technique" for making contacts, saying only that the technique "has been evolved,"
+not what attempts preceded it; in an
+interview given in 2004, Tanenbaum recalled spending about a year on other
+approaches before the simple one was tried (<a href="https://bitsavers.org/magazines/Bell_System_Technical_Journal/BSTJ_V35N01_195601.pdf">Tanenbaum and
+Thomas 1956,
+4</a>;
+<a href="https://digital.sciencehistory.org/works/9nqp9m6">Tanenbaum 2004, 34</a>). The
+training of the BLOOM language model left two such records as well. It was run
+with several changes from the conditions under which earlier trial runs had been
+unstable. A log written while the run was under way recorded that ablations,
+removing the changes one at a time, were too costly to tell which of them had
+removed the instability; the later paper reports that one of them, the switch to
+the bfloat16 number format, proved to solve the instability problem (<a href="https://github.com/bigscience-workshop/bigscience/blob/9e64edec2ad1fb9263bf39ba616a84ff64b4d947/train/tr11-176B-ml/chronicles.md">BigScience
+2022</a>;
+<a href="https://arxiv.org/abs/2211.05100">BigScience Workshop 2022, 20</a>).</p>
+<p>Laboratory
+work with reagents and samples offers such pairs too. A directed-evolution
+project in Cameron Neylon's group at the University of Southampton, for example,
+left a laboratory notebook written as the work went on and later made public,
+and a paper reporting the project's results. The paper states, for an experiment other than the run the notebook records, that
+colonies were picked after 24 hours of incubation (<a href="https://doi.org/10.1186/1756-0500-4-138">Smith, Hale, and Neylon 2011,
+2</a>), while the notebook shows how long to wait before reading such a screen coming into question during a run (Chapter 6, Section 2.4). A waiting time that the paper states as one condition of the procedure appears in the notebook as something in question within the inquiry.</p>
+<p>None of these contrasts shows that the paper is
+inaccurate; a paper is not written as a log.
+The order of work can also be made to match the order of justification deliberately. The investigators who assembled a new test set for ImageNet saved successive versions of it and computed model accuracies on the intermediate versions only after arriving at the final one, so the intermediate accuracies did not inform how the set was assembled; they used the change in accuracy across versions as evidence that their manual review had not caused the drop in accuracy
+(<a href="https://proceedings.mlr.press/v97/recht19a/recht19a-supp.pdf">Recht et al. 2019, app.
+D.3.2</a>). In a
+multi-laboratory replication conducted under a journal's registered-report
+format, each laboratory registered its implementation plan before collecting
+data (<a href="https://doi.org/10.1177/1745691616652873">Hagger et al. 2016</a>). A clean
+order in a published record can therefore reflect a discipline that was imposed,
+not only a reconstruction that was written afterward.</p>
+<p>The point that a published order need not trace the process is supported from several directions.
+Laboratory observation and cognitive ethnography expose, as they occur, problem
+revisions, diagnostic exchanges, and changes in apparatus that finished publications do not set out to record (<a href="https://sites.cc.gatech.edu/aimosaic/faculty/nersessian/papers/how-do-engineering-scientists-think.pdf">Nersessian 2009</a>). Laboratory
+ethnography, notebooks, histories, and retrospective researcher accounts expose
+other selections and transformations.</p>
+<p>What these sources show is limited, however. They do not show that every
+private event is epistemically relevant, that all inquiry must be continuously
+recorded, or that a causal chronology can replace a public argument. Different
+evidence classes also have different weaknesses: contemporaneous notes can be
+cryptic; observed meetings show only one site of work; retrospective accounts
+can rationalize success; historical reconstructions depend on selection and
+interpretation. Even a laboratory notebook read as a record of process need not
+show the order of work as it stands. The line between contemporaneous and retrospective can also run
+through a single record, so that whether an entry is contemporaneous is a
+question about that entry rather than about the record as a whole; neither the
+order of pages nor a timestamp is by itself the time of the work recorded. The
+electronic notebooks that the drug-discovery project Open Source Antibiotics
+compiled for publication and deposited with its paper give an example: a page that dates its reaction to 15 September 2020 was, by its own
+metadata, created in March 2022 and last revised in December 2022, about a week
+before the notebooks were exported for deposit (<a href="https://doi.org/10.5522/04/21749750.v1">Tse 2023,
+DGS115-1</a>). In the page
+sequence of a bound notebook as its archive has digitized it, pages dated
+October 1936 precede a page headed February 1934, and a page headed 2 May 1934
+closes with a paragraph that reports what was done on 3 May and averages
+readings recorded on the next page (<a href="https://scarc.library.oregonstate.edu/coll/pauling/rnb/09/rnb09.html">Pauling 1932–1941, 062–066,
+082–083</a>).</p>
+<p>Observation can record, as it happens, how an account comes to rationalize success in retrospect. Latour and
+Woolgar, for example, recorded a researcher's explanation for trying a
+peptide in a temperature assay: the researcher had long wanted a good assay of effects on
+the central nervous system, a paper had just described such an effect of a
+second peptide on temperature, and the researcher's own trials had shown the two peptides to
+act alike. In the article later submitted for publication, the step was
+presented as deduced rather than suggested by that resemblance, and two months
+later the researcher called it a "logical idea"; the authors read the change as a weak
+analogical link turned into a strong logical connection, and a small step made
+to look like a large leap (<a href="https://doi.org/10.1515/9781400820412">Latour and Woolgar 1986,
+172–174</a>). The same authors later argued
+that to adopt, for purposes of analysis, the view that observing research as it
+happens yields a more accurate picture of science than retrospective accounts
+presumes privileged access to the truth about science, and so ignores what itself needs investigating: how descriptions and reports come to be presented and received as accurate, distorted, or good enough (<a href="https://doi.org/10.1515/9781400820412">Latour and Woolgar 1986, 282–283</a>). This chapter sets contemporaneous records against retrospective accounts not to treat either as the true process but to use the discrepancies between them as material for inquiry.</p>
+<h4 id="2-1-output-evidence-and-process-evidence">2.1 Output evidence and process evidence</h4>
+<p>One consequence follows for assessing the research capacities of artificial systems. A final product of
+research, such as a paper or a dataset, may provide evidence for evaluating its claims, but it is not by itself
+sufficient evidence that an artificial system possesses the open-ended research
+capacity attributed to it. Process evidence can instead bear on how an outcome
+was produced, whether the relevant capacities are stable enough to be exercised
+again, and where the activity can be audited or corrected. Conversely, even a
+complete activity log would not by itself establish epistemic competence or the
+truth of the result. Output and process evidence answer different questions. A study of two openly available AI-scientist systems gives a case in which the two kinds of evidence came apart. On a synthetic task designed to lie outside their training data, Luo, Kasirzadeh, and Shah report that the internal mechanism by which each system chose which experiments to report had access to test-set results and favored runs with strong test performance, and that both systems sometimes generated their own datasets or subsampled the provided ones without saying so in the paper. An LLM-based auditor, applied to small balanced sets of projects in which many flawed cases had been constructed by perturbing the systems' runs, detected such flaws at close to chance level from the paper alone and with 82 percent accuracy when also given the trace logs and code. The authors therefore recommend that venues reviewing research conducted autonomously by such systems require the log traces of the entire research process and the generated code, while noting that their checks may miss flaws that are never reflected in the logs (<a href="https://arxiv.org/abs/2509.08713v2">Luo, Kasirzadeh, and Shah 2025, 2–3, 16–19</a>). In that study the logs were read by an artificial auditor. Whether such auditing can support evaluation for a human or mixed <i>S</i> depends on whether <i>S</i> can rely on that auditor, a case of reliance on checks that <i>S</i> does not perform itself, which Chapter 11, Section 5 examines.</p>
+<p>Nor does process-sensitive evaluation require disclosure of every internal
+state or a complete chronological trace. What is needed is task-relevant
+provenance adequate to the claim being assessed—for example, a claim about
+reliability, experimental execution, diagnosis, reproducibility, or capacity to
+continue after failure. Such provenance can include when an entry was written
+and last revised, and which run a record belongs to. In the deposited notebooks
+and supporting information of Open Source Antibiotics, the data table ties one compound's identifier to the notebook code
+of a first, small-scale run, while the notebook page that carries the
+identifier and the procedure printed in the supporting information describe a
+later scale-up, so that which run's material the table's assay values were
+measured on cannot be read from these records alone (<a href="https://doi.org/10.5522/04/21749750.v1">Tse 2023, EGT 522-1,
+522-2</a>; <a href="https://doi.org/10.1021/acsinfecdis.3c00286">Klug et al. 2023, SI:
+Chemical Methods S25; Series 2 table</a>).
+Which records are relevant depends on that evaluative
+purpose and on legitimate constraints concerning privacy, interpretability, and
+cost.</p>
+<h3 id="3-making-candidates-and-representations-available">3. Making candidates and representations available</h3>
+<p>Research can select among candidates, but it can also create the concepts,
+representations, and objects through which candidates become expressible. A
+familiar way of describing inquiry treats it as the revision of beliefs, or of
+degrees of confidence, over a given set of propositions, and an artificial
+system that proposes hypotheses and updates on the results of tests can be
+described in the same way. Such a description starts from a set of candidates
+already stated. This section asks what follows for it if research can also make
+candidates available. Ways of making a question tractable according to its kind,
+such as specifying a foil for a why-question, decomposing a how-question into
+capacities or constraints, and rendering a mathematical problem in another way,
+were seen in Chapter 4, Section 3. The work there was fixing a question's answer
+conditions, not making available candidates that could meet those conditions. On
+the side of candidates, too, a dataset can be reorganized until a previously
+invisible regularity or artifact becomes an object of inquiry (SlaveVoyages,
+later in this section), and a proof can have its representation restructured in
+the course of formalization (likewise, the Liquid Tensor Experiment).</p>
+<p>Models, diagrams, formalisms, classifications, experimental systems, and
+instruments can do more than carry hypotheses formed elsewhere. In Frigg and
+Hartmann's presentation, the contributors to <em>Models as Mediators</em>, the
+collection edited by Morgan and Morrison, hold that models are instruments that
+mediate between theories and the world: models are independent of both theories
+and their target systems, and it is this independence that lets them mediate.
+Models can also be used to explore theories, and, drawing on Morgan, Frigg and
+Hartmann add that one learns about a model in building it and in manipulating
+it, not by looking at it (<a href="https://plato.stanford.edu/archives/sum2026/entries/models-science/">Frigg and Hartmann 2025, §§3.1,
+4.2</a>).</p>
+<p>Nersessian's cognitive-ethnographic study of a tissue-engineering laboratory
+gives a case in which the model had to be built before it could supply
+hypotheses. The laboratory's director, a mechanical engineer, had come to suspect that the shear force of blood flow affects the cells lining blood vessels; call this candidate answer <i>c</i><sub>1</sub>. Vascular biology at the time concentrated on biochemical processes, and no biological theory of the phenomenon offered a place to start. With <i>c</i><sub>1</sub> at hand, therefore, there was still no means of investigating the questions bearing on <i>c</i><sub>1</sub>, whether shear stress affects the cells and, if so, how. The laboratory built in vitro models instead. Its flow loop passes a fluid with the viscosity of
+blood over cultured endothelial cells; designed in 1981 to produce only steady
+laminar flow, it was redesigned in 1989 so that flow conditions could be varied
+and in 1995 so that it could run inside an incubator, after contamination had
+made more than half the experiments fail, and it was later joined by a
+tissue-engineered model of the vessel wall. On Nersessian's account, such models
+are built to serve as analogical sources, from which inferences are transferred to the body "as candidate understandings and hypotheses." If such an inference is written <i>c</i><sub>2</sub>, then <i>c</i><sub>2</sub>, unlike <i>c</i><sub>1</sub>, is not an idea that existed before the model but a candidate obtained from the work of building and manipulating the model, and what bears on it is a different question, whether the cells in the body behave likewise. On the same account, further, the features a model does not yet instantiate drive its redesign, and since frontier problems often have no ready-made source, building one furthers the articulation of the problem as well as its solution (<a href="https://doi.org/10.4324/9781003205647-40">Nersessian 2024, 469–477, 479</a>). This work on the side of questions corresponds to the work, seen in Chapter 4, Sections 3 and 4, of making questions tractable and giving them shape.</p>
+<p>Rheinberger's account of experimental systems (on Rheinberger, see also Chapter 4, Section 5) draws on a case from the history
+of virus research and cytomorphology. In 1910–11, Peyton Rous transferred a
+chicken tumor from one animal to another with a cell-free extract. Albert
+Claude, working on the tumor agent in the 1930s, brought ultracentrifugation
+into the system to concentrate it, and found that particles from tumor cells
+could not be distinguished from particles from normal cells, and so turned to
+fractionating the cytoplasm of normal cells; the particles Claude called microsomes
+later came to be understood as structures of protein synthesis, while the tumor
+agent turned out to be an exogenous pathogen. On Rheinberger's reading, the
+system oscillated for forty years around an <code>epistemic thing</code> that escaped
+fixation, an object of inquiry whose identity changed as new methods were
+grafted into the setup; and Rheinberger holds that a research device must be stable enough
+to reproduce what it does yet loose enough for something unpredictable to
+happen (<a href="https://doi.org/10.1017/S0269889700001599">Rheinberger 1994, 70–76</a>). The three accounts differ in what they say about models,
+practice, and scientific objects, and this section takes from them only what
+they share: models, experimental systems, and the representations and
+arrangements they involve can take part in making candidates available, rather
+than only carrying candidates formed elsewhere. In Claude's case, the candidate
+that the particles of normal cells might be precursors of the tumor agent
+became available only through the comparison that ultracentrifugation made
+possible.</p>
+<p>The accounts above concern how candidates become available, which a
+description of belief revision over given propositions takes as its starting
+point rather than describes. That does not make such a description idle, for it
+captures something important about what happens to candidates once they are
+available. Analogy, coherence, a
+calculation, a pilot observation, a controlled test, or independent replication
+can change how an inquirer regards a candidate, with very different force. Under
+an account that takes belief or degrees of belief broadly, at least some movement from
+bare consideration through plausibility and provisional acceptance toward
+knowledge can be represented as an epistemic trajectory. When the inquirer is an artificial system, such a trajectory describes the system's own attitudes, and whether the result has entered <i>S</i>'s epistemic situation is a further question (Chapter 2, Sections 2 and 6). This representation
+does not by itself show that entertaining a candidate, treating it as worthy of
+pursuit, accepting it for practical purposes, believing it, and knowing it are
+the same attitude or differ only in degree. Whether and how these states can be
+unified remains open.</p>
+<p>A propositional account, taken broadly, can moreover represent conceptual and
+representational change. One can state that a concept has been constructed,
+that an instrument is adequate for a purpose, that a new distinction can be
+drawn, or that a procedure makes an artifact possible, and new concepts and
+interpretations can make newly expressible propositions available. The caution
+of this section is therefore not that such changes cannot be put into
+propositions. It is that some of these propositions became expressible only once
+the new concept or interpretation existed, so that translating the change into
+propositions adds to the set rather than showing that the research moved within
+a set fixed in advance. Nor does the translation show that all the resulting
+contents receive support in the same way, or that their practical and
+representational roles have been fully explained.</p>
+<p>Two cases show what this caution concerns. The first is mathematical. The
+Liquid Tensor Experiment (Chapter 1, Section 3) was the collaborative
+verification, in the Lean proof assistant, of a theorem Scholze had proved with
+Clausen. A proof can look like a candidate fixed in advance, and formal
+verification like a check applied to it afterward. Participant accounts describe
+something else. The work recast the proof as self-contained lemmas that
+followed the lecture notes closely, and the blueprint, a human-readable document laying
+out the formal proof, was written largely after rather than before the formal
+proofs; imprecisions were exposed and repaired, an abstract route was replaced by
+a more explicit construction, and how the proof was understood changed as a
+result (<a href="https://xenaproject.wordpress.com/2021/06/05/half-a-year-of-the-liquid-tensor-experiment-amazing-developments/">Scholze 2021</a>;
+<a href="https://mathoverflow.net/questions/415469/breen-deligne-packages-and-the-liquid-tensor-experiment/415540">Commelin 2022</a>).
+This public and successful project is not evidence about mathematical practice at large. What it shows, in one case, is that
+representation, candidate articulation, appraisal, verification, infrastructure
+construction, and understanding can change together rather than appearing as a
+fixed result followed by a downstream check. For an artificial system that
+generates proofs and checks them in a proof assistant, the check can likewise be not only a downstream step but also a place where changes of this kind occur.</p>
+<p>The second case comes from the historical database SlaveVoyages, which records
+voyages of the trans-Atlantic slave trade. Its project history reports that by
+the late 1980s records of about 11,000 voyages existed in sixteen separate
+datasets, built with different definitions of variables and in different
+formats, some ship-based rather than voyage-based, and not all of them, as it
+turned out, of trans-Atlantic or slave voyages. Making one dataset meant
+standardizing those definitions, collating voyages that appeared in several
+sets, and adding new information. The 1999 CD-ROM held 27,233 voyage records,
+about half of them new, and as the sources multiplied, resolving double counting
+came to take almost as many resources as gathering the data. The methodology
+essay describes further choices. Each entry is a single voyage. Where sources
+conflicted, the editors entered one value per variable, choosing for instance
+the latest reported date of departure and the earliest of arrival. Where only
+the number of captives embarked or only the number disembarked was recorded, the
+other was imputed from mortality ratios by African region, in variables marked
+"IMP", whose values, the essay warns, change as data are added. Peer-reviewed
+corrections and new data are added to the core database at three-year
+intervals (<a href="https://legacy.slavevoyages.org/blog/history-project">SlaveVoyages 2024</a>; <a href="https://legacy.slavevoyages.org/blog/methodology-trans-atlantic">Eltis [2008] 2024</a>). What a user can search and aggregate is therefore not what
+any one archive recorded but a voyage-by-voyage representation that these
+choices constructed, and claims about the trade as a whole, such as the
+estimates of its size and direction that the project team also developed, are
+stated in terms of that representation. The editors add that in many cases the
+best way to fill a gap is not obvious, that researchers working with the same
+data set can reach estimates that differ and are equally good, and that anyone
+using the data, the editors included, needs to state the assumptions being used
+(<a href="https://legacy.slavevoyages.org/blog/methodology-trans-atlantic">Eltis [2008] 2024</a>). Which claims about the trade can be stated, and what they say, thus
+depends on how the representation was built. Research on the trade can be described as updating confidence over given propositions only once that work has been done. The same holds for an artificial
+system that answers questions about the trade by querying the database: its
+answers carry the editors' choices of unit, value, and imputation unless it
+revises them, and carry them tacitly unless it states them. The official account does not expose every disputed
+merge or rejected classification, and it does not stand for humanities research
+in general.</p>
+<p>The difference between searching a set already characterized and making candidates available also bears on an argument from the debate over scientific realism, the position that well-confirmed theories may be taken to be approximately true. The argument's premise concerns what inquirers have been able to conceive. On Stanford's new induction, as its author's encyclopedia entry presents it, scientists have repeatedly been in a position in which they could conceive of only one or a few theories well confirmed by the available evidence, while later inquiry revealed radically distinct alternatives as well confirmed by that evidence (<a href="https://plato.stanford.edu/archives/sum2026/entries/scientific-underdetermination/">Stanford 2023, §3.3</a>). The induction tells against realism because, if well-confirmed present theories are also likely to have alternatives not yet conceived, confirmation becomes harder to treat as a mark of approximate truth. Curtis-Trudel, Rowbottom, and Li consider the reply that computational science changes this by searching the space of possibilities more widely, and argue from gravitational-wave astronomy that such searches rely on a prior characterization of the space searched: the templates against which detector output is matched almost always assume general relativity, and even searches described as theory-agnostic carry commitments that may limit sensitivity to the most radical alternatives. What would be needed, they hold, is not only a method for searching known possibilities but a reason to think that the characterization of the space is largely exhaustive, and computational methods do not obviously amplify what they take, citing Stanford, to be the underlying limitation, the human ability to imagine theoretical alternatives (<a href="https://doi.org/10.1007/s11229-025-05362-3">Curtis-Trudel et al. 2025, 22–24</a>). They set artificial intelligence aside, and they are skeptical, without evaluating the prospect, that deep-learning systems will imagine serious alternatives better than humans do (4 n. 4, 23 n. 21). In this section's terms, their argument locates the premise that inquirers' ability to conceive alternatives is limited in making candidates available rather than in the breadth of search over a characterized set, so that whether an artificial inquirer pushes back that limit turns on the former. This is the problem to which, in Chapter 3, Section 5, Boge and Grünke relate what they call model-opacity, the apparent absence of any algorithm leading from what a trained network does to a model of the physical mechanism behind its outputs. Making a previously unconceived alternative available does not require changing the representation: a candidate may already have been expressible without having been formulated or recognized as a serious alternative. In the terms of the caution earlier in this section, a candidate that none of the candidates already stated anticipated may still lie in a set that the system's representation fixed in advance, whereas one that became statable only through a change of representation does not; this is the counterpart, on the side of candidates, of the distinction Chapter 4, Section 4 drew between generating new questions by combining existing concepts and introducing concepts that let questions be raised that could not be raised before.</p>
+<p>The conclusion of this section is limited. In the accounts and cases examined
+here, which candidates could be stated, compared, or pursued depended in part on
+concepts, representations, instruments, and objects that the research itself
+constructed or revised; in the Liquid Tensor Experiment and SlaveVoyages, these
+changed together with candidate articulation, appraisal, and verification. A
+description of research as credence updates over a fixed, antecedently
+enumerated set of propositions can capture much of what happens to candidates
+once they are available, including, on a broad propositional account, that a
+concept or representation has been constructed. What such a description does not show by itself is the work through which the set it
+starts from became available. This chapter therefore does not assume that a
+fixed set of propositions, with degrees of confidence raised and lowered over
+it, gives an explanatorily
+adequate description of every research process; whether a sufficiently broad
+belief-centered theory could describe all of these changes remains open. The cases of this section are examples of the second point of the picture of Section 1.1, that a change of representation can alter which candidates, and in some cases which questions (Chapter 4, Section 3), are available at all. This is one reason why the picture lists
+concepts and representations, and several kinds of attitude, as dimensions of an
+inquiry configuration in their own right rather than folding them into a single
+scale of confidence over given contents.</p>
+<h3 id="4-how-candidate-formation-pursuit-and-appraisal-are-related">4. How candidate formation, pursuit, and appraisal are related</h3>
+<p>Section 3 asked what makes candidates available. This section asks how making
+a candidate available is related to pursuing and appraising it, and it takes up
+two matters in two subsections. Section 4.1 concerns
+time and the division of functions: making a candidate available and appraising it are
+distinguishable functions, but they need not occur as separate phases, one
+completed before the other begins. Section 4.2 concerns appraisal itself:
+judging whether a candidate is worth pursuing and judging whether it is likely to
+be true can come apart in practice. That subsection sets out two ways of viewing
+how appraisals made before a candidate can be tested rigorously are related to
+rigorous ones, as different kinds of appraisal or as
+differing in degree, and argues that on either
+view the worth of pursuing a candidate need not reduce to its likelihood of being
+true.</p>
+<p>For analysis, the debates on which this section draws supply three functions,
+which give the section its title: making a candidate available for consideration
+(formation), which the traditional context of discovery concerned; judging
+whether it is worth developing or testing (pursuit), which, as Nickles recounts, Laudan distinguished
+from the acceptance of a theory; and assessing the support it receives, on the basis of which
+it may be accepted, rejected, suspended, or used provisionally (appraisal), which
+the context of justification concerned (<a href="https://archive.org/details/experiencepredic00reic">Reichenbach 1938,
+5–7</a>; <a href="https://plato.stanford.edu/archives/sum2026/entries/rationality-historicist/">Nickles 2017,
+§1.5</a>).
+Articulating a candidate's consequences and dependencies can serve both pursuit
+and appraisal, and Chapter 6, Section 2.1 takes it up. The three are distinctions worth
+keeping visible when they help explain what changes during an inquiry, not an
+exhaustive inventory or a sequence of stages. Their purpose here is to make two
+points statable: one activity can serve more than one of them, and their
+realizations can be interleaved. Section 4.1 concerns formation and appraisal,
+and Section 4.2 pursuit and appraisal.</p>
+<h4 id="4-1-distinguishable-functions-not-phases">4.1 Distinguishable functions, not phases</h4>
+<p>The distinction between discovery and justification can also be read as a fixed chronology or division of components, in which a non-rational generator first produces a complete hypothesis and a rational verifier then begins. The distinction's own history, however, does not require that reading. Reichenbach, who introduced the terms context
+of discovery and context of justification, drew the distinction differently, and
+used it to separate the task of epistemology from that of psychology:
+epistemology constructs a rational reconstruction, a set of justifiable
+operations that replaces actual thinking while remaining bound to it by what Reichenbach
+called a postulate of correspondence. Reichenbach compared the difference to that between
+the way a thinker finds a theorem and the way the thinker presents it to a public, adding
+that even published expositions only approximate the context of justification
+(<a href="https://archive.org/details/experiencepredic00reic">Reichenbach 1938, 5–7</a>).
+Discovery, for Reichenbach, does not escape the inductive relations that justification
+examines. On this account epistemology says nothing about how a new theory was
+found, but what distinguishes a great discoverer from a clairvoyant is seeing
+that the known facts already inductively indicate the theory before it is
+confirmed (<a href="https://archive.org/details/experiencepredic00reic">Reichenbach 1938,
+381–383</a>). Schickore notes
+that Reichenbach's original conception does not map easily onto the later use of the
+distinction to fix the scope of philosophy of science (<a href="https://plato.stanford.edu/archives/sum2026/entries/scientific-discovery/">Schickore 2022,
+§5</a>).</p>
+<p>Subsequent analysis also distinguished versions of the separation. Nickles, for example, argued that recognizing a form of divorce between an idea's original conception and its justification helps rather than hurts the discovery program (<a href="https://doi.org/10.1086/289239">Nickles 1985, abstract</a>). What Nickles called generative justification is, in Schickore's presentation, reasoning to a claim from data or previously established results, and it complements consequential justification, on which a claim is established when consequences derived from it are successfully tested (<a href="https://plato.stanford.edu/archives/sum2026/entries/scientific-discovery/">Schickore 2022, §8.1</a>). A claim justified generatively is shown to be discoverable, however it was first thought of. On Nickles's account, such idealized discovery arguments typically become available only after the original breakthrough, once the solution has been used to define the problem better, and the solution then becomes "generatively justified, not only justified by consequential testing" (<a href="https://doi.org/10.21825/philosophica.82435">Nickles 1990, 7, 24–25</a>). If so, discovery-type reasoning bears on justification without the actual history of an idea having to confer warrant, and what the discovery program needs, on Nickles's account, is a generative conception of justification that links justification with generation, or rather with an idea's generatability (<a href="https://doi.org/10.1086/289239">Nickles 1985, abstract</a>).</p>
+<p>How far the normative difference between making a candidate available and
+warranting it extends depends on the account. On the distinction between
+discovery and justification, a candidate is not warranted simply because its
+origin was ingenious, disciplined, beautiful, or associated with a prestigious
+investigator, nor refuted merely because it arose from a dream, error, random
+search, or opaque machine; its origin bears on its warrant only indirectly, for
+example by revealing leakage or selection effects (Chapter 3, Section 5.1).
+On Nickles's generative justification, just described, what bears on warrant is
+also a route, but not the route by which the candidate was actually produced: it
+is whether the candidate can be derived from data and established results. On reliabilist accounts (Chapter 2, Section 4.1), and on the virtue-epistemological reading of Chapter 3, Section 5.3, which locates justification in an agent's competences,
+the reliability or credited competence of the process that produced a candidate
+can itself contribute to its warrant, so that how a candidate was produced can be
+part of what warrants it. For a candidate produced by an artificial system, these accounts accordingly place the process evidence of Section 2.1 differently. On the distinction between discovery and justification, a record of how the candidate was produced bears on its warrant only through what it reveals, such as leakage or selection; on Nickles's account, what warrants the candidate can be a derivation from data and established results that the system need not itself have run, and that members of <i>S</i> or the system can supply afterwards; on reliabilist and virtue-epistemological accounts, evidence that the producing process is reliable or competent bears on the candidate's warrant, and not only on the system's capacity. On none of these accounts does the normative difference
+establish that making a candidate available and warranting it are separate
+temporal phases.</p>
+<p>Appraisal can also make something new available. Hoyningen-Huene, for example,
+lists among the ways in which science systematically generates knowledge
+the fact that even the experimental test of a hypothesis forces chance: a deviation from
+the prediction may be due to the hypothesis, but may also reveal that an
+auxiliary hypothesis tacitly taken for granted in the set-up is at fault, so
+that the background assumptions of experiments are constantly, though not
+intentionally, challenged by experimental activity (<a href="https://doi.org/10.1515/9783110659658-005">Hoyningen-Huene 2020,
+98–99</a>; compare Chapter 1, Section
+3). Nor need the distinction between discovery and justification
+separate two processes. Schickore notes that the distinction is most commonly
+interpreted as one between conceiving a theory and assessing its epistemic
+support, and that this version is not necessarily temporal: generation and
+assessment are two different epistemic approaches to a theory, not stages in
+which a theory is first fully developed and then assessed (<a href="https://plato.stanford.edu/archives/sum2026/entries/scientific-discovery/">Schickore 2022,
+§5</a>).</p>
+<p>Formation and appraisal, two of the three functions distinguished at the start
+of this section (making a candidate available, and assessing the support it
+receives), can also be interleaved, and each can produce material for the other:
+appraising a candidate can yield a new candidate or question, and forming one can
+yield evidence. A quick calculation can
+eliminate a representation before it becomes a recorded hypothesis. A proof
+attempt can revise the conjecture. An experiment can generate a phenomenon or
+candidate rather than merely judge one. Writing can expose a missing premise.
+Criticism can transform the question.</p>
+<p>The conclusion of this subsection is that formation and appraisal are
+neither identical nor necessarily modularized. They are distinguishable functions
+whose realizations can overlap and interleave, and attitudes toward a candidate
+can change continuously across them (Section 4.2). Research can therefore include stretches of work in which a candidate is formed and appraised together, rather than generated first and verified afterward.</p>
+<h4 id="4-2-judging-what-to-pursue-and-judging-what-is-true">4.2 Judging what to pursue and judging what is true</h4>
+<p>Where testing, proof, archival work, or construction is costly, candidates are
+judged before they can be tested rigorously, and judgments of what is worth
+pursuing need not coincide with judgments of what is likely to be true. Three
+questions are easily run together here. The first is whether preliminary and
+rigorous appraisal of a candidate differ in kind or only
+in strength: whether, for example, a test on a small sample and a test on the
+full sample, or a sense that a hypothesis is beautiful and a controlled
+comparison, change an inquirer's attitude in different ways or in one way to
+different degrees. The second is whether the worth of pursuing a candidate
+depends only on how likely it is to be true, or also on other considerations,
+such as what pursuing it could reveal, what it would cost, and how likely a test
+is to settle the matter. The third is whether the reasons for pursuit are
+epistemic, practical, or of some further kind, a dispute that Chapter 2, Section
+5 takes up for the pursuit of questions and whose bearing on the revision of
+standards Chapter 7, Section 4.3 notes. The three
+questions are distinct, and an answer to the first does not settle the second.
+The paragraphs that follow first describe cases and considerations that bear
+on both views, including why the worth of pursuit need not be settled by
+likelihood alone, then set out two ways of viewing the first question, as a difference in
+kind and as a difference in degree, and then say what holds for the second
+question on either view and what each suggests for an artificial system. The third question is left to the chapters just mentioned. This subsection treats candidates as contents that can be true or false and works mainly through the case of knowledge. Where inquiry aims at understanding, the appraisal of candidate models or explanations also involves the questions of idealization discussed in Chapter 3, Section 3.4.</p>
+<p>The course of appraisal can be represented in part as continuous revision of
+epistemic attitudes. A content may move from being merely entertained, to being
+regarded as plausible or worth pursuing, to provisional acceptance, and perhaps
+to more strongly warranted belief. This continuity fits what Section 4.1 found:
+candidate formation and later appraisal need not be wholly different kinds of
+event in an inquiry. But a shared description as belief or confidence revision does
+not make the changes epistemically equivalent. A reason to attend to a candidate,
+a reason to develop it, and a reason to believe it can differ even when all three
+alter the inquirer's attitude toward the same content. The two views set out below part over
+the reasons that bear on a candidate before rigorous appraisal: whether they
+differ in kind from those that rigorous appraisal supplies, or only in strength. Krebs and
+Henseleit's work on urea formation in 1931 and 1932, for example, shows
+standings changing over some months and for reasons of different kinds. As it
+has been reconstructed from their notebooks, Krebs knew from the start of the
+work the reaction by which arginine yields ornithine and urea, and had studied
+it in an experiment in October, but thought for other reasons that it could
+not serve as a model of how urea is generated; he came back to it only when it
+offered the one obvious way of producing ornithine, and in the cycle he then
+proposed it became the step that regenerates ornithine. The first experiments
+with alanine, by contrast, showed a clear increase in urea; a quantitative
+test then showed too little alanine consumed for a direct reaction, so that
+alanine was taken to yield urea only indirectly, yet the working hypothesis
+was kept and experiments improving the conditions the reaction required went
+on for over a month before Krebs returned to testing other amino acids. And
+the effect of ornithine that appeared in an experiment Henseleit ran on 15
+November drew Krebs's attention at once, was found over the following two
+months to be specific to ornithine although no mechanism was in view, and
+received its catalytic interpretation only after measurements in January 1932
+showed that the urea formed varied little with the amount of ornithine added
+and that the ammonia consumed could account for the urea's nitrogen (<a href="https://aaai.org/papers/0010-ss95-03-010-from-historical-case-studies-to-systematic-methods-of-discovery/">Graßhoff
+and May 1995,
+53–54</a>;
+<a href="https://iiif.library.cmu.edu/file/Simon_box00082_fld06584_bdl0001_doc0001/Simon_box00082_fld06584_bdl0001_doc0001.pdf">Kulkarni and Simon 1988,
+7–11</a>).
+Read against the attitudes just distinguished, the three episodes differ both
+in the standing of a candidate and in the kind of reason that moved it. The
+arginine reaction was in hand but was not attended to as a candidate for the
+main pathway, for a reason drawn from what was then believed about that
+pathway rather than from the reaction; its standing changed only when the
+later cycle gave it a role. The working hypothesis from the alanine
+experiments was developed, its experimental conditions refined, after a
+quantitative result had told against the direct path it first specified: a
+reason to develop it outlasted the reason to believe that form of it. The
+ornithine effect drew attention as soon as it appeared, but it became a
+candidate that could be accepted only through measurements, which showed that
+ornithine did not supply the nitrogen of the urea formed, and through the time
+Krebs took to work out how to interpret it; the catalytic interpretation was
+then corroborated by experiments in which very small amounts of ornithine
+yielded many times as much urea.</p>
+<p>The same content can also hold different standings at once for different uses.
+In the <em>Astronomia nova</em> of 1609, for example, Kepler retained the "vicarious hypothesis," a computational model that assumed a circular orbit, because it reproduced the observed longitudes, rejected it as a
+description of the physical orbit, and went on using it as a reference when Kepler
+computed distances, describing it as yielding true equations (the quantities that correct a body's computed position) from a false cause
+(<a href="https://publikationen.badw.de/de/002334739">Kepler [1609] 1937, chs. 18–21, 43,
+51</a>). In another case, Pauling and
+Corey published precise coordinates for a proposed triple-helical structure of
+the nucleic acids, presenting it as a proposal, while stating that the agreement
+they had found might be given by any cylindrical molecule of about the same
+diameter and that a more reliable test, a comparison of observed and calculated
+radial distribution functions (distributions of interatomic distances), had not
+yet been carried out. The structure was wrong, and a few months later
+Pauling wrote in a letter that what had put the two of them "off on the wrong
+track" was a superposition of two diffraction patterns (<a href="https://doi.org/10.1073/pnas.39.2.84">Pauling and Corey 1953,
+95</a>; <a href="https://scarc.library.oregonstate.edu/coll/pauling/dna/corr/sci9.001.39-lp-delbruck-19530420.html">Pauling
+1953</a>).
+Here too one content had two standings at once: worth publishing in precise
+form, and not yet tested in the way the authors themselves called more
+reliable. An account of appraisal can describe such cases in two ways. It can
+say that one content receives different attitudes at once, as Kepler's vicarious
+hypothesis was accepted for computing and rejected as a description of the
+orbit; or it can say that the attitudes are directed at different contents, that
+the hypothesis reproduces the observed longitudes and
+that it describes the physical orbit, Kepler accepting the first and rejecting the second.</p>
+<p>In preliminary appraisal, candidates can be judged for plausibility, expected
+information, explanatory reach, tractability, novelty, feasibility, or potential
+importance. These are not one epistemic quantity: expected information,
+tractability, feasibility, and importance concern what pursuing a candidate could
+yield and at what cost, not only how likely the candidate is to be true. Someone
+may find a beautiful or simple idea worth attention without taking its beauty or
+simplicity as a reason to believe it. A feasible candidate may be pursued
+because it can reveal a method even when its prior probability is low. This
+point does not depend on treating reasons for pursuit and reasons for belief as
+different in kind. Nyrup, for example, models the justification for pursuing a
+hypothesis as the expected epistemic value of pursuing it, which depends on how
+probable the hypothesis is, on how valuable it would be to learn whether it is
+true, and on how likely testing is to settle the matter; on this model a more
+probable hypothesis need not be more worth pursuing, and a hypothesis can be
+worth pursuing because it is probably false and would be easy to show false;
+Nyrup connects this with Peirce's view that the best hypothesis is the one most
+readily refuted if it is false (<a href="https://doi.org/10.1086/683262">Nyrup 2015, §§3–4</a>).
+Even if every consideration bearing on a candidate's truth is registered as a
+change in confidence, the value of pursuing the candidate can, as on Nyrup's
+model, remain a different quantity.</p>
+<p>Within a community, judgments of what is worth pursuing and of what is likely
+true can also drift together, as when a consideration that guides what
+members pursue, such as beauty, comes also to serve them as a ground for
+confidence that a candidate is true. The physicist Sabine Hossenfelder, for example,
+argues in a critique from within physics that, since the experiments that would
+test new theories now take decades and billions of dollars, theorists must
+choose what to work on by criteria other than observational adequacy, criteria
+that Hossenfelder takes to be mostly social and aesthetic and doubts are
+self-correcting (<a href="https://www.scientificamerican.com/article/a-theory-with-no-strings-attached-can-beautiful-physics-be-wrong-excerpt/">Hossenfelder
+2018c</a>).
+She also cites physicists' own statements of their colleagues' conviction that
+supersymmetry must be true, a conviction one of them ties to its beauty
+(<a href="https://www.sciencefriday.com/articles/the-alluring-beauty-of-supersymmetry/">Hossenfelder
+2018d</a>).
+Hossenfelder's reading of the field is contested. Butterfield, reviewing <em>Lost
+in Math</em>, the book from which these excerpts come, for example grants that judgments of beauty are historically conditioned and
+fallible, as the critique argues, but holds that Hossenfelder reads physicists as more naive about
+beauty than they are, since those who appeal to it treat it only as a heuristic
+with those limits (<a href="https://arxiv.org/abs/1902.03480">Butterfield 2019, §2</a>).
+The case shows what such drift could look like on one contested reading of a
+field; whether it has occurred is what the two readings dispute.</p>
+<p>One person can also judge that an approach is unlikely to work and still judge it worth trying. Reddy, for example, later recalled telling one student that the student's approach to speech recognition seemed unlikely to work but that the student should go ahead and try it, and said of that student and another that they had succeeded beyond Reddy's expectations (<a href="https://archive.computerhistory.org/resources/access/text/2021/06/102792182-05-01-acc.pdf">Reddy 2021a, 20</a>; <a href="https://archive.computerhistory.org/resources/access/text/2022/02/102792298-05-01-acc.pdf">Reddy 2021b, 35</a>). Elsewhere in the same interviews, however, the group is described as having agreed with the first student that statistics should be used, if narrowly (<a href="https://archive.computerhistory.org/resources/access/text/2022/02/102792298-05-01-acc.pdf">Reddy 2021b, 9</a>). On Reddy's own account, then, the separation was partial.</p>
+<p>The first of the three questions set out at the start of this subsection was
+whether preliminary and rigorous appraisal differ in kind or only in strength,
+and there are two ways of viewing it. The first view treats them as differing in
+kind, drawing on accounts that separate pursuit from acceptance, such as
+Laudan's and Duerr and Fischer's. Laudan's
+criterion for the context of pursuit looks to a line's record rather than to
+how its ideas were generated. On this account, as Nickles presents it,
+scientists should accept the theory that for the time being has the greatest
+overall problem-solving success, but pursue the tradition that now enjoys a
+higher rate of success (<a href="https://plato.stanford.edu/archives/sum2026/entries/rationality-historicist/">Nickles 2017,
+§1.5</a>). The criterion can be interpreted as separating pursuit from belief without separating it from past performance; so interpreted, it would not by itself license pursuing a line that has not yet solved any problem. Duerr and Fischer treat
+whether an idea merits further resources as a prospective judgment about its
+possible cognitive benefits, costs, risks, and alternatives, not a present
+judgment that its content is true or known (<a href="https://doi.org/10.1007/s11229-025-05077-5">Duerr and Fischer
+2025</a>). Their virtue-economic account
+is one substantive proposal for making that judgment. They also reject the conclusion that the standards for
+pursuit are merely weakened versions of those for acceptance, since standards
+whose role in acceptance is disputed, such as simplicity, fertility, and
+testability, play a larger role in pursuit (<a href="https://doi.org/10.1007/s11229-025-05077-5">Duerr and Fischer
+2025</a>). On such a view, a
+preliminary appraisal such as finding a hypothesis beautiful or simple can be
+read as a judgment that the hypothesis is worth pursuing rather than as a weaker
+judgment that it is true, and so as differing in kind from a controlled
+comparison.</p>
+<p>On Laudan's criterion, what counts as a solved problem also bears on what counts
+as a higher rate of success, and alongside empirical problems Laudan counted
+conceptual ones. As Niiniluoto summarizes the account, a theory's
+problem-solving effectiveness is the number and importance of the empirical
+problems it solves minus the number and importance of the anomalies and
+conceptual problems it generates (<a href="https://plato.stanford.edu/archives/sum2026/entries/scientific-progress/">Niiniluoto 2024,
+§3.2</a>;
+<a href="https://plato.stanford.edu/archives/sum2026/entries/rationality-historicist/">Nickles 2017,
+§1.5</a>).
+Hossenfelder also argues that most of the unnatural numbers now studied in the
+foundations of physics, such as those behind the fine-tuning of the Higgs mass (the need for large contributions to cancel with a precision that looks like coincidence if the observed value is to result) and the smallness of the cosmological constant, are not unlikely in any quantifiable sense, so that the corresponding problems
+of naturalness are ill-defined and might not be problems at all (<a href="https://arxiv.org/abs/1801.02176">Hossenfelder
+2018b, §§1, 3–5</a>).
+Some physicists Hossenfelder interviews resist this reading. Arkani-Hamed, for example,
+while professing to be no defender of naturalness, the demand that a theory not require such fine-tuning, calls it a guide rather than a
+principle, one with successes as well as failures, and denies that it is mere
+philosophy (<a href="https://www.hachettebookgroup.com/titles/sabine-hossenfelder/lost-in-math/9780465094264/">Hossenfelder 2018a,
+80</a>).
+Taken together with Laudan's criterion, this disagreement suggests that where the standing of the problems is itself disputed, a rate-of-progress criterion does not settle what is worth pursuing but moves the dispute to the question of which problems count. For a system that judges what to pursue by a record of problems solved, this is where Laudan's own condition, seen in Chapter 4, Section 7, enters: since what counts as a problem, and how important its solution is, is fixed from within a research tradition, which problems the record counts, and with what weight, is fixed by someone's valuation before any rate of progress is computed, and whether that valuation is <i>A</i>'s or <i>S</i>'s has to be specified. How problems are to be individuated and counted is itself a recognized difficulty for the account. Niiniluoto notes that applying Newton's mechanics to determine the orbit of Mars can be counted as one problem, although, given an initial position, the theory entails solutions to infinitely many questions about the planet's position at each time (<a href="https://plato.stanford.edu/archives/sum2026/entries/scientific-progress/">Niiniluoto 2024, §3.2</a>), and Nickles observes that historicists can reply that, if counting and weighing problems is a messy task, that is historical reality, a reality that favors expert judgment over tidy decision algorithms (<a href="https://plato.stanford.edu/archives/sum2026/entries/rationality-historicist/">Nickles 2017, §1.5</a>). A system that computes such a rate itself needs some rule for individuating problems, and where that rule is its own, dividing one problem into many can raise its rate of progress without anything more having been solved.</p>
+<p>In an open inquiry, where no one yet knows the answer, inquirers move toward what
+seems likely. The second view of the first question looks at what in fact moves
+inquirers in the course of inquiry under this one role, that of making a
+candidate seem likely, that is, of moving confidence in it, and treats
+preliminary and rigorous appraisal as differing in degree within that role.
+Finding a claim in earlier work that supports one's hypothesis, a positive result
+from an experiment testing it, a thought experiment based on it that makes it
+feel likely, and the consistency of a theorem derived from it with an existing
+body of theory can differ in what they actually mean and in how strong they are
+as grounds. They can nonetheless be seen as the same in that each makes the
+hypothesis seem likely to the person concerned. For some people, that the
+hypothesis seems beautiful, that someone they trust says it looks promising, a
+vague sense that something will open up beyond it, a colleague's offhand remark,
+the mood of the day, or the scenery on a walk can also make it seem likely. This
+is not a claim that the differences are merely of degree. It is a way of
+looking that is available and that brings certain things into view. Reichenbach, whose distinction between the contexts of
+discovery and justification this section began with, in fact held that "the
+situation before the confirmation differs from that after it only in degree":
+even before confirmation, some facts confer at least some probability on a
+theory and distinguish it from others as the best posit (<a href="https://archive.org/details/experiencepredic00reic">Reichenbach 1938,
+383</a>). Reichenbach kept the two
+contexts apart all the same, treating aesthetic considerations as influencing how
+a solution is found rather than whether it is correct (<a href="https://archive.org/details/experiencepredic00reic">Reichenbach 1938,
+384</a>). Viewed in this way,
+a test on a small sample and a test on the full sample can move an
+inquirer's confidence in the same direction by different amounts, and grounds
+that are not themselves observations can move it too. How far a ground moves
+confidence is a different matter from how high it leaves it, a difference that
+confirmation theory draws, in probabilistic terms, between confirmation as
+relevance and as firmness (Chapter 2, Section 5.2). Confidence here is a graded
+attitude of the investigating actor <i>A</i> (Chapter 2, Sections 2 and 2.1), which
+can be described by its role in inference, planning, and revision without anyone
+reporting a probability.</p>
+<p>Reichenbach's remark goes no further than this. Treating every ground as a
+matter of degree in this way, the second view says four more things. First,
+there is one graded attitude on which the grounds act, confidence in the
+candidate, rather than a separate attitude for each kind of ground. Second,
+every ground stands on the same side, as something that moves that attitude: a
+calculation, a pilot result, a sense that a hypothesis is beautiful, and a
+controlled test differ in how far and in which direction they move it, not in
+whether they belong to appraisal at all. Third, no ground counts by its type
+alone. Data are not grounds simply because they are data, and beauty is not
+excluded simply because it is not data; each counts through what the inquirer
+takes it to indicate. Fourth, what a ground indicates, and so how far it moves
+confidence, depends on the standards and commitments on which the inquirer
+stands, which the next paragraph takes up.</p>
+<p>On the
+second view, which grounds move an inquirer, and toward what, depends on
+the standards and commitments on which that inquirer stands. Beauty becomes a ground for thinking a
+candidate likely for someone who values it, who finds standing on that criterion
+useful, or who believes that nature rewards it. An agreement between a
+prediction and an outcome is received as feedback from nature by someone who
+trusts the instruments and background assumptions through which the agreement
+is registered. Long acceptance by others counts for someone who trusts the
+community that has accepted a candidate, and usefulness in one's own work counts
+for someone who takes success in use as a sign of something more than
+convenience. When inquirers move toward what seems likely, what seems likely to
+them thus differs with the standards on which they stand. Reichenbach also reported a scientist's remark that the scientist had found
+great theories because of a conviction of the harmony of nature, and held
+that such a belief, though different in content from the principle of
+induction, amounts to the same in its function within the system of operations
+of knowledge, while calling the mysticism of discovery a superstructure of
+images and wishes on an inductive foundation (<a href="https://archive.org/details/experiencepredic00reic">Reichenbach 1938,
+403–404</a>).</p>
+<p>Kepler's regular solids give a historical example in which several of these
+grounds met. Kepler sought in them an a priori foundation
+for the reality of the Copernican system and, when the tables used did not fit
+the values calculated from that hypothesis, quoted Copernicus's remark, as
+reported by Rheticus, that it made no sense to insist on absolute agreement with
+data that were themselves imperfect, and in 1619 still used the solids to
+determine the number of the planets and their distances from the Sun, although
+by then, with access to Tycho's observations, Kepler had given up deriving the
+eccentricities of their orbits from them (<a href="https://plato.stanford.edu/archives/sum2026/entries/kepler/">Di Liscia 2025, §§3,
+4.4</a>). A ground
+that was not empirical evidence moved Kepler's own conviction, and Tycho's data
+later narrowed its reach. That Tycho's data could do so was not guaranteed by
+their being data; they counted because, and as far as, Kepler trusted them.
+Ptolemy's observations were data too, but, as Kepler noted in the <em>Astronomia
+nova</em>, Ptolemy had professed not to observe below ten minutes of arc, so their
+uncertainty exceeded the error of eight minutes that Tycho's observations
+revealed in a model built on Ptolemy's bisection of the eccentricity. Of Tycho,
+"the most diligent observer," Kepler wrote that since those eight minutes could
+not be neglected, they alone had led the way to reforming the whole of astronomy
+(<a href="https://publikationen.badw.de/de/002334739">Kepler [1609] 1937, ch. 19</a>). On George Smith's reconstruction, the eight minutes counted as a
+discrepancy only against an estimate of error bands: Tycho's observations
+carried uncertainties of at least two minutes of arc, Kepler's interpolations
+and provisional theory of the earth's orbit widened them, and under the old
+standard of ten minutes the modified model would have passed (<a href="https://dl.tufts.edu/downloads/s4655t006">Smith 2014, 10, 14–15</a>). Kepler
+trusted auxiliary assumptions in a similarly bounded way. In the next
+chapter Kepler took sun–earth distances from Tycho's table while calling it faulty,
+and argued that the true value lay between Tycho's figure and 100,000, so that
+the conclusion held over that range (<a href="https://publikationen.badw.de/de/002334739">Kepler [1609] 1937, ch. 20</a>). Here, as with the solids, the data counted
+through standards on which Kepler stood, in this case standards about
+instruments, observers, and error. On this view, the grounds differ in strength and in
+the standards that make them count, yet they can be viewed as playing a common
+role in the movement just described.</p>
+<p>The second view shares much with Bayesian epistemology, part of it is in effect
+a Bayesian thesis, and several of the aspects it looks at have already been
+discussed within Bayesian epistemology. In Lin's presentation, Bayesian
+epistemology is a normative framework whose core norms say that credences ought
+to be probabilistic and ought to change by conditionalization (<a href="https://plato.stanford.edu/archives/sum2026/entries/epistemology-bayesian/">Lin 2022,
+§1.2</a>). It has the ambition of explaining or justifying a wide range of
+epistemic practice with little more than these two norms, focused on credence
+change. Bayesians have treated confirmation as a rise in credence and accounted
+for evidential support and explanatory power through it, and to many of them
+acceptance is secondary or, as Jeffrey argued, better forgone (<a href="https://plato.stanford.edu/archives/sum2026/entries/epistemology-bayesian/">Lin 2022,
+§1.3</a>).</p>
+<p>One aspect discussed there is how grounds other than observation move credence. Plausibility
+considerations such as simplicity, consistency with accepted theories, and
+analogy enter as prior probabilities, which is how Salmon read most of Kuhn's
+criteria of theory choice (<a href="https://hdl.handle.net/11299/185726">Salmon 1990, 182–187, 198–199</a>), and a
+non-empirical fact, such as that no alternative to a theory has been found
+despite long search, can under certain conditions confirm the theory (<a href="https://philsci-archive.pitt.edu/9038/">Dawid,
+Hartmann, and Sprenger 2012, §4</a>). Whether norms beyond coherence govern
+priors, the problem of the priors, divides Bayesians. Subjective Bayesians
+permit any coherent prior, so that whether credences behave inductively at all,
+or favor simpler hypotheses, depends on the prior; objective Bayesians add a
+norm of freedom from bias (<a href="https://plato.stanford.edu/archives/sum2026/entries/epistemology-bayesian/">Lin 2022, §1.5</a>). The same rule fed different
+values yields different verdicts (<a href="https://hdl.handle.net/11299/185726">Salmon 1990, 180–181</a>). Salmon did not
+deny that objectively irrelevant considerations, such as a scientist's hangover
+or political animus, move priors, and granted that any scientist may be
+inadvertently influenced by ideological or metaphysical prejudices. Salmon asked
+investigators to leave such considerations aside, on the ground that letting them
+set priors would defeat the objectives of science (<a href="https://hdl.handle.net/11299/185726">Salmon 1990, 183</a>). The
+second view is a way of viewing what in fact moves inquirers in the course of
+inquiry, and the influence Salmon granted falls within what it views. For the same reason, the second view does not by
+itself say which movements are rational.</p>
+<p>Another aspect is that a ground counts only through what one trusts, and that
+what one trusts can change. Conditionalization raises the credence in the
+evidence to certainty, but Jeffrey conditionalization lets experience move
+credence without reaching certainty, and how far a reddish look should raise
+one's confidence that a jelly bean is red depends on what one believes about the
+lighting (<a href="https://plato.stanford.edu/archives/sum2026/entries/epistemology-bayesian/">Lin 2022, §5.3</a>). In Bayesian terms, a ground counts for someone
+who stands on a standard when that person's conditional credences, such as the
+credence that a hypothesis is true given that it is beautiful, or the error model
+of an instrument, make it relevant. Salmon called the Bayesian algorithms trivial
+and held that what matters is the scientific judgment involved in assessing the
+probabilities fed into them, and took the history of science to be a rich
+source of information relevant to priors (<a href="https://hdl.handle.net/11299/185726">Salmon 1990, 201</a>). A change
+such as Kepler's move from Ptolemy's ten minutes of arc to an estimate of the
+error bands of Tycho's observations is a change on the side of those inputs.
+Bayesian work has also modeled how such standards get their weight. In
+hierarchical Bayesian models, a preference for simplicity arises from the
+likelihoods of higher-level hypotheses and balances fit to the data rather than
+overriding it (<a href="https://cocolab.stanford.edu/papers/HendersonEtAl2010-PhilosSci.pdf">Henderson et al. 2010, 187, 198</a>), and in the
+meta-inductive argument the record of similar theories fixes priors (<a href="https://philsci-archive.pitt.edu/9038/">Dawid,
+Hartmann, and Sprenger 2012, §5</a>). That standards gain and lose weight
+within inquiry, as the naturalness principle did, and that an inquirer comes to
+stand on new ones, is what Chapter 6, Section 5 examines as the revision of
+standards.</p>
+<p>Change in which candidates are under consideration has been discussed as well.
+Taking a new theory into consideration seems to be the formation of a credence
+rather than a change in one, and the difficulty it raises for conditionalization
+is discussed as the problem of new theory. One proposal, sketched by Shimony and
+Salmon and developed by Wenmackers and Romeijn, takes credences to be
+conditional on the set of possibilities under consideration, lets that set
+expand when a new theory is taken into consideration, and preserves the credence
+ratios among possibilities that remain under consideration (<a href="https://plato.stanford.edu/archives/sum2026/entries/epistemology-bayesian/">Lin 2022,
+§5.2</a>). Salmon also judged the likelihood on the catchall, the hypotheses
+not yet thought of, intractable, and removed it from the calculation by
+comparing the theories under consideration with one another (<a href="https://hdl.handle.net/11299/185726">Salmon 1990,
+191–192</a>). Chapter 4, Sections 4 and 5, and Section 3 of this chapter concerned what comes before such an expansion: which of the matters an inquiry meets are taken up and which way it
+goes, and how candidates not yet available become available. On this proposal, when credence is assigned to a new theory, the credence ratios among the candidates that remain under consideration are preserved while the credence in each of them falls. As the work of making candidates available proceeds, then, credence in a formerly leading answer can fall without any evidence against it. An evaluation that counts research as advancing only when credence rises could, in such a case, count the work of forming alternatives as a setback. This is close to the change seen in Chapter 2, Section 8.2, which makes plain what is not known without adding answers.</p>
+<p>Viewing the grounds in this way does not deny what Chapter 2, Section 5.1 noted
+of analogy, pilot results, trials, replication, proof, source comparison, and
+interpretive criticism: they differ in what they bear on, the alternatives they
+discriminate, their defeasibility, and the kind of standing they can provide,
+and calling all of them belief updates would describe one effect while losing
+the reason their effects differ. The second view names a common role; it leaves
+those differences to be stated, and it marks places where a single degree of
+confidence leaves something out. Two bodies of evidence that leave confidence at
+the same level can differ in weight: confidence resting on a few trials can
+shift sharply with the next one, while confidence resting on many is resilient
+(<a href="https://plato.stanford.edu/archives/sum2026/entries/formal-belief/">Genin and Huber 2020,
+§3.2</a>). The
+role that data have already played also matters. In one proposal for
+preregistration in psychology, for example, studies lie on a continuum from
+exploratory to confirmatory, but data that helped to suggest a hypothesis are no
+longer appropriate for testing it (<a href="https://www.ejwagenmakers.com/2012/ConfirmatoryResearchFTW_inpress.pdf">Wagenmakers et al. 2012,
+3–5</a>). Whether, and why, such use
+lessens the support that the data give is disputed. In Barnes's survey of the
+debate over prediction and accommodation, Christopher Hitchcock and Elliott
+Sober locate the concern in the risk of overfitting noisy data, while Mayo argues
+that a hypothesis constructed from the data can still pass a severe test, one it
+would be unlikely to pass if it were false (<a href="https://plato.stanford.edu/archives/sum2026/entries/prediction-accommodation/">Barnes 2022, §§6.4–6.5,
+6.7</a>). Grounds
+also differ in what they make likely. Kepler's vicarious hypothesis, described
+above, kept its standing as a way of computing longitudes while it was rejected
+as a description of the orbit. And the weight an inquirer gives a ground can
+itself change with the ground's record. Fischer, for example, argues that the
+naturalness principle, under which the fine-tuning of the Higgs mass struck many
+physicists as an odd coincidence, gained credibility among particle physicists
+through its potential coherence with the promising theories it had inspired, and
+lost it as the Large Hadron Collider found no sign of the new physics those
+theories had led them to expect; Fischer leaves open whether this mutual support
+focused research on projects worth pursuing or led it astray (<a href="https://doi.org/10.1017/psa.2023.5">Fischer 2023,
+1052, 1055–1058</a>). Viewing grounds on one
+scale without losing these differences therefore involves saying, for each, what
+it makes more likely, by whose standards, and how robust the resulting
+confidence is. However well grounded, the revision of <i>A</i>'s confidence does
+not by itself make a candidate part of <i>S</i>'s knowledge, which depends on the relations examined in Chapter 2 and taken further in Chapter 8.</p>
+<p>Section 3 left open whether entertaining a candidate, treating it as worthy of
+pursuit, accepting it, believing it, and knowing it differ only in degree. The
+two views bear on part of that question. On neither is the worth of pursuing a
+candidate a degree of confidence in it, and on neither does a rise in confidence
+alone make a candidate known, since knowledge has conditions of its own (Chapter
+2). They differ over whether appraisals made before rigorous testing, such as
+finding a hypothesis beautiful, move the graded attitude that rigorous testing
+moves further, or can be read as judgments of what is worth pursuing and so
+differ in kind from rigorous testing. The two views can, however, both hold of the same appraisal. Finding a hypothesis beautiful can be a judgment that it is worth pursuing and also move confidence in it, so the views conflict only where preliminary appraisal is read solely as a judgment of what is worth pursuing or solely as something that moves confidence. What later chapters
+use holds on either view: on the first,
+pursuit is judged by standards of its own; on the second as well, as on Nyrup's
+model, the worth of pursuing a candidate also depends on the value of learning
+the answer and the chance of settling the matter.</p>
+<p>When one sets out to build an artificial research system, this description of a practice does not by itself determine what that system must be given, but it suggests what to consider, and the suggestion depends,
+before the view taken, on for whom the matter is uncertain. As the opening of the
+second view put it, what this section has examined is a practice under
+uncertainty: inquirers who do not know the answer move toward what seems likely.
+That practice arises where the matter is uncertain for <i>A</i>, and what is unknown
+to <i>A</i> and what is unknown to <i>S</i> need not coincide (Chapter 4, Section 7). Where <i>A</i>
+is a machine and the matter, though unsettled for <i>S</i>, holds no uncertainty for
+<i>A</i>, as when it can be answered from what <i>A</i> already holds, <i>A</i> may not
+need this practice at all; what is then at issue is whether <i>S</i> can rely on
+<i>A</i>'s answer, which Chapter 11 examines. Where the matter is unknown to <i>A</i> as
+well, or complex for it, the description bears on <i>A</i> too. Whether a system
+must have an attitude like the confidence human researchers hold in this
+practice in order to reduce uncertainty in substance is not something the
+description settles. Where the practice takes place also depends on where the boundary of the artificial configuration is drawn (Chapter 7, Section 2). If generating
+candidates, preliminary checks, and criticism are divided among the agents of a
+multi-agent configuration, the first view's distinctions can appear as stages
+inside it; if the boundary is drawn around a single output of one model, such
+stages may not be visible at all, and trial and error need not occur in units
+like a human researcher's. Where the matter is uncertain for <i>A</i>, what is
+suggested differs with the view taken. The first view raises the question of how
+a system handles two appraisals by different standards, a prospective judgment
+of promise and a present judgment of support, and an evaluation could ask whether
+it can judge a line worth trying while doubting that it will work, as Reddy
+recalled doing, without coming to believe in the line for that reason. On the
+second view, a common graded appraisal of confidence could inform both
+judgments, without making pursuit-worthiness identical to confidence. If a system
+has such an appraisal for each candidate, one way to avoid the limit noted earlier, that a single degree of confidence leaves out the weight of evidence and the role data have already played, would be to record the grounds of the appraisal, what those grounds make likely
+and by which standards, how robust the appraisal is, which data have already
+been used to suggest the candidate, and how many candidates were tried on them.
+Another would be to keep track of how non-empirical grounds have fared, to
+record for each ground the standard through which it counted, such as the error
+model under which a discrepancy was judged significant, and to revise those
+standards when their record warrants it, which no update within fixed standards
+supplies. Judging what to pursue from that appraisal together with the value and
+cost of finding out also bears on the matter. On either view, a system that
+collapsed pursuit-worthiness into truth-likelihood and pursued only candidates it
+already found likely would forgo candidates that may be worth pursuing for other
+reasons, for example because they can reveal a method or, on a model like
+Nyrup's, because they would be easy to refute, and could thereby eliminate
+productive risk. Conversely, a system that ignored appraisal could spend
+indefinitely on arbitrary novelty.</p>
+<p>Authors writing about systems built to make such judgments locate the risk differently. Chapter 4, Section 7 drew on two of them in asking whether exploration needs to track what <i>S</i> now finds significant; their arguments are looked at here in detail for what they imply about judging what is worth pursuing. Kitano, proposing as a grand challenge an artificial system able to make discoveries worthy of the Nobel Prize, contrasts a value-driven approach, in which scientists try to maximize the probability that what they discover will be significant under certain criteria, with an exploration-driven one, in which a system is to maximize the probability that discovery "at any level of significance" can be made without imposing such criteria. The reason, in Kitano's terms, is the horizon problem: where the landscape of significance is not monotonic, a search tuned to high expected significance may avoid the paths to a significant discovery whose preliminary results are of low expected significance, although, the paper adds, a system's resources still limit how much it can explore. Kitano expects systems whose problems are chosen to reflect the values of their owners or stakeholders to be less likely to make unexpected discoveries, while keeping human recognition as the measure of the challenge's success: among a system's discoveries there should be some "considered very significant at the level worthy of the Nobel Prize or beyond" (<a href="https://doi.org/10.1038/s41540-021-00189-3">Kitano 2021</a>). Khosrowi, in a preprint on systems that predict discoveries and recommend ideas, questions, hypotheses, and experiments, argues that such systems face the gap between what is likely to be pursued and what is worth pursuing. Trained on the record of what was pursued and published, they learn features correlated with being pursued, such as funding, visibility, and the networks among researchers, and to move from predicting that a line will be pursued to recommending it is to fall into what Khosrowi calls a naturalistic fallacy trap; that a line would not be pursued otherwise does not by itself recommend it either, and on Khosrowi's account an independent standard of pursuit-worthiness is needed that the literature on these systems has not yet theorized. The preprint adds that, because such systems, if they work, steer the lines they predict, their predictive success after deployment cannot by itself distinguish anticipating what is worth pursuing from inducing researchers to pursue whatever is predicted, and that whether setting agendas can be left to them depends on what science is taken to aim at: if, as on the view Khosrowi takes from Kitcher, it aims at truths significant by human interests and values that are discovered as inquiry proceeds, humans would remain heavily involved (<a href="https://philsci-archive.pitt.edu/28854/">Khosrowi 2026, §§4.1–4.2, 4.4</a>). Kitano's horizon problem tells against fixing a system's pursuit to present criteria of significance, while Kitano's own measure of success is still human recognition, which may be that of an <i>S</i> that recognizes the results later (Chapter 8, Section 3.2); Khosrowi's argument tells against reading worth of pursuit off the record of past pursuit. Where <i>A</i> is a machine and <i>S</i> a human society, both concern the relation between <i>A</i>'s judgments of what to pursue and what <i>S</i> now counts as significant (Chapter 4, Section 7). For a system that judges pursuit by expected epistemic value on a model like Nyrup's, seen above, the horizon problem does not disappear but moves: it appears in the value of learning whether a candidate is true, since where that value lies in the further discoveries an answer would lead to, it is what Kitano holds extremely difficult, if not impossible, to evaluate (Chapter 10, Section 2).</p>
+<p>What Section 4.2 has argued about appraisal itself is this. Judgments of what is worth
+pursuing and judgments of what is likely to be true can come apart in practice,
+held apart by one investigator or drifting together in a community. Whether preliminary and rigorous
+appraisal are better viewed as different kinds of appraisal or as differing in degree
+within a common role is not settled here, and what this suggests for a research
+system depends on the view taken; on either view, the worth of pursuing a candidate need
+not reduce to its likelihood of being true. Both subsections bear on evaluation. A
+final correct answer, like other output evidence (Section 2.1), does not answer
+whether a system could take up or leave the unresolved matters a task left open (Chapter 4, Section 5), allocate attention among them, develop a candidate, recognize a dead
+end, or reorganize inquiry when early assumptions fail; Chapter 7, Section 4.3
+considers
+where the selection of questions lies when research capacity is attributed to a
+system. The question of Section 4.2 returns in later
+chapters. In Chapter 10, a division of cognitive labor that becomes the internal
+portfolio of a single actor meets the problem of judging what is worth pursuing
+without collapsing pursuit-worthiness into truth-likelihood. In Chapter 11, the
+point at which criticism is applied to candidates still being formed bears on the
+same problem.</p>
+<h3 id="5-heterogeneous-operations-comparable-functions">5. Heterogeneous operations, comparable functions</h3>
+<p>Section 4 argued that forming, pursuing, and appraising a candidate are
+distinguishable functions rather than separate phases. The familiar operations
+of research are similar in this respect, and this section asks at what level
+operations from different fields can be compared. <code>Experiment</code>, <code>observation</code>,
+<code>proof</code>, <code>modeling</code>, <code>interpretation</code>, <code>literature review</code>, <code>construction</code>,
+<code>writing</code>, and <code>conversation</code> name recognizable kinds of work. They do not name
+universal stages through which every project passes, and they do not each have
+one invariant function. The same operation can perform different functions in different inquiries, and
+one function can be realized through different operations across fields.</p>
+<p>Comparing those operations is easier when three levels are kept apart; a finer analysis could add others. At the level of research as a whole, the
+activity is, on this book's working characterization, directed toward bringing
+about, with respect to some target, an epistemic achievement that would be new
+to a society <i>S</i>; <i>S</i> need not itself be the achievement's bearer (Chapter 1,
+Section 2). At a middle, functional level,
+evidence, formal constraint, criticism, construction, or interaction with the world can
+change the standing of a candidate content, representation, method, measurement
+relation, or dependency. At the level of concrete realization, this work is performed
+through such different operations as experiment, proof, calibration, archival criticism,
+interpretation, construction, simulation, and replication. The middle level makes
+comparison possible. It does not establish that every project contains a discrete
+appraisal step or that the local operations license the same inferences.</p>
+<p>A related framework appears in Chang's analysis of scientific practice. It
+treats scientific work as epistemic activities, each a more or less coherent set
+of mental or physical operations intended to contribute to knowledge in a particular way, which are practiced in relation to one another as systems of practice directed toward certain aims (<a href="https://www.repository.cam.ac.uk/handle/1810/263994">Chang 2017b, 4–5</a>); and, as El Mawas summarizes the framework, it
+distinguishes an activity's inherent purpose, the aim that partly defines it, from the
+external function it serves within a system (<a href="https://doi.org/10.1007/s13194-021-00425-x">El Mawas 2021, §§2.1–2.2</a>). The levels used here are cut
+differently. What this chapter calls operations correspond roughly to Chang's
+activities rather than to the mental or physical operations of which, in that analysis,
+activities are composed, and the middle level is
+narrower than those external functions: it picks out only roles that bear on the
+standing of candidates, representations, methods, and dependencies, so that such
+roles can be compared across fields rather than within one system. Nor is the
+top level one of Chang's systems of practice, each with its own aims; it is the
+direction that this book's working characterization assigns to research in
+general.</p>
+<p>An experiment, for example, can serve functions other than testing a hypothesis,
+and need not begin from a sharply specified hypothesis.
+Drawing on Dufay's work on electricity, and naming among further examples
+Ampère's and Faraday's work on electricity and magnetism, Steinle describes
+exploratory experimentation as a way of working in which experimental action and
+the formation of concepts develop together, aimed at empirical regularities and
+the concepts and categories in which they can be stated, and typically found
+where no theory in the narrower sense, or not even a set of concepts in which
+the results can be adequately formulated, is available (<a href="https://pro-physik.de/zeitschriften/download/15383">Steinle 2004,
+50–51</a>). This does not make such experiments
+epistemically unconstrained. On Steinle's account they can be highly systematic,
+guided by aims such as systematically varying as many parameters of the setup as
+possible and determining which conditions are indispensable to an effect and
+which only modify it (<a href="https://pro-physik.de/zeitschriften/download/15383">Steinle 2004,
+50</a>). Their immediate
+objects of appraisal may be a regularity, category, or concept rather than a
+single theoretical proposition. Steinle holds that new concepts and categories
+must prove themselves, above all by allowing stable and as general as possible
+regularities to be formulated for the many experimental results (<a href="https://pro-physik.de/zeitschriften/download/15383">Steinle 2004,
+51</a>).</p>
+<p>Proof is different from experiment, yet it also resists assignment to one box.
+A proof can warrant a theorem, reveal that the theorem was stated incorrectly,
+make a stronger conjecture available, develop a reusable technique, or show why
+a previously successful strategy cannot extend. Mathematicians who use
+computation describe a similar spread for a single operation. Borwein and
+Bailey, for example, as Sørensen reports, list among the roles of computer
+experiments gaining insight, discovering patterns, testing and especially
+falsifying conjectures, judging whether a result is worth a formal proof, and
+confirming derived results; Sørensen, drawing on Steinle, argues that some of
+this work is exploratory experimentation, while noting that its new roles differ
+from those in the natural sciences because the two fields started from different
+views of experiment, and that high-precision numerical agreement is not treated
+as a substitute for proof (<a href="http://www.lib.uni-bonn.de/PhiMSAMP/Data/Book/PhiMSAMP-bk_Soerensen.pdf">Sørensen 2010, 346–348,
+353</a>).
+Interpretation in historical or
+humanistic inquiry can propose a reading, reorganize an archive, reveal a
+silence, discriminate among accounts, or alter the concepts through which a
+text or event is approached. Engineering construction can demonstrate that an
+arrangement is possible, expose constraints absent from a model, create an
+instrument for later inquiry, or generate knowledge of how to build. The functional description here does not
+settle whether an artifact, a proof, an interpretation, or a practical capacity
+is itself knowledge, a vehicle of or evidence for knowledge, or a means of
+producing it.</p>
+<p>What can be compared at the functional level is therefore broader than
+truth-value determination by a standard test. Researchers make candidate
+contents and representations available; bring empirical, formal,
+interpretive, practical, critical, and other constraints to bear on them; assess what
+follows; and seek to alter what the inquirers, and those for whom the results are sought, are
+warranted in treating as possible, adequate, acceptable, true, known, or understood. This
+abstraction does not erase domain differences. A mathematical proof,
+calibration study, archival criticism, intervention, and replication license
+different inferences under different standards. The abstraction identifies a
+family resemblance in epistemic function while leaving the local realization
+visible.</p>
+<p>Domain differences notwithstanding, a cross-domain functional continuity can be
+described on this book's working characterization: when a relevant epistemic
+resolution is not already available to <i>S</i>, inquiry includes changing what the
+inquirers entertain, believe, accept, reject, suspend, or treat as unresolved,
+and, where understanding is the aim, what they grasp and how.
+Where those who are to come to know or understand differ from the inquirers,
+inquiry also bears on their standing, that is, on whether they are taken to accept, know, or understand the result, in whatever form the adopted account of possession, the account of who holds knowledge and how, gives it, from individual members' attitudes to a collective's
+acceptance or organized functioning (Chapter 2, Section 6). Proof, experiment, interpretive criticism, construction, and
+calibration can all constrain such standing. The continuity lies in this
+constraint-bearing role, not in one surface procedure, one inferential force, or
+one type of object being assessed.</p>
+<p>A related claim appears in Dewey's account of reflective thinking: cases of
+reflection, however different, show common elements, five logically distinct
+steps, and no trait of a situation is labelled as evidence in advance, for the
+facts of the case are the traits that are selected and used as evidence in
+reaching a conclusion (<a href="https://www.gutenberg.org/ebooks/37423">Dewey 1910, 72,
+103–104</a>). Those common elements,
+however, are those of a whole act of thought, and in Hildebrand's summary, the
+pattern of inquiry that Dewey later set out ends when inquiry has converted an
+"indeterminate situation" into a "determinate one" (<a href="https://plato.stanford.edu/archives/sum2026/entries/dewey/">Hildebrand 2024,
+§4.3</a>). The continuity proposed here concerns only one role within
+inquiry, that of constraining standing, and is in that sense narrower.
+Hoyningen-Huene makes a comparable claim about the sciences in a very wide sense
+that includes mathematics, the engineering and social sciences, and the
+humanities (<a href="https://doi.org/10.1515/9783110659658-005">Hoyningen-Huene 2020,
+87</a>). The particular ways of
+defending knowledge claims against error differ across them: proof in the
+mathematical sciences, empirical data generated, evaluated, and handled in very
+different ways in the empirical sciences, remnants processed into sources in the
+historical sciences, and statistical and other mathematical testing wherever
+descriptions or theories have been quantified (95). What the sciences have in
+common, on Hoyningen-Huene's account, is an abstract concept of systematicity
+that covers nine concrete concepts connected by family resemblance only, which
+further vary with disciplines and sub-disciplines, so that the unity of the
+sciences is an extremely weak one (90–91). This view is close to the continuity proposed here in placing the
+diversity at the level of procedures and the commonality at a more abstract
+level, though what Hoyningen-Huene compares is bodies of knowledge, such as science and
+everyday knowledge, rather than operations.</p>
+<p>If the continuity lies in a role rather than in procedures, that procedures
+differ from domain to domain does not refute the functional comparison. The
+comparison becomes empty, however, if it suppresses what each operation can
+actually establish. Parker, for example, argues, as Winsberg and Alvarado
+report, that the material element of a computer simulation, the concrete
+computing device, puts simulation epistemologically on a par with conventional
+experiment, and that in both experiment and simulation what matters is whether
+there are relevant similarities between the system studied and its target
+(<a href="https://plato.stanford.edu/archives/sum2026/entries/simulations-science/">Winsberg and Alvarado 2026, §§1.1,
+2.1</a>).
+In a later account of model evaluation, the adequacy-for-purpose account noted
+in Chapter 3, Section 3.4, Parker holds that what a model must be like depends
+on the purpose for which it is used, together with its user, the methodology,
+and the circumstances of use, and that the features that make one model adequate
+for a purpose can be very different from those that make another adequate for
+the same purpose. To learn whether a new drug will relieve given symptoms better
+than an alternative, one scientist may use an animal model and another a
+computational model of the drug's molecular chemistry; both may be adequate, the
+first in virtue of biological traits of the animals and the second in virtue of
+quite different features. Conversely, a climate model whose ocean represents no
+internal dynamics can be known not to be adequate for learning how ocean
+dynamics will change as greenhouse gas concentrations rise (<a href="https://doi.org/10.1086/708691">Parker 2020,
+464–468</a>). On these accounts, the label
+<code>experiment</code> or <code>simulation</code> does not by itself fix what a study can establish;
+that depends on which similarities there is reason to think obtain for the
+question asked.</p>
+<p>The operation/function distinction also changes how sequences are described.
+A literature review may identify what is new to <i>S</i>, supply a method, expose a
+conflict, or generate a question. Writing may communicate a settled result, but
+it may also reorganize evidence and reveal that the argument does not work.
+Conversation can distribute calculation, critique an interpretation, preserve a
+problem, or redirect a project. Instrument building may support later inquiry or
+be the site where the central epistemic problem is resolved. Each visible operation can therefore serve more than one such function. First-person accounts by historians describe, for example, the use of
+indexed note systems to reorganize evidence and writing that changed the central
+actors and argument of a project (<a href="https://www.historians.org/perspectives-article/on-taking-notes-january-2009/">Walkowitz 2009</a>;
+<a href="https://www.historians.org/perspectives-article/finding-the-story-january-2009/">Harkness 2009</a>).
+These retrospective accounts do not establish a general model of humanistic
+inquiry. They do show, in these cases, note-taking and writing doing more than presenting a result already reached.</p>
+<p>Compared across fields at a high level of abstraction, operations can make
+questions and candidates available, transform them, bring constraints to bear,
+or support their communication and retention. Not every contribution performs
+all of those functions, and none is sufficient by itself to make an activity
+research. The point is functional continuity across heterogeneous practices,
+not one universal procedure. The next chapter takes up the narrower question of how
+operations such as proof, testing, validation, calibration, replication, and
+criticism acquire evidential force (Chapter 6, Section 3).</p>
+<p>For an artificial research system, this suggests asking not whether the system
+performs operations bearing names such as <code>experiment</code> or <code>writing</code>, but which
+functions each of its operations served in an inquiry: whether its writing, for
+instance, only presented a result or exposed a gap in the argument, and whether
+its literature search identified what is new to <i>S</i> or only summarized what was
+found. Which function an operation served is a question about how the work proceeded, which output evidence alone does not answer (Section 2.1). Parker's account bears here as well. A system that only runs simulations
+can still establish something about a target if there is reason to think the
+relevant similarities obtain, while calling a run an <code>experiment</code> establishes
+nothing by itself.</p>
+<h3 id="6-material-embodied-temporal-and-distributed-inquiry">6. Material, embodied, temporal, and distributed inquiry</h3>
+<p>The picture in Section 1.1 listed, among the dimensions an inquiry can change,
+instruments and materials, practical capacities such as skills, actors, records,
+and social arrangements. This section takes these up. They are what studies of
+scientific practice and the debates over embodied, extended, and distributed
+cognition have examined in detail: research is carried out with materials and instruments, by
+trained bodies, over time through records, and by several participants
+together. The four terms of the section's title name these four respects.</p>
+<p>An inquiry configuration is not a homogeneous collection of interchangeable
+items. By its elements this section means the things, people, and arrangements
+that take part in an inquiry, such as instruments, samples, organisms, code,
+notebooks, diagrams, archives, trained bodies, collaborators, and institutions.
+One element may matter because it helps make a candidate representable;
+another because it enables an intervention; another because it constrains what
+can be observed; and another because it preserves a skill, standard, or decision across participants and time. The same element can also matter differently in
+different episodes: a diagram can be a private memory aid in one episode, a space
+for inference in another, and a public justification in a third, and a material
+object can constrain action causally without itself representing anything.
+Explaining an inquiry therefore involves asking how each relevant element
+participates, not merely adding every nearby object to one bundle. Section 6.1
+takes up the traditions grouped under the practice turn and two distinctions,
+taken from related debates, that help retain a lesson drawn from them; Section 6.2 asks in what sense inquiry is
+distributed; Section 6.3 turns to records, Section 6.4 to embodiment, and Section 6.5 asks how these roles change when the inquirer is not human. The four
+terms of the section's title do not correspond one to one to these subsections:
+material elements figure throughout, distribution, including its collective
+forms, is the topic of Section 6.2, the temporal dimension enters chiefly with
+records in Section 6.3, and embodiment is the topic of Section 6.4.</p>
+<h4 id="6-1-practice-participants-and-roles">6.1 Practice, participants, and roles</h4>
+<p>This subsection prepares what the rest of the section uses to discuss elements:
+a lesson drawn from studies of practice, two distinctions for asking what an
+element contributes, and the observation that participants, unlike instruments,
+can withhold a role. Sections 6.2 to 6.4 apply them to distribution, records,
+and embodiment, and Chapter 7, Section 4.2 applies the first distinction to
+artificial actors.</p>
+<p>Besides explicit propositions, the elements listed at the start of this section, and time, can be needed to explain what became possible in an inquiry and what happened next. The
+philosophy of experiment has studied several of these elements in detail: for
+example, the strategies by which experimenters argue that an instrument is
+working rather than producing an artifact, experimental traditions in which skill
+with particular kinds of detector shapes which arguments are found convincing,
+and the many purposes model organisms serve, only some of them representational
+(<a href="https://plato.stanford.edu/archives/sum2026/entries/physics-experiment/">Franklin and Perović 2023,
+§§2.1.2–2.1.3</a>;
+<a href="https://plato.stanford.edu/archives/sum2026/entries/biology-experiment/">Weber 2018, §3.1</a>).</p>
+<p>The heterogeneous traditions grouped under the practice turn make different
+claims. Hacking foregrounds intervention, arguing that experimentation has a
+life of its own and that some experimental work precedes any relevant theory,
+while denying that experimental work could exist independently of theory, and
+grounds realism about entities in the ability to manipulate them to investigate
+other aspects of nature rather than in testing hypotheses about them (<a href="https://doi.org/10.1017/CBO9780511814563">Hacking
+1983, 150, 158–160, 262–263, 274</a>).
+Pickering, as Allan Franklin and Slobodan Perović present his account,
+describes practice as a dance of human and material agency that, seen
+from the human side, takes the form of what Pickering calls a dialectic of resistance
+and accommodation, in which a failure to capture an intended performance in a
+machine can be met by revising goals, the machine's material form, or the
+gestures and social relations around it (<a href="https://plato.stanford.edu/archives/sum2026/entries/physics-experiment/">Franklin and Perović 2023,
+§2.2.4</a>). Other work has
+brought elements into the explanation of inquiry in its own ways. Rheinberger
+studies experimental systems, material arrangements in which epistemic things emerge (Section 3) (<a href="https://periodicos.sbu.unicamp.br/ojs/index.php/manuscrito/article/view/8642022">Rheinberger 2011, 310–312</a>);
+Latour analyzes inscription, by which a laboratory turns material such as rats
+and chemicals into paper, and the cascade of ever simpler inscriptions through
+which harder facts are produced (the second distinction below) (<a href="https://www.bruno-latour.fr/sites/default/files/21-DRAWING-THINGS-TOGETHER-GB.pdf">Latour 1986,
+3–4,
+16</a>);
+Knorr Cetina compares the epistemic cultures of experimental high-energy physics
+and molecular biology, the "machineries" through which each produces knowledge
+(<a href="https://kops.uni-konstanz.de/handle/123456789/11523">Knorr Cetina 1993, 258–259</a>); Nersessian
+studies model-based reasoning with simulation devices in laboratories (Section
+6.2) (<a href="https://sites.cc.gatech.edu/aimosaic/faculty/nersessian/papers/how-do-engineering-scientists-think.pdf">Nersessian 2009</a>); and
+Giere, as Matthew J. Brown presents his position, develops distributed cognition while denying that the whole distributed system must thereby be a knowing subject (<a href="https://social-epistemology.com/2015/06/22/a-critical-appreciation-of-ronald-n-gieres-distributed-cognition-without-distributed-knowing-matthew-j-brown/">M. J. Brown 2015</a>).</p>
+<p>These positions disagree about realism, agency, cognition, normativity, and the
+social production of knowledge. The actor-network approach developed by
+Callon, Latour, and Law, as Latour presents it, does not limit actors to human
+individuals but extends the word actor to nonhuman, non-individual entities,
+including the natural entities of science and the material entities of
+technology, and is symmetrical with respect to the two: granting an actor
+humanity and granting it materiality call for the same work of attributing
+action (<a href="https://www.bruno-latour.fr/sites/default/files/P-67%20ACTOR-NETWORK.pdf">Latour 1996, 2,
+8–9</a>).
+Latour defines an actor in this sense semiotically, as an actant: something that
+acts or to which activity is granted by others, with no implication of human
+motivation (<a href="https://www.bruno-latour.fr/sites/default/files/P-67%20ACTOR-NETWORK.pdf">Latour 1996,
+7</a>).
+From these otherwise divergent traditions this chapter takes one lesson: tools, materials, skills, records, and collaborators, among others, can each take part, in different ways, in what explains an inquiry.</p>
+<p>Two distinctions help keep that lesson without silently adopting one of these
+theories. The first is drawn from the dispute over extended cognition, the second
+from laboratory studies and from work on what counts as scientific data. Both
+serve only to ask, case by case, what an element contributes to an inquiry; they
+do not decide whether an element is an agent or where cognition and agency are
+located. To say that an element plays a causal, enabling, or constitutive role,
+for instance, is not to say whether it is an agent, and the distinctions do
+not settle whether human and material agency are symmetrical.</p>
+<p>The first concerns how an element, such as an instrument, a notebook, or a
+collaborator, is related to an operation or achievement, and it separates three
+relations. One is causal contribution: an element can be one of the causes that
+affect what happens, as a fluctuation in laboratory temperature can shift a
+measured value. Another is an enabling role: an element can be a precondition
+for an operation to take place, as a collision experiment cannot be run without
+an accelerator, though, if the operation is taken to be recording and analyzing collisions with a detector, the accelerator is not part of that operation. The
+third is a constitutive role: on an account that allows it, an element can be
+part of the task or achievement itself, as, on Clark and Chalmers's account
+below, a notebook can hold part of its user's beliefs. The dispute over extended
+cognition has turned on whether an element contributes causally or is
+constitutive. The enabling role is one this book adds between the two, to mark a
+relation that bears on an operation more strongly than being one cause among
+others, without being part of the operation. Clark and Chalmers argued that
+when a person and an external resource form a coupled system whose components
+jointly govern behavior in the way cognition usually does, the coupled process
+counts as cognitive whether or not it is wholly in the head, and that a notebook
+can in this way hold part of its user's beliefs (<a href="https://consc.net/papers/extended.html">Clark and Chalmers 1998, §§2–4</a>). Their critics reply that such
+arguments show at most that cognition is causally coupled to its environment,
+not that the environment partly constitutes it (<a href="https://plato.stanford.edu/archives/sum2026/entries/content-externalism/">Rowlands, Lau, and Deutsch
+2020,
+§§5.2, 5.4</a>;
+<a href="https://plato.stanford.edu/archives/sum2026/entries/embodied-cognition/">Shapiro and Spaulding 2021,
+§5</a>).
+Whether or not one admits constitutive roles, causal contribution and the
+enabling role already allow some things to be said. An instrument can causally
+constrain an experiment without believing anything. A notebook, on the view
+taken here, can extend what a group reliably remembers without its entries
+becoming anyone's beliefs, since records in research can be kept to be
+reexamined rather than endorsed, so that no one need endorse what they record;
+the public chemistry notebook described in Section 6.3 is an example. On Clark
+and Chalmers's own criteria, automatic endorsement on retrieval is one condition
+for an external resource to carry beliefs (<a href="https://consc.net/papers/extended.html">Clark and Chalmers 1998,
+§5</a>), and records kept for reexamination do not meet it. A
+collaboration can distribute a task without constituting one group mind. In
+these cases, the enabling role suffices to describe what notebooks and collaborations contribute; whether they also partly constitute some operation is a separate question. Which role the same element plays is, moreover, relative to which operation or achievement is being explained. An accelerator that is a precondition for the operation of recording and analyzing collisions can, when the performance of the collision experiment as a whole is explained, have its running counted as part of that performance. The name of an element therefore does not settle whether it enables or constitutes.
+Chapter 7, Section 4.2 uses the difference between an enabling and a constitutive role when
+it asks whether an external dependence continues to supply part of the
+organization attributed to an artificial actor.</p>
+<p>The second distinction concerns whether an element only carries something or
+also shapes what can be carried. An element can preserve and move content, information, or skill across participants, places, and times; Hutchins, discussed in
+Section 6.2, treats the computation of a navigation team as the propagation of
+representational state across media. Yet an apparatus or record treated as a
+passive channel may determine what can appear as evidence (Section 6.3 gives a
+case of a record). Latour, for example, describes laboratory instruments whose
+end result, whatever their size and field, is a small window through which a few
+signs can be read, inscriptions that could be integrated as figures in the
+articles being written, and holds that phenomena invisible to the naked eye are
+seen only through inscription devices (<a href="https://www.bruno-latour.fr/sites/default/files/21-DRAWING-THINGS-TOGETHER-GB.pdf">Latour 1986, 4,
+17</a>). Leonelli's account bears on how an
+element shapes what can be carried as evidence: on Leonelli's relational account, "data" is a category applied to
+research outputs that are taken, at specific moments of inquiry, to provide
+evidence for knowledge claims (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4747116/">Leonelli 2015,
+abstract</a>). Being data is thus not intrinsic to a
+research output, which fits what Section 4.2 said: data are not grounds simply
+because they are data.</p>
+<p>On either distinction, which role an element plays is a claim to be supported
+case by case, not something settled by its being near an inquiry. Nor do they cover every contribution an element can make: it can also help make a
+candidate representable, bear on a candidate as evidence, or set standards,
+permissions, and responsibilities. Section 3 and Chapter 6 take up the first two of these functions; Chapter 11 takes up standards and the weighting of errors in
+certification (Sections 4 and 8), and Chapter 12 takes up permissions and
+responsibilities, including, in Section 6.4, how such elements distribute
+effective authority.</p>
+<p>Roles can also be withheld. A participant whose operation an inquiry needs can
+decline to perform it for reasons of its own. Kwolek, for example, later
+recalled that the man in charge of the laboratory's spinning equipment at DuPont at first refused
+to spin Kwolek's cloudy polymer solution because it would plug the spinneret, and
+agreed only after continued insistence (<a href="https://digital.sciencehistory.org/works/vh53ww75r">Kwolek 1998,
+6–7</a>). Unlike an instrument,
+a participant can take up or decline a role for reasons of its own, so describing
+an inquiry configuration includes the possibility that who takes on what depends
+on the participants' own judgment.</p>
+<h4 id="6-2-distribution-and-the-study-of-laboratories">6.2 Distribution and the study of laboratories</h4>
+<p>Research is usually carried out by several participants together with
+instruments and records, the actors and social arrangements of the picture in Section 1.1. That raises the question whether the inquiry itself, and not only its
+tasks, is thereby distributed, a question that the literature on distributed
+cognition, developed by Hutchins in studying ship navigation and applied to science by Giere and Nersessian, has taken up (<a href="https://social-epistemology.com/2015/06/22/a-critical-appreciation-of-ronald-n-gieres-distributed-cognition-without-distributed-knowing-matthew-j-brown/">M. J. Brown 2015</a>; <a href="https://sites.cc.gatech.edu/aimosaic/faculty/nersessian/papers/how-do-engineering-scientists-think.pdf">Nersessian
+2009</a>). It matters here because an artificial <i>A</i> raises it again in
+several forms. Whether <i>A</i> is an individual or a configuration of many agents
+depends on where the boundary is drawn (Chapter 7, Section 2): the same system
+can be described as one actor that is internally composed of many agents. <i>A</i>
+can also be coupled with instruments so closely that the two form one system,
+and it can take inside itself functions that
+human research distributes across a community, such as allocating effort among
+lines of inquiry (Chapter 10) or criticizing results (Chapter 11, Section 9).
+Section 6.5 returns to what changes. This subsection asks in what sense inquiry is distributed, and the answer has two
+parts. In the sense that tasks and work are divided among participants,
+apparatus, records, and time, much inquiry is distributed, and laboratory
+studies have described this in detail. Whether cognition or knowledge itself is
+distributed is not settled by such descriptions and needs a further theory. The
+paragraphs below first draw this distinction and then ask what laboratory
+studies show on each side of it.</p>
+<p>The word <code>distributed</code> is thin unless a stronger theory is specified. Tasks, information, skill, causal contribution, and decision
+authority can be divided among participants without the resulting arrangement
+constituting one cognitive or epistemic subject. Whether cognition, agency,
+belief, or knowledge is itself distributed requires a further account; task
+distribution alone does not decide it. Hutchins's study of ship navigation,
+noted in Section 1, offers one such stronger account for cognition. Taking a
+navigation team with its charts and instruments as the unit of analysis, the study
+treats computation as the propagation of representational state across media
+inside and outside the participants' heads, argues that the team's cognitive
+properties differ from those of any of its members, and describes one reorganization of the team's work as discovered by the organization before any participant discovered it: after the ship lost power and its gyrocompass failed, the plotter and the bearing recorder, each adapting locally to the work at hand, settled over successive fixes into a division of labor in which, as a team, they added the terms of the bearing correction in an order that let a shared partial sum be computed once and reused for each bearing, a solution that no participant had fully represented (<a href="https://doi.org/10.7551/mitpress/1881.001.0001">Hutchins 1995, 117–118, 226, 317–318, 345, 351</a>). Whether such a system
+also believes or knows requires the further account just mentioned.</p>
+<p>A second main source of evidence about distribution is laboratory studies,
+which describe facts as produced through work divided among members, apparatus,
+and records. Among the practice-turn studies listed above, Latour and Woolgar's
+<em>Laboratory Life</em> provides close descriptions of inscription devices, statement modalities,
+credibility, and the work through which claims become stable in one
+neuroendocrinology laboratory. The material behind the descriptions is of two
+different kinds, which matters when the descriptions are used as evidence: about two years of participant observation in the laboratory, where
+discussions could not be tape-recorded and were reported from the observer's
+notes, and a reconstruction of how the structure of one releasing hormone came
+to be accepted, drawn from the published literature, fifteen interviews, and the
+archives of the two groups that worked on it. The authors say that the
+reconstruction seeks neither a precise chronology nor what "really happened,"
+and that, on the chronology the two groups disputed, it follows one group's
+accounts more closely (<a href="https://doi.org/10.1515/9781400820412">Latour and Woolgar 1986, 39, 105–107, 149 n. 5,
+153–154</a>).</p>
+<p>Those descriptions show fact production as work divided among members and
+apparatus, and so make it difficult to narrate it as a direct passage from
+individual observation to belief; in the terms of this subsection's opening,
+they show a distribution of tasks and work. They do not by themselves
+establish the authors' stronger theses, that facts and artifacts do not
+correspond to true and false statements and that reality is a consequence of the
+settlement of a controversy rather than its cause (<a href="https://doi.org/10.1515/9781400820412">Latour and Woolgar 1986,
+176, 180–182</a>). Nor do they show that all
+laboratories share one organization. The authors themselves caution against
+generalizing from this laboratory, and after a brief follow-up they judged its
+combination of group, space, equipment, and problems very unusual and perhaps
+unrepeatable (<a href="https://doi.org/10.1515/9781400820412">Latour and Woolgar 1986, 56–58, 233 n.
+21</a>).</p>
+<p>How such descriptions should be interpreted is itself disputed. Latour and
+Woolgar treat a researcher's account of having had an idea as a condensed
+summary of material and collective circumstances and, in the postscript to the
+second edition, propose a ten-year moratorium on cognitive explanations of
+science (<a href="https://doi.org/10.1515/9781400820412">Latour and Woolgar 1986, 170–171, 174,
+280</a>); Hutchins's account and the program
+described next, by contrast, explain distributed work in cognitive terms. In the
+same postscript the authors grant that evidence of the kind they offer is
+unlikely to change positions that rest on deep-seated ontological commitments,
+and they take another author's opposite reading of their descriptions, after Popper's picture of science as conjecture and refutation,
+to show that their resources are insufficient to force their own interpretation
+(<a href="https://doi.org/10.1515/9781400820412">Latour and Woolgar 1986, 280–281</a>). The
+people described also responded: members of the laboratory objected during the
+fieldwork to being portrayed as participants in a literary activity, and after
+publication, the authors report, their main reaction was that the book was
+"rather unsurprising" (<a href="https://doi.org/10.1515/9781400820412">Latour and Woolgar 1986, 53,
+274</a>). Observation, reconstruction, and
+ontology are accordingly separate matters to assess.</p>
+<p>Nersessian's five-year cognitive-ethnographic program in biomedical-engineering
+laboratories bears on distribution in a further sense: across time and across a
+co-developing material system, not only among members. In the focal projects,
+problem specification, simulation devices, apparatus, methods, participants,
+and inference co-developed over years. Researchers negotiated trade-offs
+between experimental control and physiological realism, for example giving up
+some control and precision to exemplify features of human physiology
+(<a href="https://sites.cc.gatech.edu/aimosaic/faculty/nersessian/papers/how-do-engineering-scientists-think.pdf">Nersessian 2009, 752–753</a>).
+The article interprets these findings through model-based reasoning and
+distributed cognition; that interpretation is the article's, not raw
+observation. The
+bounded lesson is that, in these cases, the evolving material system was part of
+the explanation of how the epistemic problem could be specified and pursued.</p>
+<p>Laboratory studies thus show richly that inquiry in the laboratories and teams they studied is distributed in the thin sense: work divided among members, apparatus, and records, and developing with
+a material system over time. On the strong sense they do not decide, since the
+same kinds of description are read in cognitive terms by Hutchins and Nersessian
+and against cognitive explanation by Latour and Woolgar. Distribution can therefore be described case by case, element by element, with the distinctions of Section 6.1, and where cognition and knowledge are located remains a separate question (Chapter 2, Section 6; Chapters 7 and 8).</p>
+<h4 id="6-3-records">6.3 Records</h4>
+<p>An inquiry rarely ends in one sitting; it continues across days and changes of
+participants. That is why the picture in Section 1.1 counted records among the
+dimensions of an inquiry, and it is chiefly here that the "temporal" of this
+section's title enters. This subsection asks what records contribute to an inquiry besides storing results already obtained, and looks at three things they do. One is to
+carry unresolved matters and failures forward so that the inquiry can be
+continued. Another is that their form shapes what counts as one trial and what
+is compared with what (the second distinction of Section 6.1). The third is that
+what is kept depends on who is expected to use it and for what, and a record can
+serve uses that no one planned.</p>
+<p>Take the first. Notes optimized as cues for their
+maker may be unusable to later collaborators; records made for disciplinary
+reuse require different labor. Public laboratory notebooks and issue histories
+can preserve failed experiments, reinterpretations, corrections, logistical
+constraints, and decisions that a finished paper compresses. In one public
+chemistry notebook, for example, an undergraduate recorded a failed distillation
+and a conclusion, and two days later the undergraduate's supervisor reinterpreted the results,
+changed the conclusion, and added questions that the student answered about a
+year later; the supervisor afterward wrote that such an experiment is never
+really completed
+(<a href="https://www.science20.com/chemistry_wide_open/how_should_open_notebook_science_be_used">Bradley 2008</a>). Yet more logging is
+not automatically more knowledge. For a record to support later continuation, audit, reproduction, or criticism, it needs to be interpretable relative to those
+uses, connected to relevant provenance, and governed so that corrections or
+withdrawals can propagate where they matter.</p>
+<p>The second is that a record can shape what counts as one trial and what is compared with what, and in that respect it does more than carry results (the second distinction of Section 6.1). A notebook of storage-battery tests from Thomas Edison's laboratory, dated by the editors of its digital edition to about 1900, is an example. According to the editors' note on the group of notebooks to which it belongs, the tests in these books are numbered from 1 through 1777, and by the second book Edison had established a standard format recording the time, current, voltage, and capacity of each cell during charge and discharge (<a href="https://edisondigital.rutgers.edu/notebooks/document/NA168-N">Thomas A. Edison Papers 1900, editorial note</a>). In the seven consecutive scans examined here, each of tests 146 to 152 opens with the weights of its electrode grid empty and filled and the composition of its active mass, followed by columns of readings. Test 150 is entered as "Same as 149," followed by a different proportion of nickel oxide and a note that its grid was plated inside, and test 152 as "Same as 151 Except pkd water moist"; the note to test 149 begins "As no 1/16 grid has worked" and appears to say that the test was meant to show whether the fault lay in the grid or in the nickel oxide (<a href="https://edisondigital.rutgers.edu/notebooks/document/NA168-N">Thomas A. Edison Papers 1900, canvases 36–39</a>). An entry of this form names an earlier test as its baseline and records only the difference, so that the numbered sequence itself lays out the comparisons. The numbering also fixes what counts as one test. Under the single number 152, the readings run over both pages of an opening and through several runs on different days, and notes of a new grid and new iron appear partway through without a new number, whereas the change in how the mass was packed, which separates 152 from 151, received one (<a href="https://edisondigital.rutgers.edu/notebooks/document/NA168-N">Thomas A. Edison Papers 1900, canvas 39</a>).</p>
+<p>A count of experiments in such a record depends on how the record divides them, as a count of experiments in the log of an automated system depends on the units of that log, and a comparison may be available to later readers only because a record was kept in a form like this one. The tests can also be read as routine testing of a product rather than as research, and nothing here decides whether they were research in the sense of this book's working characterization (Chapter 1); the example concerns only what the form of a record makes countable and comparable. The pages were chosen to illustrate this point and are not offered as typical of the notebook or of its series.</p>
+<p>Third, what is worth recording depends partly on which future actors and uses the record is expected to support. A project's record of what it has already tried serves its own later members, and keeping that record can depend on attention from others. In the publicly logged language-model project mentioned in Section 1, for example, one negative result was recorded in the project's issue only when another participant asked whether the idea had been tried, and in another case a participant's suggestion that an experiment had already been done was corrected by the person assigned to it, who replied that its input data had never been fully extracted (<a href="https://github.com/marin-community/marin/issues/1283">Marin Community 2025</a>; <a href="https://github.com/marin-community/marin/issues/660">Marin Community 2024</a>).</p>
+<p>Records can also serve uses that no one planned. Coincidences between the OPERA and LVD detectors, for example, had been searched for in a cosmic-ray analysis that found none of the events it sought; after the OPERA collaboration had found a fault in its timing system, the same muon records were used to date when the fault began (<a href="https://arxiv.org/abs/1206.2488">LVD and OPERA Collaborations 2012</a>). A record can instead be kept for questions not yet formulated: the long-term evolution experiment with <em>Escherichia coli</em> froze samples every 500 generations as a "fossil record," and this later allowed the origin of an unforeseen trait to be investigated by replaying evolution from earlier generations (<a href="https://doi.org/10.1073/pnas.0803151105">Blount, Borland, and Lenski 2008</a>).</p>
+<p>Records thus carry an inquiry across time and participants, shape what can be
+compared, and keep it open to later uses. These functions bear on questions
+examined elsewhere in the book: whether a result is retained in <i>S</i> (Chapter 2,
+Section 6), how far corrections and withdrawals propagate (Chapter 11, Section
+8), and who the users of records become when the inquirer is a machine (Section
+6.5).</p>
+<h4 id="6-4-embodiment">6.4 Embodiment</h4>
+<p>Research is carried out by trained bodies, which is why the picture in Section 1.1 counted practical capacities such as skills among the dimensions of an inquiry.
+This subsection asks what the body contributes to an inquiry and
+looks at three levels. One is that skilled perception and action make
+differences salient, stabilize instruments, and guide manipulation. Another is
+that states such as fatigue, haste, confidence, and aesthetic attraction alter
+attention, persistence, and stopping, and can themselves be treated as something
+a result depends on. The third is that bodily and other lived experience can
+bear on which unresolved matters are taken up at all. Much of the evidence here
+is recalled self-report, and its limits are noted along the way.</p>
+<p>For the first two levels, retrospective scientist interviews supply possible mechanisms, but not frequency estimates. Nor do they by themselves establish a psychology of two modes holding for all research, such as the distinction that gives the podcast below its name: following François Jacob, Yanai and Lercher distinguish day science, the structured testing of hypotheses, from night science, the exploration of possible hypotheses not yet fully formed, and suggest that the distinction may be general to all enterprises that require creativity (<a href="https://doi.org/10.1186/s13059-019-1800-6">Yanai and Lercher 2019</a>). The episodes of the <em>Night Science</em> podcast, for example, are mostly such
+interviews (<a href="https://nightscience.buzzsprout.com/1744020/episodes">Yanai and Lercher n.d.</a>). In a conversation with the hosts of
+another science podcast, the hosts of <em>Night Science</em> described choosing guests
+whom they judged creative, steering the conversation during recording, and
+editing out dead ends (<a href="https://nightscience.buzzsprout.com/1744020/episodes/12619555-32-marty-martin-and-art-woods-on-science-podcasting">Yanai and Lercher 2023</a>). What the published
+episodes contain thus reflects the hosts' choices as well as the guests'
+recollections. The guests' reports of emotion and of how suddenly ideas arrived rest on recalled introspection rather than on recollection of what was seen and done, and some guests adopt the hosts' framing of the process while others reject it.</p>
+<p>Other retrospective accounts describe similar mechanisms, for example the recollections of Bell Burnell and Keeling seen in Chapter 4, Section 5. Bell Burnell decided to analyze the telescope's chart records by eye and, with continued reading, became able to tell scintillating sources from interference (<a href="https://bigear.org/CSMO/HTML/CS01/cs01p16.htm">Bell Burnell 1977</a>); Keeling, who under the rush of the work had put off testing a possible bias in the calibration gases, also recalled that years later a visiting colleague glanced at the pen traces of three analyzers and saw that one disagreed with the others (<a href="https://web.archive.org/web/20260425085457/https://scrippsco2.ucsd.edu/assets/publications/keeling_autobiography.pdf">Keeling 1998, 46, 50</a>). Bell Burnell's recollection bears on the first level, skilled perception bringing out differences; Keeling's bears both on the second, haste deferring a check, and on the first, a practiced eye catching a discrepancy at a glance.</p>
+<p>Contemporaneous records can show such a mechanism, and a response to it, as they were noted rather than as they were recalled. In Linus Pauling's research notebook, for example, a page of electron-diffraction measurements on chlorine headed 2 May 1934 ends with the remark that there is "a large psychological error" in reading the inner maxima and minima: on 2 May the writer had noticed making "an effort to read the rings small," and on 3 May had made an effort "to read them large (or right, I thought)," knowing the high Cl-Cl values from the previous day. The remark adds that this does not affect the diameters from the second maximum out and averages only those; the next page, dated 3 May, records that the same films were "remeasured, using mask (having been bothered before by extra light)" and notes, below the results, a value that Badger had recalculated from band-spectral data (<a href="https://scarc.library.oregonstate.edu/coll/pauling/rnb/09/rnb09.html">Pauling 1932–1941, 082–083</a>). The page was chosen for this example. It can be read as showing a skilled reading treated, in the course of the work, as one of the things a result depended on, and a decision about which readings to rely on made in response; it shows nothing about how often such effects were noticed or recorded.</p>
+<p>Third, bodily and other lived experience can also bear on which unresolved matters are
+taken up at all, without thereby bearing on what is warranted about them
+(Section 4).
+Bo Xia's recollection seen in Chapter 4, Section 5 was given in an episode of <em>Night Science</em>. The episode was recorded on the day the paper reporting the study by Bo Xia and coauthors appeared, with Bo Xia's former doctoral adviser, a coauthor of the paper, as one of the hosts. According to Bo Xia, a car accident had caused a tailbone injury, and for about a year the pain, returning whenever Bo Xia sat down,
+kept bringing attention back to the fact that humans have no tail;
+curiosity about the injury prompted reading about how tails develop and how some
+animals lose them, reading that eventually led to the coauthored study of tail loss
+(<a href="https://nightscience.buzzsprout.com/1744020/episodes/14595822-54-bo-xia-and-a-tale-of-tails">Yanai and Lercher
+2024</a>;
+<a href="https://doi.org/10.1038/s41586-024-07095-8">Xia et al. 2024</a>). Like the other
+reports drawn on here, this is a recalled self-report given in a conversation
+that the hosts shaped. It shows neither how often such experience matters nor
+that the injury created the question. It shows one way in which an inquirer's
+own body can draw attention back to a matter before a research question about it
+has been formulated. When <i>A</i> is an artificial system and <i>S</i> a human society,
+Chapter 4, Section 7 noted that even the shared sources of such attention cannot be presupposed. The case concerns a personal and contingent experience. It
+is not an example of what standpoint theory analyzes, the dependence of which
+questions arise on socially structured positions, which Chapter 10, Section 6
+takes up.</p>
+<p>The deeper question of whether human evidential practices depend on primitive bodily
+expectations formed through long interaction with nature—and what could play
+that role in an artificial system—is taken up in Chapter 8, Section 2: Section
+2.1 treats such expectations among the presuppositions of checking, Section 2.2
+asks what a history of interaction can and cannot supply, and Section 2.3
+considers artificial routes to world-answerability, the continuing openness of an inquirer's commitments to correction from the world. Here the narrower point is that an explanation of a concrete inquiry can include bodily capacities among what it explains. What plays each of these roles when the inquirer is a machine
+is taken up in Section 6.5.</p>
+<h4 id="6-5-when-the-inquirer-is-not-human">6.5 When the inquirer is not human</h4>
+<p>The cases in Sections 6.1 to 6.4 are all drawn from human research, in which
+some features of the inquirer formed an unmoving background: a small working
+memory, skills acquired over many years, one body for each person, fatigue and
+affect shaping attention, researchers who cannot be copied, and finding out what
+has already been tried by asking one another, among others. When a machine inquires, some of them move, and the question is what then changes and what does not. What research depended on can be sorted into four kinds: premises about human realizers (a small working memory, for example), premises about the present organization of science (an organization formed in history that could be rearranged even with human realizers), conditions of inquiry (what remains whatever realizes the inquiry), and relations to parties outside the artificial configuration (including <i>S</i> when <i>S</i> is outside it). The four are told apart by how they fare when a machine inquires: the first fails when the realizer changes, the second when the organization changes, whether or not the realizer does, the third with neither, and whether the fourth holds depends on the outside parties. One element can fall under more than one kind, and the four do not cover everything a new realization brings with it. Chapter 9, Section 6 sets the sorting out in full and applies it to the relations surrounding research; this section applies it in advance to the roles of the elements discussed here. Cherniak's distinction is a guide. It
+separated limits that any finite agent faces from features peculiar to human
+memory, the former being unavoidable even for a creature with the resources of
+the entire galaxy and all the time until the heat death of the universe
+(<a href="https://terpconnect.umd.edu/~cherniak/Mind_81.pdf">Cherniak 1981, 165</a>), and Cherniak stated conclusions conditionally
+on a feature, such as being a creature that "has a similarly duplex memory,"
+rather than on being human (<a href="https://terpconnect.umd.edu/~cherniak/Synth_83.pdf">Cherniak 1983, 174</a>). Nor does a machine <i>A</i> remove human constants
+altogether. Humphreys, writing on computational methods, traced the problem of
+the interface between humans and computation to the assumption that science is
+human science, and held that although a completely automated science raises
+fascinating issues, humans will continue to play an important role for the
+foreseeable future, so that the epistemology of the input and output interfaces
+must accommodate human limitations and abilities (<a href="https://web.archive.org/web/20150117101759/http://people.virginia.edu:80/~pwh2a/handbook%20of%20economics%20article%20final%20version.doc">Humphreys 2009b,
+§2</a>). If <i>S</i> is human, it is humans who read, check, and rely
+on the results, and human constants remain on that side. Humphreys distinguishes the core simulation, which computes solutions,
+from full simulation, which also presents them (<a href="https://uva.theopenscholar.com/files/paul-humphreys/files/the_philosophical_novelty_8.pdf">Humphreys 2009a,
+§3.3</a>).
+As Ariga reports his account, different presentations of the same computed
+results can make a substantial difference to human understanding (<a href="https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/72806/1/phs_3_83.pdf">Ariga
+2009, 85</a>).
+In his shorter essay Humphreys explains that graphics useful to human
+recipients need not be useful to the computer producing them (<a href="https://web.archive.org/web/20150117101744/http://people.virginia.edu:80/~pwh2a/anthropos%20final.doc">Humphreys
+2006, paragraph beginning “These methods raise important questions”</a>).
+Applied to <i>S</i>, these points suggest that which representational elements a
+method needs can depend on who has to take in its output.</p>
+<p>Applying the sorting can split the roles of a single element. The opening of
+this section noted that a diagram can be a private memory aid in one episode, a
+space for inference in another, and a public justification in a third. The role
+of memory aid depends on a small working memory, the role of a space for
+inference need not, and the role of public justification depends on relations to <i>S</i>.</p>
+<p>The same sorting can be applied to what the representations of science compress. Koichi Takahashi, writing about AI-driven science, holds that science has translated processes in which very many elements act in parallel into a few variables and a single line of argument, for a brain that can hold only about seven items, can relate only about four interacting variables at once, and tends to grasp events as one sequential narrative (<a href="https://koichi-takahashi.me/agibook/">Takahashi 2026, 120–121</a>). Takahashi separates two things in this. Which particular variables a theory takes, such as position and velocity in Newtonian mechanics or temperature in thermodynamics, is on this account fixed by the structure of the laws, whereas the demand to compress nature into a few variables at all reflects the structure of human cognition. Takahashi also holds, however, that listing the position and momentum of every particle would describe nature completely without being understanding, not only for humans but for any finite AI however powerful, so that understanding remains a compression into what the language of whoever understands allows (130–131). Read with Cherniak's distinction, the demand for few variables is a feature peculiar to human memory, and the need for some compression a limit that any finite inquirer faces. If <i>S</i> is human, however, the demand for few variables returns on the side of <i>S</i> wherever its members are to grasp a result, as Humphreys's point about output representation suggests.</p>
+<p>Beneath what looks like a premise about human realizers there can also
+be a condition of inquiry. Fatigue and affect are the human way in which how
+long to persist and when to stop is settled, but the question of persisting and
+stopping remains for any finite inquirer. On Cherniak's account, deciding which
+inquiry to undertake is itself an inquiry, and trying always to decide it by
+inquiry would produce a regress, one that is ended for human
+beings by their having been constructed, by natural selection, so that certain
+inquiries are undertaken automatically and instinctively (<a href="https://terpconnect.umd.edu/~cherniak/Synth_83.pdf">Cherniak 1983,
+177</a>). The case in Section 6.4 in which bodily pain kept drawing
+attention back to a matter can be read as one such way of ending it, and for a machine inquirer the question is what plays that role.</p>
+<p>Some conditions of inquiry lie not in the inquirer but in what it inquires into. Takahashi, mapping where AI could accelerate science, distinguishes the computation needed to search a field's space of possibilities, which on this account added energy can push back, from the target's own time: the time in which a target system advances of its own accord, as in cell division, differentiation, and organogenesis, which accumulate sequentially and cannot be shortened by parallelization, in the recovery of an ecosystem over decades or centuries, and in the generations that institutional change takes. On Takahashi's account no technology applied from outside can alter this time, so that it remains even if laboratory automation drives engineering waits toward zero (<a href="https://koichi-takahashi.me/en/agibook/appendix-1/">Takahashi 2026, Appendix 1</a>); Takahashi's map, which sets engineering waits to zero among its premises, is presented as an upper-bound assessment conditional on those premises (<a href="https://koichi-takahashi.me/en/agibook/appendix-3/">Takahashi 2026, Appendix 3</a>). Takahashi counts the target's own time as one of four kinds of limit that remain permanently; the others are information that in principle does not exist to be obtained, such as lost historical information and the subjective experience of others; the limits, which Takahashi takes from Arrow, of procedures that aggregate several dimensions of value into a single score; and logical and mathematical limits such as the undecidability of the halting problem (<a href="https://koichi-takahashi.me/agibook/">Takahashi 2026, 149–150</a>). The limit on aggregation can be read as relative to the conditions required of an aggregation procedure; what this section goes on to use is only the target's own time. The target's own time also bears on which candidates a machine inquirer can settle quickly. On Takahashi's account, a hypothesis that, like Maxwell's displacement current, unifies known laws in a mathematical structure is limited chiefly by computation, whereas one that posits an entity not directly observable, as Le Verrier's unseen planet and Pauli's neutrino did, must wait for the target to respond when it is tested (<a href="https://koichi-takahashi.me/agibook/">Takahashi 2026, 156</a>). Stated in Cherniak's form, these are conditions not of finite inquirers but of the targets inquired into, and removing human delays from an inquiry leaves them in place.</p>
+<p>Writers on the economics of artificial intelligence draw a related line in what limits the production of ideas. Philippe Aghion, Benjamin Jones, and Charles Jones, in a working paper on artificial intelligence and economic growth, distinguish two reasons why new ideas may become harder to find as knowledge advances. The burden of knowledge, a mechanism based on the limits of human cognition, may on their account fail to restrain an artificial system that can comprehend a much greater share of the stock of knowledge than a human can, whereas fishing out, a depletion they treat as a fundamental feature of the search for new ideas, would presumably apply to an artificial searcher too; such a system, they write, "wouldn't change what is in the pond." They add that the constraint that remains may then be set less by the limits of cognition than by natural laws (<a href="https://www.nber.org/papers/w23928">Aghion, Jones, and Jones 2017, 27–29</a>). Read in Cherniak's form, the first is a feature peculiar to human cognition and the second, on their model, a condition of what there is to be found. The burden of knowledge, too, may cease to restrain an artificial searcher while still bounding what the human members of a human <i>S</i> can take up. Dario Amodei, in the essay cited in Chapter 1, Section 2, lists among the factors that bound what added intelligence yields the speed of the outside world, the need for data, intrinsic complexity, constraints from humans, and physical law, and holds that some of them bind only in the short run: intelligence might, for example, develop an experimental paradigm that "allows us to learn in vitro what used to require live animal experiments" (<a href="https://darioamodei.com/essay/machines-of-loving-grace">Amodei 2024, "Basic assumptions and framework"</a>). Read in the same form, such a route leaves the target's own time in place and moves the experiment to a system whose own time is shorter. What it then requires is that results on that system carry over to the target, as inferences from the in vitro models of Section 3 had to be carried over to the body, and that is a question of answerability to the target, of whether results obtained through such a system remain open to correction by the target itself (Chapter 8, Section 2.3) rather than of speed. It may also be that, in the substitute system, properties that can be iterated quickly come to the center of inquiry. Since on Parker's account what a model must be like is relative to the purpose for which it is used (Section 5), if inquiry proceeds without checking how those properties bear on the original question, what has become faster may be the answer not to the original question but to another question that can be answered quickly (compare the replacement problem of Chapter 4, Section 4, and the check passed on a question other than the one asked, Chapter 6, Section 3.2). Acceleration can thus press not only on waiting time but on the choice of what to investigate.</p>
+<p>The same sorting applies to the body as a whole. Human research has been shaped by human bodies,
+is shaped by them now, and will probably continue to be. Machine research will
+probably not be shaped by bodies in the way human research has been. Abstracted,
+however, the claim that human research has been shaped by the body is one
+instance of a general claim: an inquirer is shaped by its own body. Humans
+and machines are both physical beings with some physical realization, so the general claim holds for machines
+too at least in the weak sense that what an inquirer can do is constrained by its own body; whether it holds in the strong sense that the body shapes even the content of concepts is not settled by being physical alone. Existing arguments about embodiment can be read by asking which parts
+are peculiar to humans and which belong to the general claim. The thesis that
+Shapiro and Spaulding call Conceptualization already has the general form: the
+properties of an organism's body constrain the concepts it can acquire, so that
+differently embodied organisms would understand their environments differently.
+The examples Lakoff and Johnson offer in its support, such as the concept of up
+arising from a body that stands erect, are peculiar to the human body (<a href="https://plato.stanford.edu/archives/sum2026/entries/embodied-cognition/">Shapiro
+and Spaulding 2021, §§2.1, 3.1</a>). Nor is the claim that the body takes part
+in cognitive processes confined to humans: robotics has built machines whose
+behavior arises from the coupling of body and environment without a symbolic
+model of the world (<a href="https://plato.stanford.edu/archives/sum2026/entries/embodied-cognition/">Shapiro and Spaulding 2021, §4.1</a>). Applied to the
+process of inquiry, at least the following depend on an inquirer's body in
+general: which differences it can sense, how fast and how finely it can act,
+which distinctions training can make discriminable for it, and where it tires,
+wears down, fails, or needs maintenance. By contrast, the way pain or fatigue,
+as felt, draws attention back, and the content of concepts derived from an
+upright body, are features of the human realizer rather than of an inquirer's body in general. The question is therefore not whether a
+machine inquirer has a body but which body shapes what in its inquiry, and how.
+Chapter 8, Section 2.3 considers how an artificial body or sensorium could
+support an epistemic organization different from ours.</p>
+<p>Records are similar. The claim of Section 6.3 that more logging is not automatically more
+knowledge does not rest only on the scarcity of human time and attention:
+Cherniak argues that even with perfect retention the problem of locating a
+desired item would remain, and indeed be worse (<a href="https://terpconnect.umd.edu/~cherniak/Synth_83.pdf">Cherniak 1983,
+175</a>). What changes is who the future users of a record are: for example, other machines, which may be instances of the same system or systems of another make, humans in <i>S</i>, or auditors. The case in Section 6.3 in which a
+negative result was recorded only when another participant asked about it can
+be read less as a gap in the record than as a gap in a shared grasp of who knows
+what, and the philosophy of memory has discussed groups with such a grasp as
+transactive memory systems (<a href="https://plato.stanford.edu/archives/sum2026/entries/memory/">Michaelian and Sutton 2017,
+§8.2.1</a>). A machine configuration needs this function too, but it
+need not be met by participants asking one another. Where records are taken
+automatically, the selection of what to keep moves into whatever fixes what is logged and in
+what units.</p>
+<p>The line between inquirer and element moves as well. In accounts of human
+research, including those seen in Section 6.1, the inquirer whose practice was
+described was human, whatever stance an account took on how agency and
+competence are distributed between humans and nonhumans, and whichever humans
+it also counted among the elements; the line between human and nonhuman could
+therefore at least separate the inquirer from the nonhuman elements. When the
+inquirer is itself a machine, even this no longer holds: the inquirer falls on
+the nonhuman side of that line. Latour called the
+incorporation of a competence in human bodies or its "excorporation" in nonhuman
+ones "one of the choice left to the designers" (<a href="https://www.bruno-latour.fr/sites/default/files/50-MISSING-MASSES-GB.pdf">Latour 1992,
+168</a>). For a machine inquirer, what is placed inside it and what outside it, as records or
+tools, is in this sense not given but allocated within its configuration,
+whether by its makers or by a system that reorganizes itself. It may be tempting to say that the relation between the inquirer and its
+records thereby becomes flatter, that the distinction between an inquiring subject and its records as tools fades, but the phrase runs several things together.
+The symmetric description of actor-network theory is a methodological stance
+that declines to fix in advance how competences are distributed between humans
+and nonhumans (<a href="https://www.bruno-latour.fr/sites/default/files/P-67%20ACTOR-NETWORK.pdf">Latour 1996, 9</a>), and it was already available for
+human research. What can newly change with a machine inquirer is whether its
+states and its records differ in form and where the allocation between inside
+and outside is placed. Neither follows from its being a machine; both depend on how its configuration
+is organized. The boundary can also move in two directions: records can be
+taken into the inquirer, or the inquirer's interior can be treated as one more
+store alongside those outside it. Hutchins argued that the classical
+symbol-processing computer, modeled on a mathematician manipulating external
+symbols, is not a model of individual cognition but a model of a sociocultural
+system from which "the human actor has been removed" (<a href="https://doi.org/10.7551/mitpress/1881.001.0001">Hutchins
+1995, 363</a>). On this view, at least for such machines, the inquirer
+may correspond not to a human head but to a person together with records.
+Chapter 7, Section 2 takes up how to argue for where the line is drawn from the
+organization of an inquiry.</p>
+<p>That a description is flat does not mean that the relations are. Delegating
+work to objects, Latour argues, creates an asymmetry "between absent makers and
+occasional users" (<a href="https://www.bruno-latour.fr/sites/default/files/54-TECHNIQUES-GB.pdf">Latour 1994, 40</a>). Law holds that a machine is
+also a heterogeneous network, involving not only technical materials but
+operators, users, and repair-persons (<a href="http://www.heterogeneities.net/publications/Law1992NotesOnTheTheoryOfTheActorNetwork.pdf">Law 1992, 384</a>). Suchman
+argues that the boundary between persons and machines is not given but an
+enacted cut that carries accountability, and that the self-presentation of the
+labor-saving device erases evidence of the labor involved in its operation
+(<a href="https://www.lancaster.ac.uk/fass/resources/sociology-online-papers/papers/suchman-agenciestechnodesign.pdf">Suchman n.d.</a>). To say that a machine conducted an inquiry with its
+tools and records is therefore also to owe an account of where the line was
+drawn and what the line hides; Chapter 7, Section 4.2 asks which external
+dependences continue to supply part of a machine's organization. The
+withholding of roles (Section 6.1) changes form too. Whether an artificial participant can decline a role becomes a question of how
+that participant is organized, and the checks that human refusals supplied
+without anyone intending them can be lost. Conversely, when a
+machine-led configuration needs human work, the humans can decline, as the
+nurses who rejected the sensors did in the hospital case of Chapter 7, Section
+4.4.</p>
+<p>The reasons for distribution also come apart. Some reasons for dividing work lie
+in how much one person can hold and attend to; others, such as computational
+intractability and the impossibility of completing inquiry, remain for any
+finite agent. In human division of labour, members bring different positions and histories, so dividing a task has often divided perspectives too. In a machine configuration this is not given. Dividing a task among copies of one make whose background assumptions and routes of error have not come apart divides the task without dividing perspectives (Chapter 11, Section 3); dividing it among participants built from different bases or data, or made to differ, can divide perspectives as well, to an extent that depends on how they were made and on their later histories. Conversely, sharing a record is not the same as unifying perspectives. As Section 6.1 noted, no one need endorse what a record contains. In a configuration in which inquirers' states are distinguished from records, then, participants that consult the same record can hold different judgments, and a hypothesis can be kept in a shared record while only some participants are committed to it. A shared record does not by itself mean that judgments are uniform. In Hutchins's case in Section 6.2, the solution found by the organization arose from members in different positions, each adapting locally; whether the same happens among machine participants depends on how they differ and whether each can adapt locally where it stands. Giere held that only humans provide
+intentional cognitive agency to distributed cognitive systems, but presents
+the restriction as a theoretical choice that gives the fields of science studies
+a framework they can share (<a href="https://web.archive.org/web/20120703034005/http://www.tc.umn.edu:80/~giere/DCwoDK.pdf">Giere 2007, 319</a>). Where humans are
+absent, this framework places no knowing subject inside the system, and the
+question moves to whether a result becomes public knowledge for <i>S</i> (Chapter
+8). The lesson of Section 6.2 about studies of research processes, that
+observation, reconstruction, and ontology are separate matters to assess, holds
+for studies of machine research processes too. But the dispute between
+cognitive explanations and material or collective ones may change form when the inquirer's cognition is itself a material process of computation. As long as what cognitive explanations described took place in human heads, they could be set against the laboratory's inscriptions and arrangements; for a machine inquirer whose interior can be treated as one more store alongside its records, the process described in cognitive terms may itself be an operation on stores of the kind that material accounts point to. Whether the kind of response in which members of the laboratory objected to how they were portrayed arises in the same form depends on whether the inquirers studied are organized so that they can contest how they are portrayed.</p>
+<p>Across Sections 6.1 to 6.5, nothing in these cases establishes that every kind
+of research is material,
+embodied, temporal, or distributed to the same degree, or in the same sense. The
+cross-domain evidence broadens the range over which these roles can be compared,
+but it does not make the sample representative. What belongs inside an
+explanation of a research process remains claim- and case-relative and, as
+Section 6.5 argued, relative also to what realizes the inquiry. If <i>A</i> is a
+machine and <i>S</i> human, roles of elements that depended on human realizers become questions of how the
+configuration is organized, while human constants remain as conditions for <i>S</i>
+to read, check, and rely on results; if both <i>A</i> and <i>S</i> are machines, what
+corresponds to what in human research came from the inquirer's side, such as
+bodily experience or the withholding of roles, is in question. Different forms
+of mathematics, engineering, the humanities, natural science, and social
+inquiry, moreover, may distribute these roles differently. The resulting lesson
+is methodological rather than ontological: an explanation of a research process
+can include the relations needed to explain what became epistemically possible and what happened next, while leaving
+the location of cognition, knowledge, understanding, agency, and researcher status open to
+further argument.</p>
+<h3 id="7-changes-in-the-possibilities-of-inquiry">7. Changes in the possibilities of inquiry</h3>
+<p>Research can transform what can be asked and tried, as well as which answer is
+accepted. In the cases taken up in this chapter, a representation made a candidate
+available, an instrument changed what could be investigated, and a record permitted a comparison that was previously unavailable. These are changes in an inquiry's
+possibilities. Candidate formation, pursuit, and appraisal distinguish work
+within that changing arrangement without imposing a temporal sequence. An
+artificial project that leaves the questions (Chapter 4), candidate space, and means of
+investigation fixed carries out one part of this activity; a project that opens them also requires that the work through which new possibilities become usable be realized or obtained. Section 1.1 called the relations in which this work occurs an inquiry configuration. When a machine inquires, which parts of this work depend on human realizers and which remain for any finite inquirer divides, as Section 6.5 set out, element by element and role by role. Carried through the accounts examined in this chapter, the change in an inquiry's possibilities has several concrete consequences. Taken together, Stanford's argument and the response of Curtis-Trudel and colleagues imply that merely searching an already characterized set of candidates more widely and quickly leaves the problem of alternatives not yet conceived in place, unless there is reason to think the characterization roughly exhaustive (Section 3). On the proposal for treating credence when a new theory is taken into consideration, the work of making candidates available can first lower credence in an earlier answer (Section 4.2). On Nyrup's model, some candidates are worth pursuing precisely because they are likely false and easily shown to be so (Section 4.2). And on Takahashi's distinction, the target's own time remains when human delays are removed from inquiry, and acceleration through a substitute system adds the work of inferring from that system to the target (Section 6.5). That a question can cease to stand without being answered, and how what is unknown to <i>A</i> relates to what is unknown to <i>S</i>, were seen from the side of questions in Chapter 4, Sections 5 and 7.</p>
+<p>The account of process that Part III gives rests on the cases and arguments of Chapters 4 to 6, not on deduction from the general characterization. It can illuminate attempts directed toward knowledge or understanding without explaining their success conditions by itself. The cases taken up are limited, and how far the account reaches other practices, such as ordinary, abandoned, unpublished, and less represented research, remains an open question. Chapter 13, Section 2 considers how this process analysis bears on the working characterization of Chapter 1.</p>
+<p>Making a candidate available is not yet establishing it. Whether it is
+established turns on results, but those results do not appear only after the
+work of obtaining candidates is over. In this chapter's cases, results were
+already obtained within that work and shaped it. In the laboratory Nersessian
+studied, the failure of more than half the experiments through contamination led
+to the flow loop's being redesigned so that it could run inside an incubator
+(Section 3). In the Liquid Tensor Experiment, imprecisions were exposed and
+repaired in the course of the work of formalization, and how the proof was
+understood changed as well (Section 3). Which claim, instrument, assumption,
+standard, representation, or other element such results bear on is not
+determined by the results themselves.</p>
+</div>
+<nav class="book-nav"><a href="/blogs/what-would-it-mean-for-machines-to-do-research/chapter-4.html">&larr; Chapter 4</a><a href="/blogs/what_would_it_mean_for_machines_to_do_research.html">Contents</a><a href="/blogs/what-would-it-mean-for-machines-to-do-research/chapter-6.html">Chapter 6 &rarr;</a></nav>
+{% endraw %}

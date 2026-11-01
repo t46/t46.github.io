@@ -1,0 +1,498 @@
+---
+layout: "post"
+title: "Introduction | What Would It Mean for Machines to Do Research?"
+permalink: "/blogs/what-would-it-mean-for-machines-to-do-research/introduction.html"
+description: "A book-length conceptual exploration of what it would mean for machines to do research, drawing on accounts of knowledge, understanding, inquiry, and the social organization of research developed with human researchers in mind."
+og_image: "/assets/images/blog/what-would-it-mean-for-machines-to-do-research/social-card.png"
+og_image_width: 1280
+og_image_height: 670
+og_image_alt: "What Would It Mean for Machines to Do Research? A Conceptual Exploration Drawing on Accounts of Human Inquiry"
+---
+{% raw %}
+<p class="book-running-title"><a href="/blogs/what_would_it_mean_for_machines_to_do_research.html">What Would It Mean for Machines to Do Research?</a></p>
+<nav class="book-nav"><span></span><a href="/blogs/what_would_it_mean_for_machines_to_do_research.html">Contents</a><a href="/blogs/what-would-it-mean-for-machines-to-do-research/chapter-1.html">Chapter 1 &rarr;</a></nav>
+<div class="book">
+<h2 id="introduction">Introduction</h2>
+<p>As of 27 October 2026, reports of what machines have contributed to research
+follow one another in quick succession, and many of them come from
+mathematics. In May 2026 an unreleased OpenAI model was reported to have
+produced a counterexample to Erdős's unit-distance conjecture of 1946, and nine
+mathematicians published a verified summary of the construction (<a href="https://arxiv.org/abs/2605.20695">Alon et al.
+2026</a>). In July a counterexample to the
+Jacobian conjecture in three variables was announced; according to Terence Tao's
+account, it was found with the help of an Anthropic model (<a href="https://terrytao.wordpress.com/2026/07/21/a-digestion-of-the-jacobian-conjecture-counterexample/">Tao
+2026</a>).
+In August Anthropic announced that an unreleased model had raised the proven
+lower bound on the proportion of nontrivial zeros of the Riemann zeta function
+that lie on the critical line from 41.6 to 67.2 percent (<a href="https://www.anthropic.com/research/riemann-zeta">Anthropic
+2026</a>), and OpenAI released
+ten results obtained by an internal model, each accompanied by a Lean proof
+(<a href="https://cdn.openai.com/pdf/ten-proofs-oai.pdf">OpenAI 2026a</a>; <a href="https://github.com/openai/ten-proofs">OpenAI
+2026b</a>). In September OpenAI posted a
+construction of solutions to the three-dimensional Navier–Stokes equations that
+develop unbounded velocity in finite time under a smooth external force, and
+presented it as establishing one of the alternatives in the official statement
+of the Millennium Prize problem (<a href="https://cdn.openai.com/pdf/32d9f210-8b73-45e0-91bc-82a30aef8a9a/navier-stokes.pdf">OpenAI
+2026c</a>);
+the Clay Mathematics Institute said that the problem had "apparently been
+settled", without naming who had settled it (<a href="https://www.claymath.org/news/navier-stokes-announcement">Clay Mathematics Institute
+2026</a>). In October OpenAI
+placed more than seven hundred manuscripts written by an internal model in a
+public repository, deferring to the mathematical community on credit and
+precedence (<a href="https://github.com/openai/math">OpenAI 2026d</a>).</p>
+<p>Formal checking and tests built by experts also report such results. An agent
+system from Google DeepMind solved nine of the 353 Erdős problems formalized in
+the community repository Formal Conjectures, with each proof checked by Lean and
+each formal statement checked by the team's mathematicians against the original
+problem (<a href="https://arxiv.org/abs/2605.22763">Tsoukalas et al. 2026</a>). On fifty
+unpublished research-level problems in theoretical physics, prepared by working
+physicists, GPT-6 Astra, in a single run with web access, returned correct
+answers to forty-nine and Claude Opus 5.5 to forty-six (<a href="https://arxiv.org/abs/2610.16733">Chandra et al.
+2026</a>). Formalization has reached the scale of
+research: coding agents under human supervision wrote a complete Lean proof,
+more than 126,000 lines long, of a theorem on which the proof of MIP* = RE
+depends, and repaired side conditions in the published statement along the way
+(<a href="https://arxiv.org/abs/2609.19814">Lu, Deng et al. 2026</a>).</p>
+<p>In the experimental sciences, what is reported is more often a design, an
+analysis, or a first test in the laboratory. A team of language-model agents
+designed nanobodies against recent SARS-CoV-2 variants, two of which showed
+improved binding to recent variants in experiments run by humans (<a href="https://doi.org/10.1101/2024.11.11.623004">Swanson et
+al. 2024</a>). Systems also arrive in
+lineages. Google's co-scientist, which in 2025 generated hypotheses for
+researchers to test, has been extended to run experiments and write papers; in
+one case it proposed a precursor, which the authors describe as non-hazardous,
+for growing a two-dimensional material, and human experts refined the proposal
+into a recipe whose product is consistent with the target material (<a href="https://arxiv.org/abs/2608.26701">Schmidgall,
+Zhu et al. 2026</a>). In particle physics, an
+agent framework working on archived ALEPH data produced a measurement that its
+authors present as a candidate for community scrutiny rather than as a claim of
+discovery (<a href="https://arxiv.org/abs/2603.20179">Moreno et al. 2026</a>).</p>
+<p>Machines are also being turned on the methods that produce them. In 2025 Google
+DeepMind reported that AlphaEvolve, which evolves programs with language models,
+had found a scheduling heuristic that recovers on average 0.7 percent of
+Google's worldwide computing resources and a way to speed up a kernel used in
+training the Gemini models themselves (<a href="https://deepmind.google/discover/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/">Google DeepMind
+2025</a>).
+In 2026 loops in which a system rewrites an agent's code and selects among the
+rewrites by an evaluation became a line of work of their own (<a href="https://arxiv.org/abs/2609.26457">Srikanth et al.
+2026</a>): of 173 arXiv records labeled as
+recursive self-improvement up to mid-October 2026, 153 were posted that year,
+and most of the studies, a census finds, evaluate the improved system rather
+than the process of improvement (<a href="https://arxiv.org/abs/2610.27610">Chen et al.
+2026</a>). Frontier laboratories have begun to report how
+much of their own research their models carry out. A policy paper by researchers
+from several AI companies and universities collects such figures, among them
+Anthropic's report that the share of its research and development work completed
+autonomously, with only high-level human supervision, rose from 1 percent to 26
+percent between March and August 2026 (<a href="https://arxiv.org/abs/2609.36054">Chan et al.
+2026</a>). Systems that run from a question
+through to a paper also operate at scale; one deployment reports 166 papers
+written in 417 hours, all of them released for review (<a href="https://arxiv.org/abs/2606.31651">Tang et al.
+2026</a>). Machines have entered the
+certification of research as well: the AAAI-26 conference attached a labeled AI
+review, alongside the human reviews, to each of its 22,977 fully reviewed
+submissions (<a href="https://arxiv.org/abs/2604.13940">Biswas et al. 2026</a>).</p>
+<p>What these reports amount to is itself in dispute, and much of the dispute takes
+place among the people who build and use such systems. One question is what
+exactly has been solved. A Lean check certifies a formal statement, and whether
+that statement is the problem mathematicians meant has to be judged separately.
+The Formal Conjectures repository records 291 misformalizations that have been
+found and fixed (<a href="https://arxiv.org/abs/2605.13171">Firsching et al. 2026</a>), and
+other researchers have argued that part of the Lean formalization of the
+Navier–Stokes construction does not correspond to its written proof (<a href="https://arxiv.org/abs/2610.08144">Bastounis,
+Circelli, and Hansen 2026</a>). Another question
+is to whom a result is new. A counterexample to a problem listed as open in 2014
+turned out to have been constructed, for another purpose, in a book published in
+1962 (<a href="https://arxiv.org/abs/2604.03789">Ju, Gao et al. 2026</a>), and on Erdős's
+open problems a count of novel autonomous solutions that once stood at nine fell
+to four as the literature was searched (<a href="https://arxiv.org/abs/2601.22401v3">Feng et al.
+2026</a>). A third question is which part of
+the work the machine did. Some authors have begun to classify AI-assisted
+results stage by stage, separating who formulated a problem, how it was solved,
+how the solution was verified, and who wrote it up, because a single phrase such
+as "AI-discovered mathematics" hides these differences (<a href="https://arxiv.org/abs/2610.25490">Tian and Narayanan
+2026</a>). Each of these three questions returns in a more general form in the chapters that follow. Whether a checked statement is the problem that was meant is a judgment that formal checking does not itself make (Chapter 3, Section 5.1); to whom a result is new becomes the question of the society relative to which novelty is assessed (Chapter 1, Section 6); and which part of the work the machine did becomes the question of what can be attributed to it (Chapter 7).</p>
+<h3 id="1-a-list-of-operations-conceals-a-conceptual-choice">1. A list of operations conceals a conceptual choice</h3>
+<p>Amid such reports and the disputes over what they amount to, this book considers what it is for a machine to do research, and what may
+happen when machines do. The question is less simple than it looks. One can
+name many things researchers do. They search literature,
+formulate hypotheses, design experiments, prove results, interpret sources,
+construct artifacts, analyze data, write papers, and criticize one another's
+work. But a list of inherited operations is not an account of what makes those
+operations parts of research. Reproducing a visible sequence does not by itself
+show that the underlying endeavor has been reproduced.</p>
+<p>The distinction between an operation and its function is simple but
+consequential. A literature search can locate an unresolved question, acquire a
+method, identify a comparison class, diagnose an unexpected result, or test a
+later claim of novelty. The operation is recognizably similar while its place
+in inquiry changes. Conversely, assessing whether a proposed answer deserves
+confidence can be realized through an experiment, proof, simulation, archival
+argument, field observation, critical interpretation, construction and testing
+of an artifact, or an arrangement distributed across investigators and
+instruments. A recognizable function can have heterogeneous realizations.</p>
+<p>A familiar research-cycle diagram therefore cannot be transferred directly
+into an ontology of research, an account of what research consists of. Literature review, idea generation, experimentation, analysis, writing, review, and publication each involve choices. Analysis can construct the phenomenon to be explained or reveal that
+the initial experiment was misconceived. Writing can reorganize an argument
+rather than merely report it. Review can test support, change a claim, allocate
+credibility, and alter what a community later treats as worth pursuing. The diagram may remain useful for organizing work without settling what the activity is.</p>
+<p>Apparently cognitive stages raise the same question.
+What is an <code>idea</code>, and what makes one productive? Is curiosity necessary, or is
+it one human mechanism for directing exploration? Is creativity a capacity to
+be reproduced, a name for an output judged after the event, or a family of
+processes requiring further analysis? Each of these nouns names something that an artificial researcher might be thought to need, and what each names, and how it could become an engineering target, is itself a question to examine. Chapter 5 takes up how ideas and other candidates become
+available, including what the label <code>creative</code> leaves unexplained and to what
+creativity can be attributed (Section 2). What the word <code>curiosity</code> can name in the formation of questions is taken up in Chapter 4, Section 7. Chapter 7, Section 3.3 returns
+to creativity and discovery as terms of praise for an actor.</p>
+<p>The question running through the book is what research involves, and what
+changes when the activity, its participants, or the relations sustaining it
+become artificial. Building makes these questions concrete. A project must
+choose what to realize, yet its encounters with questions, evidence, failure,
+and other inquirers can expose inadequacies in that choice. The chapters move
+in two directions: clarifying research makes construction targets more
+precise, while considering artificial realizations tests assumptions inherited
+from human research. Accounts of knowledge, understanding, agency, and
+authority disagree both about what research involves and about what changes when machines do it. By following those disagreements, the book tries to see how different projects might extend human inquiry, constitute artificial research actors, or reorganize the societies in which research takes place. Assessing
+claims about such projects is one use of this analysis. Section 6 sets out its route, and the conclusion returns to what has come into view in the course of the examination.</p>
+<p>Three distinctions will matter throughout. Whether a capacity exists differs
+from whether it is exercised in an episode and from whether an evaluator has
+evidence for attributing it (Chapter 1, Section 3; Chapter 7, Section 3.1). What makes an activity research differs from what
+would successfully answer its particular question (Chapter 1, Section 3; Chapter 3, Section 7.1). And what warrants reliance
+on a result differs from what authorizes someone to decide for others (Chapter 12, Section 1.4). The
+chapters develop these distinctions through competing accounts and cases; none
+is a demand that every researcher perform every function alone.</p>
+<h3 id="2-existing-labels-do-not-identify-one-target">2. Existing labels do not identify one target</h3>
+<p>Technical work relevant to artificial research is distributed across automated
+discovery, literature-based discovery, machine learning, laboratory automation,
+theorem proving, computational creativity, and domain-specific systems. Mapping
+that work is an empirical task. It asks which capacities have been implemented,
+under what constraints, and with how much human and infrastructural
+contribution. A second task is conceptual. It asks what those capacities would
+have to accomplish, separately or together, before the resulting arrangement
+could reasonably be said to conduct research or contain an artificial
+researcher.</p>
+<p>Prominent systems and programs already operationalize different targets. The
+early Robot Scientist iterated hypothesis formation, experiment selection,
+physical execution, and interpretation inside a detailed human-built logical
+model (<a href="https://doi.org/10.1038/nature02236">King et al. 2004</a>). The AI Scientist
+organizes machine-learning research through idea generation, literature search,
+computational experimentation, analysis, paper production, and review, while
+retaining consequential human specification and filtering
+(<a href="https://doi.org/10.1038/s41586-026-10265-5">Lu et al. 2026</a>). Those who set
+out a path for the field draw the line elsewhere again. Ross King, who built the
+Robot Scientists, now grades autonomy from level 0, a tool, to level 5, at which
+humans govern from outside rather than direct the science, and asks that a
+system's level be assigned from the interventions actually observed rather than
+from how the system is described (<a href="https://arxiv.org/abs/2608.14407">King
+2026</a>). The organizers of the First Proof
+challenge, who give research-level problems to systems they run themselves, test
+only proof; they set aside the making of conjectures and the choice of
+definitions and frameworks, which they count as at least as important to
+research but cannot yet measure (<a href="https://arxiv.org/abs/2606.18119">Abouzaid et al.
+2026</a>). An ARIA call leaves the problem to
+human applicants, who must specify the research problem their existing system
+will tackle, while evaluating how much of exploration, hypothesis and experiment
+construction, interpretation, and reporting occurs without human intervention
+(<a href="https://aria.org.uk/media/za3mj5h1/ai-scientist-solicitation-call-document_accessible.pdf">ARIA 2025, 4–5,
+7</a>).
+A Beijing municipal plan for 2026–2028, by contrast, places the whole sequence
+from proposing hypotheses to innovative discovery within the autonomous
+operation of its laboratories and leaves standards and graded assessment of
+autonomy to be drawn up later (<a href="https://www.ncsti.gov.cn/zcfg/zcwj/202607/t20260702_250676.html">Beijing Municipal Committee
+2026</a>).</p>
+<p>These operationalizations are not equivalent. They place boundaries around different activities, achievements, and actors. The systems and programs just cited are partial and heavily conditioned cases, and they are used here to show that the same label can cover different construction claims.</p>
+<p>Philosophical analyses widen the divergence. Accounts of AI discovery disagree
+about what independent discovery requires. Bergamaschi Ganapini argues that,
+because discovery is a praiseworthy epistemic achievement, it requires not only
+competence in the relevant field but also reflective insight into the reach and
+limits of that competence, and holds that current AI systems do not yet
+show it (<a href="https://doi.org/10.1007/s11098-025-02299-8">Bergamaschi Ganapini 2025</a>;
+Chapter 7, Section 3.3). Duede and Friedman reject requirements of this kind, which they call cognitivist because they make discovery depend on the discoverer's cognitive capacities. On their account, discovery consists in successfully negotiating an epistemic gap, a point at which existing knowledge, theory, and expectation fall short. A discovery either reveals such a gap, by bringing to light a phenomenon they cannot accommodate, or bridges a gap already revealed and well defined, by supplying new knowledge, theory, or method. They argue that competence, reflective insight, and domain-general knowledge often accompany discovery but are not essential to it. Jocelyn Bell Burnell, for example, discovered the first pulsar as a doctoral student who had noticed the signal but could not yet explain its significance. They conclude that AI systems that bridge such gaps can be credited with discoveries. Their example is a search framework built around a large language model, which found a new heuristic for online bin packing (assigning items, as they arrive, to as few fixed-capacity bins as possible). Crediting a system with a discovery is not, they add, recognizing it as a scientist. They also grant that, if discovery requires standing in the scientific community as well, current AI systems typically lack it, though they take this barrier to be socially and historically contingent (<a href="https://philsci-archive.pitt.edu/27719/">Duede and Friedman 2025, §§1–5</a>; Chapter 7, Section 3.3).
+Collective-centered work argues that discovery may be attributable to a
+heterogeneous organization of people, machines, institutions, and material
+entities rather than one individual agent
+(<a href="https://doi.org/10.1007/s11229-022-03902-9">Clark and Khosrowi 2022</a>). Other
+work asks how artificial agency in basic research should be modeled
+(<a href="https://doi.org/10.1007/s11229-023-04083-9">van Lier 2023</a>), whether
+AI-driven research remains a socially distributed cognitive activity and might
+give rise to an alien science
+(<a href="https://phsc.jp/dat/rsm/20190515_16AMA2.pdf">Kureha and Kukita 2019</a>;
+<a href="https://doi.org/10.20556/0002001002">Kureha 2023</a>), and whether core epistemic
+aims can be translated into nonanthropocentric objectives for artificial
+scientists
+(<a href="https://doi.org/10.1162/daed.a.991">Krenn and Champion 2026</a>).</p>
+<p>These accounts disagree partly because discovery, contribution, participation,
+agency, epistemic subjecthood, and researcher status identify different
+possibilities. A project that enables human discovery and one that establishes
+an artificial knower can require different achievements even where their
+outputs look alike. Making the target explicit therefore changes what there is
+to build, as well as what would count as evidence of having built it.</p>
+<h3 id="3-why-disagreement-does-not-remove-the-need-for-characterization">3. Why disagreement does not remove the need for characterization</h3>
+<p>Research practices have been formed through disciplines, instruments,
+professions, institutions, and communities. Mathematics, literary studies,
+molecular biology, anthropology, computer science, engineering, and artistic
+research differ in objects, operations, evidential relations, and products.
+Their standards have also changed. No short formula will reproduce every
+accepted use without controversy.</p>
+<p>That observation invites two opposite responses. One is to set conceptual analysis aside and automate what researchers now do. For the purpose of this book, that response would leave the current organization of research unexamined and take it as given. The other is to wait for a settled philosophy of research before building any useful system. Bounded tools for retrieval, proof checking, computational reproduction,
+experiment scheduling, and instrument control do not require that settlement.</p>
+<p>The conceptual problem enters when a project chooses which aspects of research
+to realize and which to leave to its surroundings. It becomes especially visible
+at the step from bounded performance to a broader attribution. Reproducing an
+analysis, recovering a withheld finding, optimizing an experimental objective,
+or producing a conventionally structured paper may demonstrate real capacities.
+Whether these capacities amount to the research envisioned depends on what the
+task represents and what remained fixed or supplied by others. Evaluation makes
+the choice visible, but the choice already helped determine the construction.</p>
+<p>This is a problem of construct validity as well as vocabulary. A broad capacity
+such as <code>conducting research</code> is not observed directly in one score. It is
+operationalized through selected tasks, environments, artifacts, metrics, and
+judgments. Work on AI benchmarks has shown how a finite contextual task can
+remain useful while a general capability claim exceeds the defended relation
+between the task and its target
+(<a href="https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/084b6fbb10729ed4da8c3d3f5a3ae7c9-Abstract-round2.html">Raji et al. 2021</a>;
+<a href="https://papers.nips.cc/paper_files/paper/2025/hash/1967e0fc3aa6cbbace562f5cb8e3954e-Abstract-Datasets_and_Benchmarks_Track.html">Bean et al. 2025</a>).
+Applied here, the lesson is not that research benchmarks are impossible. It is
+that an evaluation licenses only those broader inferences for which its relation
+to the target has been defended.</p>
+<p>Current research-agent benchmarks make the point concretely. CORE-Bench tests
+computational reproduction and presents it as a step toward rather than an
+instance of novel autonomous research
+(<a href="https://openreview.net/forum?id=BsMMc4MEGS">Siegel et al. 2025</a>).
+ScienceAgentBench evaluates executable programs for data-driven research tasks
+(<a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/f12b4df26344f3be803c06b555252efe-Abstract-Conference.html">Z. Chen et al. 2025</a>).
+FIRE-Bench evaluates constrained rediscovery from a high-level question and
+experimental scope
+(<a href="https://arxiv.org/abs/2602.02905v2">Wang et al. 2026</a>).
+MLR-Bench evaluates a longer machine-learning pipeline and shows that coherent
+papers can coexist with invalid or fabricated experimental results
+(<a href="https://proceedings.neurips.cc/paper_files/paper/2025/hash/ab8dd000d6f87f40061a73f8bca7fae4-Abstract-Datasets_and_Benchmarks_Track.html">H. Chen et al. 2025</a>).
+Each benchmark contributes evidence about the target it constructs; how that target relates to research in general is a further question, which Chapter 2, Sections 4.2, 5, and 5.2 take up in epistemological terms.</p>
+<p>A project claiming only a bounded capacity needs a defensible account of that
+capacity. A project claiming to automate research, make discoveries, or build
+an artificial researcher assumes a wider burden: the claim can be assessed only
+once it is made explicit what conception licenses the attribution, which aspects of research its
+evidence addresses, and which remain outside the evaluation. This does not require philosophical consensus.
+It requires the scope of the claim to be open to criticism.</p>
+<h3 id="4-a-working-characterization-can-be-purposeful-without-being-arbitrary">4. A working characterization can be purposeful without being arbitrary</h3>
+<p>Definitions of research serve different purposes. The OECD's <em>Frascati Manual</em>
+classifies R&amp;D for international statistics through novelty, creativity,
+uncertainty, systematic conduct, and transferability or reproducibility
+(<a href="https://doi.org/10.1787/9789264239012-en">OECD 2015</a>). Those criteria are
+authoritative for an administrative purpose, not thereby a philosophy of
+research activity. The example shows that a definition can have authority for
+one task without saying what research is, and so suggests treating an
+account relative to the work it is meant to do. The characterization proposed
+in Chapter 1 is purposeful in this sense: it is offered as a footing for
+thinking about what it is for a machine to do research and what may follow when
+machines do. Three worries about such a characterization are
+taken in turn below: that it is arbitrary, that revising a concept for a
+purpose changes the subject, and that an account, once institutions use it,
+has consequences through what it excludes.</p>
+<p>Carnap's method of explication offers one model. An unclear concept can be
+replaced, for a stated purpose, by a more exact and fruitful concept without
+pretending that their extensions, the ranges of things to which they apply, are identical (<a href="https://plato.stanford.edu/archives/sum2026/entries/carnap/methodology.html">Leitgeb and Carus 2020, suppl.
+D</a>). On Carnap's model, as
+this book uses it, a replacement made for a stated purpose is assessed against
+that purpose, and so is constrained rather than arbitrary; this is how the book
+responds to the first worry. That is also why the book uses the model: because a concept introduced in this way answers to a
+stated purpose and need not share the old concept's extension, thinking about
+research by machines can proceed from an explicit, criticizable characterization
+rather than waiting for an essence. Because the purpose stated here is such
+thinking, the model, taken alone, would in effect make usefulness for that
+thinking the standard the characterization answers to; if one sets out to build
+artificial systems, it would be usefulness for that engineering work.</p>
+<p>But purpose-relative revision can change the subject rather than clarify it, an
+objection that derives from Strawson's criticism of Carnap. Applied here, the
+worry is that showing a system to do what a purpose-built characterization
+calls research may not answer whether it does research in the ordinary sense. How far the objection reaches is itself disputed, and
+contemporary accounts locate the difficulty differently. Each of the three considered here can be read as narrowing the objection's scope or relocating its force rather than dismissing it.
+Mark Pinder argues that the objection holds only in a tempered and limited form:
+it has force when a concept needed to state a philosophical problem is replaced,
+not merely supplemented, by one designed to be fruitful for science, and whether
+an explication changes the subject depends on how it is performed, what it is
+used for, and how the problem is construed (<a href="https://doi.org/10.1007/s11229-017-1614-6">Pinder 2020, §§3.2, 5.2,
+6</a>). Tristram McPherson and David
+Plunkett propose that <code>topic continuity</code> be treated as context-sensitive, with
+communicative, representational, and inferential continuity (whether speakers using the revised term can still communicate and report earlier users' claims, whether its representational content is preserved, and whether the patterns of inference tied to it are preserved) weighted by the
+interests of those assessing a proposal, and as one defeasible desideratum
+rather than an overall verdict on it (<a href="https://doi.org/10.1080/0020174X.2021.1980095">McPherson and Plunkett 2024,
+§§1–2</a>). Matthieu Queloz argues
+that a concept's authority, the reason those asked to use it have to adopt it,
+depends on whether it serves concerns that they would endorse on reflection. On
+Queloz's account, continuity of subject matters only as a proxy for this authority.
+Continuity is wanted because the revised concept is hoped to serve the concerns
+that gave people reason to use the concept it replaces. Continuity is therefore
+not sufficient: a concept that keeps answering the original question need not
+answer it well. Nor is it necessary: some concerns cannot be expressed as
+questions, and a concept that preserves the original concept's function without
+preserving its subject can serve them. For the same reason, greater precision
+confers authority only where precision is already what users care about, as in
+logic (<a href="https://doi.org/10.1093/mind/fzac028">Queloz 2022, 1247, 1250, 1253, 1255–1256,
+1262</a>). Applied here, merely making a characterization of research more precise gives it no authority for users who do not care about precision as such.</p>
+<p>Usefulness for the stated purpose is therefore one thing the characterization
+answers to, not the only one. In light of the discussion above, more is asked of
+the book's working characterization: that it remain connected to heterogeneous
+research practices, clarify cases that task lists obscure, expose consequential
+choices, and make clearer what to ask when machines do research, and that it remain
+revisable when later accounts of knowledge, understanding, practice, agency, or research
+systems show that it excludes too much or includes the wrong things. If Pinder's distinction is applied here, a characterization used in this way is closer to what Pinder calls partial explication, which introduces a more exact concept without
+replacing the old one in the relevant theoretical contexts, than to full
+explication, against which, on Pinder's reconstruction, the charge of changing the
+subject has its force (<a href="https://doi.org/10.1007/s11229-017-1614-6">Pinder 2020, §§2, 3.2,
+5.2</a>). What the book takes from Carnap's model, then, is that a replacement is assessed against its stated purpose, not that the ordinary concept of research is replaced by this characterization. That is how this book meets
+the second worry, that revising a concept for a purpose changes the subject.</p>
+<p>The third worry concerns how an account is used rather than whether it changes
+the subject, and it remains once the second worry has been answered. A
+definition is not institutionally inert. Gieryn examines the demarcation of
+science from other intellectual activities, long an analytic problem for
+philosophers and sociologists, as a practical problem for scientists. On his
+account, drawing a boundary between science and varieties of non-science serves
+scientists' professional goals: acquiring intellectual authority and career
+opportunities, denying these resources to those they call pseudoscientists, and
+protecting the autonomy of scientific research from political interference
+(<a href="https://www.jstor.org/stable/2095325">Gieryn 1983, abstract</a>). In the cases
+Gieryn analyzed, as Chih-Tung Huang reports them, John Tyndall drew a boundary
+between science and religion by describing science as useful, empirical,
+skeptical, and objective, and so claimed for scientists the authority to speak
+about nature, to set the curriculum, and to win public support; against the
+mechanics and engineers, at a time when many Britons credited craftsmen rather
+than scientists with the Industrial Revolution, he described science instead
+as theoretical and pure, justified by its nobler uses. In Edinburgh, anatomists
+described phrenology as pseudoscience, vague in its theories and resting on
+popular opinion rather than on the judgment of experts, pushed it out of the
+scientific community, and gained access to authority and resources (<a href="https://doi.org/10.5070/G313410934">Huang
+2012, 2–4</a>). Gieryn traces these
+descriptions both to strains and to interests: the alternative characteristics
+that can be attributed to science reflect ambivalences within the institution,
+so that science can be made to look empirical or theoretical, pure or applied,
+and which description is selected depends on which best draws the boundary in a
+way that justifies scientists' claims to authority or resources (<a href="https://www.jstor.org/stable/2095325">Gieryn 1983,
+abstract</a>). Applied to characterizations of research, Gieryn's analysis implies that they are open to the same use. This book needs only a
+more limited point: once an account becomes a benchmark, funding criterion,
+publication rule, or basis for credit, its exclusions have consequences.</p>
+<p>An account that took papers as its unit, for example, would privilege current
+publication forms; one centered on experiment would privilege some domains; one
+centered on individual agents could hide distributed labor and infrastructure. Queloz's account has a
+consequence that bears on these exclusions: because a concept's authority is
+relative to the concerns its users would endorse, the same concept can be
+authoritative for one group and not for another (<a href="https://doi.org/10.1093/mind/fzac028">Queloz 2022,
+1265–1266</a>). On such a view, a
+characterization that serves the concerns of those who think about research by
+machines does not thereby have authority for the research communities whose
+practices it classifies. This is the same kind of limit that the first
+paragraph of this section placed on the OECD criteria: authority for one
+purpose, or for one group, does not by itself extend to another. The limit
+runs one way. What it limits is the authority of the characterization over those
+communities, not their standing to criticize it: the characterization remains
+answerable to their practices and revisable in light of them (Chapter 1, Section 1
+says so, and Section 8 compares the characterization with such practices).</p>
+<p>A comparison with scientific modeling may make the book's procedure as a whole
+clearer. Weisberg describes modeling as the indirect study of a phenomenon
+through a model in three stages: a model is constructed, it is analyzed, and its
+relation to the target is then assessed where such an assessment is appropriate.
+What relates a model to its target is fixed partly by a construal, which assigns
+parts of the model to parts of the target, states its intended scope, and sets
+the standards of fidelity it is to meet (<a href="https://web.archive.org/web/20240418223301/http://www.phil.upenn.edu/~weisberg/documents/modelingfinal.pdf">Weisberg 2007b,
+4, 14–16</a>). The working characterization can
+be read as a model of research in this sense. It is constructed in Chapter 1 and
+its consequences are analyzed there, and the later chapters, holding it up against research practices, consider what can be drawn from this model about research by machines; it is not offered as a
+complete representation that would make other models unnecessary.</p>
+<p>Much of what
+the book draws on can likewise be read as partial models of research, each built
+for one aspect of it, such as knowledge, understanding, the process of inquiry,
+agency, or the social organization of research. Since research has so far been
+done by humans, what these models have dealt with is, naturally, human research.
+While connecting these partial models, the book tries to think through what
+changes and what does not when research is done by a machine, and in what sense.
+This is what the book is after in asking what it is for a machine to do
+research. To that end, it tries to tell how far each discussion is specific to
+human research and where it may also hold for research by machines. A discussion that had one implication for human research may also have another for research by machines, and another again where those for whom the knowledge is sought (the society Chapter 1 calls <i>S</i>) are not human. For example, human research has been shaped by the human body. Put
+as the claim that an inquirer is shaped by its own body, this may hold for
+machines as well, and one can then ask which parts of the discussion of
+embodiment are specific to humans (Chapter 5, Section 6.5). Chapter 9, Section 6 poses the same question in another form. It asks what the goods that may have been supplied by dividing the relations surrounding research (the allocation of inquiry, criticism and certification, authority, and others) among separate parties depended on, and sorts the answers into four: premises about research's having been carried out by humans, premises about how the present system of science is organized, conditions of inquiry that remain for any inquirer, and relations to parties outside the unit that carries out the research. In Weisberg's
+terms, this is close to asking which results are robust to a change of
+representational framework (<a href="https://philsci-archive.pitt.edu/4085/">Weisberg and Reisman 2008, 15–17,
+25</a>).</p>
+<p>Moves of a related kind have been made in the philosophy of computational science. Humphreys wrote that to be a scientific realist is to reject an anthropocentric position on what exists, and so to recognize the human senses as only five detectors, each with a limited domain of application (<a href="https://doi.org/10.4245/sponge.v4i1.14185">Humphreys 2010, 112</a>); and Humphreys, as Winsberg and Alvarado report, defined epistemic opacity relative to a cognitive agent and a time, as the agent's not knowing at that time all the epistemically relevant elements of the process, and held that a process is essentially opaque to an agent when the agent's own nature makes it impossible to know those elements (<a href="https://plato.stanford.edu/archives/sum2026/entries/simulations-science/">Winsberg and Alvarado 2026, §2.5</a>; Chapter 3, Section 5). In the debate over scientific realism, van Fraassen, whose constructive empiricism is the view that science aims at theories that are true about what is observable, treated <code>observable</code> as meaning observable by us, an epistemic community whose membership need not coincide with humanity (<a href="https://web.archive.org/web/20221011071250/https://www.princeton.edu/~fraassen/abstract/Dolphins.pdf">van Fraassen 2005, 3–4</a>; Chapter 1, Section 6). Humphreys's account of the senses rejects privileging human senses. His agent-relative account of opacity and van Fraassen's account of observability more directly exemplify restating a notion so that it can be applied to other inquirers, the kind of restatement the book attempts discussion by discussion.</p>
+<h3 id="5-why-this-book-begins-from-research-rather-than-science-alone">5. Why this book begins from research rather than science alone</h3>
+<p>The object of this book includes natural science, mathematics, engineering,
+social inquiry, the humanities, and related domains. It does not begin with
+experimental natural science as the standard case and admit other practices by
+resemblance. A proof, archival interpretation, field study, artifact, and
+laboratory experiment differ substantially. The purpose of a common
+characterization is to make comparison possible without making one realization
+the ontology of all the others.</p>
+<p>No timeless taxonomy establishes that <em>research</em> is the genus and <em>science</em> one
+species. Historical work locates much of the modern sciences–humanities division
+in the long nineteenth century and describes how unmodified English <em>science</em>
+came commonly to denote physical or natural science. <em>Research</em> developed from
+careful search or investigation into a professional academic activity and then
+an organized category spanning universities, government, industry, and R&amp;D
+(<a href="https://www.journals.uchicago.edu/doi/full/10.1086/696298">Krämer 2018</a>;
+<a href="https://espace.inrs.ca/id/eprint/6070/">Godin and Schauz 2016</a>).
+The histories explain why contemporary vocabulary overlaps; they do not settle
+the correct conceptual boundary.</p>
+<p>Institutional classifications use <em>research</em> broadly across mathematics,
+natural and social science, engineering, medicine, humanities, arts,
+performance, artifacts, design, and experimental development
+(<a href="https://doi.org/10.1787/9789264239012-en">OECD 2015</a>;
+<a href="https://2021.ref.ac.uk/media/1447/ref-2019_01-guidance-on-submissions.pdf">Research England et al. 2019</a>).
+These are practical classifications rather than philosophical definitions, and
+ordinary <code>research</code> also covers commercial, journalistic, and personal
+investigation. The word does not delimit the object by itself. It is used here
+as the activity term for the broad comparison class, with its
+scope stated explicitly.</p>
+<p>The neighboring philosophy of inquiry supplies useful distinctions but not a
+settled superclass. Inquiry can be directed toward true belief, justified
+belief, knowledge, understanding, or broader epistemic improvement, depending
+on the account. It can also enlarge one person's understanding of something a
+wider community already knows. This book need not settle inquiry theory before
+proposing a research characterization. What the characterization relies on is
+that the differences among being directed toward an unknown, following
+investigative norms, settling a question, and bringing about knowledge or another epistemic achievement be preserved
+(<a href="https://doi.org/10.1111/phc3.12952">Haziza 2023</a>;
+<a href="https://doi.org/10.1007/s11229-018-1803-y">Kelp 2021b, S1583–S1584</a>;
+<a href="https://doi.org/10.1093/pq/pqaf098">El Shazly 2025, 2–5, 12–13</a>).</p>
+<p>The choice of <em>research</em> is consequently purpose-relative rather than lexical
+legislation. Its value is to keep heterogeneous forms of inquiry directed toward
+knowledge, understanding, or other epistemic achievements inside the initial comparison
+class. The abstraction is meant not to erase disciplinary difference but to make
+possible a target that allows operations, standards, products, and perhaps some aims to
+vary. One reason for allowing them to vary is to keep in the comparison the case in which machines come to make new ways of doing research, not only to carry out research as it is now done, so that asking what changes when the activity, its participants, or the relations sustaining it become artificial includes asking what changes in the way research itself is done. The book does not settle whether or how that would happen; Chapter 13, Section 7 returns to what the examination brings into view about it.</p>
+<h3 id="6-the-route-of-the-argument">6. The route of the argument</h3>
+<p>The next chapter proposes one thin orientation, which deliberately settles little. It
+does not claim to discover the unique essence of research. The rest of the book
+then takes that orientation as a footing for considering five coupled questions:</p>
+<ol>
+<li>What conception of research is at issue?</li>
+<li>What would count as epistemic achievement?</li>
+<li>How is inquiry organized when its question, method, and standards can change?</li>
+<li>What would warrant attributing research capacity, researcher status, or
+   autonomy when the boundary of what counts as one actor is drawn around an artificial
+   system or a combination of humans and machines, and for which society
+   is that research organized,
+   and where would its intended achievements be realized?</li>
+<li>Which of the relations through which research is directed, certified, and
+   governed for the society relative to which its intended achievements would be new
+   (<i>S</i> in Chapter 1) can be located inside an artificial configuration, and what changes when they are? An artificial configuration here is a unit to which research is attributed and which includes something artificial: a single model, an agent, a collection of agents, or an organization of humans and AI (Chapter 7, Section 1). To locate a relation inside it is for that unit itself to come to carry a relation now carried by parties or arrangements outside the research.</li>
+</ol>
+<p>Chapter 1 offers a provisional outlook on the first question by proposing the
+characterization; the other four correspond to the four debts that Chapter 1,
+Section 9, identifies, that is, questions that the characterization leaves the later
+chapters to answer: the achievement, process, attribution, and research-order debts.
+The last concerns the social order of research, made up of the division of labor, the
+allocation of inquiry, criticism and certification, memory and correction, credit, and
+authority.
+Chapter 1, Section 9 explains what kind of division this is and what it is for. Each question organizes one of the book's five parts.
+Part I (Chapter 1) takes up the first, Part II (Chapters 2 and 3) the second,
+Part III (Chapters 4 to 6) the third, Part IV (Chapters 7 and 8) the fourth,
+and Part V (Chapters 9 to 12) the fifth. Chapter 13 concludes.</p>
+<p>The opening orientation uses epistemic achievement as an open success term, one that marks success without fixing in advance what kind of success it is. Knowledge and understanding receive the principal analysis; further achievements are not established merely by being named. In many places the book's argument proceeds mainly through the case of knowledge, especially in the chapters that discuss what it takes for an achievement to be realized, how evidence is assessed, and how results are certified (Chapters 1, 2, 6, 8, and 11). Understanding is taken up in Chapter 3, which examines, chiefly through its relation to knowledge, what it takes for understanding to be realized, who understands, and what makes understanding valuable; its consequences for certification and attribution are discussed further in Chapter 9, Section 2.1 and Chapter 11, Section 5.6, among other places. Most of the chapters on the process of inquiry, the attribution of research, the allocation of inquiry, and authority over decisions, by contrast, are written in terms that apply to knowledge and understanding alike. The term epistemic achievement lets several achievements, knowledge and understanding among them, serve as construction targets, while each target's conditions remain to be defended. Its cost, that the term by itself fixes no single condition of success, is assessed explicitly in Chapter 1, Section 1.</p>
+<p>The order of the argument is not one-way: the later chapters draw on the characterization, and what they find can call for its revision (Chapter 1, Section 1). What the later chapters mainly consider is what follows about machines' doing research when research is taken in this way. The book does not aim to test the working characterization, but Chapter 1, Section 8 compares the characterization with varied research practices to see how far it reaches and where it parts from other ways of taking research. Chapter 13 traces what the characterization distinguished and made askable where the one doing research is a machine, what it set aside, and which conclusions rest on accounts or cases other than the characterization. It also draws together what the chapters have tried to bring out about artificial research, from changing questions and methods to the creation of research
+actors and the reorganization of relations among them. The target can become
+more definite through this inquiry without every philosophical disagreement
+having to be settled first.</p>
+<p>Of what comes into view across the chapters, Chapter 13 gathers two things. One is that the claim that a machine is doing research divides into claims that can hold or fail separately; the other is that much of what was settled without being decided when humans did research, because those who did it were individual people, divided among many, can become something to be decided when machines do.</p>
+</div>
+<nav class="book-nav"><span></span><a href="/blogs/what_would_it_mean_for_machines_to_do_research.html">Contents</a><a href="/blogs/what-would-it-mean-for-machines-to-do-research/chapter-1.html">Chapter 1 &rarr;</a></nav>
+{% endraw %}

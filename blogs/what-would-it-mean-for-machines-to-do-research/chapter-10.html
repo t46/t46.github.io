@@ -1,0 +1,1005 @@
+---
+layout: "post"
+title: "Chapter 10 — How Is Inquiry Allocated? | What Would It Mean for Machines to Do Research?"
+permalink: "/blogs/what-would-it-mean-for-machines-to-do-research/chapter-10.html"
+description: "A book-length conceptual exploration of what it would mean for machines to do research, drawing on accounts of knowledge, understanding, inquiry, and the social organization of research developed with human researchers in mind."
+og_image: "/assets/images/blog/what-would-it-mean-for-machines-to-do-research/social-card.png"
+og_image_width: 1280
+og_image_height: 670
+og_image_alt: "What Would It Mean for Machines to Do Research? A Conceptual Exploration Drawing on Accounts of Human Inquiry"
+---
+{% raw %}
+<p class="book-running-title"><a href="/blogs/what_would_it_mean_for_machines_to_do_research.html">What Would It Mean for Machines to Do Research?</a></p>
+<nav class="book-nav"><a href="/blogs/what-would-it-mean-for-machines-to-do-research/chapter-9.html">&larr; Chapter 9</a><a href="/blogs/what_would_it_mean_for_machines_to_do_research.html">Contents</a><a href="/blogs/what-would-it-mean-for-machines-to-do-research/chapter-11.html">Chapter 11 &rarr;</a></nav>
+<div class="book">
+<h2 id="chapter-10-how-is-inquiry-allocated">Chapter 10 — How Is Inquiry Allocated?</h2>
+<h3 id="division-of-labor-diversity-and-whose-unknowns">Division of Labor, Diversity, and Whose Unknowns</h3>
+<h3 id="1-why-allocation-arises-and-what-makes-it-hard">1. Why allocation arises, and what makes it hard</h3>
+<p>Chapter 9 distinguished three relations through which research is directed,
+certified, and governed for <i>S</i>, and called the first of them allocation: the
+distribution of attention, effort, and resources among <i>S</i>'s unknowns
+(Chapter 9, Section 2.1). The relation arises where a term of the working
+characterization meets a condition that lies outside it. The term is <em>new to
+<i>S</i></em>. <i>S</i> is ignorant of indefinitely many things, and novelty does not
+decide which of them deserve attention (Chapter 1, Section 8). That alone would
+not force a choice. What forces one is that the means of inquiry are finite.
+What one line of inquiry receives, another does not: attention, effort,
+instruments, samples, and time are limited, and each could be spent otherwise.
+Applied to this relation, the question of Part V becomes the question of this
+chapter: can the distribution of effort among <i>S</i>'s unknowns, and the judgment
+of which of them are worth pursuing, be located inside an artificial
+configuration, and what changes when it is? In the example with which Chapter 9
+fixed ideas, a system that generates a hundred instances, assigns them to
+different lines, and shifts computing resources among the lines according to
+checks run by other instances is allocating in this sense, and a builder who
+says that such a system allocates inquiry well makes a claim about this
+relation (Chapter 9, Sections 1 and 6).</p>
+<p>Once means are finite, two problems can be distinguished. The first is a
+problem of search: given what <i>S</i> wants to know, how is effort to be
+distributed among lines whose prospects are uncertain? The second concerns the
+ends themselves: which of <i>S</i>'s unknowns are worth pursuing at all, and in
+what order. A complete solution to the first would leave the second where it
+was. Both problems follow from the finiteness just stated, which forces a distribution of effort toward ends taken as given as well as a choice among the ends, and keeping them apart lets one ask, of a claim to allocate well, which of the two problems it concerns. Keeping them apart does not make search free of value: Section 2 argues that how a search represents and orders its space is itself a judgment of value, made for ends taken as given, and is not the choice among ends that Section 6 takes up. The two are not cleanly separable, however: they meet wherever what
+counts as success in search is itself in question (Section 6). Sections 2 to 5
+take up the search problem, and Section 6 the second; Chapter 12 takes up who
+may answer it.</p>
+<p>The search problem arises where finiteness meets ignorance. Ignorance of which line
+will succeed creates an allocation problem only when the lines cannot all be
+pursued cheaply, safely, and reversibly. Where they can, a configuration may
+simply try them all, and choosing among them loses most of its point. Section 4
+asks where this condition holds and where it weakens.</p>
+<p>What makes the search problem hard is that no one knows in advance which line
+will succeed. Not knowing, however, covers at least three different things, and each corresponds to a family of arguments examined in this chapter. Telling the three apart therefore separates the reasons a spread of effort can be worth having, and lets the arguments below be sorted by the kind of ignorance each addresses. They do not exhaust those reasons: diversity kept for the sake of criticism rather than search is a further reason,
+which Chapter 11, Section 3 takes up, and the ordering of ends is not a matter
+of not knowing in any of these senses.</p>
+<p>In the first, the chance that each line succeeds is known, and what no one knows
+is which line will in fact deliver. Philip Kitcher's model of the division of cognitive labor is of this kind: the chance that a method succeeds, given the number of workers assigned to it, is treated as known, and in the case of rival methods the community optimum can divide the workforce because, as Marco Viola reports the model, additional workers on a method yield less and less as it nears saturation (<a href="https://doi.org/10.13130/2282-5398/4768">Viola 2015, 5–6</a>; <a href="https://doi.org/10.1387/theoria.7014">Kitcher 2013, 202</a>); in that case nothing has to be learned for the division to be worthwhile. The case of rival theories differs and lies closer to the second kind below: there, Kitcher holds, as Viola quotes him, "we may be grateful to the stubborn minority who continue to advocate problematic ideas" even where all could reasonably agree that their theory is the inferior one (<a href="https://doi.org/10.13130/2282-5398/4768">Viola 2015, 6</a>), so that something can be learned by dividing. In the second, the chances are
+themselves unknown and can be learned only by pursuing the lines. Here the problem takes the form of what is called the trade-off between exploration and exploitation: effort spent learning about options that look worse is withheld from the option that looks best, and effort withheld from them leaves their merits unlearned. The trade-off is not tied to any one problem setting and has been discussed for organizational learning (Section 5), for child development (Chapter 4, Section 7), and in machine learning; in science, as Jingyi Wu and Cailin O'Connor
+note, the trade-off is sharpened because time, money, and energy are limited
+(<a href="https://doi.org/10.1007/s11229-023-04037-1">Wu and O'Connor 2023</a>; accepted
+manuscript, 4, 8). In the third, neither the lines nor their value can be
+projected in advance. Wu and O'Connor note that the models of the trade-off they survey, known as bandit models, assume a well-defined, well-understood set of options and leave out the
+generation of new ones (<a href="https://doi.org/10.1007/s11229-023-04037-1">Wu and O'Connor
+2023</a>; accepted manuscript, 21),
+and Jamie Shaw, examined in Section 2, argues that this is the common situation
+in research. The trade-off between exploration and exploitation thus names one
+part of the allocation problem rather than the whole of it. Chapter 5, Section
+4.2 examined the judgment of what to pursue within a single inquiry; the three
+kinds of not knowing concern the same judgment when it is distributed across
+many investigators.</p>
+<p>Which spread of effort is good also depends on what inquiry is taken to be for.
+Kitcher holds that understanding how norms and incentives bear on the purposes
+of collective inquiry "presupposes an initial account of what those purposes
+are", and that only given such an account can one look for the optimal way of
+organizing collective research (<a href="https://doi.org/10.1387/theoria.7014">Kitcher 2013,
+206</a>). The arguments examined below each presuppose some such purpose. In the models of
+Kitcher and Michael Strevens, a distribution is measured by its expected
+contribution to a goal fixed in advance, over lines given in advance; in the
+network models of Section 4, by whether a community comes to favor the option with better expected performance among options fixed in advance (identifying that option is not the same as establishing the truth of an entire theory); on Miriam
+Solomon's account, by whether each empirical success available in a domain stays represented, that is, whether some theory that has it is still pursued, until one theory has them all. Other purposes change what
+counts as a good allocation; those that follow are examples, each presupposed by particular
+arguments, models, or positions on why research is pursued at all (Chapter 9,
+Section 3). Donald Gillies, arguing that because research explores what is not
+yet known no one can tell in advance which program will succeed, holds that a
+good funding system would fund every approach as far as possible (<a href="https://doi.org/10.13130/2282-5398/3834">Gillies
+2014, 7, 11</a>), and Vannevar Bush's case for research whose uses cannot be foreseen asked that "the entire front" of medicine
+and its underlying sciences be developed (<a href="https://www.govinfo.gov/content/pkg/GOVPUB-PR32_400-e7966ee70a4f7b47f862431c9776f727/pdf/GOVPUB-PR32_400-e7966ee70a4f7b47f862431c9776f727.pdf">Bush 1945,
+9</a>);
+both presuppose the purpose of covering a space of possibilities. Wu and
+O'Connor, noting that the bandit models they survey leave out the generation of
+new options, ask how to encourage the exploration of "new and unexpected
+possibilities" (<a href="https://doi.org/10.1007/s11229-023-04037-1">Wu and O'Connor 2023</a>;
+accepted manuscript, 21), a question that presupposes the purpose of generating
+options not yet in view. The results on payoffs that can change, taken up in
+Section 4, presuppose the purpose of keeping the capacity to respond when
+conditions change; on positions on which the ends themselves move, such as Max Weber's or the Deweyan view (Chapter 9, Section 3), what changes can include the
+ends. Bush's report also asked for coordinated work on special problems where
+support could shorten the time before benefits reached the public (9–10), which
+presupposes the purpose of answering soon the questions that press on
+particular members of <i>S</i>. On these purposes the same distribution can be
+judged differently; Wu and O'Connor suggest, for example, that funders might
+promote more exploration where accuracy is very important than where swift
+convergence on a decent theory is best (accepted manuscript, 12). A heuristic such as directing effort to what has not yet been explored shows the same dependence on purpose.
+The working characterization does not imply it, since novelty to <i>S</i> makes
+every unknown a candidate without favoring the unexplored (Chapter 1, Section
+8); it has a reason on purposes such as coverage or the discovery of what no one
+expects, and less on a purpose such as answering a pressing question soon.
+Since the working characterization establishes no single global aim for inquiry (Chapter 1, Section 1), the chapter says, of each argument, which purpose its conclusion
+presupposes.</p>
+<p>The working characterization also leaves open how different achievements are weighed
+against one another. Different achievements can favor different
+allocations: discovering another regularity and explaining an established one compete
+for the same finite means but need not be comparable on a common measure. Their relative importance depends on which account of value and purposes is adopted. Nothing in
+the term epistemic achievement supplies an aggregate score or makes every
+capacity-building investment an achievement in its own right.</p>
+<p>The arguments themselves come mainly from one lineage: formal models of the
+division of cognitive labor, beginning with Kitcher's, and the debate about
+central direction that preceded them. This lineage suits the chapter's
+question for a specific reason. Its models state their premises explicitly, so
+that each premise can be examined in turn and sorted with the device of Chapter
+9, Section 6: does it rest on premises about human realizers, on premises about the present organization of science, on conditions of inquiry that hold whatever realizes it, or on relations to parties outside the
+configuration, <i>S</i> among them? Empirical studies of research communities enter
+below as evidence about whether a premise holds, not as prescriptions. Section 2
+examines the premises about the center and its control, Section 3 the premise
+that allocation passes through investigators' motives, Section 4 which lines are
+kept alive and for how long, Section 5 the functions that human allocation
+performed without anyone deciding them, and Section 6 the question of whose
+unknowns are pursued. One distinction becomes central as the examination proceeds: that a single configuration can create and sustain many lines is one thing, and that it judges their survival by a single criterion is another (Sections 2 and 4). Section 7 joins these examinations into a single picture of what can happen to research when allocation enters a configuration, and draws from that picture what a claim that a configuration allocates well would need to show.</p>
+<h3 id="2-the-philosopher-monarch-s-two-powers">2. The philosopher-monarch's two powers</h3>
+<p>Human research communities carry out allocation without needing a single
+decision to do so: investigators choose problems and methods under the pressure
+of credit, careers, funding, and the choices of their colleagues, and the
+resulting distribution of effort is what the community actually pursues. An
+artificial research configuration can change the realization of this relation
+at its root. Some such configurations can instantiate investigators, copy them, assign them, and withdraw them. The first question this raises for the search problem is whether anything that made the distributed organization of human inquiry epistemically valuable survives when allocation can be assigned from a center, or formed inside a configuration in other ways (Section 3). The arguments that
+defended distributed allocation are the place to look, because they say what
+the distribution was valuable for, and their premises can then be examined one
+by one.</p>
+<p>The classical defense of distributed allocation is Michael Polanyi's, which
+compared science to a group of helpers assembling a large jigsaw puzzle, each
+working in sight of the others and responding to every piece that another fits.
+Any attempt to organize such helpers under a single authority, Polanyi argued, would remove their separate initiatives and leave their joint
+performance no better than that of the person directing them
+(<a href="https://polanyisociety.org/primary-resources-the-republic-of-science/">Polanyi 1962</a>; 2000 reprint, 2–3). The same essay also considers giving each helper a duplicate set of all the pieces and bringing their several results together: that would do a little better than sharing out the pieces, but the team would not much surpass the best performance of a single individual (Polanyi 1962; 2000 reprint, 2). What the jigsaw gains, on this account, comes not from the number of helpers but from their working in sight of one another. The
+argument has more than one premise. Polanyi rests it on the end result being
+unknown, so that the joint task can advance only stepwise, with each step best
+taken by whoever is most competent to take it (Polanyi 1962; 2000 reprint, 3).
+One premise, however, concerns the realizer: the center is a single person,
+with one person's capacity to attend. An artificial allocator need not be
+limited in that way. It can attend to many lines at once and pool what every
+investigator observes. Pooling at a center, however, is not what Polanyi's helpers do: each responds to the pieces the others fit. Whether a configuration's instances see and respond to one another's results, or only report to an allocator that pools them, is a further question about its organization (compare Section 4). If the case for distributed allocation rested only on this premise, an artificial allocator would dissolve it. A thought experiment that Kitcher proposed later suggests that the case does not rest only on it.</p>
+<p>Kitcher imagined a philosopher-monarch "with the prerogative of directing the course of scientific research," as Viola quotes the paper, who wants the scientific community to reach its epistemic goals and who, in Shaw's description, has perspicuous knowledge of the probability functions of the rival lines; this chapter calls that knowledge the monarch's eye for the objective merits of theories (<a href="https://doi.org/10.13130/2282-5398/4768">Viola 2015, 5</a>; <a href="https://hdl.handle.net/20.500.14721/33235">Shaw 2018, 155</a>). Kitcher introduced the monarch to frame the question of the community optimum and, as Viola reports, then set its standpoint aside as a useful fiction (<a href="https://doi.org/10.13130/2282-5398/4768">Viola 2015, 5, 9</a>). Without the fiction, in Kitcher's later statement of the problem, investigators who each evaluate the methods correctly and seek their own best chance will all adopt the more promising method, and the community would do better if some of them altruistically adopted the other "for the good of the community", at what might be a considerable sacrifice (<a href="https://doi.org/10.1387/theoria.7014">Kitcher 2013, 202</a>). The thought experiment is used here
+for a narrower reason. It separates two powers that human institutions combine
+only partially, control over where investigators work and the eye for the objective merits of theories, and so lets one ask which of them an artificial
+configuration changes. That such a configuration makes one of the powers look
+less like a fiction is a reason to examine the thought experiment again, not
+evidence that the monarch has been realized.</p>
+<p>Kitcher argues that even this monarch would not assign every investigator to the
+best-supported option. As Shaw and Viola report the argument, when the evidential balance between rivals is delicate, when methods respond quickly to additional workers, or when the workforce is large, the distribution that best serves the community's goal divides the workforce, even though each investigator, judging individually, would choose the same option (<a href="https://hdl.handle.net/20.500.14721/33235">Shaw 2018, 153–154</a>; <a href="https://doi.org/10.13130/2282-5398/4768">Viola 2015, 5–6</a>; <a href="https://doi.org/10.1387/theoria.7014">Kitcher 2013, 202</a>).
+The distribution that individual rationality produces and the distribution the
+community would choose can diverge. In Kitcher's analysis, the reason is not a
+defect in the investigators but the two features of the problem noted in
+Section 1: no one knows in advance which line will succeed, and additional
+effort on one line yields diminishing returns. The optimum is defined relative
+to the community's goal, whatever it is taken to be (Section 1).</p>
+<p>Science has no such monarch. Kitcher himself, writing with Julian Reiss, held that where large rewards draw several groups into racing toward the same result, "a certain amount of planning" would foster a division of labor and useful collaboration (<a href="https://doi.org/10.1387/theoria.696">Reiss and Kitcher 2009, 273</a>). Chapter 9, Section 5 distinguished four things that the word control can run together: a formal right to decide, the effective capacity to exercise it, knowledge bearing on how to use it, and influence that shapes options without deciding
+among them. An artificial configuration that can create, copy, assign, and
+withdraw its investigators may come closer than human arrangements have to
+direct assignment and to costless movement between lines. How close it comes is
+not settled by that ability. Whether a formal power to assign is matched by
+effective control depends on whether an assigned investigator pursues the line
+in the sense the allocator intends; on whether the lines among which it assigns
+are given before inquiry or are formed and divided within it (Chapter 4, Sections 4 and 6; Section 4 below); and on whether the resources through which lines
+are pursued are the allocator's to assign (Chapter 12, Section 6.4).</p>
+<p>Where control is approached, it does not supply the eye that the philosopher-monarch was given for the objective merits of theories. Strevens makes part of
+the point precise. On Strevens's model, a central planner that computes the optimal allocation among research programs is assumed to know the true form of each program's success function, and, under the model's idealizations, a scheme that rewards
+investigators in proportion to their marginal contribution to a program's
+chance of success reaches the same allocation without a planner. If the success
+functions change in unforeseeable ways, optimality may be out of reach; but
+this, Strevens notes, is "a universal obstacle" that "equally hinders the wisest
+central planner," not a peculiar fragility of the proposed reward scheme
+(<a href="https://www.strevens.org/research/scistruc/Prioritas.pdf">Strevens 2003, §§3.3–3.4</a>). Kitcher
+later grants a related point: because nature is unpredictable, judgments of
+significance, even if made under ideal conditions, would often turn out to need
+revision by the next generation of those who make them, though Kitcher holds
+this no more troubling than the continual revision that any planning for an
+uncertain future involves (<a href="https://doi.org/10.1387/theoria.7014">Kitcher 2013,
+221</a>). Kitcher also holds that the philosophical task of
+finding the optimal organization of collective research would be too ambitious
+if undertaken in full generality, as the general theories sought by logical
+empiricism suggest, different areas of research being likely to call for
+different analyses, and that rather than seeking the optimum, a more useful
+first venture might be to understand how collective inquiry could go badly wrong
+(<a href="https://doi.org/10.1387/theoria.7014">Kitcher 2013, 206</a>). Wu and O'Connor,
+who argue that funding bodies could move a community toward the levels of
+exploration that decision theory recommends, add that even where a decision
+maker can allocate labor across a community, the complexity of real scientific
+evidence can make it hard to know how labor ought to be allocated (<a href="https://doi.org/10.1007/s11229-023-04037-1">Wu and
+O'Connor 2023</a>; accepted
+manuscript, 11–12, 14). Hiroaki Kitano, proposing a program to build artificial systems that make major scientific discoveries autonomously, takes a related point as a reason for machine exploration. On Kitano's account, the significance of a discovery can be extremely difficult, if not impossible, to evaluate when a few more discoveries may be needed before it leads to a major outcome, a difficulty the account names the over-the-horizon problem; a search that pursues expected significance can therefore stop short of a significant discovery reachable only through steps of low expected significance. Kitano proposes that such systems explore hypotheses without imposing what the proposal calls value-driven criteria, that is, criteria based on the expectation that a discovery will be significant. The paper distinguishes a system's role as a problem solver, aligned with the value of its stakeholders and working on problems defined in advance, from its role as an explorer of hypothesis spaces that human investigators would not reach, allowing that human experts may take commanding and monitoring roles and holding these roles important to avoid misuse (<a href="https://doi.org/10.1038/s41540-021-00189-3">Kitano 2021</a>). On this program the absence of the eye is met not by leaving each step to whoever is most competent to take it, as on Polanyi's account, but by extending search to lines that no one would choose on expected significance. Since, as Kitano notes, such a system is not free of resource limits, how it is to sample the space of hypotheses remains, on the program's own statement, an open research problem, and some ordering among lines returns there.</p>
+<p>Resource limits are not the only reason an ordering returns. Any search fixes, at least implicitly, how the space it searches is represented and where and in what order it searches; what a search fixes in this way can be called its heuristic of search. To choose where and in what order to search is to single out some possibilities among many, and however the choice is made, it is made by some criterion of choice: a judgment of what to take up first and what to weigh more, which is a judgment of value in a broad sense. In that sense one may even say that a choice is a judgment of value about which of several options to take up, and from where. No search, then, is free of a prioritization. Proposals to search without objectives or without expected significance are examples. Kitano's own program proposes that a first stage focus on hypotheses of a particular form, molecular mechanisms (<a href="https://doi.org/10.1038/s41540-021-00189-3">Kitano 2021</a>). Joel Lehman and Kenneth Stanley, who propose giving up the pursuit of objectives and searching for novelty alone, say of their own method that its measure of novelty "must be fitted to the domain" and that, combined with a complexifying algorithm such as NEAT, it orders search from simple to complex (<a href="https://web.archive.org/web/20220707/http://eplex.cs.ucf.edu/papers/lehman_ecj11.pdf">Lehman and Stanley 2011, §§3–4, 9.1</a>); and, as Chapter 5, Section 3 noted, even searches described as theory-agnostic rely on a prior characterization of the space searched. For research in particular, Julian Reiss and Jan Sprenger report it as almost universally accepted that the choice of a research problem is often influenced by the interests of individual scientists, funders, and society (<a href="https://plato.stanford.edu/archives/sum2026/entries/scientific-objectivity/">Reiss and Sprenger 2020, §3.1</a>), and on Weber's position (Chapter 9, Section 3) value ideas fix which part of reality becomes an object of investigation. For the same reason, a policy of searching as far as possible without the heuristics humans have used is not value-free either, since it is itself a prioritization that decides where search goes and in what order. In this sense completely value-free exploration is not possible, and what a proposal such as Kitano's removes is one criterion, significance as expected in advance (what Kitano calls value-driven), rather than judgments of value as such. What follows from this is more than that every search involves judgments of value. Judgments of value in this broad sense differ in what they weigh. Choosing an order at random, for instance, gives weight to giving every candidate an equal chance of being taken up early, that is, to not presupposing which candidates matter; in the same way, setting the order by computational convenience weighs ease, and setting it by expected significance weighs anticipated results. A search that does not use expected significance still settles, through how it represents and orders its space, which possibilities it can reach and which it reaches first. If, as on Kitcher's account examined in Section 6, which lines were pursued shapes what later appears significant, these choices of reachability and order constrain later judgments of significance. Such a proposal then avoids narrowing search by significance expected in advance, but the order it adopts in its place sets the range of what can later come to appear significant.</p>
+<p>Jamie Shaw, developing an approach to the organization of research from
+Feyerabend's pluralism, generalizes the diagnosis, seen above in Strevens and Kitcher, that the eye is missing to the third kind of not
+knowing distinguished in Section 1, in which neither the lines nor their value
+can be projected in advance. Shaw argues that Kitcher's ideal of
+well-ordered science, on which the goals of research determine what research is
+pursued, and the allocation models of Kitcher, Strevens, and Weisberg and
+Muldoon share an assumption that they leave unstated. Kitcher's and Strevens's
+models suppose that the chances of success of research programs are known,
+without saying how they could be; Weisberg and Muldoon's model lets projections
+change as research proceeds but, on Shaw's reading, "still requires that we
+predict future significance". In that model, whose investigators do not
+know in advance which approaches are significant, the presupposition lies in a distribution of significance over approaches fixed in advance, settled even though investigators do not know it, and in investigators who all do normal science, building on what came before (<a href="https://hdl.handle.net/20.500.14721/33235">Shaw 2018, 153–160</a>;
+<a href="https://repository.upenn.edu/philosophy_papers/7">Weisberg and Muldoon 2009, 229, 231, 233</a>).
+Shaw draws on Feyerabend's observations that no idea is ever examined in all its ramifications and that theories abandoned or overtaken by a rival can make comebacks, so that whether a line will go on degenerating or progressing cannot be read off its present state, and even for an idea to show some merit it must first be pursued (<a href="https://hdl.handle.net/20.500.14721/33235">Shaw 2018, 69, 86–87</a>). Feyerabend held, as Shaw reports, that long-term projections about the fate of theories are impossible and that to call a degenerating line riskier than a progressive one runs into a version of Hume's problem. Shaw grants that reasonably accurate projections of the value of research can be made within normal science, but holds that such projections are "by their very nature, short term" and that, in the long term, all proliferated alternatives begin as equally risky, since no one knows how they will turn out. On this account, projection can guide funding within established programs but cannot say how to fund the alternatives that proliferate beside them, and how funding is divided between the two depends on how urgently results are needed (<a href="https://hdl.handle.net/20.500.14721/33235">Shaw 2018, 123, 136, 161–164</a>). The premise that the outcome of
+research cannot be foreseen thus supports different conclusions on different
+accounts: for Polanyi, that each step be left to whoever is most competent to
+take it; for Shaw, that projection guide funding only within established programs, and that how much goes there depend on how urgently results are needed. Decision theory has positions, though not about research, on the step, which Shaw shares with Feyerabend, from long-term unpredictability to declining to rank proliferated alternatives by their prospects. It has asked how a decision maker can reason when suspecting that there are states or outcomes not yet entertained, a condition called awareness of unawareness. Katie Steele and H. Orri Stefánsson argue that such awareness may differ "only in degree, and not kind" from the decision maker's imperfect grasp of the states already entertained; among the views they report, Simon Grant and John Quiggin suggest that the corresponding judgments are made by induction from past occasions on which awareness grew, and Chloé de Canson argues that one is to assign "at least some positive probability" to there being states or outcomes of which one is unaware (<a href="https://plato.stanford.edu/archives/sum2026/entries/decision-theory/">Steele and Stefánsson 2025, §5.4</a>). On these positions, what has not been foreseen can still be an object of judgment, formed by induction from past growth of awareness or by reserving some probability for what has not been conceived; whether such judgments could ground unequal assessments of proliferated alternatives, rather than the equal risk Shaw assigns them, is a further question, which these positions, not being about research, leave open.</p>
+<p>On these arguments, an artificial allocator that came closer than human
+institutions have to the monarch's control would not thereby acquire the eye.
+If Shaw is right, the knowledge it lacks is least lacking within established
+programs and most lacking in choices among them and in support for work that departs from them. Friedrich Hayek, writing of competition as a procedure for discovering facts that would otherwise remain unknown, drew from a similar premise a consequence for how such procedures can be judged. Their merits, Hayek argued, cannot be empirically verified for the cases in which they are of interest, a feature Hayek took the discovery procedures of science to share: the advantages of established scientific procedures are recognized "only because they have actually provided better results than alternative procedures"; the performance of the market, on the same argument, is to be judged "from the bottom up," by comparison with what other available methods would attain, rather than "from the top down," against an ideal standard that no known method attains (<a href="https://cdn.mises.org/qjae5_3_3.pdf">Hayek [1968] 2002, 10, 16</a>). Hayek did not discuss the allocation of research effort. Extended from the market to it, the point implies that a claim that a configuration allocates well can be tested against alternative arrangements available to it, but not against the distribution the philosopher-monarch would choose, since that comparison would require the eye.</p>
+<p>Such control, where it is approached, has a price that the thought experiment
+does not display. Complete control of the workforce means that investigators do
+not choose their own lines. In the terms of Chapter 7, Section 4.3, an allocator
+that assigns every line takes question selection away from the investigators and
+supplies it to them from outside. The more fully control is realized, the less
+autonomous the investigators are in question selection, in the sense that
+section distinguished. That alone does not make the configuration that includes
+the allocator the only research actor, since, as the same section notes, an
+externally assigned actor can still conduct research. Whether the investigators
+conduct research on their lines, whether the configuration as a whole conducts
+one inquiry, and whether its parts are independent of one another are separate
+questions, and counting instances settles none of them. Chapter 7, Section 2
+located the boundaries relevant to the first two by where initiation,
+monitoring, redirection, and recovery are organized; since those boundaries are
+drawn relative to the claim, the investigators and the whole may each be
+research actors. Chapter 9, Section 5 named the powers whose division among the
+parts would make them independent of one another. Where neither that
+organization nor those powers are divided among the parts, the division of
+cognitive labor is the internal portfolio of a single actor, and the problem of this section becomes the problem Chapter 5, Section
+4.2 described for one inquiry: how to judge what is worth pursuing without
+collapsing pursuit-worthiness into truth-likelihood. Where investigators
+organize the inquiry on their assigned lines but hold none of those powers,
+allocation distributes work among research actors that are not independent of
+the center. Where investigators do hold some of those powers, control is only partial, and the question of what moves
+their choices returns.</p>
+<h3 id="3-steering-without-motives-signals">3. Steering without motives: signals</h3>
+<p>The division of labor that Kitcher's monarch would impose has been realized in human communities, to the extent it has, partly through investigators' motives.
+A second premise of distributed allocation is therefore that allocation passes through those motives. Allocation's entering a configuration does not mean that it is assigned directly from a center: there can be configurations whose instances choose lines themselves and move between them. What allocation passes through there may be not the motives of human researchers but motives of the machine, or something equivalent to them, and whether these do the work that the pursuit of credit did is a separate question (Chapter 4, Section 7). Where an allocator assigns lines directly, this premise
+fails, and the question is what goes with it and what remains. The literature used to examine it is the one that has asked how motives such as the pursuit of
+credit produce or prevent a spread of effort: Kitcher's models of credit, their successors, and the sociology of priority on which both draw. Curiosity, another motive that has moved effort among human researchers, is taken up in Section 5.</p>
+<p>Kitcher's models show that communities whose members seek priority and prizes
+can distribute effort better than communities without such motives, because the competition for credit
+gives some investigators a personal reason to pursue the less favored line; in
+Longino's summary of the result in her encyclopedia entry on the social
+dimensions of scientific knowledge, scientific progress "can tolerate and indeed
+benefits from" a certain amount of impure motivation (<a href="https://doi.org/10.1387/theoria.7014">Kitcher 2013,
+202–203</a>; <a href="https://plato.stanford.edu/archives/sum2026/entries/scientific-knowledge-social/">Longino 2025,
+§5</a>). Credit
+also works in the opposite direction. In simulations of investigators choosing
+repeatedly between a safe line and a riskier, better one, Erich Kummerfeld and
+Kevin Zollman find that investigators who care about their own contributions
+have an incentive to leave risky exploration to others, so that a community left
+to itself can explore less than would be best for it; differences in
+investigators' skill with each line could temper or remove the effect
+(<a href="https://www.kevinzollman.com/uploads/5/0/3/6/50361245/conservativismv16.pdf">Kummerfeld and Zollman 2016, §§2–3, 5</a>). Partha Dasgupta and Paul David, writing on the economics of science, describe a further effect of the priority rule. Society, they argue, "does not care who is successful" in solving a problem, while the rule of priority makes the identity and timing of the solver matter greatly to each team, and this divergence between private and social rankings gives grounds for suspecting that the research portfolio that scientists select will be inefficient. Provided that private gain from a success is made commensurate with the benefits to the collectivity of researchers, they argue, the rule tends, among projects within a program that offer the same expected social payoff, to draw rival teams into "overly similar (i.e. positively correlated) projects", and the all-or-nothing character of its rewards draws them into duplicative races, which "works against the emergence of a diversified societal research portfolio"; the correlation, they add, will not be perfect, and they offer the argument as a hint at how a proof goes rather than as a proof (<a href="https://doi.org/10.1016/0048-7333%2894%2901002-1">Dasgupta and David 1994, 506–507 and n. 56</a>).</p>
+<p>An allocator that assigns lines directly need not route allocation through its investigators' motives. In assigning lines directly, it removes what these analyses identify as a source of spread, a source of under-exploration, and a source of correlated duplication together, and since it removes them together, it settles nothing about which effect predominated in human communities, and so nothing about whether their removal is a gain. Nor does it remove correlation among lines that arises without credit, as Section 4 notes for investigators copied from a common base and for investigators of different origins. For such an allocator, how much exploration there will be becomes a matter of the rule by which it assigns lines, however that rule came about, rather than of the investigators' interests. In a configuration whose instances choose their own lines, it depends instead on what moves those choices and on how the configuration combines them, and the effects that these analyses trace to credit may return there in other forms, or not at all, depending on whether what moves the instances shares the features those analyses identify, such as a reward shared among those on a line, so that a less crowded line offers each more (Kitcher), reward for an instance's own contribution rather than for what others learn from its exploration (Kummerfeld and Zollman), or all-or-nothing reward for being first (Dasgupta and David).</p>
+<p>What this removal accomplishes is narrower than it may seem. Merton argued, as
+Strevens reports, that scientists' concern for priority reflects a powerful norm
+governing science more than their psychological makeup (<a href="https://www.strevens.org/research/scistruc/Prioritas.pdf">Strevens 2003,
+§2.1</a>).
+On this account the priority rule links private motives to public goals, and it
+builds the link out of signals of achievement. Merton also held, as Strevens
+reports, that enforcing the rule so literally that a margin of days decides who
+receives all the credit is "a dysfunctional extreme far beyond the limits of
+utility"; Strevens replies that even so fine a discrimination has a function,
+since it makes research programs with a high potential for success relatively
+more attractive (<a href="https://www.strevens.org/research/scistruc/Prioritas.pdf">Strevens 2003, §§2.1,
+5.1</a>). An allocator that assigns lines directly removes the dependence on human motives. It does not thereby remove the dependence on signals. Chapter 9, Section 4 gave the general reason: what counts as success
+for research is often not observable when a judgment about it has to be made, so
+that an allocator judges which lines are progressing through results, scores, how far other lines use its outputs, or other quantities that, on accounts that distinguish the goal from its
+measures, stand in for it rather than constitute it. Human allocation, too, has moved not only through researchers' motives but through institutionalized signals. Indicators of research output have been linked directly to the allocation of research funding, as when Australian research funding came to be allocated partly by a formula based on publication counts, and researchers have responded to such links (<a href="https://www.ukri.org/wp-content/uploads/2021/12/RE-151221-TheMetricTideFullReport2015.pdf">Wilsdon et al. 2015, 81–82</a>; Chapter 11, Section 8). Where such signals are used directly to distribute funds, they help decide which lines continue without having to pass through the motives of the researchers whose lines are affected.</p>
+<p>Kummerfeld and Zollman note that when every investigator seeks credit from the
+same central body, their incentives track what that body finds interesting
+(<a href="https://www.kevinzollman.com/uploads/5/0/3/6/50361245/conservativismv16.pdf">Kummerfeld and Zollman 2016, §5</a>). A
+single allocator's signal stands in that position for every line it assigns.
+Where the signal also decides which investigators are copied and which are
+withdrawn, adapting to the signal shapes the investigators themselves. Reading
+their equilibrium in evolutionary terms, an interpretation they endorse without
+modeling it explicitly, Kummerfeld and Zollman note that investigators who
+explore less make larger individual contributions, because they leave
+exploration to others; if others imitate them, or they train more students, a
+community can move toward less exploration than would be best for it
+(<a href="https://www.kevinzollman.com/uploads/5/0/3/6/50361245/conservativismv16.pdf">Kummerfeld and Zollman 2016, §3</a>). Paul
+Smaldino and Richard McElreath model a related dynamic explicitly. In their
+model, laboratories whose methods yield more publications leave more "progeny"
+that inherit those methods, and selection on publication counts alone degrades
+the rigor of the methods in use; the dynamic, they argue, requires no conscious
+strategizing by anyone (<a href="https://doi.org/10.1098/rsos.160384">Smaldino and McElreath 2016, abstract, §§4,
+5.1</a>). A coding error later found in their
+implementation meant that laboratories' replication rates could not affect
+their fitness, so that the dynamics they reported for replication did not
+correspond to the model they described; the correction also notes a minor
+deviation in the order of the evolution stage, states that the conclusions are
+unaffected, and does not identify the result on the degradation of methods as
+affected (<a href="https://doi.org/10.1098/rsos.231026">Smaldino and McElreath 2023</a>).
+What their model selects on is the rigor of methods rather than the amount of
+exploration. If the structure of these models transfers, an allocator that
+copies the investigators whose own measured output is highest would select in
+the directions they describe with no motive involved: toward less exploration
+unless its signal credits what an investigator's exploration contributes to
+what others learn, and toward less rigorous methods unless it registers the
+rigor of the methods behind that output.</p>
+<p>Strevens reports Kitcher's shared-credit mechanism in terms of both the chance of a research program's success and the number of participants sharing its reward (<a href="https://www.strevens.org/research/scistruc/Oeconomicus.pdf">Strevens 2011, §2, manuscript p. 10</a>). Zamora Bonilla's account of Kitcher's models contrasts credit-only investigators' convergence on the theory they expect to be accepted with a distribution close to the optimum when some weight is given to truth (<a href="https://mappingignorance.org/2014/03/17/grand-bazaar-wisdom-6-mathematical-models-economics-science/">Zamora Bonilla 2014, paragraph beginning "One important topic"</a>). For an allocator that follows signals of expected acceptance, the corresponding question is what connects those signals to truth. Where certification supplies those signals, the question links allocation to criticism (Chapter 9, Section 2.4).</p>
+<p>Two questions on the side of allocation follow, and the chapter returns to both.
+The first is the termination rule: on what signal, and over what horizon, is a
+line cut? Under a short horizon, a signal that registers success only after a long delay cuts lines that a longer horizon would have kept (Section 5). The question has a precedent
+in the dilemma Feyerabend put to Lakatos (Chapter 6, Section 4.1). As Musgrave and Pigden report it, applied strictly, Lakatos's methodology urges scientists to abandon degenerating programs, research programs whose later theories predict no new facts and are made only to fit known ones, and grant-giving agencies to defund them, and so condemns programs that might later recover; restricted, as Lakatos then restricted it, to appraisal without advice, it tells no one what to do and is scarcely distinguishable from "Anything goes" (<a href="https://plato.stanford.edu/archives/sum2026/entries/lakatos/">Musgrave and Pigden 2026, §4</a>). From this precedent it can be inferred that the second horn, appraisal without advice, is not open to an allocator, since
+the signal and horizon by which it cuts a line are already advice acted on; for
+an allocator, the dilemma becomes the choice of a termination rule. How much the first horn then costs it, condemning lines that might later recover, depends on whether a cut can be undone: on whether a closed line can be reopened, on what evidence (Section 4), and with how much of what it had, which a record keeps only in part (Section 5). The second
+is a loop. Because allocation decides what is produced, and what is produced is
+what the next signal measures, an allocator that follows its signal changes what
+that signal will later report. How signals themselves behave over time, what
+they measure, what they are biased toward, and how they change when those
+measured respond to them, is a property of criticism and evaluation rather than
+of allocation, and Chapter 11, Section 8 examines it.</p>
+<p>The models behind Sections 2 and 3 are deliberately idealized. Whether highly
+idealized models of scientific interaction can ground recommendations about how
+a community should be organized has been contested, and some hold that such
+models must first be validated against empirical targets, as Dunja Šešelja's
+survey of the agent-based models among them (models that run individual
+researchers as agents on a computer) reports (<a href="https://doi.org/10.1111/phc3.12855">Šešelja 2022,
+§4</a>). Their role here is not to
+fix an allocation rule but to separate premises and to ask what takes their
+place when they fail. The conclusion of the two sections is therefore
+conditional. It rests on the arguments of Polanyi, Kitcher, Strevens, Shaw, Wu and O'Connor, and Hayek and on the point that no search is free of prioritization (Section 2), on the models of credit (Section 3), and on Chapter
+9, Section 4 for the general reason why signals remain; and it presupposes, with those models, a goal fixed in advance toward which
+lines are judged (Section 1):</p>
+<blockquote>
+<p>On these arguments, an artificial configuration that takes over the
+allocation of inquiry may approach one of the philosopher-monarch's powers,
+control of assignment, more closely than human institutions have, to the
+extent that its assignments are direct, its investigators carry them out, and
+the lines and resources are its to assign; it does not, by that control,
+acquire the other. Nor does dropping criteria of expected significance free its
+search from prioritization, and a claim about its allocation can be tested
+against arrangements available to it rather than against the distribution the
+monarch would choose. When the premises on which distributed human allocation
+relied fail, many of the problems they addressed change form rather than disappear.
+The center need no longer have one person's capacity, although a center can
+reappear in the concentration of the resources through which lines can be
+pursued at all (Chapter 12, Section 6.4). Allocation need no longer pass
+through human investigators' motives, but it is still steered by signals that
+stand in for the goals of <i>S</i>. Where control of the workforce is approached, it
+withdraws autonomy in question selection from the investigators, and where it also absorbs
+the organization of their lines and the powers that would make them
+independent, it turns a community into one actor. And effort is still distributed under an ignorance of which
+lines will succeed that integrating allocation into one configuration does not
+by itself remove. A claim that such
+a configuration allocates inquiry well would therefore need to show how its
+signals remain answerable to those goals, where the powers that would make
+its parts independent are divided, how it represents its ignorance, and how
+it keeps alive those unfavored lines that, given its goal and the evidence,
+are worth keeping, rather than infer good allocation from control.</p>
+</blockquote>
+<h3 id="4-which-lines-are-kept-alive-and-for-how-long">4. Which lines are kept alive, and for how long?</h3>
+<p>The conclusion of Sections 2 and 3 leaves a consideration in place: on the
+arguments examined, effort is distributed under an ignorance that control does
+not remove, and some lines that currently look unfavorable may need to be kept
+alive. That consideration raises four further questions: what is to be kept
+alive, for how long, where the need bites, and where the diversity that keeps them alive comes from. Two lineages answer the second question in particular. Formal models of
+scientific communities ask when, and for how long, disagreement helps a
+community converge on the better option. Miriam Solomon's social empiricism asks
+when dissent and consensus are each appropriate, judged by the distribution of
+empirical success. The section asks what follows for artificial research on each answer, which purpose each presupposes,
+and what becomes of one of the goods that Chapter 9, Section 2.3 proposed, as a
+hypothesis, that the division of the relations may have supplied: standing for
+dissent.</p>
+<p>One lineage answers the question of how long with a specific claim. In Kevin
+Zollman's network models, a community can maintain a division of labor either by
+limiting how much information each investigator receives or by giving
+investigators extreme initial beliefs. When both are present, the initial
+diversity is never abandoned and the community fails to converge on the better
+option. What the community needs, Zollman concludes, is not diversity as such
+but <em>transient</em> diversity: disagreement that lasts long enough to prevent
+premature closure and then gives way (<a href="https://www.kevinzollman.com/uploads/5/0/3/6/50361245/zollman_-_transient_diversity.pdf">Zollman 2010, 1,
+§5</a>). The claim is the answer of one family of models; whether diversity worth keeping is only transient is itself disputed, as this section shows below.</p>
+<p>The robustness of these models has since been examined, and the examination
+limits what can be inferred. Rosenstock, Bruner, and O'Connor found that the
+advantage of sparser communication appears only in a small region of parameter
+space, when there are relatively few investigators, evidence arrives in small
+batches, and the rival options differ only slightly in success, while the claim
+that some transient diversity of belief is needed survived across the models
+they examined; where inquiry is hard, they add, more stubborn or exploratory
+investigators and standards for how much evidence a conclusion requires can
+prevent premature convergence better than withholding evidence (<a href="https://cailinoconnor.com/wp-content/uploads/2015/03/In_Epistemic_Networks_Is_Less_Really_Mor-FINAL-VERSION.pdf">Rosenstock,
+Bruner, and O'Connor 2017, 235, 248, 251</a>).
+Šešelja's survey reaches a compatible verdict and holds that such models, at
+least in their current form, serve chiefly to identify possible mechanisms and
+candidate explanations rather than to formulate policy (<a href="https://doi.org/10.1111/phc3.12855">Šešelja 2022, 3–4,
+11–12</a>). Results from landscape models, in
+which investigators choose where to work, have been contested on similar
+grounds, as turning on implementation and on the shape of a landscape of which
+little is known (<a href="https://doi.org/10.1086/681766">Alexander, Himmelreich, and Thompson 2015, 425, 432–440,
+448–451</a>); in Johanna Thoma's, investigators who
+move away from approaches others have tried discover far less on average than
+those who extend the best approach found so far, so that rewards other than
+discovery may be needed for exploring to be sustained (<a href="https://doi.org/10.1086/681768">Thoma 2015, §§4.3–4.4,
+5</a>), a need that an artificial investigator
+assigned a strategy would not have, although it would then not supply
+exploration by temperament either. What survives this examination is narrower
+than a prescription: some transient diversity of belief appears to be needed in
+many models, the benefit of particular mechanisms for producing it is fragile,
+and the models identify possible mechanisms.</p>
+<p>These results also presuppose a purpose. In the network models, a community
+succeeds when it comes to favor the better of options fixed in advance;
+diversity is valuable there as a means to that convergence, and diversity that
+never gives way counts as failure. On purposes that do not end in convergence
+among fixed options, such as keeping the capacity to respond when conditions
+change or generating options not yet in the set (Section 1 notes which arguments presuppose each), diversity that does not give way can have
+reasons that these models do not register, and on Helen Longino's account, which asks that dissenting perspectives be cultivated (Chapter 11, Section 3), and on standpoint theory as Kristen Intemann reconstructs it (a family of views on which the social position from which research starts bears on the knowledge it yields; Section 6), it has further reasons as a condition of criticism. The
+claim that diversity should be transient is therefore relative to the purpose
+the models build in, as well as to their structure.</p>
+<p>This leaves the third question, <em>where</em> the need bites. If measures to protect
+transient diversity matter chiefly when inquiry is hard, their importance varies
+across domains. The need also presupposes the condition stated in Section 1,
+that the lines cannot all be tried. Zollman's model locates this premise from
+another side: the harm it displays arises only because evidence about a line is
+gathered by pursuing that line, and could not arise if the evidence available
+did not depend on investigators' own choices (<a href="https://www.kevinzollman.com/uploads/5/0/3/6/50361245/zollman_-_transient_diversity.pdf">Zollman 2010,
+§3</a>). Where evidence is cheap, plentiful, and decisive for the specified claim, the premise weakens, and concentrating effort costs comparatively little. Formal checking and fast simulation can provide such evidence within fixed formal systems or models; whether a model adequately represents its target remains a separate evidential question. Where
+evidence is slow, costly, and arrives in small samples, as in clinical research,
+field observation, or experiments that depend on scarce instruments, the premise
+is strongest. These are also the domains in which an artificial system, too, cannot cheaply multiply its own evidence. If the models' structure transfers, the
+epistemic risk of integrating allocation is concentrated where artificial
+research has the least room to compensate by generating more data.</p>
+<p>Two qualifications apply. Formal verification is cheap and decisive at the point
+of checking, but bringing a claim to that point need not be. In the Liquid
+Tensor Experiment (Chapter 1, Section 3), for example, formalizing the statement of the central theorem
+took about a month and its five-page proof about five more, while a five-line
+deduction of the final result took another year because the theory of abelian
+categories, derived functors, and Ext groups it relied on had first to be built
+(<a href="https://xenaproject.wordpress.com/2022/09/12/beyond-the-liquid-tensor-experiment/">Buzzard
+2022</a>).
+Whether the premise weakens therefore depends on whether a domain's claims are
+already expressed where such checks apply. Second, whether a problem can be
+divided into parts that can be explored separately need not be a fixed property
+of the problem: in a simulation study accepted at <em>Philosophy of Science</em> and
+cited here from its preprint, Fazelpour, O'Brien, and Rubin argue that such
+decomposability is often an achievement of standardization, protocols, and
+divisions of labor (<a href="https://arxiv.org/abs/2608.19390">Fazelpour, O'Brien, and Rubin 2026, 2–3,
+25</a>). If that is right, whether the premise
+weakens in a domain depends in part on how its problems have been divided, and
+dividing a problem is itself an allocative decision taken under the same
+ignorance. A further possibility can be considered. A configuration that divides problems and selects tasks is likely to show success most readily on tasks that are easy to judge. If that success justifies its next allocations, and which investigators are copied or withdrawn (Section 3), tasks that need slow or ambiguous evidence are more likely to fall outside the candidates compared, and the configuration may, by reason of its own high performance, make hard research still less visible. This is not merely that an evaluation criterion is biased: under the condition that the same evaluative signal returns into future allocation, the scope of research may narrow from within through success itself (see also Section 6).</p>
+<p>The fourth question is <em>where diversity comes from</em>. Zollman's mechanisms
+preserve diversity only "so long as agents have diverse priors" (<a href="https://www.kevinzollman.com/uploads/5/0/3/6/50361245/zollman_-_transient_diversity.pdf">Zollman 2010,
+§5</a>). Human communities acquire such
+differences from different training, histories, and commitments without anyone
+having to design them. Artificial investigators may be copied from a common base or built on different bases and set side by side, and in either case they may come to differ through their own histories of inquiry. Those copied from a common base may not receive such differences at the outset. But a difference of origin does not guarantee them either, and the evidence that follows concerns differences of origin, not differences acquired over histories of inquiry. Across several hundred
+language models evaluated on shared benchmarks, Kim and colleagues found that
+models often converge on the same wrong answer, that a shared provider or base architecture raises this correlation, and that more accurate models have more correlated errors even when their providers and base architectures differ (<a href="https://proceedings.mlr.press/v267/kim25e.html">Kim et al. 2025, abstract</a>). The models compared are all large language models, so that the differences of architecture at issue are variants within one class of model, and the errors are errors in answering fixed questions, not choices among lines of research. For systems of that class, the finding nonetheless cautions against assuming that diversity of provenance supplies diversity of priors; whether systems built in quite different ways would share their errors in the same way is a question it does not address. Two preprints come closer to choices among lines, though not to choices made in pursuing them. Bisht and colleagues asked twelve models from four providers to propose new hypotheses extending published papers in materials science and in biology. On their embedding measure, hypotheses from models of different providers were almost as similar to one another as repeated samples from a single model (0.64 against 0.72 for the materials papers), and drawing ten hypotheses from ten models rather than from one raised the effective number of distinct hypotheses only from 2.9 to 3.6 (<a href="https://arxiv.org/abs/2605.08956v2">Bisht et al. 2026, §5 and app. A</a>). Bao and colleagues, who had authors of recent preprints rate hypotheses that language models generated for their own papers, found that non-reasoning models collapsed into a narrow region of the space of ideas while reasoning models ranged more widely, found no evidence that models from the same company generated more similar ideas, and found that every model proposed null hypotheses, claims of no relationship or effect, less often than human scientists did (<a href="https://arxiv.org/abs/2606.08251v3">Bao et al. 2026, 1, 3</a>). The two studies use different measures, and both concern hypotheses proposed for given papers, not lines that investigators pursue over time; within those limits they extend the caution from answers to fixed questions to the proposing of hypotheses. Where artificial investigators lack diverse priors, limiting information cannot preserve a diversity that was never there.</p>
+<p>Devices at a center can add some diversity: assigning lines by lot among those
+that pass a threshold, as proposals that Shaw discusses to fund research partly
+by lottery would do (<a href="https://hdl.handle.net/20.500.14721/33235">Shaw 2018, 172–173</a>),
+protecting budgets for unfavored lines, building a rate of exploration into each
+investigator's policy, or giving investigators differently initialized
+representations or a degree of inertia before switching lines (<a href="https://doi.org/10.1111/phc3.12855">Šešelja 2022,
+4</a>; <a href="https://cailinoconnor.com/wp-content/uploads/2015/03/In_Epistemic_Networks_Is_Less_Really_Mor-FINAL-VERSION.pdf">Rosenstock, Bruner, and O'Connor 2017,
+251</a>). Solomon argues that diversity is in this
+respect a blunt epistemic tool, for which there are typically several options
+for adequate diversification
+(<a href="https://doi.org/10.3366/epi.2006.3.1-2.23">Solomon 2006b, abstract</a>). Zollman's
+network models, described above, give one instance: in them a division of
+labor can be maintained either by limiting the information each investigator
+receives or by giving investigators extreme initial beliefs, which has the
+same effect
+(<a href="https://www.kevinzollman.com/uploads/5/0/3/6/50361245/zollman_-_transient_diversity.pdf">Zollman 2010, 1, 3–4</a>);
+where the missing distribution can be identified in advance, then, it can be
+supplied in more than one way. Two limits
+qualify what such devices achieve. Diversity is a matter of degree, not a
+property a configuration has or lacks, and it is not confined to what any
+center contains: whatever spread a configuration produces internally, others
+outside it who pursue quite different lines add to the diversity of the whole.
+And whether the variety a device adds is the variety a given position requires
+depends on the position. For the spread of effort that the models of this
+section consider, Solomon's argument and Zollman's models suggest that it often
+can be; for the
+diversity that Longino's account and standpoint theory value for the sake of
+criticism, which depends on who
+takes part in inquiry, it is less clear (Chapter 11, Section 3; Section 6
+below). Whether any device would in fact produce the diversity it aims at appears, for artificial investigators, to be largely untested.</p>
+<p>Several of these models also take evaluation to be free of error: in Kitcher's
+model an answer, once delivered, is recognizably correct or incorrect, and in
+Weisberg and Muldoon's landscape a visit always reveals an approach's true
+significance (<a href="https://www.kevinzollman.com/uploads/5/0/3/6/50361245/zollman_-_transient_diversity.pdf">Zollman
+2010, n. 3</a>; <a href="https://repository.upenn.edu/philosophy_papers/7">Weisberg and Muldoon
+2009, 232–233</a>). The problem that follows therefore lies outside what these models address.</p>
+<p>What integration alone does not supply is an independent check on the criterion
+by which diversity is ended. Transient diversity ends with a judgment that one
+line has done better. In a centrally allocated configuration that judges
+every line by the allocator's own signal, an error in that signal can correlate
+closure decisions across otherwise diverse lines. On the argument of this section, what centralization trades against is
+therefore less diversity as such than independence of error about the criterion
+that governs convergence. Chapter 11, Section 2 takes up what such independence
+consists in on the view that locates the value of criticism in the errors it
+detects. It follows that an assessment of diversity can ask not only how different the candidates are, or how many there are, but which errors the judgments of their continuation share. Being able to generate different representations is one thing, and being able to judge whether lines survive on different evidence is another; a configuration with only the first can produce diverse candidates while discarding them together through the same error.</p>
+<p>Solomon's social empiricism gives a different answer to the question of how long, and with it an answer to the first question, which lines are to be kept alive. It treats dissent as the prototype and consensus as a limiting case of it.
+On this account, as Longino reports it, a community is rational when the
+theories it accepts are those with all the empirical successes or with unique
+ones, and it is collectively irrational to jettison a theory with unique
+empirical successes; dissent is thus appropriate when each rival theory has
+empirical success of its own, and consensus when one theory has them all.
+Dissent is worth keeping, then, where each dissenting position brings empirical
+successes of its own and, in the extension of the argument that Longino reports
+from Solomon's later work, where different models carry particular insights or
+specific data that are likely to be lost in a consensus (<a href="https://plato.stanford.edu/archives/sum2026/entries/scientific-knowledge-social/">Longino 2025,
+§5</a>).
+On the same norm, a consensus would have to be reconsidered once a rival theory
+gains an empirical success that the consensus theory lacks. Solomon's own
+example of a consensus that fell short of the norm is the near-consensus of the
+1950s on the "master molecule" view of DNA, under which the work of Barbara
+McClintock, Ruth Sager, and others was not accepted, or was accepted only late
+(<a href="https://philpapers.org/archive/SOLIIT.pdf">Solomon 2001b, 72</a>). What kept each
+success represented, on Solomon's account, was in part that scientists weighted
+their own data and concerns more heavily than others did: in the geological
+debates Solomon examines, geologists were convinced of drift by data that were
+their own and resisted it when their own results seemed to tell against it, and
+such influences distributed research effort over the competing theories
+(<a href="https://philpapers.org/archive/SOLIIT.pdf">Solomon 2001b, 69–72</a>). The purpose Solomon's account
+presupposes differs from Zollman's: not convergence on the better of fixed
+options, but that each empirical success a domain offers stay represented
+until one theory has them all.</p>
+<p>In the terms of this chapter, that weighting of one's own data is a premise about human realizers of the kind Section 2 separated, although it bears on allocation only where, as in research as it has been organized, data are first with those who produced them and their weighting reaches decisions about whether lines continue. Sharing data does not by itself remove this weighting: even where everyone can see the data, weightings can differ through the experience of producing them, knowledge of their provenance, and their interpretation. Whether a configuration keeps something that plays its part depends on how observations pass through its investigators and how what they find is combined. Machine investigators that keep their own records and act on them could weight their own data in a way equivalent to Solomon's scientists, whereas an allocator that pools every investigator's observations and judges all lines by one signal removes the premise. What removes it is not the pooling of observations as such but judging the continuation of every line by one signal; observations can be pooled while an arrangement is kept under which a judgment that a line should continue because of its own successes reaches allocation. For artificial configurations too, who can see the data and whose judgment can keep a line alive are separate questions. On
+Solomon's account, such an allocator would then also have to show by other means
+that convergence does not discard lines with successes of their own, and say on
+what evidence a closed line would be reopened. On Zollman's account, the
+corresponding requirement is narrower: that convergence not come before the
+evidence warrants it. The two accounts thus differ on how long diversity is
+kept and on what ends it, but on both, the judgment that ends it needs evidential support that integration alone does not supply. An integrated allocator may still maintain informative checks on that judgment within its own organization (Chapter 11, Section 1).</p>
+<p>That judgment is also where the hypothesis of standing for dissent applies to
+allocation. In allocation, dissent takes the form of continuing a line that the
+prevailing judgment would close, or of pressing for a closed line to be
+reopened. In human research, those who did so may often have been parties distinct from whoever judged their line unfavorable: for example, an investigator with a laboratory, a record, and a career, a funder with criteria of its own, or a community in another field. Two things can be separated in what this division supplied. One is
+epistemic: on Solomon's account, dissent keeps represented successes that
+consensus would lose. The other is standing in the sense of Chapter 9, Section
+2, an entitlement, held in relation to the decision that would close a
+line, to object to its closing, to refuse to abandon it, or to propose that it
+be reopened. On the argument of this section, the two come apart when allocation is
+integrated. The epistemic work of dissent can be performed inside a configuration by arrangements that someone sets, such as protected budgets for lines with successes of their own or a
+rule for reopening, or by dividing among its parts the powers that Chapter 9,
+Section 5 named, such as refusing resources, keeping evidence apart, and leaving
+with a record. Those powers are not standing (Chapter 9, Section 5). Standing
+would be held inside a configuration only by parts that hold it on the account adopted, such as parts that were parties in their own right (Chapter 12, Section 5) or, on the result-based ground, parts whose good results had been established (Chapter 12, Section 3.1);
+otherwise it is held, if at all, by parties outside the configuration who pursue
+other lines or can press for a closed line to be reopened, which is one more
+respect in which the diversity of the whole lies partly outside any center.
+Whether that standing matters epistemically, or only for whether the closing of
+a line is legitimate, depends on the account adopted. On Solomon's account what
+matters epistemically is that successes stay represented, by whatever means; on
+accounts that tie the value of dissent to the intellectual authority of
+critics, such as Longino's, the question belongs to criticism, and Chapter 11,
+Section 3 takes it up.</p>
+<p>The theory of reinforcement learning has results about a single learner, that is, an agent that chooses actions in an environment, observes the rewards they bring, and revises its later choices accordingly. These bear on the judgment that ends exploration from another direction, though they apply to this chapter only where, by the test of Section 2, the configuration is a single actor whose allocator chooses lines as one such learner acting on one prior. Under an assumption they call No Heaven, that no course of action in the true environment yields near-maximal reward forever, Michael Cohen, Elliot Catt, and Marcus Hutter prove that an agent guaranteed eventually to act as well as possible in any computable environment must keep trying every course of action: if it tried something only finitely often, it would be ignoring a computable environment, indistinguishable so far from the true one, in which trying it once more yields maximal reward forever. Such an agent never reaches a point at which it could stop exploring; since it keeps trying everything, it will sooner or later try what brings about a given event, so long as recognizable opportunities to do so keep recurring, and so it either brings about any given event or eventually loses every recognizable opportunity to do so (<a href="https://doi.org/10.1109/JSAIT.2021.3079722">Cohen, Catt, and Hutter 2021, §§I–II, IV</a>); an agent that acts optimally relative to a prior, a Bayes-optimal agent, may instead stop exploring where its prior and observations so direct, and Jan Leike and Hutter construct priors, by means they describe as unnatural, that keep such an agent on any given computable policy for as long as that policy's rewards stay bounded away from zero
+(<a href="https://doi.org/10.1109/JSAIT.2021.3079722">Cohen, Catt, and Hutter 2021, §V</a>;
+<a href="https://proceedings.mlr.press/v40/Leike15.html">Leike and Hutter 2015, 2, 5–6,
+10–11</a>). This book reads the theorems' events as harms that trying a line of research could do to others. On that reading, where lines cannot be tried safely and reversibly, neither kind of optimality by itself guarantees that the criterion that ends exploration is sound: the first never ends it, and so tries even lines whose trial cannot be undone (so that an allocator that places some lines beyond trial gives up the guarantee of eventually acting as well as possible in every computable environment), and the second ends it where its prior and observations direct, while being optimal relative to a prior does not show that the prior is sound, as Leike and Hutter's construction, which can keep such an agent on any given policy, illustrates. These results do not show that a Bayesian configuration cannot check its prior or its stopping judgment against observation or by other tests. Nor is a guarantee across a broad class of computable environments the same as safe exploration in a restricted domain of research. Applying these results to research therefore adds the questions of which class of environments is considered, what is placed outside trial, and what supports that restriction. Where
+payoffs can change, watching lines that are rarely tried has a price as well:
+among rules for choosing repeatedly between two options, the less a rule loses
+while nothing changes, the more it loses under some pattern of at most two changes in the payoffs (<a href="https://tor-lattimore.com/downloads/book/book.pdf">Lattimore and Szepesvári 2020,
+§31.2</a>).</p>
+<p>Because these results concern single learners, they leave open how the quality
+of an allocation relates to the quality of its investigators. Mayo-Wilson,
+Zollman, and Danks give an example that bears on investigators who share
+evidence: a rule that lowers an investigator's rate of exploration as the
+evidence it observes accumulates, which they do not regard as unreasonable in
+itself, can leave two investigators who pool their evidence stuck on a worse
+option, because each then observes more and explores less (<a href="https://doi.org/10.1086/661777">Mayo-Wilson,
+Zollman, and Danks 2011, 665–666 and n. 15,
+670–671</a>). The example shows that the adequacy of an allocation cannot always be read from the quality of its individual investigators as assessed in isolation. In one model, restricting communication also harmed
+groups whose members already explored more (<a href="https://www.kevinzollman.com/uploads/5/0/3/6/50361245/conservativismv16.pdf">Kummerfeld and Zollman 2016,
+§4</a>), so none of these results supports a
+general prescription to maximize diversity or restrict communication.</p>
+<p>If
+the structure of the models of transient diversity transfers, and on the
+purpose they build in, the need they identify does not disappear when the human traits and arrangements that used to meet it, such as different priors, stubbornness, careers, and the mortality that Section 5 takes up, are absent; it remains at least where inquiry is hard and
+evidence is gathered by pursuing lines. On other purposes, such as the coverage and the generation of options noted in Section 1, the diversity worth keeping
+need not be transient at all. A claim to allocate well would then need
+to say where the diversity it relies on comes from, recognizing that devices at
+a center add to a diversity that is graded and partly outside any center. On
+both Zollman's and Solomon's accounts, integration alone does not supply
+independence of error about the criterion by which diversity is ended; how far
+that criterion's past decisions can be examined, from inside the configuration
+or outside it, depends on whether a record of its closings remains (Chapter 11,
+Sections 5.3 and 8). The epistemic work of dissent can be set by a rule someone adopts or
+supplied by divided powers, while standing for dissent, in the sense of Chapter
+9, Section 2.3, is not supplied by either. And because the ease of a domain
+depends in part on how its problems have been divided, such a claim cannot treat
+that ease as given when the division was the configuration's own choice.</p>
+<h3 id="5-what-human-allocation-supplied-without-deciding-it">5. What human allocation supplied without deciding it</h3>
+<p>The models of Sections 2 to 4 abstract from how human research communities actually performed the functions that allocation requires. That abstraction is what let them state their premises explicitly; this section turns to a feature they set aside that matters for the question of this chapter. Chapter 4, Section 5 looked, in light of research records, at how within a single inquiry, of the unresolved matters an inquiry meets, some are taken up as questions while others are left, postponed, or cease to be askable, and how not all of this comes from deliberate choice. This section asks whether something comparable held at the
+level of a community: which functions of allocation were performed by
+arrangements that no one adopted as allocation policy, and what becomes of them
+when allocation moves inside a configuration.</p>
+<p>The functions in question are those that Sections 2 to 4 found the models to
+presuppose or to abstract from. They are functions that allocation performs
+across a community, not the middle, functional level of Chapter 5, Section 5,
+at which evidence or criticism changes the standing of a candidate within one
+inquiry; what the two uses share is the contrast between a function and what
+realizes it. They are listed here so that each case below
+can be read as an example of one of them:</p>
+<ol>
+<li>keeping lines that currently look unfavorable alive, which includes deciding
+   on what signal and over what horizon a line is cut, and where the cost of a
+   failed line falls;</li>
+<li>opening lines of different kinds before anyone knows which will succeed, and
+   admitting new groups to them;</li>
+<li>judging when a result warrants convergence;</li>
+<li>ending the dominance of established participants and renewing those who
+   pursue lines;</li>
+<li>keeping more than one signal by which work is recognized.</li>
+</ol>
+<p>The first three are what the models of Sections 2 to 4 presupposed, and the last two what they abstracted from; separating the functions in this way makes it possible to locate, for each, the premise on which its performance rested, whether about human realizers or about how human research has been organized. Other features of human research also shape allocation without
+anyone deciding them, among them cumulative advantage in recognition, the costs
+of specializing and of switching fields, and the variability of reviewers'
+judgments; they are not examined here. There are four cases, chosen because each makes one function and the premise behind it visible. The first, third, and fourth show a function performed without being decided, though what no one decided differs among them. In the first, the funding arrangement itself was deliberately set up, but how far it kept unfavored lines alive across the community as a whole was not set by anyone as a policy of allocation; in the third, turnover comes with human lifespans; in the fourth, the plurality of signals persists without anyone maintaining it. The second is a contrasting case of central direction, in which an office did decide the allocation. Separating deliberately established support, unintended effects at the level of the whole, and turnover through mortality makes it easier to see what becomes newly an object of design when allocation moves inside a configuration. The cases are not a
+sample of the ways research has been organized, and none of them shows that the arrangement it
+describes was good on balance.</p>
+<p>The first case concerns the first function, keeping unfavored lines alive.
+Pierre Azoulay, Joshua Graff Zivin, and Gustavo Manso compare investigators of
+the Howard Hughes Medical Institute with comparable researchers funded by the US
+National Institutes of Health. The institute tolerates early failure, rewards
+long-term success, reviews on five-year cycles, and selects "people, not
+projects"; the NIH grants they compare have shorter review cycles, predefined
+deliverables, and renewal policies less forgiving of failure (<a href="https://hdl.handle.net/1721.1/64640">Azoulay, Graff
+Zivin, and Manso 2011, 2–3, 7–8</a>). The institute's
+investigators produced more highly cited papers, and also more papers cited less
+than their own least-cited work before appointment, a pattern the authors read
+as more risky bets and more failure (<a href="https://hdl.handle.net/1721.1/64640">Azoulay, Graff Zivin, and Manso 2011,
+4</a>). The authors note that
+attributing the difference to the program's incentive features, rather than to
+resources, prestige, or the sorting of researchers, requires an interpretive
+leap, although after examining those alternatives they conclude that the
+incentive features are the likely explanation (<a href="https://hdl.handle.net/1721.1/64640">Azoulay, Graff Zivin, and Manso
+2011, 27–28</a>). The institute
+did not remove evaluation. It changed its horizon, its treatment of failure, and
+its unit. The premise here concerns how research has been organized more than its human realizers: how the cost of a failed line falls on a career. The institute's arrangement shows that the treatment of failure can change while the realizers remain human. An artificial investigator need have no career to protect, but the questions that protecting a line
+answered remain: on what signal, and over what horizon, is a line cut, and on
+whom does the cost of cutting it, or of its failing, then fall? In a configuration that controls its own resources, the first can be answered by a termination rule that an allocator sets (Section 3), or by a pattern that forms as instances give up lines themselves and their choices are combined. Where the rule is set by the same party that sets the criterion for convergence, Section 4 found that it does not, by integration alone, come with independence of error about that criterion. The second is a
+question of distribution among those who bear consequences, which Chapter 9,
+Section 3 counted among the objects of value for <i>S</i>.</p>
+<p>The second case concerns the second and third functions, opening lines of
+different kinds before anyone knows which will succeed and judging when a result
+warrants convergence, under central direction that lacks the eye of Section 2, knowledge of the objective merits of the lines. From 1967 a national office in China, known as the 523
+Office, organized and coordinated antimalarial drug research across seven
+provinces and cities, a program known as Project 523. Its long-term aim was to find new drugs both by screening
+synthetic chemicals and by searching the recipes and practices of traditional
+Chinese medicine (<a href="https://doi.org/10.1016/j.cell.2011.08.024">Miller and Su 2011</a>).
+Several thousand compounds screened between 1967 and 1969 yielded no effective
+drug, and in 1969 the office asked a further institute, of the Academy of Traditional
+Chinese Medicine, to join the search among Chinese medicines (<a href="https://www.nobelprize.org/prizes/medicine/2015/tu/lecture/">Tu 2015,
+289</a>). In October
+1971 an extract of qinghao from that institute, sample 191, was fully effective
+against rodent malaria. Reported at a meeting of the program in March 1972, the
+result drew requests for information from other institutes and collaboration
+across the country, and with the first clinical trial it "steered nationwide
+antimalarial research towards Qinghao" (<a href="https://www.nobelprize.org/prizes/medicine/2015/tu/lecture/">Tu 2015, 290–291,
+293</a>). Within the
+program, Miller and Su report, information flowed freely among groups and
+results were presented at frequent joint meetings, while secrecy barred external
+publication (<a href="https://doi.org/10.1016/j.cell.2011.08.024">Miller and Su 2011</a>).
+Among the historical cases this chapter can draw on, it comes close to such direction. The office controlled assignment and communication, showing that control need not be dispersed across grant holders even when investigators are human. It did not know which line would succeed; it kept
+lines of different kinds open in parallel and brought further groups into them,
+and once a result appeared, central communication brought the network to
+converge on it. Its sources, a participant's lecture, a secondary account
+drawing on a chronicle, and historians' reconstruction from archives and
+interviews, disagree on credit, and the program was military and political and
+is visible only because it succeeded (<a href="https://www.nobelprize.org/prizes/medicine/2015/tu/lecture/">Tu 2015,
+301</a>; <a href="https://doi.org/10.1016/j.cell.2011.08.024">Miller and
+Su 2011</a>; <a href="https://doi.org/10.16418/j.issn.1000-3045.2019.09.009">Li and Zhang 2019, secs.
+2.1–2.2</a>). Within those
+limits, the case suggests that two judgments mattered that control did not by
+itself supply: which lines of different kinds to keep open before any result,
+and when a result warranted convergence. Control could be used to keep a line
+open—when that institute of the Academy proposed in 1971 to
+abandon its search, for example, the Ministry of Health refused (<a href="https://doi.org/10.16418/j.issn.1000-3045.2019.09.009">Li and Zhang
+2019, sec. 2.2</a>)—but
+those judgments still had to be made, and made without knowing which line would succeed. Here the
+functions were decided, and the case suggests that deciding them is one thing
+and making the judgments they require is another.</p>
+<p>The third case concerns the fourth function, the ending of dominance. Azoulay,
+Christian Fons-Rosen, and Graff Zivin study the subfields of 452 eminent life
+scientists who died prematurely. After such a death, publications in the
+subfield by researchers who had not collaborated with the deceased rise on
+average by 8.6 per cent; the additional work comes disproportionately from
+outsiders, draws on different literatures, and is well cited. The mechanism they
+favor is not gatekeeping through review panels or editorships, which few of
+these scientists held, but the deterrent effect of an eminent figure's presence
+on potential entrants; entry also stays limited where the deceased's
+collaborators hold gatekeeping positions, and the authors decline to draw strong
+conclusions about welfare (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6814193/">Azoulay, Fons-Rosen, and Graff Zivin 2019, §§1,
+4.2–4.5</a>). The human premise is
+that turnover occurs without anyone deciding it. By contrast, a persistent model, evaluator, or research platform does not leave by dying; it leaves when someone or something retires it. The deterrence the authors describe runs
+through human reputation and may have no artificial counterpart; whether a
+dominant component could narrow entry by another route, for instance through an
+allocator that ranks proposals by their agreement with that component's
+assessments, is a possibility the case raises rather than shows. James March's
+simulations suggest a route by which turnover could have value without reputation. In March's model, as Simon Rodan and Megha Sachdeva describe it, an organizational code, the beliefs an organization keeps in its rules and procedures, adjusts toward the beliefs of members who are closer to reality than it is, while members are socialized toward the code; where socialization is fast, members soon share the code's beliefs, the variety from which the code could learn is driven out, and learning suffers (<a href="https://www.sjsu.edu/cob/docs/OM-05-003.pdf">Rodan 2005, 2, 6, 24</a>; <a href="https://buscompress.com/uploads/3/4/9/8/34980536/riber_b13-231__602-615_.pdf">Sachdeva 2013, 603–604</a>). Moderate turnover, March found, then increased exploration, and with it knowledge, through the diversity of the new recruits (<a href="https://buscompress.com/uploads/3/4/9/8/34980536/riber_b13-231__602-615_.pdf">Sachdeva 2013, 605</a>). Rodan, rerunning March's original simulation, found that low rates of turnover improved learning while high rates lost too many knowledgeable members, and that once turnover reintroduced variety, fast socialization ceased to be a problem (<a href="https://www.sjsu.edu/cob/docs/OM-05-003.pdf">Rodan 2005, 12, 23–24</a>). Extended to configurations, which March does not discuss, the model suggests that replacing components around a persistent model or evaluator would raise the question of what the replacements are made from, and Section 4 noted that artificial investigators, not only when copied from a common base but also when of different origins, need not differ in the way this requires. In March's model what yields the gain is not turnover as such but newcomers' holding beliefs the code has not yet absorbed; if so, applied to configurations, merely raising the frequency with which components are updated, or the number of models, may not supply this function. And whereas human turnover can bring at once the loss of knowledge and the end of a judgment's continued dominance, a configuration could transfer only the authority to allocate or evaluate while keeping the record, so that what is kept and what is brought to an end become separate questions. A record cannot be assumed to keep every tacit capacity, however, and if successors are chosen by the same criterion of evaluation, the range of judgment may not change with the turnover.</p>
+<p>The fourth case concerns the fifth function, the plurality of signals. Laurens
+Hessels and colleagues compare four high-performing research groups in the
+Netherlands. In mathematics, arguments can gain recognition before formal
+publication, and a group that depends on little equipment can change direction
+quickly; in the humanities, cycles are slow, and recognition is converted mainly
+into positions and research time rather than grants (<a href="https://hdl.handle.net/1887/77958">Hessels et al. 2019,
+139–143, 146</a>). In the groups they compare, the routes by which work becomes recognition and resources differ by field. Where each field's work
+is evaluated largely by its own members, this plurality persists without anyone
+maintaining it; one may infer that the same arrangement can leave work between fields without a matching evaluator. A single evaluator or allocator
+applied across fields would either maintain that plurality, deliberately or
+through arrangements no one set, or impose one mapping on all of them, and Section 3 found that the adequacy of a
+steering signal depends on the goals it stands in for, which differ by field.</p>
+<p>None of the cases shows that the human arrangement was right: the
+welfare effect of turnover is unsettled, and Project 523 is a single,
+successful, politically embedded case. What the cases suggest is narrower and
+takes the form of a question. When allocation moves inside an artificial
+configuration, what was supplied by features of human realizers and of the way their research has been organized can no longer be assumed to be supplied by those features. Whether a function is then set by a rule someone adopts, supplied by some other process that no one decides, or not supplied at all,
+becomes a question that a claim to allocate well would need to answer. Each of
+the three answers is possible. A function can become a parameter that someone
+sets: a termination rule and its horizon, a rule for keeping lines of different
+kinds open and admitting new groups to them, a criterion for convergence, a
+schedule for retiring or replacing dominant components or the components around
+a persistent one, or a policy about how many evaluative criteria are
+maintained. It can also be supplied by processes that no one sets as policy,
+inside a configuration as well as outside it, such as the choices of instances that take up and drop lines on their own motives or something equivalent to them, the emergent behavior of a learned allocator, the randomness of its initialization, a market among parts with
+private costs, or a provider's decision, made for other reasons, to retire a
+model. And it can lapse unnoticed. Where a function is set, whoever sets it
+determines part of what the configuration can learn. Where it is set by many
+parts, no single party may be its author, and who answers for the setting
+becomes the question of responsibility that Chapter 12, Section 6.3 takes up.
+This is the form that the recombination described in Chapter 9, Section 2.3 takes
+for allocation. Jan Kulveit and colleagues make a parallel observation about the economy, culture, and states, which they hold have been kept aligned with what humans want partly through explicit actions and partly implicitly, through their reliance on human labor and cognition; the significance of the implicit route, they write, "can be hard to recognize because we have never seen its absence". They add that analogous arguments could be made for other domains, research among them, and that drift away from human interests can occur "even while each individual AI system successfully follows the local specification of its goals" (<a href="https://arxiv.org/abs/2501.16946">Kulveit et al. 2025, 2–3, 15</a>). Their concern is the loss of human influence over societal systems (Chapter 12, Section 7). What is taken from them here is narrower: that a function supplied by human participation rather than by decision may become visible only once it lapses. In research it may stay invisible even then. Lines that are closed, or never opened, because such a function has lapsed leave no results, and since the results of lines not chosen are not observed, the record that would show what was lost is never produced.</p>
+<p>Besides the arrangements that performed the five functions, human allocation may have rested on a mechanism that no one decided: exploration driven by curiosity. Taken as an inquirer's wanting to know what is unknown to it, curiosity works as a heuristic for setting that inquirer's questions and for searching its space of unknowns. Chapter 4, Section 7 separated three things the word can name, an inquirer's state, the work of detecting unresolved matters and forming questions, and a community's distribution of exploration among questions, and noted that none of them entails another by definition. In human researchers the three have often worked together: wanting to know has moved researchers to form and pursue their own questions, and the pursuits of many researchers have together distributed exploration. Part of science so far, though not all, has consisted of research driven in this way by the curiosity of individual researchers, and because the three have worked together, such research, taken as a whole, can be read as having formed, from the bottom up and without anyone deciding it, a heuristic for searching the space of unknowns. As long as researchers are members of <i>S</i>, each one's unknowns overlap with <i>S</i>'s, and the differences among their curiosities may have spread the search. On this reading, at least three things come into question when the inquirer is a machine. One is that where the machine is not a member of <i>S</i>, as when it conducts research for a human society, what is unknown to it, toward which its curiosity or something equivalent to it is directed, need not overlap with what is unknown to <i>S</i> (Section 6); where <i>S</i> is mixed or artificial and the machine is among its members, the overlap can return, but the question then becomes whose unknowns within <i>S</i> are pursued. Another is that the three things that have worked together in human researchers need not come together in artificial ones, and that the variation in the curiosity of artificial investigators, or what is equivalent to it, need not be supplied, as it is for humans, by what the realizer is like: copying from a common base can narrow it, and different origins do not guarantee it (Section 4), while it might also be built in, and even made greater than the variation among human researchers. Whoever or whatever decides what variation to build then sets part of the search heuristic, and where that is a single decision it approaches the centralization taken up next. The third concerns centralization rather than machines as such: where allocation is assigned from a center, this heuristic is replaced by the single heuristic of the allocator (Section 2), which holds for a human center as well, although an artificial configuration can come closer than human institutions have to such assignment.</p>
+<p>Seen at the level of the whole system, the choice by states, funders, or a society to accept and support research of this kind is also an implicit adoption of exploration driven in a distributed way by curiosity as a method of allocation. Abraham Flexner's defense of curiosity-driven research and Bush's defense of basic research, set out in Chapter 9, Section 3, can be read as giving reasons for that adoption. If so, when inquirers become machines, whether to keep this heuristic may be less likely to stay implicit, since whether artificial investigators have curiosity or something equivalent to it, and how far it varies among them, cannot be presumed to come with them as it came with human researchers. Where it cannot, someone, or the configuration itself, may end up choosing the heuristic, or the heuristic may form without anyone choosing it; to whom any such choice falls is a question of authority (Chapter 12).</p>
+<p>The point can be put more abstractly, and doing so connects it with the three answers above. Since, as Section 2 argued, no search is free of prioritization, however a whole system allocates, it adopts some heuristic of search. Two distinctions, not one, apply to that heuristic. One is whether lines are assigned by a single center or result from the choices of many parts. The other is whether the heuristic was set by someone or formed without anyone setting it. The two cross: a heuristic applied by a single allocator may have been set by no one, as when the allocator's behavior is learned, and a rule that someone sets can be applied by many parts. Where a heuristic is formed from the bottom up through distributed mechanisms, what drives them may be curiosity in the sense it has had so far, the pursuit of credit (Section 3), or something that is neither; exploration driven by curiosity is one form of this. The three answers above ask, for each function, whether a heuristic that someone set supplies it, one formed without anyone setting it supplies it, or neither does.</p>
+<h3 id="6-whose-unknowns">6. Whose unknowns?</h3>
+<p>Section 1 separated the search problem from the ordering of ends. Sections 2 to
+5 treated allocation as search: given what <i>S</i> wants to know, how is effort to
+be distributed? A complete solution to the search problem would leave the
+question of which of <i>S</i>'s unknowns are worth pursuing where it was. This
+section asks whether that question, too, can be answered inside an artificial
+configuration, and it separates the part of the question that bears on
+knowledge from the part that bears on standing, which Chapter 12 takes up. The
+lineages examined here are those that ask where the ends of an activity come
+from and who knows them: the argument about dispersed knowledge in economic
+planning, an account of how democratic institutions transmit information, an
+account of how scientific significance arises, standpoint theory, which asks
+from where in a society questions arise, and a debate over whose criteria of
+importance a society's research follows and whether that bears on what its
+research certifies. Each presupposes a purpose, and the section says which.</p>
+<p>Chapter 9, Section 3 set out what it can mean for something to be valuable for <i>S</i>, and also introduced the position Kitcher calls the traditional approach to epistemic significance, on which the structure of the world fixes which truths are significant. On that position a capable configuration could find what is significant as it finds anything else, and the question of whose unknowns would reduce to search. But it is one particular position: even if the structure of the world bears on one aspect of what is significant, it does not follow that it fixes significance by itself. This section concerns the accounts on which significance is not so fixed.</p>
+<p>Hayek's argument against central planning bears on distributed science not through what it says about scientific knowledge but through how the argument itself is built. Hayek
+grants that, as far as scientific knowledge is concerned, a body of suitably
+chosen experts may be best placed to command the best knowledge available,
+while noting that this only shifts the difficulty to the selection of the
+experts. The argument concerns two other things: knowledge of "the particular
+circumstances of time and place", which is dispersed and changes continually,
+and the use of resources "for ends whose relative importance only these
+individuals know" (<a href="https://www.econlib.org/library/Essays/hykKnw.html">Hayek 1945, §§I, III–IV</a>). The purpose the argument
+presupposes is that resources serve the ends individuals hold. These two kinds of dispersion, of knowledge of particular circumstances and of knowledge of the relative importance of ends, can come apart for artificial research. The first could reappear inside an artificial population wherever ownership and
+information about costs are divided among its parts. The second would not thereby appear: dividing ownership and information does not by itself give such a population ends of its own. Whether artificial systems can have ends of their own is left open in this book (Chapter 7, Section 4.3; Chapter 12, Section 5). Hayek's argument also has a
+constructive step. Decentralization alone does not suffice, because those on the
+spot must fit their decisions to changes beyond their view; prices do this by
+condensing what a distant change means for them without conveying its cause
+(<a href="https://www.econlib.org/library/Essays/hykKnw.html">Hayek 1945, §§V–VI</a>). Hayek's account can be read as implying that such a signal draws its content from the choices of those who hold the
+dispersed knowledge. By contrast, a signal chosen by an allocator, of the kind Section 3 considered, draws its content from such choices only to the extent that it is generated from them, and its having been chosen does not by that fact make it convey what matters to <i>S</i>.</p>
+<p>Elizabeth Anderson, who counts Hayek a pioneer of what is, in Anderson's term, institutional
+epistemology, distinguishes three forms in which socially dispersed information
+is transmitted: talk, votes, and market prices. Prices, Anderson argues, transmit
+information about private preferences, whereas making a concern a matter of
+public interest requires talk to articulate it and votes to ratify it, since a
+private preference does not become a public interest by being widely held
+(<a href="https://public.websites.umich.edu/~eandersn/EpistemeAnderson.pdf">Anderson 2006, 9–11</a>). Applied to <i>S</i>, this distinction implies that a price-like signal drawn from the choices of those who hold dispersed knowledge would convey what each of them wants, but not by that fact which of <i>S</i>'s unknowns are <i>S</i>'s to pursue together. In research a further circumstance widens this gap: the concerns that talk articulates themselves move with what research shows. Kitcher counts preferences about the direction of research only once they have been tutored, and Stephen John argues that research can challenge an audience's present values and enlarge the space of later choice (Chapter 12, Sections 1 and 3.3). If so, knowledge of which of <i>S</i>'s unknowns are to be pursued together cannot be had only by gathering what is already dispersed, since those who conduct research also take part in forming it. What can happen where the configuration that allocates takes on that part is taken up in Chapter 12, Section 4.</p>
+<p>Later readers qualify Hayek's constructive step on the side of knowledge rather than of ends. Lisa Herzog argues that the information a price conveys is purely quantitative, and that markets process knowledge well where other mechanisms, from talk and reputation to regulators and courts, take on the remaining epistemic tasks (<a href="https://hdl.handle.net/11370/a44e0296-74b9-4a19-8df5-adc369f6424e">Herzog 2020, 267, 269–273, 283</a>). Robert Reamer, reading Hayek together with James C. Scott, argues that prices do not avoid the reduction of information that Hayek found in central planning but perform it, so that which information counts as "the most essential" is itself open to contest (<a href="https://doi.org/10.1080/08913811.2024.2354648">Reamer 2024, 167–170</a>). Applied to the quantities that move the allocation of research rather than markets, such as citation counts and scores, their points imply that such quantities can steer well only where other means, such as review and criticism, take on the remaining work of judging what is new and what matters, and that what is discarded in reducing that work to a quantity is itself a judgment. In research, moreover, what serves as the criterion of evaluation itself moves, and what is new may as yet have no criterion (Chapter 11, Section 8), so that this judgment is not made once and for all. Anderson, whose
+concern is which institutions can find and use the information needed to solve
+collective problems in accordance with values such as welfare and justice,
+later distinguished three kinds of local knowledge: legible local knowledge,
+discrete facts about particulars put into a standardized form that outsiders can
+use; illegible local knowledge, articulated but not so standardized; and
+<em>mētis</em>, practical know-how in dealing with particulars that exceeds what its
+holders can articulate. Anderson holds that Hayek's argument concerns only the first,
+that prices encapsulate it by discarding such details as why people want what
+they demand, and that every increase in the scale of coordination, markets
+included, shifts what an institution can draw on from the local to the general
+(<a href="https://doi.org/10.1080/24740500.2024.2422551">Anderson 2025, 1–2, 4–5, 21</a>).
+On Anderson's reading, the first kind of dispersion, that of knowledge of the
+particular circumstances of time and place, which this section found could
+reappear inside an artificial population, is dispersion of legible
+knowledge, and Reamer likewise takes the local knowledge in Hayek's argument to
+be factual and readily articulated rather than tacit (<a href="https://doi.org/10.1080/08913811.2024.2354648">Reamer 2024,
+170–171</a>). These accounts limit, from the side of knowledge, the reading above on which a signal like a price draws its content from the choices of those who hold dispersed knowledge: such a signal carries what they know only in the part that has been put into a standardized form, and its
+working depends on other means through which the rest is gathered or acted on.</p>
+<p>What, then, supplies the ends of research, on accounts on which the world does
+not? Philip Kitcher's account of scientific significance offers one answer. As Matthew J. Brown reports the account, Kitcher argues that no context-independent notion of epistemic significance can be defended: there is, in Kitcher's words, "no good reason to believe in the ideal atlas" at which inquiry would aim. Significance flows into the sciences from broad questions that express natural human curiosity and from practical projects. Fields are associated with significance graphs, which show how particular questions, techniques, and results inherit significance from others; the graphs are indexed to a time and change as the field develops, and what counts as significant is relative to a particular group, with its practical interests and its history (<a href="https://www.matthewjbrown.net/professional/papers/significance-problems.pdf">M. J. Brown 2010, 133–138</a>). In Kitcher's later account, one generation of inquiry can revise the judgments of significance it inherits, so that what earlier inquiry found shapes what later counts as significant (<a href="https://doi.org/10.1387/theoria.7014">Kitcher 2013, 207, 221</a>). Kitcher's analysis also gives such shaping a direction. As Eigi reports it, research directions once chosen have considerable inertia, so that it is easier to go on following them, and later attempts to meet needs they neglected start from a less favorable position (<a href="http://hdl.handle.net/10062/52179">Eigi 2016, 92</a>; Chapter 12, Section 7). Chapter 4 looked, within a single inquiry, at a relation in which an overarching question is divided into subquestions and it is asked how far the collected answers to the subquestions answer the original question (Chapter 4, Sections 2 and 6). That, however, is a relation of answers, not the relation of value in which subquestions inherit significance from an overarching question. Significance graphs describe the latter across a field and over time. The purpose this account gives research is to answer the
+broad questions and serve the practical projects at a graph's periphery, the root from which its significance flows.</p>
+<p>Applied to configurations, which Kitcher does not discuss, the account implies that a configuration could extend a significance graph, finding
+the tractable questions through which a broad question is pursued, without
+supplying the broad questions and practical projects at its periphery. For
+research for a human society, the configuration would then inherit that
+periphery, and an allocation that no longer traced back to it could still
+bring about epistemic achievements new to <i>S</i>, but it would no longer be directed by what <i>S</i>
+finds significant, however well it searched. Kitcher's account is framed by
+human curiosity. On this account, as Matthew J. Brown reports it, the sciences
+ultimately obtain their epistemic significance from broad questions that express
+natural human curiosity, judged against a conception of healthy curiosity, while
+human beings vary in the ways they express surprise and curiosity (<a href="https://www.matthewjbrown.net/professional/papers/significance-problems.pdf">M. J. Brown
+2010, 137–138</a>); if so, human investigators share that source with the society whose questions stand at the
+periphery, and artificial investigators cannot be assumed to. If artificial
+members of <i>S</i> come to perform work named by the second or third of the claims that Chapter 4, Section 7 distinguished beneath the word curiosity, detecting unresolvedness and
+generating questions, or distributing exploration across questions, the
+periphery could come to include their questions. The question of whose unknowns
+would then not disappear. It would become the question that Chapter 8, Section 3.3
+raised and Chapter 12 takes up: who may speak for <i>S</i>, and whose questions stand at the root of its significance
+graphs.</p>
+<p>On accounts such as Kitcher's, on which significance is not fixed by the structure of the world alone but changes as the connections among questions change, allocation bears not only on which answers are found but also on what is significant. Because significance graphs change as a field develops, and one generation of inquiry can revise the judgments of significance it inherits, which lines were pursued also shapes which questions later appear significant; Section 3
+found a loop of the same form in the signals by which lines are judged. Two examples suggest that tractability can move attention, though not through an allocator. After predicted structures from AlphaFold2 became available in 2021,
+basic research on proteins that had lacked any structural information rose by 23 to 32 per cent relative to proteins that already had a structure, with much larger increases by 2025, while the rate of experimental structure determination remained almost unchanged (<a href="https://www.nber.org/papers/w35143">Hill and Stein 2026, abstract, 26</a>; figures from the revision dated 17 July 2026);
+the study is a working paper about one technology in one field, and the tool decided nothing
+about ends. And the authors of one study of reinforcement learning for reasoning
+in language models wrote that the great majority of such work had trained and
+evaluated models only on mathematics and code, domains that offer easily
+verifiable answers, and that extending it to other domains was held back by a
+scarcity of reliable reward signals and curated data (<a href="https://arxiv.org/abs/2506.14965">Cheng et al. 2025,
+1–2</a>). The examples do not show that signals govern ends. Koichi Takahashi gives a reason why what AGI makes tractable may differ by field. Takahashi distinguishes a wall of computation, which investing energy can push back, from a wall of intrinsic time, the time a target system takes to advance of its own accord, such as the decades to centuries of ecosystem recovery, which no technology applied from outside can shorten (<a href="https://koichi-takahashi.me/en/agibook/appendix-1/">Takahashi 2026, appendix 1, "The Wall of Intrinsic Time"</a>). Takahashi's map of what AGI could reach is presented as an upper-bound assessment under stated premises rather than as a forecast, and on it a field counts as reached when a mechanism model is obtained that predicts specified observations and interventions to a specified precision. On that map, at the energy of the whole Earth, energy and materials come within a year's reach, whereas for climate and social institutions the computation still falls short and the intrinsic time is decisively long (<a href="https://koichi-takahashi.me/agibook/appendix-3/">Takahashi 2026, appendix 3</a>; Chapter 5, Section 6.5).</p>
+<p>Some authors locate a further route, through the infrastructure on which research runs and those who build it. Emmanuel Jeannot argues, of the Genesis Mission of the United States, that an infrastructure for artificial research on that scale, which emerges from political and industrial decisions rather than from the distributed preferences of the scientific community, encodes "the agenda of the institutions that built it, at the moment they built it"; once such infrastructure becomes the dominant mode of production, Jeannot holds, the questions it does not ask become harder to ask because work beyond its agenda would proceed more slowly and attract less attention and funding, even without being prohibited. On the same argument, this works at a political level, where priorities change with administrations while the infrastructure they built persists, and at an industrial level, where private partners have an interest in orienting research toward what is computationally tractable and economically valuable; and "neither requires a conspiracy" (<a href="https://arxiv.org/abs/2607.15164v1">Jeannot 2026, §7</a>). Bisht and colleagues argue that research involving artificial techniques is pushed toward problems that can be quantified, because those techniques are optimized and evaluated on numerical signals and need data in computationally convenient form; they describe this as an instance of the McNamara fallacy, in which what cannot easily be measured comes to be treated as unimportant (<a href="https://arxiv.org/abs/2605.08956v2">Bisht et al. 2026, §3</a>). These are arguments in preprints, not findings about a particular allocator. Zeynep Pamuk, writing on the public funding of science in democracies, gives an argument of the same form as Jeannot's about infrastructure, for funding decisions themselves. Holding that those who make funding decisions can, intentionally or not, rule out courses of action, Pamuk argues that decisions about how funds are distributed within an area determine the range of possible answers to a problem, while at the decision stage laypeople can accept one of the available options or reject them all but "cannot produce new science", so that formal decision-making power may remain with political processes while being constrained by funding decisions made far earlier by scientists; Pamuk also notes the worry that private funders may enact their vision of a good society "through their private funding decisions, rather than by seeking majority support" (<a href="https://doi.org/10.1017/S0007123418000431">Pamuk 2019, 11–12</a>). In the terms of Chapter 9, Section 2, the arguments of Jeannot, of Bisht and colleagues, and of Pamuk describe a route by which a supporter or provider distinct from <i>S</i> can shape which of <i>S</i>'s unknowns become tractable and so, on Kitcher's account, which later appear significant; on Pamuk's argument the route also shapes which answers are available to those who later decide, a gap between formal and effective authority that Chapter 12, Section 4 takes up. Taken together with Kitcher's account, on which what earlier inquiry found shapes what later counts as significant, these arguments suggest at least the following. Because only the lines chosen accumulate means, expertise, and results, which of the ends that can later be chosen can actually be achieved depends on the history of allocation; so even where formal authority over ends remains and no end has been explicitly rewritten, what can in fact be chosen may have changed. Whether to call this a change of ends depends on how ends are specified, but it is a more specific form of the point that allocation is not a neutral means of realizing ends, and it holds whether allocation is carried out by human institutions or by an artificial configuration.</p>
+<p>How such movement is to be assessed depends on the purpose and the account of
+value adopted. If the purpose is to produce as much knowledge new to <i>S</i> as possible, wherever it lies, a shift toward what has become tractable can count as good allocation. The principle that every true belief is good for its own sake does not entail this maximizing purpose: aggregation and priority rules would also be needed (Chapter 9, Section 3). If Kitcher's account is applied here, where no one with a place at the periphery reviews whether the signals still trace back to it, the signals can
+come to govern the ends by default. Nothing in this requires the configuration
+to have ends of its own. It requires only that the ends be represented by
+proxies and that no one hold the proxies to account. On accounts on which ends
+are themselves revised in the course of inquiry, by learning what pursuing them
+involves and what it yields, a change in what is tractable can be part of an
+ordinary revision of ends rather than a drift from them. On such accounts a
+judgment of value is tested by acting on it and seeing whether its consequences
+are valued as it predicted (Chapter 9, Section 3), so that the revision would need some route by which it learns how those who bear the
+consequences value them. Whether they also take part in making the revision is a
+further question.</p>
+<p>Two different things bear on answering the question of whose unknowns, that is, which of <i>S</i>'s unknowns to pursue, and this book distinguishes them as two roles. One is knowing what matters to the members of <i>S</i>, which outcomes they care about, which problems press on them, and which particular circumstances bear on those problems; this is an epistemic role. Parts of it can be gathered and
+represented, and a configuration whose parts hold dispersed information
+could carry out much of it. On Anderson's account, set out above, institutions
+that are to use what has not been put into a legible form have to include those who hold it,
+recognize them as experts with respect to it, and respect their autonomy in
+using it (<a href="https://doi.org/10.1080/24740500.2024.2422551">Anderson 2025, 1–2, 5,
+20</a>); the account does not rule out that
+an artificial system could acquire <em>mētis</em> (<a href="https://doi.org/10.1080/24740500.2024.2422551">Anderson 2025, 19 n.
+8</a>). Where Anderson's account holds, the part of the epistemic role that rests on members'
+illegible knowledge and <em>mētis</em> of their own particulars would be a relation to
+those members, or to whoever has acquired that familiarity, rather than a
+capacity that a configuration could exercise from its records alone. The other is deciding whose questions stand at the root of the ordering (on Kitcher's account, at the periphery of the significance graphs) and how they are weighed against one another, or answering for an ordering that no one decided. An account of what is valuable for <i>S</i> bears on what such a decision weighs, but does not by itself settle who is entitled to make it or to answer for it. Discussion of artificial systems in research contains several positions on this second role. In an exchange collected by Marcel Binz and colleagues, Matthew Botvinick and Samuel Gershman would reserve to human scientists what they call the normative aspect of science, the question of which problems to work on: judgments of interest, significance, and timeliness are, on their account, tied to cultural and historical sensibilities that themselves change, and making a system conform to present human views does not amount to authorizing it to direct how those views change. Eric Schulz and colleagues reply that if a system had proven itself to select topics fruitfully, there would be no reason to refrain from using it as long as ethical and legal guidelines were followed, since which directions will be fruitful is often not known in advance (<a href="https://doi.org/10.1073/pnas.2401227121">Binz et al. 2025, 6–8</a>). Ross King distinguishes a system's generating its own questions within a domain from normative self-authorization, a system's taking itself to be entitled to settle what ends to pursue, and would have what King calls virtual research councils allocate resources "within human-authorised objectives rather than determine autonomously what humanity ought to value" (<a href="https://arxiv.org/abs/2608.14407">King 2026, §§14.1, 14.4</a>). In the terms of this section, Schulz and colleagues rest their reply on fruitfulness, an epistemic competence closer to the search problem of Section 1 than to either role, with compliance with ethical and legal guidelines as a condition; whether such compliance supplies what the second role involves is a further question (Chapter 12, Section 1). Botvinick and Gershman, and King, place the second role, deciding the ordering and its change, with humans.
+Chapter 12, Section 1 examines it on accounts of legitimate authority, and
+notes there a claim that all of them other than purely epistocratic ones, on which rule belongs to those who know best, can accept: competence in the first role does not by itself supply the standing
+that the second involves; it also examines Kitcher's ideal of well-ordered science, on
+which even the epistemic role answers to what ideal deliberators representing
+the viewpoints in a society would choose.</p>
+<p>Standpoint theory, the family of views on which the social position from which research starts bears on the objectivity of the knowledge it yields, adds a consideration that falls under neither role. Sandra Harding
+argues that where research starts is itself a matter of objectivity. In a
+society stratified by power, on this account, the activities of those at the top
+organize and limit what can be understood from their position, and questions
+that arise from the lives of those the society marginalizes yield less partial
+accounts not only of those lives but of the social order (<a href="https://webarchive.unesco.org/web/20151214152723/http://unesdoc.unesco.org/images/0018/001883/188333e.pdf">Harding 2010,
+173–174</a>). Harding does not confine the argument to
+the social sciences: on her account, sexist and androcentric assumptions have
+shaped results especially in biology as well as in the social sciences, and
+what researchers observe is always both given by nature and constructed by
+culture. She carries the argument into the context of discovery, criticizing
+accounts that confine method to the testing of hypotheses already formulated
+(<a href="https://www.reciis.icict.fiocruz.br/index.php/reciis/article/download/891/pdf_20">Harding 2007,
+162–163</a>). Kitcher's account traces broad questions to human curiosity; Harding's asks from which positions within a society questions arise. Chapter 11, Section 3 refers to this examination when it asks what standpoint theory implies for critics.</p>
+<p>Intemann's reconstruction, as Sharon Crasnow reports it, narrows and specifies
+the claim. On this reconstruction, feminist empiricism and standpoint theory
+have converged in several respects but still differ over the kind of diversity
+needed for objectivity and over the role that non-epistemic values play in
+enhancing it; Intemann argues that the standpoint understanding of diversity, as
+diversity of social location, better explains why particular sorts of evidence
+are significant, and why they are relevant to some knowledge projects and not to
+others. Nor does standpoint theory claim that the epistemic advantage of
+marginalized positions is automatic: had it claimed this, the view would, as
+Intemann points out, be either trivial or false. Standpoint theories, as Crasnow
+summarizes them, also share an achievement thesis, on which a standpoint is not
+automatic and must be achieved; Harding, as Crasnow presents her view,
+distinguishes it from the perspective that a change of social location
+automatically brings, since achieving a standpoint requires a group
+consciousness rather than an individual's change of perspective (<a href="https://plato.stanford.edu/archives/sum2026/entries/feminist-science/">Crasnow 2025,
+§4.3</a>).
+Harding also holds that those who do not live marginalized lives can start
+their thought from them, but that doing so requires learning from those who live
+them (<a href="https://webarchive.unesco.org/web/20151214152723/http://unesdoc.unesco.org/images/0018/001883/188333e.pdf">Harding 2010, 173–174</a>). Longino had
+argued, as Anderson reports, that standpoint theory cannot provide a
+noncircular basis for deciding which standpoints have epistemic privilege
+(<a href="https://plato.stanford.edu/archives/sum2026/entries/feminism-epistemology/">Anderson 2024,
+§2</a>). The reconstruction, on which evidence from a social position is relevant to some knowledge projects and not to others, suggests where one possible reply might be sought: in what particular evidence bears on a particular project rather than in a general ranking of standpoints. The purpose
+the theory presupposes is epistemic, knowledge that is less partial; on
+purposes, or in fields, for which social position does not bear on content, it
+gives correspondingly less reason to change where research starts.</p>
+<p>On standpoint theory, then, whose questions stand at the root is not only a
+matter of standing, nor only of gathering knowledge of what matters to members,
+but also bears on how partial the knowledge research yields will be (compare Chapter 4, Section 1). Three things follow, where the theory holds, for an artificial configuration conducting research for a human society. A configuration that extends significance graphs from the
+questions already posed in the record it was trained on would start where those
+who produced that record stood, and competence in gathering what members want
+would not by itself correct this. A standpoint is not something a configuration
+could have or lack merely by what it is, since on these accounts it is achieved
+by communities rather than conferred by location; whatever part a configuration
+could take would be relational, depending on whom it learns from and with whom
+it inquires. And feminist work on the epistemic value of diversity, as Crasnow presents it, holds that unexamined assumptions go unchallenged when those whose experiences conflict with them are excluded (<a href="https://plato.stanford.edu/archives/sum2026/entries/feminist-science/">Crasnow 2025, §1</a>); records
+produced by research communities would lack such experience to the extent of that exclusion. Taken with the possible reply to Longino's objection noted above, this point also gives reason to think that a configuration could not settle from its record alone which positions bear on the content of a given project, since part of the evidence bearing on that is what the record lacks. In a mixed society, the relation between human and artificial members could itself be a relation of power of the kind that standpoint theorists take social positions to track, and whether positions on either side of it bear on the content of research would, on Intemann's reconstruction, differ from one knowledge project to another. An artificial society whose members were trained on a human record and extended significance graphs from the questions posed in it would, by the first and third points, start where human research communities stood rather than from positions within itself; whether its own members come to occupy positions that bear on the content of their research is a further question.
+Chapter 11, Section 3 takes up what these points imply for the organization of
+criticism.</p>
+<p>Standpoint theory asks from which positions within a society questions arise. A
+debate among Argentine scientists and philosophers, conducted in 1971 in the
+journal <em>Ciencia Nueva</em> and in lectures it sponsored, and collected in a book in
+1975, asked a related question about research in different societies; it lies
+outside the cases and debates on which this book has otherwise drawn. Oscar
+Varsavsky had argued that research in one society can take its criteria of
+importance from elsewhere without anyone having decided it. On this
+account, which topics are of greatest interest, which methods are most
+promising, and how each scientist's work is to be evaluated were sanctioned,
+rather than explicitly decided, in the large international research centres;
+researchers trained there returned with those criteria and took them to be
+universal; and funding allocated according to expected results, with the
+published paper as a countable unit of evaluation, produced a positive feedback,
+a "natural selection" of topics, in which established topics attracted funds and
+new ones could compete only when they answered a need that the prevailing
+system already recognized. Varsavsky called <em>cientificismo</em> the stance of researchers
+who adapt to this market, give up concern with the social meaning of their
+work, and accept the norms and values of those centres (<a href="https://repositorio.esocite.la/339/">Varsavsky 1969,
+§§II–III</a>). To the reply that what is true
+in one place is true everywhere, Varsavsky answered that truth is not the only
+dimension that counts; importance is another, and on this view it is essentially
+local: a theory about petroleum matters differently in Switzerland and Venezuela (<a href="https://repositorio.esocite.la/339/">Varsavsky 1969, §IV</a>). Varsavsky
+later proposed that research priorities be derived, through a policy for
+technology, from needs that a society defines with popular participation
+(<a href="https://repositorio.esocite.la/388/#src-varsavsky-1975">Varsavsky 1975, 53, 55–56</a>). The purpose
+the argument presupposes is that a society's research serve that society's own
+project, in Varsavsky's case its transformation.</p>
+<p>Gregorio Klimovsky, whose interview in <em>Ciencia Nueva</em> opened the debate,
+granted much of this. On Klimovsky's account, where one stands socially can make the
+same problem seem urgent or not, and hypotheses can be suggested by fashions and
+by research done elsewhere; Klimovsky counted as an ideological distortion a study that
+would draw its subjects from a middle-class district of a city and not from its
+informal settlements, but held that methodological criticism can detect such a
+partial delimitation of the empirical base (<a href="https://repositorio.esocite.la/388/#src-klimovsky-1971">Klimovsky [1971] 1975, 15, 24–25,
+28</a>). What Klimovsky denied was that such factors
+affect the objectivity of results in the context of justification (<a href="https://repositorio.esocite.la/388/#src-klimovsky-1971">Klimovsky
+[1971] 1975, 27, 36</a>). Thomas Moro Simpson,
+defending Klimovsky, separated two senses of objectivity: a theory's relation to
+truth, and impartiality in choosing what to investigate or to make known.
+Partiality in the second, Moro Simpson argued, does not imply a lack of objectivity in the
+first, while the criteria of importance merit the greatest attention in setting
+a science policy, as does the question of who is to plan research and by which
+criteria (<a href="https://repositorio.esocite.la/388/#src-moro-simpson-1975">Moro Simpson 1975, 83–84</a>).
+Moro Simpson was answering Varsavsky's reply to Klimovsky, which had argued
+that the criteria of importance are not confined to the choice
+of problems: they also fix which claims are checked first and how soon, and
+which methods prevail, so that ideology, acting through them, bears on truth
+mostly by delaying it
+rather than by falsifying it (<a href="https://repositorio.esocite.la/388/#src-varsavsky-1971">Varsavsky [1971] 1975, 45–47,
+49–50</a>); Chapter 11, Section 4 takes up
+that point. The purpose Klimovsky and Moro Simpson presuppose is objective
+knowledge, with the scientist's social responsibility as further tasks
+(<a href="https://repositorio.esocite.la/388/#src-klimovsky-1971">Klimovsky [1971] 1975, 33, 35</a>).</p>
+<p>The debate bears on this section in two ways. First,
+Varsavsky's account describes, for the research of a whole society, the
+structure this section found for a configuration: significance graphs extended
+from broad questions and criteria of importance supplied elsewhere, through
+funding by expected results, training, and countable outputs, without anyone
+having decided it, and with the authority of being taken as universal. If this
+account is right, such inheritance needs no intention; it needs only, as in the application of Kitcher's account above, that signals stand in for ends and that no one hold them to account. A configuration trained on a record whose questions were set
+mostly by some research communities would extend their graphs in the same way,
+starting, as the paragraphs on standpoint theory above found, where those
+communities stood;
+and its competence in search would not by itself show whose criteria of
+importance it applied. Second, Moro Simpson's separation corresponds to the one
+this section draws between the search problem and the ordering of ends, and to
+the one between competence and standing that Chapter 12, Section 1 examines. Applied to configurations, which Moro Simpson does not discuss, the separation implies that a configuration's inheriting its criteria of importance from elsewhere would not by itself imply a lack of objectivity, in the sense of a relation to truth, in what it certifies, but would raise the question of who may set those criteria. Not implying a lack of objectivity is not the same as having no effect. On Varsavsky's reply, criteria of importance also fix which claims are checked first and how soon and which methods prevail, so that the separation, though it can be drawn, may not hold in practice, a question Chapter 12, Section 3.5 takes up for governance in general. The debate thus separates three dimensions: whether results are true, to whom they are important, and when needed truths are reached. Applied to configurations, it suggests that a configuration can produce true results while inheriting criteria of importance from elsewhere and delaying the arrival at truths that <i>S</i> itself needs. Where <i>S</i> is itself an artificial society whose members were trained on such a record, the inheritance runs between societies, as in Varsavsky's own case: its criteria of importance, so far as they come from that record, would at first be those of the human research communities that produced it. Applied to such a society, Varsavsky's view that importance is local implies that whether it came to have criteria of its own would turn on whether it had a project of its own from which they could be derived, and Moro Simpson's separation implies that the inheritance would not by itself imply a lack of objectivity in what it certifies, but would raise the question of who may set those criteria for it.</p>
+<p>As Section 1 noted, even a complete solution to the search problem leaves the question of which of <i>S</i>'s unknowns are worth pursuing; what this section adds is that how that question is answered depends on the account of value and of legitimacy adopted. On Hayek's argument and Anderson's reading of it, knowledge of particular circumstances can be dispersed inside a configuration as well, but ends are not thereby supplied, and a signal like a price carries only what has been made legible; much of the epistemic role could then be performed inside a configuration whose parts hold dispersed information, while competence in that role does not by itself settle the second. Applied to configurations, Kitcher's account and accounts like it imply that a configuration inherits the questions at the
+root of the significance it extends and its allocation shapes which questions
+later appear significant; on accounts on which ends are revised through
+inquiry, the question becomes by what route the revision learns how those who
+bear the consequences value them, and whether they also take part in making it; on standpoint theory, where the root questions start also
+bears on how partial the resulting knowledge is; and on Varsavsky's account the
+criteria of importance that a society's research follows can be inherited from
+research communities elsewhere, which on Klimovsky's and Moro Simpson's accounts bears on what is investigated without implying a lack of objectivity in what is certified, while on Varsavsky's reply it can bear on when needed truths are reached.</p>
+<h3 id="7-what-chapter-10-has-found">7. What Chapter 10 has found</h3>
+<p>Artificial allocation can change both who pursues a line and how the population of investigators is formed. The hundred-instance configuration can distribute effort without recruiting a hundred human researchers or acting through their career incentives, and allocation's entering a configuration need not mean that lines are assigned from a center: instances can take up and drop lines themselves (Section 3). Sections 2 to 5 examined what changes with that possibility. Control over the workforce enlarges the available interventions; it does not supply the philosopher-monarch's eye for the objective merits of theories (Section 2). Where lines cannot all be tried cheaply, safely, and reversibly, how to distribute effort remains a problem, and the purposes built into a model of allocation determine what counts as a good answer (Sections 1 and 4). Whatever form allocation takes, it adopts some heuristic of search: no search is free of prioritization, and a proposal to search without criteria of expected significance removes one criterion, not judgments of value in a broad sense (Section 2). The heuristic can be set by someone, or formed without anyone setting it through distributed mechanisms such as the curiosity or the pursuit of credit of human researchers, or something equivalent in artificial ones; in human research, exploration driven by the curiosity of individual researchers has been one such bottom-up form (Section 5).</p>
+<p>Applied to allocation, the sorting of Chapter 9, Section 6 draws its lines as follows. Premises about human realizers can fail: that a center has one person's capacity to attend, that allocation passes through human investigators' motives, and that turnover comes with mortality, without anyone deciding it. So can premises about how allocation has been organized, which can change even while its realizers remain human: that the cost of a failed line falls on a career, that control over time and resources is dispersed across many grant holders, and that each field's work is evaluated largely by its own members. Some premises mix the two: the concern for credit reflects, on Merton's account, a norm of science more than scientists' psychology, and the weighting of one's own data that Solomon describes bears on allocation where the weighting of those who produced the data reaches decisions about whether lines continue (Sections 2 to 5). Where they fail, many of the problems they addressed change form rather than disappear. Allocation is still steered by signals. Human allocation, too, was already moved by institutionalized signals, some of which did not pass through researchers' motives (Section 3). Diversity still has to come from somewhere: artificial investigators need not be copies of one base, but neither copying nor a difference of origin guarantees the differences that inquiry needs (Section 4). And the functions that human arrangements performed without anyone deciding them, such as keeping unfavored lines alive, keeping lines of different kinds open, and renewing participants, may be set by a rule someone adopts, supplied by a process no one sets, or not supplied at all (Section 5). Conditions of inquiry remain: no one knows in advance, in the senses Section 1 distinguished, which line will succeed, and no search is free of prioritization (Section 2). What a configuration needs in the face of the first differs with the sense: where the chances are known, knowledge of them, which Strevens's planner is assumed to have (Section 2); where they can be learned only by pursuing lines, a policy for learning them, whose costs appear in the termination rule and in the results on exploration (Sections 3 and 4); and where neither lines nor their value can be projected, a way for lines its representation does not yet contain to enter it, which on the positions on awareness of unawareness can include reserving some weight for possibilities not yet conceived (Section 2). Relations to parties outside the configuration that involve the other party's participation or recognition cannot be completed from one side. On Kitcher's account, they include whose questions stand at the root of what <i>S</i> finds significant, and allocation bears back on this, since which lines are pursued shapes which questions later appear significant; on standpoint theory, from which positions those questions start; on Varsavsky's account, whose criteria of importance a society's research follows, which Klimovsky and Moro Simpson hold bears on what is investigated without implying a lack of objectivity in what is certified, while Varsavsky replies that, through which claims are checked when, it bears on when truths are reached; and on accounts on which ends are revised through inquiry, by what route the revision learns how those who bear the consequences value them (Section 6). Standing for dissent belongs with these relations: unlike the epistemic work of dissent, a configuration holds it inside itself only where its parts hold it on the account adopted (Section 4). Where the lines fall depends on the account adopted; if significance were fixed by the structure of the world, which unknowns to pursue would belong with the conditions of inquiry (Section 6).</p>
+<p>This sorting is also a means of describing what can happen to research when allocation enters a configuration. Consequences that appeared separately in Sections 3 to 6 can join into a single chain where certain conditions hold: that the same evaluative signal returns into the next allocation and into which investigators are copied or withdrawn; that significance is not fixed by the structure of the world alone, as on Kitcher's account; and that no one with a place at the periphery reviews whether the signal still traces back to it. Under those conditions a configuration that divides problems and selects tasks is likely to show success most readily on tasks that are easy to judge, and that success justifies its next allocations (Section 4). Attention then moves to what has become tractable; protein research after AlphaFold2, and work on reinforcement learning gathered in domains with easily verifiable answers, suggest that such movement can occur even without an allocator (Section 6). If what earlier inquiry found shapes what later counts as significant, as on Kitcher's account, and if research directions once chosen have the inertia Eigi reports from Kitcher's analysis (Section 6), the movement does not stop at which answers are found but reaches how significance itself is seen; and because only the lines chosen accumulate means and expertise, the ends that can in fact be chosen later change without any decision to rewrite them (Section 6). Moreover, for a configuration conducting research for a human society, an allocation that seems to trace back to the periphery may trace back not to the questions the members of <i>S</i> now pose but to where the communities that produced its training record stood (Section 6). If, in addition, the survival of lines is judged by one signal, an error in that signal can correlate decisions to discard otherwise diverse lines (Section 4); in research, since results are new to <i>S</i>, there may be no other answer against which the signal's error could be checked (Chapter 11, Section 6). The links have precedents in accounts of human research and in models of it, for example in the "natural selection" of topics that Varsavsky described and in Smaldino and McElreath's model, in which selection on publication count degrades the rigor of methods (Sections 3 and 6). A configuration can nonetheless differ in three respects. One is that the first condition is more easily met. Institutionalized signals already steered human allocation (Section 3), but control over time and resources was dispersed across many grant holders, and the routes by which work was recognized differed by field (Section 5); in a single configuration, by contrast, one signal can reach every line at once and decide which investigators are copied and withdrawn. Another is that the functions by which human arrangements could break the chain without anyone deciding it, such as the protection of unfavored lines and turnover through mortality, cannot be assumed to be given (Section 5). A third is that, where one configuration's own record is the main record of the research, the narrowing is unlikely to show in it: lines not pursued leave no results, in human research too (Section 5), and that record may come to show high performance on the tasks at which the configuration succeeded (Sections 4 and 5). Further, if the rules of assignment are themselves revised by the same signal, the narrowing can proceed at the level of how allocation is done, not only at the level of lines (Chapter 12, Sections 7 and 8.4). The chain is not an inevitable course: wherever one of the conditions above fails, it can break at the corresponding link. Of these conditions, the first lies within the configuration's own arrangement: it fails where the judgment of which lines continue does not rest on the signal by which the next tasks are chosen and investigators copied or withdrawn. Checks that are not used to select or train producers, a measure Chapter 11, Section 8 considers, can let that signal itself be examined, but they make the condition fail only where their verdicts bear on which lines continue.</p>
+<p>What a claim that a configuration allocates inquiry well would need to show can also be drawn from this picture. Such a claim can be tested against arrangements available to the configuration, not against the distribution the philosopher-monarch would choose, since that comparison would require the eye (Section 2). A configuration that can create and assign investigators may be better placed than human institutions to run alternative arrangements side by side (compare Section 2), but where it compares them by its own signal, integration alone supplies no independent check on the criterion of comparison (Section 4). Nor can such a claim always be read from the quality of the configuration's instances assessed one by one, since investigators each following a rule that is not unreasonable in itself can, by pooling their evidence, together stay with a worse option (Section 4). Beyond that, it would need to show three things, each bearing on where the chain is broken. One, bearing on the links from success on tasks easy to judge to the inheritance of the periphery, is, on Kitcher's account and accounts like it, how the signals the configuration steers by still trace back to <i>S</i>'s questions, and who reviews whether they do (Sections 3 and 6). Another, bearing on the last link, at which lines are discarded through a shared error, is where the diversity it relies on comes from, and what independent check there is on the criterion by which diversity is ended, which integration alone does not supply (Section 4). A third, bearing on the functions by which human arrangements could break the chain, is, for each function of Section 5, whether a rule someone adopts, a process no one sets, or nothing supplies it, including whether the configuration keeps, replaces, or loses the heuristic that human curiosity formed (Section 5). Devices such as protected budgets or different initializations are possibilities to test, not established substitutes for every kind of difference among human investigators, and Project 523, a single case, suggested that deciding a function centrally is one thing and making the judgments its performance requires is another. Of the two roles that Section 6 distinguished, knowing what matters to the members of <i>S</i> is an epistemic role that a configuration whose parts hold dispersed information could in large part perform; deciding whose questions stand at the root of the ordering, or answering for an ordering that no one decided, is not settled by competence in the first, and who may take it on is the question of Chapter 12.</p>
+<p>The distinction between the epistemic work of dissent and standing for dissent also bears on such a claim. Keeping a line with successes of its own, or a route to reopen it, can be an internal feature of allocation; recognizing a party's standing to object is a further relation, unless the internal parts are themselves such parties (Section 4; Chapter 12, Section 5). The distinction does not make separate organizations necessary for every good allocation. What it implies is that a claim to allocate well and a claim that dissent has standing need different evidence: the first, on Solomon's account, about how the allocation keeps successes represented, the second about relations among parties.</p>
+<p>What the chapter leaves, therefore, is a space of alternatives, each to be judged against its purposes: which lines remain possible, how they gain and lose
+support, where differences arise, and how priorities can be revised. The
+uncertainty of future results constrains that space without specifying a single
+best arrangement. Within that space, however, the arguments examined bring at least three things into view. One is that the power to create and sustain many lines and the power to judge their survival by a single signal can be joined in a single configuration. On Kitcher's analysis, control can bring about a division of labor that individuals would not choose, so centralization need not reduce diversity (Section 2); but if, as at the last link of the chain above, the same configuration judges the survival of lines by one signal, what centralization trades against is less diversity as such than independence of error about the criterion that governs convergence (Section 4). Another is that a search that does not use expected significance still makes choices about which possibilities it can reach and which it reaches first, and that if allocation bears back on significance, as on Kitcher's account, these choices constrain later judgments of significance (Sections 2 and 6). A third is that, applying Varsavsky's argument, an allocation can produce true results while inheriting criteria of importance from elsewhere and delaying the arrival at truths that <i>S</i> itself needs: truth, importance, and the time at which truths are reached are assessed along separate dimensions (Section 6). Since allocation also uses judgments produced by criticism,
+the next chapter asks how those judgments are formed and when others can rely
+on them.</p>
+</div>
+<nav class="book-nav"><a href="/blogs/what-would-it-mean-for-machines-to-do-research/chapter-9.html">&larr; Chapter 9</a><a href="/blogs/what_would_it_mean_for_machines_to_do_research.html">Contents</a><a href="/blogs/what-would-it-mean-for-machines-to-do-research/chapter-11.html">Chapter 11 &rarr;</a></nav>
+{% endraw %}
