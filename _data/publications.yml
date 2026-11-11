@@ -1,3 +1,17 @@
+- title: "Atlas of Judgment: A Structured Analysis of Reviewer Reasoning in ICLR, 2018–2026"
+  url: "/assets/papers/atlas-of-judgment-technical-report.pdf"
+  authors: "<b>Shiro Takagi</b>"
+  venue: "2026 (technical report)"
+  materials:
+    - label: "PDF (English)"
+      url: "/assets/papers/atlas-of-judgment-technical-report.pdf"
+    - label: "Project"
+      url: "https://atlas-of-judgment.pages.dev/"
+    - label: "Code"
+      url: "https://github.com/t46/atlas-of-judgment"
+    - label: "Dataset"
+      url: "https://huggingface.co/datasets/t46/atlas-of-judgment"
+
 - title: "What Would It Mean for Machines to Do Research? A Conceptual Exploration Drawing on Accounts of Human Inquiry"
   url: "/assets/papers/what-would-it-mean-for-machines-to-do-research.pdf"
   authors: "<b>Shiro Takagi</b>"
